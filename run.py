@@ -98,12 +98,18 @@ def _remember(seen: dict, doc) -> None:
 
 def _close_window(doc) -> None:
     """
-    An artifact in hand means stop looking for it. Only fires when the
-    document maps onto a scheduled meeting: the county news feed and
-    press coverage are not tied to one, so they never close anything.
+    An artifact in hand means stop looking for it.
+
+    The county news feed and press coverage are both kind "notice", and
+    both are stamped with today's date rather than a meeting's, so only
+    the newspaper is allowed to close a press window. Otherwise a county
+    notice fetched today would close the press window on a county
+    meeting held two days ago, which is a different thing entirely.
     """
     artifact = ARTIFACT_OF_KIND.get(doc.kind)
     if not artifact or not doc.meeting_date:
+        return
+    if artifact == "press" and doc.body != "press":
         return
     key = sched.match_meeting(doc.body, doc.meeting_date)
     if key:
@@ -286,6 +292,11 @@ def _gaps() -> list[str]:
         return gaps
 
     for artifact, meetings in due.items():
+        # Press is excluded. A newspaper owes nobody an article, so an
+        # open press window means nothing was written, not that something
+        # was missed. Listing it would bury the gaps that do matter.
+        if artifact == "press":
+            continue
         for m in meetings:
             if dt.date.fromisoformat(m.date) <= today:
                 gaps.append(f"No {artifact} retrieved for the {m.body} meeting "
