@@ -1,0 +1,386 @@
+[
+  {
+    "body": "county",
+    "date": "2026-01-12",
+    "title": "Board of Commissioners 4:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-01-12"
+  },
+  {
+    "body": "county",
+    "date": "2026-02-09",
+    "title": "Board of Commissioners 4:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-02-09"
+  },
+  {
+    "body": "county",
+    "date": "2026-02-23",
+    "title": "Board of Commissioners 6:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-02-23"
+  },
+  {
+    "body": "county",
+    "date": "2026-03-09",
+    "title": "Board of Commissioners 4:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-03-09"
+  },
+  {
+    "body": "county",
+    "date": "2026-03-23",
+    "title": "Board of Commissioners 6:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-03-23"
+  },
+  {
+    "body": "county",
+    "date": "2026-04-13",
+    "title": "Board of Commissioners 4:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-04-13"
+  },
+  {
+    "body": "county",
+    "date": "2026-04-27",
+    "title": "Board of Commissioners 6:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-04-27"
+  },
+  {
+    "body": "county",
+    "date": "2026-05-11",
+    "title": "Board of Commissioners 4:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-05-11"
+  },
+  {
+    "body": "city",
+    "date": "2026-05-18",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "city:2026-05-18"
+  },
+  {
+    "body": "schools",
+    "date": "2026-05-18",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "schools:2026-05-18"
+  },
+  {
+    "body": "county",
+    "date": "2026-05-25",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "county:2026-05-25"
+  },
+  {
+    "body": "county",
+    "date": "2026-05-26",
+    "title": "Board of Commissioners 6:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-05-26"
+  },
+  {
+    "body": "city",
+    "date": "2026-06-01",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "city:2026-06-01"
+  },
+  {
+    "body": "county",
+    "date": "2026-06-08",
+    "title": "Board of Commissioners 4:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-06-08"
+  },
+  {
+    "body": "city",
+    "date": "2026-06-15",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "city:2026-06-15"
+  },
+  {
+    "body": "schools",
+    "date": "2026-06-15",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "schools:2026-06-15"
+  },
+  {
+    "body": "county",
+    "date": "2026-06-22",
+    "title": "Board of Commissioners 6:00 PM",
+    "cancelled": false,
+    "source": "county site",
+    "key": "county:2026-06-22"
+  },
+  {
+    "body": "city",
+    "date": "2026-07-06",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "city:2026-07-06"
+  },
+  {
+    "body": "county",
+    "date": "2026-07-13",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-07-13"
+  },
+  {
+    "body": "city",
+    "date": "2026-07-20",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-07-20"
+  },
+  {
+    "body": "schools",
+    "date": "2026-07-20",
+    "title": "Board of Education Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "schools:2026-07-20"
+  },
+  {
+    "body": "county",
+    "date": "2026-07-27",
+    "title": "",
+    "cancelled": false,
+    "source": "recurrence rule",
+    "key": "county:2026-07-27"
+  },
+  {
+    "body": "city",
+    "date": "2026-08-03",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-08-03"
+  },
+  {
+    "body": "county",
+    "date": "2026-08-10",
+    "title": "(not in shared.js, treated as cancelled)",
+    "cancelled": true,
+    "source": "recurrence rule",
+    "key": "county:2026-08-10"
+  },
+  {
+    "body": "city",
+    "date": "2026-08-17",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-08-17"
+  },
+  {
+    "body": "schools",
+    "date": "2026-08-17",
+    "title": "Board of Education Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "schools:2026-08-17"
+  },
+  {
+    "body": "county",
+    "date": "2026-08-24",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-08-24"
+  },
+  {
+    "body": "city",
+    "date": "2026-09-07",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-09-07"
+  },
+  {
+    "body": "county",
+    "date": "2026-09-14",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-09-14"
+  },
+  {
+    "body": "city",
+    "date": "2026-09-21",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-09-21"
+  },
+  {
+    "body": "schools",
+    "date": "2026-09-21",
+    "title": "Board of Education Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "schools:2026-09-21"
+  },
+  {
+    "body": "county",
+    "date": "2026-09-28",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-09-28"
+  },
+  {
+    "body": "city",
+    "date": "2026-10-05",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-10-05"
+  },
+  {
+    "body": "county",
+    "date": "2026-10-12",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-10-12"
+  },
+  {
+    "body": "city",
+    "date": "2026-10-19",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-10-19"
+  },
+  {
+    "body": "schools",
+    "date": "2026-10-19",
+    "title": "Board of Education Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "schools:2026-10-19"
+  },
+  {
+    "body": "county",
+    "date": "2026-10-26",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-10-26"
+  },
+  {
+    "body": "city",
+    "date": "2026-11-02",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-11-02"
+  },
+  {
+    "body": "county",
+    "date": "2026-11-09",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-11-09"
+  },
+  {
+    "body": "city",
+    "date": "2026-11-16",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-11-16"
+  },
+  {
+    "body": "schools",
+    "date": "2026-11-16",
+    "title": "Board of Education Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "schools:2026-11-16"
+  },
+  {
+    "body": "county",
+    "date": "2026-11-23",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-11-23"
+  },
+  {
+    "body": "city",
+    "date": "2026-12-07",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-12-07"
+  },
+  {
+    "body": "county",
+    "date": "2026-12-07",
+    "title": "County Commission Organizational Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-12-07"
+  },
+  {
+    "body": "county",
+    "date": "2026-12-14",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-12-14"
+  },
+  {
+    "body": "city",
+    "date": "2026-12-21",
+    "title": "Brevard City Council Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "city:2026-12-21"
+  },
+  {
+    "body": "schools",
+    "date": "2026-12-21",
+    "title": "Board of Education Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "schools:2026-12-21"
+  },
+  {
+    "body": "county",
+    "date": "2026-12-29",
+    "title": "County Commission Meeting",
+    "cancelled": false,
+    "source": "tcdp-shared.js",
+    "key": "county:2026-12-29"
+  }
+]
