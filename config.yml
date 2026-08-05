@@ -78,14 +78,18 @@ known_gaps:
   - County minutes are approved four to six weeks after the meeting, so
     the most recent county meeting is usually represented by its agenda
     only, with no record of how anything was actually voted.
-  - The county publishes no machine readable video feed, so county
-    meeting video is not transcribed. Probed 2026-08-05: the legacy
+  # Folded block scalar, not a plain one. This entry contains colons and
+  # a plain scalar in a list would be read as a mapping and break the
+  # parse. Use >- for any gap text carrying a colon.
+  - >-
+    The county publishes no machine readable video feed, so county
+    meeting video is not transcribed. Probed 2026-08-05, the legacy
     Granicus RSS views carry only leftover 2022 training clips, view 1
     and view 4 return test content, view 2 returns 403, views 5 to 8
     return 404, and the legacy API paths are gone. The county is on the
     newer Granicus boards interface, whose HTML is disallowed by
     robots.txt and is deliberately not scraped. County proceedings
-    therefore have no same-week record here: coverage is the agenda plus
+    therefore have no same-week record here, coverage is the agenda plus
     press until minutes are approved four to six weeks later. School
     board and city video are unaffected, both come from YouTube.
   - School board agendas post roughly a week ahead. Minutes appear in
@@ -129,12 +133,38 @@ video:
       # channels accept ?user=; newer ones need ?channel_id=UC...
       # Resolve once with:
       #   yt-dlp --print channel_id https://www.youtube.com/user/tcsnc
-      rss_url: https://www.youtube.com/feeds/videos.xml?user=tcsnc
+      # Resolved from /user/tcsnc on 2026-08-05. The legacy ?user= form
+      # still answers, but it is the deprecated one, so pin the id.
+      rss_url: https://www.youtube.com/feeds/videos.xml?channel_id=UCblwE2_OLBGrrioIV0Esfyw
+      # Loose on purpose and checked against the live feed: across 15
+      # entries heavy with graduations and student features, this matched
+      # only "TCS Board Meeting 06-15-2026". Narrowing it to "board
+      # meeting" would break the moment they title one "Board of
+      # Education Meeting".
       title_filter: "board|meeting"
     - body: city
-      channel: https://www.youtube.com/@CityofBrevardNC
-      rss_url: ""
-      title_filter: "city council"
+      channel: https://www.youtube.com/channel/UCQLjYNExYc71BKYghN0V5iA
+      # The city's own City Council meetings playlist, not the channel
+      # feed. The city curates this, so the filtering happens upstream
+      # and we inherit it.
+      #
+      # That matters here. The channel posts three videos per meeting: an
+      # agenda preview before, the meeting, and a staff recap after. Off
+      # the channel feed a plain "city council" match took all three,
+      # which is a correctness problem before it is a cost one, since a
+      # staff recap filed in transcripts/ with frontmatter naming a body
+      # and a meeting date reads as the proceedings. The playlist carries
+      # meetings only: 15 entries checked on 2026-08-05, zero previews,
+      # zero recaps.
+      #
+      # Note the feed is ordered by playlist position, not by date, so
+      # never assume entry order is chronological. The lookback cutoff in
+      # video.py filters before max_per_run slices, which is what keeps
+      # that safe.
+      rss_url: https://www.youtube.com/feeds/videos.xml?playlist_id=PLjGP_ZHg4MS1BBWaYNGN1x4RtrERCAPB3
+      # Belt and braces behind the playlist, in case a preview ever gets
+      # added to it by mistake. Matches all 15 current entries.
+      title_filter: "^(?!.*(preview|recap|meet the mayor)).*city council"
 
   # Used only to correct names that speech recognition mangles. The
   # attributor may map a near miss onto a roster spelling. It may never

@@ -57,6 +57,10 @@ SEEN = STATE / "seen.json"
 RECORDS = STATE / "records.json"
 FAILURES = STATE / "failures.json"
 
+# video.py's pointer files, one per video id. Read only from here, and
+# only so a dry run can say which videos already have a transcript.
+CACHE_VIDEO = STATE / "video"
+
 # Doc.kind is what an adapter produces. Window artifacts are what
 # schedule.py watches for. They are not the same vocabulary, because a
 # school board packet and a county agenda close the same window.
@@ -118,27 +122,15 @@ def _close_window(doc) -> None:
 
 # ============================================================ documents
 
-def poll(only_bodies: set[str] | None = None) -> list[dict]:
-    """
-    Every document adapter, de-duplicated and extracted.
-
-    Ignores windows entirely. `tick` is the window aware caller and
-    passes only_bodies; running this directly is the deliberate override
-    for a first run or a backfill.
-    """
-    from govwatch import brief
-
-    seen = _load(SEEN, {})
-    records = _load(RECORDS, [])
-    watchlist = CONFIG.get("watchlist", [])
+def _collect_documents(only_bodies: set[str] | None):
+    """Run the document adapters. Returns (docs, failures)."""
     lookback = CONFIG.get("lookback_days", 60)
-
-    fresh, failures = [], {}
+    docs, failures = [], {}
     for adapter in ADAPTERS:
         if only_bodies and adapter.body not in only_bodies:
             continue
         try:
-            docs = adapter.collect(lookback)
+            got = adapter.collect(lookback)
         except Exception as e:
             # A source that has started failing silently is the failure
             # mode this project is most exposed to, so record it rather
@@ -146,11 +138,35 @@ def poll(only_bodies: set[str] | None = None) -> list[dict]:
             failures[adapter.body] = f"{type(e).__name__}: {e}"[:300]
             print(f"adapter failed for {adapter.body}: {e}")
             continue
-        for doc in docs:
-            if doc.uid in seen:
-                continue
-            _remember(seen, doc)
-            fresh.append(doc)
+        docs.extend(got)
+    return docs, failures
+
+
+def poll(only_bodies: set[str] | None = None, dry: bool = False) -> list[dict]:
+    """
+    Every document adapter, de-duplicated and extracted.
+
+    Ignores windows entirely. `tick` is the window aware caller and
+    passes only_bodies; running this directly is the deliberate override
+    for a first run or a backfill.
+
+    dry stops after collection: it reports what a real run would extract
+    and returns nothing. See _dry_report_docs for why it writes no state.
+    """
+    seen = _load(SEEN, {})
+    docs, failures = _collect_documents(only_bodies)
+    fresh = [d for d in docs if d.uid not in seen]
+
+    if dry:
+        _dry_report_docs(docs, fresh, failures)
+        return []
+
+    from govwatch import brief
+
+    records = _load(RECORDS, [])
+    watchlist = CONFIG.get("watchlist", [])
+    for doc in fresh:
+        _remember(seen, doc)
 
     print(f"{len(fresh)} new document(s)")
     new_records = _extract_all(fresh, brief, watchlist)
@@ -167,25 +183,34 @@ def poll(only_bodies: set[str] | None = None) -> list[dict]:
 
 # =============================================================== video
 
-def transcribe(only_bodies: set[str] | None = None) -> list[dict]:
+def transcribe(only_bodies: set[str] | None = None, dry: bool = False) -> list[dict]:
     """
     Meeting video to committed transcript to extraction record.
 
     The transcript itself is written by video.py into transcripts/ and is
     the durable artifact here. What comes back is the record, which is
     disposable: it can be rebuilt from the markdown at any time.
-    """
-    from govwatch import brief
 
+    dry stops at discovery, before anything is downloaded or fed to
+    Whisper. That is the expensive half, so a dry transcribe is the cheap
+    way to answer whether a source is finding video at all.
+    """
     vcfg = CONFIG.get("video", {})
     if not vcfg.get("enabled", True):
         print("video is disabled in config.yml")
         return []
 
+    roster = vcfg.get("roster", [])
+
+    if dry:
+        _dry_report_videos(only_bodies, vcfg)
+        return []
+
+    from govwatch import brief
+
     seen = _load(SEEN, {})
     records = _load(RECORDS, [])
     watchlist = CONFIG.get("watchlist", [])
-    roster = vcfg.get("roster", [])
 
     docs = video_source.collect(
         vcfg.get("lookback_days", 21),
@@ -206,6 +231,102 @@ def transcribe(only_bodies: set[str] | None = None) -> list[dict]:
     _save(SEEN, seen)
     _save(RECORDS, records + new_records)
     return new_records
+
+
+# ============================================================== dry run
+
+# brief.extract skips anything under this and truncates anything over it,
+# so the cost estimate below has to apply the same limits to mean
+# anything. Keep in step with brief.extract if those numbers move.
+MIN_EXTRACT_CHARS = 200
+MAX_EXTRACT_CHARS = 180_000
+
+# Haiku 4.5 input, dollars per million tokens, per the README's rate
+# table. Output is a small fraction of a run's cost and is ignored here,
+# so treat the figure as a floor, not a quote.
+HAIKU_INPUT_PER_MTOK = 1.00
+
+
+def _dry_report_docs(docs: list, fresh: list, failures: dict) -> None:
+    """
+    What a real poll would do, without doing it.
+
+    This writes nothing, and that is the point rather than an
+    optimization. A dry run that recorded documents in seen.json would
+    make the next real run skip them as already handled, which is the one
+    way a preview could do damage. Same reason tick skips mark_checked in
+    dry mode: stamping the cadence clock would suppress the real check.
+    """
+    print("\nDRY RUN. Nothing extracted, nothing written, no API spend.\n")
+
+    bodies = sorted({d.body for d in docs} | set(failures))
+    if not bodies:
+        print("  no adapter returned anything and none reported an error.")
+
+    fresh_uids = {d.uid for d in fresh}
+    for body in bodies:
+        mine = [d for d in docs if d.body == body]
+        new = [d for d in mine if d.uid in fresh_uids]
+        if body in failures:
+            print(f"  {body:8s} FAILED: {failures[body]}")
+            continue
+        if not mine:
+            # Not an error, but the shape a silently broken adapter takes,
+            # so it is called out rather than left as a blank line.
+            print(f"  {body:8s} returned 0 documents, worth a look")
+            continue
+        print(f"  {body:8s} {len(mine)} document(s), {len(new)} new")
+        for d in new:
+            print(f"      {d.kind:10s} {d.meeting_date or '????-??-??'} "
+                  f"{len(d.text):>7} chars  {d.title[:58]}")
+
+    billable = [min(len(d.text), MAX_EXTRACT_CHARS) for d in fresh
+                if len(d.text) >= MIN_EXTRACT_CHARS]
+    skipped = len(fresh) - len(billable)
+    tokens = sum(billable) // 4
+    print(f"\n  {len(fresh)} new document(s) would be extracted"
+          + (f", {skipped} skipped as too short" if skipped else ""))
+    print(f"  roughly {tokens:,} input tokens, about "
+          f"${tokens / 1_000_000 * HAIKU_INPUT_PER_MTOK:.2f} at Haiku input rates.")
+    print("  Rough: 4 chars per token, input only, before prompt caching.\n")
+
+
+def _dry_report_videos(only_bodies: set[str] | None, vcfg: dict) -> None:
+    """
+    Which videos a real transcribe would pick up.
+
+    Stops at discovery. Nothing is downloaded, no captions are fetched
+    and Whisper is never loaded, so this costs a few HTTP requests and
+    answers the question that actually matters day to day: is this source
+    finding video at all.
+    """
+    print("\nDRY RUN. Discovery only, nothing downloaded or transcribed.\n")
+
+    lookback = vcfg.get("lookback_days", 21)
+    cap = vcfg.get("max_per_run", 4)
+    total = 0
+
+    for src in video_source.sources():
+        body = getattr(src, "body", str(src))
+        if only_bodies and body not in only_bodies:
+            continue
+        try:
+            refs = src.discover(lookback)
+        except Exception as e:
+            print(f"  {body:8s} discovery FAILED: {type(e).__name__}: {e}")
+            continue
+        if not refs:
+            print(f"  {body:8s} found no video in the last {lookback} days")
+            continue
+        total += len(refs)
+        print(f"  {body:8s} {len(refs)} video(s), {min(len(refs), cap)} would be processed")
+        for ref in refs[:cap]:
+            done = (CACHE_VIDEO / f"{ref.vid}.json").exists()
+            print(f"      {ref.date or '????-??-??'}  "
+                  f"{'cached' if done else 'NEW':<6}  {ref.title[:58]}")
+
+    print(f"\n  {total} video(s) discovered. Anything marked cached already has a "
+          f"transcript\n  and would be reused rather than fetched again.\n")
 
 
 def _extract_all(docs, brief, watchlist, roster=None) -> list[dict]:
@@ -233,7 +354,7 @@ def _extract_all(docs, brief, watchlist, roster=None) -> list[dict]:
 
 # =============================================================== digest
 
-def digest(force: bool = False) -> str | None:
+def digest(force: bool = False, dry: bool = False) -> str | None:
     """
     Synthesize the records inside the reporting window into one brief,
     write it to briefs/, and email it.
@@ -257,6 +378,27 @@ def digest(force: bool = False) -> str | None:
 
     missing = _gaps()
     period = f"{cutoff} to {today.isoformat()}"
+
+    if dry:
+        # The gaps are the part worth previewing. They are assembled from
+        # config, live adapter failures and still-open windows, so this is
+        # the only way to read them without paying Sonnet to write around
+        # them.
+        print(f"\nDRY RUN. No brief written, no email sent, no API spend.\n")
+        print(f"  reporting period: {period}")
+        print(f"  {len(window)} record(s) would be synthesized, "
+              f"{len(records)} held in total")
+        by_body = {}
+        for r in window:
+            by_body.setdefault(r.get("_source", {}).get("body", "?"), []).append(r)
+        for body, rs in sorted(by_body.items()):
+            print(f"    {body:8s} {len(rs)} record(s)")
+        print(f"\n  Gaps section would carry {len(missing)} item(s):")
+        for m in missing:
+            print(f"    - {m[:110]}")
+        print()
+        return None
+
     text = brief.synthesize(window, missing, period)
 
     path = BRIEFS / f"{today.isoformat()}-brief.md"
@@ -375,13 +517,17 @@ def send_email(subject: str, body: str) -> None:
 
 # ================================================================= tick
 
-def tick() -> None:
+def tick(dry: bool = False) -> None:
     """
     The scheduled entrypoint. Does only what the open windows justify.
 
     Most runs find nothing open and exit in about a second, which is the
     whole point: the calendar is known, so there is no reason to poll
     around the clock for something that cannot exist yet.
+
+    dry previews the whole decision: which windows are open, what each
+    would collect, and what it would cost. It never marks a window
+    checked, so a preview cannot suppress the real run that follows it.
     """
     windows = sched.open_windows()
     today = dt.date.today()
@@ -403,24 +549,26 @@ def tick() -> None:
             bodies.add("press")
         print(f"open document windows: {', '.join(doc_artifacts)} "
               f"for {', '.join(sorted(bodies))}")
-        new_records += poll(only_bodies=bodies)
-        for artifact in doc_artifacts:
-            sched.mark_checked(artifact, windows[artifact])
+        new_records += poll(only_bodies=bodies, dry=dry)
+        if not dry:
+            for artifact in doc_artifacts:
+                sched.mark_checked(artifact, windows[artifact])
 
     if "video" in windows:
         bodies = {m.body for m in windows["video"]}
         print(f"open video window for {', '.join(sorted(bodies))}")
-        new_records += transcribe(only_bodies=bodies)
-        # Marked whether or not anything was found. The cadence counts
-        # attempts, not successes, otherwise a body that has not posted
-        # yet gets hammered every run.
-        sched.mark_checked("video", windows["video"])
+        new_records += transcribe(only_bodies=bodies, dry=dry)
+        if not dry:
+            # Marked whether or not anything was found. The cadence counts
+            # attempts, not successes, otherwise a body that has not posted
+            # yet gets hammered every run.
+            sched.mark_checked("video", windows["video"])
 
     if new_records:
         alert(new_records)
 
     if digest_day:
-        digest()
+        digest(dry=dry)
 
 
 # =============================================================== setup
@@ -440,23 +588,42 @@ def discover() -> None:
 # ================================================================= main
 
 MODES = {
-    "tick":       lambda: tick(),
-    "schedule":   lambda: print(sched.describe()),
-    "poll":       lambda: alert(poll()),
-    "transcribe": lambda: alert(transcribe()),
-    "digest":     lambda: digest(force=True),
-    "probe":      lambda: probe(),
-    "discover":   lambda: discover(),
+    "tick":       lambda dry: tick(dry=dry),
+    "schedule":   lambda dry: print(sched.describe()),
+    "poll":       lambda dry: alert(poll(dry=dry)),
+    "transcribe": lambda dry: alert(transcribe(dry=dry)),
+    "digest":     lambda dry: digest(force=True, dry=dry),
+    "probe":      lambda dry: probe(),
+    "discover":   lambda dry: discover(),
 }
+
+# schedule, probe and discover are already read only and already free, so
+# --dry-run would mean nothing on them. Rejecting it is better than
+# accepting it silently, which would teach the flag as a habit that
+# happens to be a no-op here and is load bearing elsewhere.
+DRY_CAPABLE = ("tick", "poll", "transcribe", "digest")
 
 
 def main() -> int:
-    mode = sys.argv[1] if len(sys.argv) > 1 else "tick"
+    args = list(sys.argv[1:])
+    dry = False
+    for flag in ("--dry-run", "--dry", "-n"):
+        while flag in args:
+            args.remove(flag)
+            dry = True
+
+    mode = args[0] if args else "tick"
     if mode not in MODES:
         print(f"unknown mode: {mode}")
         print("modes: " + ", ".join(MODES))
         return 2
-    MODES[mode]()
+    if dry and mode not in DRY_CAPABLE:
+        print(f"--dry-run does nothing for {mode}, it already reads "
+              f"without writing or spending.")
+        print("it applies to: " + ", ".join(DRY_CAPABLE))
+        return 2
+
+    MODES[mode](dry)
     return 0
 
 
