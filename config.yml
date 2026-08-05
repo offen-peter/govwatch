@@ -78,9 +78,16 @@ known_gaps:
   - County minutes are approved four to six weeks after the meeting, so
     the most recent county meeting is usually represented by its agenda
     only, with no record of how anything was actually voted.
-  - The county's Granicus portal blocks automated access. Video is the
-    only same-week record of county proceedings and is not transcribed
-    by this pipeline.
+  - The county publishes no machine readable video feed, so county
+    meeting video is not transcribed. Probed 2026-08-05: the legacy
+    Granicus RSS views carry only leftover 2022 training clips, view 1
+    and view 4 return test content, view 2 returns 403, views 5 to 8
+    return 404, and the legacy API paths are gone. The county is on the
+    newer Granicus boards interface, whose HTML is disallowed by
+    robots.txt and is deliberately not scraped. County proceedings
+    therefore have no same-week record here: coverage is the agenda plus
+    press until minutes are approved four to six weeks later. School
+    board and city video are unaffected, both come from YouTube.
   - School board agendas post roughly a week ahead. Minutes appear in
     the following month's consent agenda, not as standalone documents.
 

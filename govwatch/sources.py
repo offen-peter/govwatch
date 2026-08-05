@@ -253,44 +253,97 @@ class CityCouncil:
         https://{tenant}.api.civicclerk.com/v1/Meetings
             /GetMeetingFileStream(fileId=NNNN,plainText=false)
 
-    Run discover() once and check what the Events collection actually
-    returns for brevardnc before relying on the field names below.
+    Field names confirmed against the brevardnc tenant on 2026-08-05:
+    eventName, startDateTime and publishedFiles[{fileId, name, type}] are
+    all present and shaped as this parser expects. The file stream
+    endpoint serves a real PDF. See _events() for the two things about
+    the query that are not obvious.
     """
 
     TENANT = "brevardnc"
     API = f"https://{TENANT}.api.civicclerk.com/v1"
     body = "city"
 
+    # The server caps a page at 15 no matter what $top asks for. Four
+    # pages covers the window with room to spare: the live tenant returns
+    # 42 events across three for a 105 day span.
+    MAX_PAGES = 4
+
+    # Agendas post about a week ahead, so the window has to reach past
+    # today to catch them. Matches the lookahead the other adapters use.
+    LOOKAHEAD_DAYS = 45
+
     def discover(self) -> dict:
         """One-time helper. Print this and adjust the parser if needed."""
         return get(f"{self.API}/Events?$top=3&$orderby=startDateTime desc").json()
 
+    def _events(self, lookback_days: int) -> list[dict]:
+        """
+        Every event in the window, following the server's paging.
+
+        Two things here are load bearing, both learned from the live
+        tenant rather than from the API docs.
+
+        The filter needs an upper bound. Without one it matches every
+        meeting the city has ever put on the calendar, including
+        placeholders out into 2027, and a descending sort puts those
+        first.
+
+        And the paging has to be followed. $top is capped at 15 server
+        side and the rest comes back behind an @odata.nextLink. Those
+        two together are fatal: a single unbounded request returns the
+        fifteen furthest future events, which are exactly the ones with
+        no agenda posted yet, so the adapter finds nothing and raises
+        nothing. Measured before this fix, against the live tenant: 15
+        events returned, all in 2027, zero already held, zero files.
+        """
+        today = dt.date.today()
+        since = (today - dt.timedelta(days=lookback_days)).isoformat()
+        until = (today + dt.timedelta(days=self.LOOKAHEAD_DAYS)).isoformat()
+
+        out: list[dict] = []
+        url = f"{self.API}/Events"
+        params = {
+            "$filter": (f"startDateTime ge {since}T00:00:00Z and "
+                        f"startDateTime le {until}T23:59:59Z"),
+            "$orderby": "startDateTime desc",
+            "$top": "100",
+        }
+        for page in range(self.MAX_PAGES):
+            # nextLink is absolute and already carries the filter and a
+            # skiptoken, so it must be fetched without params of our own.
+            payload = get(url, params=params if page == 0 else None).json()
+            out.extend(payload.get("value", []))
+            url = payload.get("@odata.nextLink")
+            if not url:
+                break
+        return out
+
     def collect(self, lookback_days: int = 60) -> list[Doc]:
-        since = (dt.date.today() - dt.timedelta(days=lookback_days)).isoformat()
         try:
-            payload = get(
-                f"{self.API}/Events",
-                params={
-                    "$filter": f"startDateTime ge {since}T00:00:00Z",
-                    "$orderby": "startDateTime desc",
-                    "$top": "40",
-                },
-            ).json()
+            events = self._events(lookback_days)
         except Exception:
             return []
 
         docs = []
-        for ev in payload.get("value", []):
+        for ev in events:
             name = ev.get("eventName") or ev.get("name") or "Meeting"
             if "council" not in name.lower():
                 continue
             when = (ev.get("startDateTime") or "")[:10]
             for f in ev.get("publishedFiles", []) or []:
                 fid = f.get("fileId") or f.get("id")
-                label = (f.get("name") or f.get("type") or "").lower()
                 if not fid:
                     continue
-                kind = "minutes" if "minute" in label else "agenda"
+                # type is a clean enum on this tenant, Agenda, Agenda
+                # Packet, Minutes, Notice, so prefer it. name is the
+                # fallback for a tenant that does not populate it, and it
+                # is the looser signal: an agenda whose title mentions
+                # approving last month's minutes would misfile on name.
+                label = (f.get("type") or f.get("name") or "").lower()
+                kind = ("minutes" if "minute" in label
+                        else "notice" if "notice" in label
+                        else "agenda")
                 url = (f"{self.API}/Meetings/GetMeetingFileStream"
                        f"(fileId={fid},plainText=false)")
                 try:
@@ -300,7 +353,12 @@ class CityCouncil:
                             else r.text)
                 except Exception:
                     continue
-                docs.append(Doc(self.body, kind, f"{name} {when}", when, url, text))
+                # One meeting can publish an agenda, a packet and minutes.
+                # Without the file label in the title they arrive as three
+                # documents with identical names, which makes a record in
+                # the brief impossible to trace back to the right one.
+                title = f"{name} {when}: {f.get('type') or f.get('name') or kind}"
+                docs.append(Doc(self.body, kind, title, when, url, text))
         return docs
 
 
