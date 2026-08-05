@@ -166,65 +166,124 @@ class County:
     Transylvania County Board of Commissioners.
     Second Monday 4pm, fourth Monday 6pm.
 
-    Meeting-day URL slugs use MMDDYY. Minutes PDFs use YYYY-MM-DD with a
-    suffix that varies by meeting type, so we try the known variants.
+    Everything comes off the county's own meetings index, which is a
+    Drupal view listing one row per meeting with links to the agenda PDF,
+    the minutes PDF and the video. Confirmed on 2026-08-05: 25 rows, all
+    25 carrying a video link and a resolvable date.
+
+    Access: www.transylvaniacounty.org serves a stock Drupal robots.txt
+    that disallows /core/, /admin/, /search/, /user/ and /media/oembed.
+    /meetings and /sites/default/files are not disallowed. That is a
+    different host from transylvaniacounty.granicus.com, whose HTML is
+    disallowed and which this project does not touch.
+
+    This used to guess URLs instead, deriving meeting dates from the
+    second and fourth Monday rule and trying a list of known filename
+    suffixes for the minutes. Reading the index beats guessing on three
+    counts, all of them measured against the live page:
+
+      Suffixes. The guess list did not include "reg mtg & PH",
+      "reg mtg _ PH" or "reg mtg & PH (2)", so it silently missed those
+      minutes, 2026-06-22 among them.
+
+      Dates. Not every meeting is a second or fourth Monday. The
+      2026-06-02 budget workshop and the 2026-05-26 regular meeting are
+      both Tuesdays and both were invisible to the rule.
+
+      Agendas. It scraped the HTML meeting page. The index links the
+      actual agenda PDF, which is the document the board works from.
     """
 
     ROOT = "https://www.transylvaniacounty.org"
-    MIN_DIR = ROOT + "/sites/default/files/departments/administration/minutes"
+    INDEX = ROOT + "/meetings"
     body = "county"
-
-    MINUTE_SUFFIXES = [
-        "reg mtg", "Regular Meeting", "Budget Workshop",
-        "Special Meeting", "work session",
-    ]
 
     def collect(self, lookback_days: int = 90) -> list[Doc]:
         docs = []
-        for d in self._meeting_dates(lookback_days):
-            docs.extend(self._agenda(d))
-            docs.extend(self._minutes(d))
+        today = dt.date.today()
+        cutoff = today - dt.timedelta(days=lookback_days)
+
+        for row in self.rows():
+            when = row["date"]
+            if not when or when < cutoff:
+                continue
+            for kind in ("agenda", "minutes"):
+                url = row.get(kind)
+                if not url:
+                    continue
+                try:
+                    r = get(url)
+                except Exception:
+                    continue
+                text = (pdf_text(r.content)
+                        if "pdf" in r.headers.get("content-type", "").lower()
+                        else html_text(r.text))
+                if not text:
+                    continue
+                docs.append(Doc(self.body, kind,
+                                f"Commissioners {kind} {when:%m/%d/%y}",
+                                when.isoformat(), url, text))
         docs.extend(self._notices())
         return docs
 
-    def _meeting_dates(self, lookback_days: int) -> list[dt.date]:
-        """Second and fourth Mondays inside the window, plus a lookahead."""
-        today = dt.date.today()
-        start = today - dt.timedelta(days=lookback_days)
-        end = today + dt.timedelta(days=45)
-        out, d = [], start
-        while d <= end:
-            if d.weekday() == 0:
-                nth = (d.day - 1) // 7 + 1
-                if nth in (2, 4):
-                    out.append(d)
-            d += dt.timedelta(days=1)
+    def rows(self) -> list[dict]:
+        """
+        One dict per meeting off the index: date, agenda, minutes, video.
+
+        Shared with the video adapter, which wants the same rows for a
+        different column, so parsing lives here rather than in both.
+        """
+        try:
+            html = get(self.INDEX).text
+        except Exception as e:
+            print(f"county meetings index unavailable: {e}")
+            return []
+
+        soup = BeautifulSoup(html, "html.parser")
+        out = []
+        for row in soup.select("div.meeting-listing"):
+            hrefs = [a.get("href", "") for a in row.select("a[href]")]
+            rec = {
+                "agenda":  self._abs(next((h for h in hrefs if "/agendas/" in h), "")),
+                "minutes": self._abs(next((h for h in hrefs if "/minutes/" in h), "")),
+                "video":   next((h for h in hrefs
+                                 if "vimeo.com" in h or "granicus.com" in h), ""),
+                "title":   " ".join(row.get_text(" ", strip=True).split())[:120],
+            }
+            rec["date"] = self._row_date(rec, row)
+            if rec["date"]:
+                out.append(rec)
         return out
 
-    def _agenda(self, d: dt.date) -> list[Doc]:
-        slug = d.strftime("%m%d%y")
-        url = f"{self.ROOT}/meetings/commissioners-meeting-{slug}"
-        try:
-            text = html_text(get(url).text)
-        except Exception:
-            return []
-        if "Call to Order" not in text and "CALL TO ORDER" not in text:
-            return []
-        return [Doc(self.body, "agenda", f"Commissioners agenda {d:%m/%d/%y}",
-                    d.isoformat(), url, text)]
+    @staticmethod
+    def _row_date(rec: dict, row) -> dt.date | None:
+        """
+        Filename first, row text second.
 
-    def _minutes(self, d: dt.date) -> list[Doc]:
-        for suffix in self.MINUTE_SUFFIXES:
-            url = f"{self.MIN_DIR}/{d:%Y-%m-%d} {suffix}.pdf".replace(" ", "%20")
+        The PDF filenames carry an unambiguous YYYY-MM-DD. The row text
+        carries MM/DD/YY, which is the only date a row with a video but
+        no documents yet will have.
+        """
+        m = re.search(r"/(?:agendas|minutes)/(\d{4}-\d{2}-\d{2})",
+                      rec["agenda"] + rec["minutes"])
+        if m:
             try:
-                r = get(url)
-            except Exception:
-                continue
-            if "pdf" not in r.headers.get("content-type", "").lower():
-                continue
-            return [Doc(self.body, "minutes", f"Commissioners minutes {d:%m/%d/%y}",
-                        d.isoformat(), url, pdf_text(r.content))]
-        return []
+                return dt.date.fromisoformat(m.group(1))
+            except ValueError:
+                pass
+        m = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{2})\b", row.get_text(" ", strip=True))
+        if m:
+            try:
+                return dt.date(2000 + int(m.group(3)), int(m.group(1)), int(m.group(2)))
+            except ValueError:
+                pass
+        return None
+
+    @classmethod
+    def _abs(cls, href: str) -> str:
+        if not href or href.startswith("http"):
+            return href
+        return cls.ROOT + href
 
     def _notices(self) -> list[Doc]:
         """
