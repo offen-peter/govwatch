@@ -1,0 +1,9 @@
+# Installed on every run, including the ones that find no open window
+# and exit in a second. Keep this list small for that reason: anything
+# heavy belongs in requirements-media.txt instead.
+
+requests>=2.32
+beautifulsoup4>=4.12
+PyYAML>=6.0
+pdfplumber>=0.11
+anthropic>=0.40

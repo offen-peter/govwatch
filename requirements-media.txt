@@ -1,0 +1,12 @@
+# Installed only when a video window is open, see the workflow.
+#
+# faster-whisper drags in ctranslate2 and its numeric wheels, roughly
+# 200MB, and dominates job setup time. Keeping it off the roughly two
+# thirds of ticks that have no video window to service is most of what
+# makes a twice daily schedule free.
+#
+# yt-dlp is deliberately unpinned. It tracks YouTube's extractor changes
+# and a pinned version is a version that stops working.
+
+faster-whisper>=1.0
+yt-dlp

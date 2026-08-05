@@ -1,0 +1,101 @@
+name: govwatch
+
+on:
+  schedule:
+    # Twice a day, 08:00 and 15:00 Eastern. We know the meeting calendar,
+    # so there is nothing to gain from polling around the clock: every
+    # window here is at least a day wide and two runs a day hit all of
+    # them with retries to spare.
+    #
+    # The morning run is the one that matters. It catches video uploaded
+    # overnight after an evening meeting, and agendas posted the previous
+    # afternoon. The afternoon run is the retry.
+    #
+    # Deliberately off the hour: everyone schedules on :00 and GitHub
+    # queues shared runners accordingly.
+    - cron: "17 12,19 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "tick, schedule, poll, transcribe, digest, discover, probe"
+        default: tick
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    # A three hour meeting on base.en lands well inside this. The ceiling
+    # exists so a stalled download cannot sit burning minutes until the
+    # six hour hard limit.
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # Check the calendar before installing anything heavy. Most ticks
+      # find no open window and skip straight past ffmpeg and the model
+      # cache, which is what keeps a two-hourly schedule affordable.
+      - name: Check for open windows
+        id: windows
+        run: |
+          python -c "
+          from govwatch import schedule
+          w = schedule.open_windows()
+          print('video' if w.get('video') else 'none')
+          " | tail -1 | xargs -I{} echo "video={}" >> "$GITHUB_OUTPUT"
+
+      # Media stack only when a video window is open. faster-whisper and
+      # its numeric wheels are ~200MB and dominate job time, so keeping
+      # them off the other 350-odd ticks a month is most of the savings.
+      - name: Install media tools
+        if: steps.windows.outputs.video == 'video' || github.event_name == 'workflow_dispatch'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg
+          pip install -r requirements-media.txt
+
+      # The Whisper weights are ~150MB for base.en. Cache them or every
+      # transcription run re-downloads before it can start.
+      - name: Cache Whisper weights
+        if: steps.windows.outputs.video == 'video' || github.event_name == 'workflow_dispatch'
+        uses: actions/cache@v4
+        with:
+          path: state/video/models
+          key: whisper-${{ hashFiles('config.yml') }}
+
+      - name: Decide mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=tick" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python run.py ${{ steps.mode.outputs.mode }}
+
+      - name: Commit state and briefs
+        run: |
+          git config user.name  "govwatch"
+          git config user.email "actions@github.com"
+          # transcripts/ holds the durable public record this project
+          # exists to create: readable markdown, one file per meeting,
+          # diffable and citable by URL.
+          # state/ holds bookkeeping so a runner starts each run knowing
+          # what it already has and never re-transcribes anything.
+          git add state briefs transcripts
+          git diff --staged --quiet || git commit -m "govwatch: ${{ steps.mode.outputs.mode }} $(date -u +%Y-%m-%d)"
+          git push

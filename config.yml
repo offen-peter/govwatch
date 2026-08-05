@@ -1,0 +1,143 @@
+# How far back each adapter looks on every poll. Generous overlap is
+# cheap because de-duplication happens on document URL.
+lookback_days: 60
+
+# Window described in the digest header.
+digest_days: 14
+
+# 0 = Monday. The digest fires on this weekday during a tick, and only
+# if there is something new to report.
+digest_weekday: 4
+
+schedule:
+  # Your hardcoded government meeting schedule, the same one the website
+  # widgets read. Government meetings are not in Mobilize, you found that
+  # while building the widget, so this file is the authority. Point this
+  # at whatever URL serves the array.
+  shared_js_url: https://YOUR-SITE.netlify.app/tcdp-shared.js
+
+  # Variable names to look for inside that file.
+  array_names:
+    - govMeetings
+    - governmentMeetings
+    - GOV_MEETINGS
+
+  # Supplement only. Occasionally a meeting gets staged as a Mobilize
+  # event, and catching that costs one request per org.
+  mobilize_org_ids:
+    - 1550     # TCDP
+
+
+# Terms the extractor flags. These drive the between-digest alerts, so
+# keep the list to things you would actually want to be interrupted for.
+watchlist:
+  - landfill
+  - solid waste
+  - leachate
+  - DEQ
+  - Department of Environmental Quality
+  - transfer station
+  - parcel fee
+  - availability fee
+  - social services
+  - DSS
+  - staffing contract
+  - school bond
+  - Joint School Bond Project Committee
+  - vestibule
+  - capital improvement plan
+  - courthouse
+  - tax rate
+  - revenue neutral
+  - fund balance
+  - SNAP
+  - teacher supplement
+  - average daily membership
+  - public comment
+  - decorum
+  - closed session
+  - open meetings
+  - public records
+  - agenda modification
+  - stormwater
+  - steep slope
+  - homelessness
+  - affordable housing
+  - rezoning
+  - conditional use
+
+# Structural gaps that are true every cycle. The synthesis prompt folds
+# these into the Gaps section so the brief never reads as complete when
+# it is not.
+known_gaps:
+  - County minutes are approved four to six weeks after the meeting, so
+    the most recent county meeting is usually represented by its agenda
+    only, with no record of how anything was actually voted.
+  - The county's Granicus portal blocks automated access. Video is the
+    only same-week record of county proceedings and is not transcribed
+    by this pipeline.
+  - School board agendas post roughly a week ahead. Minutes appear in
+    the following month's consent agenda, not as standalone documents.
+
+alerts:
+  enabled: true
+
+email:
+  enabled: true
+  to:
+    - CHANGE_ME@example.org
+
+video:
+  enabled: true
+
+  # Videos are large and slow. Keep this window tight and let the daily
+  # document poll do the broad watching.
+  lookback_days: 21
+
+  # Hard ceiling per run so one bad discovery cannot burn an hour of CI
+  # on a backlog you did not ask for.
+  max_per_run: 4
+
+  # base.en is about four to eight times realtime on a CPU runner.
+  # small.en is better on crosstalk and room echo at roughly half the
+  # speed. Only YouTube-less sources hit Whisper at all.
+  whisper_model: base.en
+
+  granicus:
+    enabled: true
+    # Run `python run.py probe` once and put the working view here.
+    # Left empty the county adapter is a no-op rather than a guess.
+    view_id:
+
+  youtube:
+    - body: schools
+      channel: https://www.youtube.com/user/tcsnc
+      # The channel feed updates within minutes of an upload, which is as
+      # close to a push notification as YouTube offers. Legacy /user/
+      # channels accept ?user=; newer ones need ?channel_id=UC...
+      # Resolve once with:
+      #   yt-dlp --print channel_id https://www.youtube.com/user/tcsnc
+      rss_url: https://www.youtube.com/feeds/videos.xml?user=tcsnc
+      title_filter: "board|meeting"
+    - body: city
+      channel: https://www.youtube.com/@CityofBrevardNC
+      rss_url: ""
+      title_filter: "city council"
+
+  # Used only to correct names that speech recognition mangles. The
+  # attributor may map a near miss onto a roster spelling. It may never
+  # assign a name the transcript did not say.
+  roster:
+    - Teresa McCall, Chair, Board of Commissioners
+    - Larry Chapman, Vice Chair, Board of Commissioners
+    - Jason Chappell, Commissioner
+    - Jake Dalton, Commissioner
+    - Chase McKelvey, Commissioner
+    - Jaime Laughter, County Manager
+    - Trisha Hogan, Clerk to the Board
+    - Lisa Fletcher, Superintendent, Transylvania County Schools
+    - Brian Weaver, Assistant Superintendent
+    - Michelle Mullinax, Finance Director, Transylvania County Schools
+    - Beecher Allison, Joint School Bond Project Manager
+    - Wilson Hooper, Brevard City Manager
+    - Christy Wentzell, Brevard Police Chief
