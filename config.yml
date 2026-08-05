@@ -14,7 +14,12 @@ schedule:
   # widgets read. Government meetings are not in Mobilize, you found that
   # while building the widget, so this file is the authority. Point this
   # at whatever URL serves the array.
-  shared_js_url: https://YOUR-SITE.netlify.app/tcdp-shared.js
+  #
+  # This is the tcdp-events-api repo's public/ folder, which netlify.toml
+  # publishes at the site root. The same file the Squarespace widgets
+  # load, so there is one calendar, not two. The array is called
+  # TCDP.GOV_MEETINGS in it, which array_names below already covers.
+  shared_js_url: https://tcdp-events-api.netlify.app/tcdp-shared.js
 
   # Variable names to look for inside that file.
   array_names:

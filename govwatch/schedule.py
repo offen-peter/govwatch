@@ -130,14 +130,14 @@ def from_shared_js() -> list[Meeting]:
             continue
         return [
             Meeting(
-                body=_norm_body(it.get("body") or it.get("entity") or ""),
+                body=_body_of(it),
                 date=_norm_date(it.get("date") or it.get("start") or ""),
                 title=it.get("title") or it.get("name") or "",
                 cancelled=bool(it.get("cancelled") or it.get("canceled")),
                 source="tcdp-shared.js",
             )
             for it in items
-            if _norm_body(it.get("body") or it.get("entity") or "") in BODIES
+            if _body_of(it) in BODIES
             and _norm_date(it.get("date") or it.get("start") or "")
         ]
     print("no government meeting array found in shared.js")
@@ -452,6 +452,33 @@ def _norm_body(s: str) -> str:
     if "school" in s or "education" in s or "boe" in s:
         return "schools"
     return s if s in BODIES else ""
+
+
+def _body_of(it: dict) -> str:
+    """
+    Work out which body a shared.js entry belongs to.
+
+    The live file carries no body field. Its entries look like
+
+        {"id":"gov_county_20260824","title":"County Commission Meeting",
+         "date":"2026-08-24", ...}
+
+    so the body has to be read off the title, or failing that the id.
+
+    This used to consult body and entity only. Against the real file that
+    matched nothing, so every one of the 28 entries failed the BODIES
+    filter and from_shared_js returned an empty list. The authoritative
+    source was ignored in silence, the calendar fell back to recurrence
+    rules, and the cancellation logic in build() went with it, since that
+    is guarded on shared.js having returned something.
+
+    Explicit fields still win wherever a file provides them.
+    """
+    for key in ("body", "entity", "title", "name", "id"):
+        body = _norm_body(it.get(key) or "")
+        if body in BODIES:
+            return body
+    return ""
 
 
 def _body_from_title(title: str) -> str:
