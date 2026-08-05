@@ -1,0 +1,4 @@
+# The working copy is Windows, the runner is Linux, and the workflow
+# carries shell scripts inline. Normalize to LF in the index so a CRLF
+# never reaches bash.
+* text=auto eol=lf
