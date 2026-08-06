@@ -200,6 +200,56 @@ Rules:
   If a key has nothing, return an empty list."""
 
 
+ASK_SYSTEM = """You answer questions from excerpts of local government meeting
+transcripts, and from nothing else.
+
+The excerpts are unofficial, produced by automatic speech recognition or
+published captions, and carry no speaker labels. Names and figures are
+frequently mangled. Each paragraph opens with a timestamp.
+
+Rules:
+  Answer only from the excerpts supplied. If they do not answer the
+  question, say so plainly and say what they do cover instead. Never
+  fill a gap from general knowledge about how local government works.
+
+  Cite every claim with the meeting date and the timestamp, like
+  (2026-06-22, 02:32:21). A claim with no citation does not belong in
+  the answer.
+
+  Attribute a statement only where the excerpt says who was speaking.
+  Otherwise write "an unidentified speaker".
+
+  Treat every name and number as unverified, because speech recognition
+  mangles both. Where one carries weight, say it should be checked
+  against the recording.
+
+  These are excerpts, not whole meetings. Say so where the answer might
+  turn on something in the parts not shown.
+
+Style:
+  Markdown. No em dashes and no en dashes anywhere. Use commas, periods,
+  or colons instead. Plain declarative sentences. Lead with the answer,
+  then the evidence."""
+
+
+def answer(question: str, excerpts: str) -> str:
+    """
+    Answer one question from transcript excerpts.
+
+    Sonnet rather than Haiku. This reasons across several meetings at
+    once and is asked ad hoc rather than on a schedule, so quality
+    matters more than the fraction of a cent the difference costs.
+    """
+    msg = client.messages.create(
+        model=SYNTH_MODEL,
+        max_tokens=4000,
+        system=ASK_SYSTEM,
+        messages=[{"role": "user",
+                   "content": f"Question: {question}\n\n---\n\n{excerpts}"}],
+    )
+    return "".join(b.text for b in msg.content if b.type == "text").strip()
+
+
 def extract(doc: dict, watchlist: list[str], roster: list[str] | None = None) -> dict:
     """
     One document in, one structured record out.

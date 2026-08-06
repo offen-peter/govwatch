@@ -360,9 +360,19 @@ python run.py schedule     # print the calendar and today's open windows
 python run.py poll         # find and extract new documents, ignores windows
 python run.py transcribe   # find, transcribe, and extract new video
 python run.py digest       # build and send the brief
+python run.py ask "..."    # question the transcript archive, grep first
 python run.py discover     # print the CivicClerk payload, setup only
 python run.py probe        # probe the county's Granicus endpoints, setup
 ```
+
+`ask` is the payoff this section predicted. It greps `transcripts/` for
+the query terms and sends only the paragraphs that match, so a question
+across the whole archive costs a few thousand tokens rather than every
+transcript in full. Measured on six meetings: "what was said about the
+landfill and solid waste" matched 49 paragraphs across 5 meetings,
+9,048 tokens, against 192,000 for the archive entire. Every paragraph
+arrives with its timestamp, so the answer cites a meeting and a time you
+can check against the recording.
 
 Transcripts are cached in `state/video/` by video id and committed, so
 nothing is ever transcribed twice and the archive accumulates.

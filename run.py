@@ -32,6 +32,7 @@ last_checked.json) belongs to schedule.py and is written there.
 from __future__ import annotations
 
 import os
+import re
 import sys
 import json
 import smtplib
@@ -61,6 +62,9 @@ FAILURES = STATE / "failures.json"
 # video.py's pointer files, one per video id. Read only from here, and
 # only so a dry run can say which videos already have a transcript.
 CACHE_VIDEO = STATE / "video"
+
+# The durable archive, and the only thing `ask` reads.
+TRANSCRIPTS = ROOT / "transcripts"
 
 # Doc.kind is what an adapter produces. Window artifacts are what
 # schedule.py watches for. They are not the same vocabulary, because a
@@ -703,6 +707,146 @@ def tick(dry: bool = False) -> None:
         digest(dry=dry)
 
 
+# ================================================================== ask
+
+# Words too common to narrow anything down. Deliberately short: this is a
+# filter on query terms, not an attempt at linguistics.
+ASK_STOPWORDS = {
+    "the", "and", "for", "was", "were", "what", "who", "when", "where",
+    "did", "does", "any", "anyone", "about", "said", "say", "says", "this",
+    "that", "with", "from", "have", "has", "had", "how", "why", "are",
+    "our", "their", "there", "they", "them", "been", "being", "would",
+    "could", "should", "will", "can", "all", "some", "more", "meeting",
+}
+
+# One question's worth of excerpts. Far below the extraction cap on
+# purpose: an answer built from 100,000 characters the reader will never
+# check is worth less than one built from 10,000 they might.
+ASK_MAX_CHARS = 120_000
+
+
+def _ask_terms(question: str) -> list[str]:
+    words = re.findall(r"[a-z0-9'\-]{3,}", question.lower())
+    terms = [w for w in dict.fromkeys(words) if w not in ASK_STOPWORDS]
+    # If the question was nothing but stopwords, search them rather than
+    # searching nothing.
+    return terms or list(dict.fromkeys(words))
+
+
+def _frontmatter(raw: str) -> dict:
+    if not raw.startswith("---"):
+        return {}
+    head = raw.split("---", 2)[1]
+    out = {}
+    for line in head.splitlines():
+        key, sep, val = line.partition(":")
+        if sep and not key.startswith(" "):
+            out[key.strip()] = val.strip()
+    return out
+
+
+def _grep_transcripts(terms: list[str], budget: int = ASK_MAX_CHARS):
+    """
+    Matching paragraphs from the archive, best match first.
+
+    Paragraphs are what _vtt_to_text already writes, each opening with a
+    timestamp, so a match arrives carrying its own citation and needs no
+    further processing. That is the practical argument for the archive
+    being markdown rather than JSON, and it only pays off here.
+
+    Ranked by how many distinct query terms a paragraph contains, then by
+    recency, then truncated to a character budget. Crude, and enough: the
+    corpus is a few hundred paragraphs per meeting, not a search engine
+    problem.
+    """
+    hits = []
+    for path in sorted(TRANSCRIPTS.glob("*.md")):
+        raw = path.read_text(encoding="utf-8")
+        meta = _frontmatter(raw)
+        body = raw.split("---", 2)[-1] if raw.startswith("---") else raw
+        for para in body.split("\n\n"):
+            para = para.strip()
+            if not para or para.startswith((">", "#")):
+                continue
+            low = para.lower()
+            score = sum(1 for t in terms if t in low)
+            if score:
+                hits.append([score, path.name, meta, para])
+
+    considered = len(hits)
+    hits.sort(key=lambda h: h[1], reverse=True)   # newest meeting first
+    hits.sort(key=lambda h: -h[0])                # then best match, stably
+
+    kept, total = [], 0
+    for h in hits:
+        if total + len(h[3]) > budget:
+            break
+        kept.append(h)
+        total += len(h[3])
+    return kept, total, considered
+
+
+def _format_excerpts(hits) -> str:
+    """Group by meeting so the model sees which body and date it is reading."""
+    by_file: dict[str, tuple] = {}
+    for _score, name, meta, para in hits:
+        by_file.setdefault(name, (meta, []))[1].append(para)
+
+    out = []
+    for name, (meta, paras) in by_file.items():
+        out.append(
+            f"### {meta.get('meeting_date', '?')} {meta.get('body', '?')}: "
+            f"{meta.get('title', name)}\n"
+            f"source: {meta.get('source', '')}\n"
+            f"method: {meta.get('method', 'unknown')}"
+        )
+        out.extend(paras)
+    return "\n\n".join(out)
+
+
+def ask(question: str, dry: bool = False) -> None:
+    """
+    Ask a question of the transcript archive.
+
+    Greps transcripts/ for the query terms and sends only the paragraphs
+    that match, rather than every transcript in full.
+
+    This is the payoff the README predicted for storing transcripts as
+    timestamped markdown. Six meetings is already 768,000 characters, so
+    asking one question against the whole archive would cost more than a
+    month of everything else the pipeline does. The twenty paragraphs
+    that mention the landfill cost a fraction of a cent, and every line
+    of the answer can point at a meeting and a timestamp.
+    """
+    terms = _ask_terms(question)
+    hits, total, considered = _grep_transcripts(terms)
+
+    print(f"terms: {', '.join(terms)}")
+    print(f"{considered} matching paragraph(s) in the archive, "
+          f"{len(hits)} within budget, {total:,} chars "
+          f"~ {total // 4:,} tokens")
+
+    if not hits:
+        print("\nNothing in the archive matches. Try broader or fewer terms.")
+        print(f"The archive holds {len(list(TRANSCRIPTS.glob('*.md')))} meeting(s).")
+        return
+
+    meetings = sorted({h[2].get("meeting_date", "?") for h in hits})
+    print(f"across {len(meetings)} meeting(s): {', '.join(meetings)}")
+
+    if dry:
+        print("\nDRY RUN. No API call, no spend. Best matches:\n")
+        for score, name, _meta, para in hits[:8]:
+            print(f"  [{score} term(s)] {name}")
+            print(f"    {para[:180]}\n")
+        return
+
+    from govwatch import brief
+    print()
+    print(brief.answer(question, _format_excerpts(hits)))
+    print()
+
+
 # =============================================================== setup
 
 def probe() -> None:
@@ -733,7 +877,12 @@ MODES = {
 # --dry-run would mean nothing on them. Rejecting it is better than
 # accepting it silently, which would teach the flag as a habit that
 # happens to be a no-op here and is load bearing elsewhere.
-DRY_CAPABLE = ("tick", "poll", "transcribe", "digest")
+#
+# ask is dry capable for a different reason than the rest. A dry ask
+# prints which paragraphs the grep found and what sending them would
+# cost, which is the cheapest way to tell a badly worded question from
+# an archive that genuinely has nothing on the subject.
+DRY_CAPABLE = ("tick", "poll", "transcribe", "digest", "ask")
 
 
 def _require_api_key() -> None:
@@ -776,9 +925,23 @@ def main() -> int:
             dry = True
 
     mode = args[0] if args else "tick"
+
+    # ask carries a question rather than nothing, so it is dispatched
+    # here rather than through MODES, whose entries all take only dry.
+    if mode == "ask":
+        question = " ".join(args[1:]).strip()
+        if not question:
+            print("ask needs a question, quoted:")
+            print('  python run.py ask "what was said about the landfill"')
+            return 2
+        if not dry:
+            _require_api_key()
+        ask(question, dry=dry)
+        return 0
+
     if mode not in MODES:
         print(f"unknown mode: {mode}")
-        print("modes: " + ", ".join(MODES))
+        print("modes: " + ", ".join(MODES) + ", ask")
         return 2
     if dry and mode not in DRY_CAPABLE:
         print(f"--dry-run does nothing for {mode}, it already reads "

@@ -102,9 +102,16 @@ python run.py schedule     # print the calendar and today's open windows
 python run.py poll         # documents, ignores windows
 python run.py transcribe   # video, ignores windows
 python run.py digest       # build and send the brief
+python run.py ask "..."    # question the transcript archive, grep first
 python run.py probe        # county Granicus endpoints, setup only
 python run.py discover     # CivicClerk payload shape, setup only
 ```
+
+`--dry-run` (also `-n`) works on tick, poll, transcribe, digest and ask.
+It writes nothing, never stamps the cadence clock, and never calls the
+API. On `ask` it prints the matching paragraphs and what sending them
+would cost, which separates a badly worded question from an archive
+that has nothing on the subject.
 
 ## Cost baseline, don't regress silently
 
