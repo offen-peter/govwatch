@@ -210,18 +210,42 @@ def extract(doc: dict, watchlist: list[str], roster: list[str] | None = None) ->
     if is_transcript and roster:
         header += "Roster of known participants:\n" + "\n".join(roster) + "\n"
 
+    # Raised from 8000 on 2026-08-06. The 2026-06-22 county meeting, seven
+    # public comment speakers plus eight unanswered items, ran past 8000
+    # and returned truncated JSON, which parsed as nothing and was then
+    # treated as permanently unextractable. Output is billed on tokens
+    # actually generated, so a higher ceiling costs nothing on the
+    # documents that never approach it.
+    max_tokens = 16000 if is_transcript else 4000
+
     msg = client.messages.create(
         model=FAST_MODEL,
-        max_tokens=8000 if is_transcript else 3000,
+        max_tokens=max_tokens,
         system=[{"type": "text", "text": system,
                  "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user", "content": f"{header}\n---\n{text}"}],
     )
+
+    # Raise rather than return {}. The caller treats an empty return as a
+    # permanent verdict and stops retrying, which is right for content
+    # that is genuinely unusable and wrong for a cap that can be lifted.
+    # A truncated response is the second kind and has to stay retryable.
+    if msg.stop_reason == "max_tokens":
+        raise RuntimeError(
+            f"extraction hit the {max_tokens} token output cap on "
+            f"{doc.get('title', 'this document')!r} and the JSON is "
+            f"truncated. Raise max_tokens rather than accepting the loss."
+        )
+
     raw = "".join(b.text for b in msg.content if b.type == "text")
     raw = raw.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
     try:
         rec = json.loads(raw)
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as e:
+        # Was silent, which made a parse failure indistinguishable from a
+        # document with nothing in it.
+        print(f"extraction returned unparseable JSON for "
+              f"{doc.get('title', '?')}: {e}. First 200 chars: {raw[:200]!r}")
         return {}
     rec["_source"] = {k: doc[k] for k in ("body", "kind", "title", "meeting_date", "url")}
     return rec
