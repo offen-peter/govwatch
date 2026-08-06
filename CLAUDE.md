@@ -63,6 +63,15 @@ contradicts:
 - **Transcripts are committed markdown in `transcripts/`, not JSON.**
   Costs the same tokens either way, the API bills what you send. The
   point is a browsable, diffable, greppable archive.
+- **City council committees are in scope, not noise.** Brevard prefixes
+  every committee with "City Council", so `CityCouncil.collect()`'s
+  substring match takes them all. Confirmed keep, 2026-08-06: 7 full
+  council documents against 12 committee ones over 60 days, but the
+  committees are only ~1,800 tokens combined, about half a cent a cycle.
+  They are upstream of council decisions, which is where turning up
+  still changes the outcome. The thing to guard is conflation, never
+  letting a committee recommendation read as a council action, and the
+  synthesis prompt already covers that.
 - **Speaker attribution is inference from context, not voice
   diarization.** These meetings self-narrate: roll call, the chair
   naming public comment speakers, staff introducing themselves. Cheaper

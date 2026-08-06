@@ -407,6 +407,27 @@ class CityCouncil:
         docs = []
         for ev in events:
             name = ev.get("eventName") or ev.get("name") or "Meeting"
+            # Deliberately loose, and it is a decision rather than an
+            # accident. Brevard prefixes every council committee with the
+            # full name, "City Council Finance and Human Resources
+            # Committee" and so on, so this takes the committees too.
+            #
+            # Measured over a 60 day window: 7 documents from the full
+            # council, 12 from committees and advisory boards. The
+            # committees total about 7,300 characters, roughly 1,800
+            # tokens, so the cost of keeping them is around half a cent a
+            # cycle. They are also upstream of council decisions, which
+            # is where showing up still changes something.
+            #
+            # The risk is conflation, not inclusion: a committee
+            # recommendation must never read as a council action. The
+            # synthesis prompt already forbids that, and the full event
+            # name goes into Doc.title below so a record always says
+            # which body actually met.
+            #
+            # Note this filter excludes Board of Adjustment, Brevard
+            # Planning Board and Ecusta Trail Advisory Board, none of
+            # which carry "council" in the name.
             if "council" not in name.lower():
                 continue
             when = (ev.get("startDateTime") or "")[:10]
