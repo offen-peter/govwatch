@@ -101,8 +101,10 @@ alerts:
 
 email:
   enabled: true
+  # Recipients of the brief. This is separate from GMAIL_USER, which is
+  # the sending account and lives in the repository secrets.
   to:
-    - CHANGE_ME@example.org
+    - chair@transcodems.com
 
 video:
   enabled: true
