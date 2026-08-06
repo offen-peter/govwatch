@@ -9,4 +9,15 @@
 # and a pinned version is a version that stops working.
 
 faster-whisper>=1.0
-yt-dlp
+
+# Unpinned deliberately. It tracks YouTube's extractor changes and a
+# pinned version is a version that stops working. curl-cffi brings TLS
+# impersonation, which is the difference between looking like a browser
+# and looking like a script.
+yt-dlp[default,curl-cffi]
+
+# The yt-dlp side of the proof of origin token provider. The workflow
+# starts the matching server before any video work, see the comment
+# there. Without this plugin installed, yt-dlp never asks for a token
+# and YouTube subtitle requests from a runner get refused.
+bgutil-ytdlp-pot-provider

@@ -61,6 +61,45 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends ffmpeg
           pip install -r requirements-media.txt
+          # yt-dlp needs a JavaScript runtime to solve YouTube's player
+          # challenges. Without one it warns that extraction is
+          # deprecated and some formats are missing, which on a runner
+          # is the difference between a caption track and nothing. Only
+          # deno is enabled by default, so install that rather than
+          # relying on the preinstalled node.
+          curl -fsSL https://deno.land/install.sh | sh -s -- -y --no-modify-path
+          echo "$HOME/.deno/bin" >> "$GITHUB_PATH"
+
+      # YouTube demands a proof of origin token for subtitle requests
+      # and challenges datacenter addresses far harder than residential
+      # ones. That is the whole story behind caption fetching working on
+      # a laptop and failing here: on 2026-08-06 all three city videos
+      # failed in Actions and the same three succeeded locally minutes
+      # later.
+      #
+      # This is the provider yt-dlp's own PO token guide recommends. The
+      # published image is used rather than building from source, since
+      # cloning and compiling the provider on every video run is both
+      # slower and one more thing to break quietly.
+      #
+      # The county is unaffected either way. Its video comes from Vimeo
+      # through the player config endpoint and never touches yt-dlp.
+      - name: Start the YouTube PO token provider
+        if: steps.windows.outputs.video == 'video' || github.event_name == 'workflow_dispatch'
+        run: |
+          docker run --name bgutil-provider -d --init -p 4416:4416 \
+            brainicism/bgutil-ytdlp-pot-provider
+          for i in $(seq 1 30); do
+            if curl -sf http://127.0.0.1:4416/ping >/dev/null; then
+              echo "token provider up after ${i}s"
+              exit 0
+            fi
+            sleep 1
+          done
+          # Not fatal. Vimeo still works, and a run that fetches county
+          # video and misses city video beats a run that does neither.
+          echo "token provider did not come up, youtube captions will probably fail this run"
+          docker logs bgutil-provider || true
 
       # The Whisper weights are ~150MB for base.en. Cache them or every
       # transcription run re-downloads before it can start.
