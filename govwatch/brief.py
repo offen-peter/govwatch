@@ -23,6 +23,28 @@ import anthropic
 FAST_MODEL = "claude-haiku-4-5-20251001"
 SYNTH_MODEL = "claude-sonnet-5"
 
+# Raised from 180,000 on 2026-08-06, after measuring what the old value
+# was actually doing. All three city council agenda packets exceeded it:
+# 229,943, 247,300 and 266,605 characters. So between 22 and 32 percent
+# of every packet was being discarded without a word, and the discarded
+# part is the back of the packet, where the staff reports, contracts and
+# budget detail sit rather than the running order.
+#
+# 180,000 characters is roughly 45,000 tokens, nowhere near Haiku's
+# limit, so the cap was never protecting against anything. 600,000 is
+# about 150,000 tokens, which leaves comfortable room for the system
+# prompt and a 16,000 token response inside a 200,000 token context.
+#
+# The cost of reading a packet whole rather than four fifths of it is
+# about two cents. Truncation is now a warning rather than a silence.
+MAX_INPUT_CHARS = 600_000
+
+# Same reasoning applied to the synthesis payload. The digest already
+# windows records to digest_days, so this is a backstop rather than a
+# working limit, but a backstop that fires silently drops meetings out
+# of a brief with nothing to show it happened.
+MAX_SYNTH_CHARS = 400_000
+
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 BODY_NAMES = {
@@ -194,7 +216,14 @@ def extract(doc: dict, watchlist: list[str], roster: list[str] | None = None) ->
     call, so after the first request in a five minute span the rest read
     it at a tenth of the price.
     """
-    text = doc.get("text", "")[:180_000]
+    raw = doc.get("text", "")
+    text = raw[:MAX_INPUT_CHARS]
+    if len(raw) > MAX_INPUT_CHARS:
+        # Loud, because the old limit was silent and was throwing away
+        # real content. See MAX_INPUT_CHARS.
+        print(f"WARNING: {doc.get('title', '?')} is {len(raw):,} chars and was "
+              f"cut to {MAX_INPUT_CHARS:,}. {len(raw) - MAX_INPUT_CHARS:,} "
+              f"characters were not read.")
     if len(text) < 200:
         return {}
 
@@ -253,7 +282,12 @@ def extract(doc: dict, watchlist: list[str], roster: list[str] | None = None) ->
 
 def synthesize(records: list[dict], missing: list[str], period: str) -> str:
     """Pass 2. All records in, one brief out."""
-    payload = json.dumps(records, indent=2)[:400_000]
+    full = json.dumps(records, indent=2)
+    payload = full[:MAX_SYNTH_CHARS]
+    if len(full) > MAX_SYNTH_CHARS:
+        print(f"WARNING: {len(records)} records serialize to {len(full):,} chars "
+              f"and were cut to {MAX_SYNTH_CHARS:,}. The brief is being written "
+              f"from an incomplete set. Narrow digest_days or raise the cap.")
     gaps = "\n".join(f"- {m}" for m in missing) or "- none recorded"
 
     msg = client.messages.create(

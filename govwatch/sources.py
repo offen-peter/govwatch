@@ -47,13 +47,31 @@ class Doc:
     meeting_date: str    # ISO date, best effort
     url: str
     text: str = ""
+    # True for a page that lives at a fixed URL and changes underneath it,
+    # as opposed to a document that is published once. See __post_init__.
+    rolling: bool = False
     uid: str = field(default="")
 
     def __post_init__(self):
         if not self.uid:
-            self.uid = hashlib.sha1(
-                f"{self.body}|{self.kind}|{self.url}".encode()
-            ).hexdigest()[:16]
+            key = f"{self.body}|{self.kind}|{self.url}"
+            if self.rolling:
+                # A rolling page has a constant URL, so a URL-only uid is
+                # recorded as seen on the first run and the page is never
+                # read again however much it changes.
+                #
+                # The county news feed is the one this matters for. It
+                # carries cancellations, budget hearing notices and public
+                # hearing notices, and is where a schedule change surfaces
+                # first. It was extracted once on 2026-08-06 and, before
+                # this, would never have been read again.
+                #
+                # Folding the content in means it re-extracts when, and
+                # only when, the page actually changes. Cheaper than a
+                # date-based uid, which would re-extract daily whether or
+                # not anything had happened.
+                key += "|" + hashlib.sha1(self.text.encode()).hexdigest()[:12]
+            self.uid = hashlib.sha1(key.encode()).hexdigest()[:16]
 
     def to_dict(self):
         return asdict(self)
@@ -218,6 +236,12 @@ class County:
     INDEX = ROOT + "/meetings"
     body = "county"
 
+    # One fetch of the index per process. Both the document adapter and
+    # the Vimeo video adapter read these rows, so a tick that polls and
+    # transcribes was pulling the same page twice. The county's bandwidth
+    # is not ours to spend twice for one answer.
+    _rows_cache: list | None = None
+
     def collect(self, lookback_days: int = 90) -> list[Doc]:
         docs = []
         today = dt.date.today()
@@ -252,7 +276,10 @@ class County:
 
         Shared with the video adapter, which wants the same rows for a
         different column, so parsing lives here rather than in both.
+        Cached for the life of the process for the same reason.
         """
+        if County._rows_cache is not None:
+            return County._rows_cache
         try:
             html = get(self.INDEX).text
         except Exception as e:
@@ -273,6 +300,7 @@ class County:
             rec["date"] = self._row_date(rec, row)
             if rec["date"]:
                 out.append(rec)
+        County._rows_cache = out
         return out
 
     @staticmethod
@@ -315,8 +343,10 @@ class County:
             text = html_text(get(self.ROOT + "/news").text)
         except Exception:
             return []
+        # rolling, because this URL never changes but its contents do.
         return [Doc(self.body, "notice", "County news and public notices",
-                    dt.date.today().isoformat(), self.ROOT + "/news", text)]
+                    dt.date.today().isoformat(), self.ROOT + "/news", text,
+                    rolling=True)]
 
 
 # ------------------------------------------------------------------ city

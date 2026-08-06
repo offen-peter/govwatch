@@ -249,8 +249,14 @@ def from_rules(horizon_days: int = 120) -> list[Meeting]:
 
 def build() -> list[Meeting]:
     """Merge all resolvers. Earlier sources win. Cancellations always win."""
+    # Fetched once and reused. This used to be called twice per rebuild,
+    # once in the resolver loop and once for the cancellation check
+    # below, which meant two full downloads of shared.js for one calendar.
+    shared_meetings = from_shared_js()
+
     merged: dict[str, Meeting] = {}
-    for resolver in (from_rules, from_mobilize, from_official_sites, from_shared_js):
+    for resolver in (from_rules, from_mobilize, from_official_sites,
+                     lambda: shared_meetings):
         for m in resolver():
             if not m.date:
                 continue
@@ -263,7 +269,7 @@ def build() -> list[Meeting]:
 
     # A meeting the authoritative source dropped entirely is treated as
     # cancelled, so we stop watching for materials that will not appear.
-    shared = {m.key for m in from_shared_js()}
+    shared = {m.key for m in shared_meetings}
     if shared:
         for key, m in merged.items():
             if (m.source == "recurrence rule"
@@ -390,8 +396,21 @@ def mark_acquired(meeting_key: str, artifact: str):
     ACQUIRED.write_text(json.dumps(acquired, indent=2))
 
 
-def match_meeting(body: str, date_str: str, tolerance_days: int = 2) -> str | None:
-    """Map a retrieved artifact back to a scheduled meeting."""
+def match_meeting(body: str, date_str: str, tolerance_days: int = 1) -> str | None:
+    """
+    Map a retrieved artifact back to a scheduled meeting.
+
+    Tolerance tightened from 2 to 1 on 2026-08-06. Brevard's council
+    committees are not on the calendar, only the full council is, and
+    they meet within days of it: council on 2026-08-03, Public Works and
+    Utilities on 2026-08-05. At two days a committee agenda matched the
+    council meeting and closed its agenda window, so if the committee
+    agenda posted first the council's own agenda would never be fetched.
+
+    One day still absorbs the date parsing slop this exists for, a
+    meeting listed as the 8th whose minutes are filed as the 9th, without
+    reaching the next meeting of the same body.
+    """
     if not date_str:
         return None
     try:
