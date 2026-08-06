@@ -82,14 +82,23 @@ known_gaps:
   # a plain scalar in a list would be read as a mapping and break the
   # parse. Use >- for any gap text carrying a colon.
   - >-
-    County meeting video is not yet transcribed by this pipeline, so the
-    only same-week record of county proceedings is the agenda plus
-    press, until minutes are approved four to six weeks later. The video
-    does exist: the county's meetings index links a Vimeo recording for
-    every one of its 25 listed meetings. Wiring that up is pending, and
-    until it is, county public comment goes unrecorded here. Not a
-    Granicus gap: probed 2026-08-05, the legacy Granicus RSS views carry
-    only leftover 2022 training clips and the legacy API paths are gone.
+    County meeting video is not transcribed by this pipeline, so the only
+    same-week record of county proceedings is the agenda plus press,
+    until minutes are approved four to six weeks later. County public
+    comment in particular goes unrecorded here, and minutes compress a
+    whole comment period into a line or two.
+    The video does exist. The county's meetings index links a Vimeo
+    recording for all 25 listed meetings, and yt-dlp resolves the event
+    URL to a real video. It cannot be retrieved without credentials:
+    tested 2026-08-06 on yt-dlp nightly, Vimeo now refuses anonymous
+    extraction outright, saying the extractor only works when logged in.
+    That is a Vimeo platform change, not a county setting, and not
+    something a newer yt-dlp will fix.
+    Other routes checked and ruled out. Legacy Granicus RSS carries only
+    leftover 2022 training clips and the legacy API paths are gone. The
+    county's YouTube channel has four videos, the newest from 2013. The
+    one YouTube link on the county site is a sitewide footer element, a
+    2013 tourism clip, not meeting content.
     School board and city video are unaffected, both come from YouTube.
   - School board agendas post roughly a week ahead. Minutes appear in
     the following month's consent agenda, not as standalone documents.
