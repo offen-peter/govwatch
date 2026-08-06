@@ -263,10 +263,114 @@ class GranicusSource:
         return out
 
 
+class VimeoSource:
+    """
+    Transylvania County. The county streams each meeting to its own Vimeo
+    account and links the recording from its meetings index, one Vimeo
+    event per meeting.
+
+    Three hops, none of which need credentials:
+
+        vimeo.com/event/N            linked from the county index
+        vimeo.com/event/N/embed      carries the player iframe
+        player.vimeo.com/video/M/config
+
+    That last one returns the caption track and the HLS streams.
+
+    Hand rolled rather than shelled out to yt-dlp on purpose. Vimeo has
+    withdrawn anonymous extraction and yt-dlp's extractor now refuses
+    without a login, tested 2026-08-06 on the nightly build. The player
+    config endpoint is a different path and still answers anonymously,
+    which is the whole reason county video is reachable at all.
+
+    Verified against two meetings on 2026-08-06. Both carried an
+    auto-generated English track: 130,338 and 125,878 characters, each
+    opening with a roll call naming every commissioner present, which is
+    exactly what extraction needs to attribute speakers.
+    """
+
+    body = "county"
+    EMBED = "https://vimeo.com/event/{}/embed"
+
+    def discover(self, lookback_days: int) -> list[VideoRef]:
+        from govwatch.sources import County
+
+        cutoff = dt.date.today() - dt.timedelta(days=lookback_days)
+        out = []
+        for row in County().rows():
+            url, when = row.get("video"), row.get("date")
+            if not url or "vimeo.com" not in url or not when or when < cutoff:
+                continue
+            title = f"Board of Commissioners {when:%B} {when.day}, {when.year}"
+            out.append(VideoRef(self.body, title, when.isoformat(), url, url))
+        return out
+
+
+def _vimeo_config(event_url: str) -> dict | None:
+    """Event URL to the player config, the JSON the player itself reads."""
+    m = re.search(r"/event/(\d+)", event_url)
+    if not m:
+        return None
+    try:
+        html = get(VimeoSource.EMBED.format(m.group(1))).text
+    except Exception as e:
+        print(f"vimeo embed page unavailable: {e}")
+        return None
+    vid = (re.search(r"player\.vimeo\.com/video/(\d+)", html)
+           or re.search(r"/video/(\d+)/config", html))
+    if not vid:
+        print(f"no player id on the vimeo embed page for {event_url}")
+        return None
+    try:
+        return get(f"https://player.vimeo.com/video/{vid.group(1)}/config").json()
+    except Exception as e:
+        print(f"vimeo player config unavailable: {e}")
+        return None
+
+
+def _vimeo_captions(ref: VideoRef) -> str | None:
+    cfg = _vimeo_config(ref.media_url)
+    if not cfg:
+        return None
+    tracks = (cfg.get("request", {}) or {}).get("text_tracks") or []
+    if not tracks:
+        print(f"no caption track on {ref.title}, falling back to whisper")
+        return None
+    url = tracks[0].get("url", "")
+    if url.startswith("/"):
+        url = "https://player.vimeo.com" + url
+    try:
+        return _vtt_to_text(get(url).text)
+    except Exception as e:
+        print(f"vimeo caption fetch failed: {e}")
+        return None
+
+
+def _vimeo_hls(event_url: str) -> str:
+    """
+    Master playlist url, for the Whisper fallback.
+
+    Vimeo serves no progressive mp4 for these, only HLS and DASH, so
+    there is no single file to stream. ffmpeg reads HLS directly, which
+    is why the fallback goes through it rather than through a download.
+    """
+    cfg = _vimeo_config(event_url)
+    if not cfg:
+        return ""
+    cdns = ((((cfg.get("request", {}) or {}).get("files", {}) or {})
+             .get("hls", {}) or {}).get("cdns", {}) or {})
+    for cdn in cdns.values():
+        if cdn.get("url"):
+            return cdn["url"]
+    return ""
+
+
 def sources() -> list:
     cfg = VIDEO_CFG
     out = []
-    if cfg.get("granicus", {}).get("enabled", True):
+    if cfg.get("vimeo", {}).get("enabled", True):
+        out.append(VimeoSource())
+    if cfg.get("granicus", {}).get("enabled", False):
         out.append(GranicusSource())
     for yt in cfg.get("youtube", []):
         out.append(YouTubeSource(yt["body"], yt["channel"], yt["title_filter"],
@@ -283,6 +387,9 @@ def fetch_captions(ref: VideoRef) -> str | None:
     Order matters: a human-corrected caption track beats automatic
     captions, which beat anything we generate locally.
     """
+    if "vimeo.com" in ref.media_url:
+        return _vimeo_captions(ref)
+
     if "youtube.com" not in ref.media_url and "youtu.be" not in ref.media_url:
         return _granicus_captions(ref)
 
@@ -403,6 +510,20 @@ def _download_audio(ref: VideoRef) -> Path:
     if dest.exists():
         return dest
 
+    if "vimeo.com" in ref.media_url:
+        # Only reached when a meeting has no caption track. ffmpeg pulls
+        # the HLS stream and strips it to the mono 16k Whisper wants, so
+        # nothing lands on disk except the audio.
+        hls = _vimeo_hls(ref.media_url)
+        if not hls:
+            raise RuntimeError(f"no caption track and no HLS stream for {ref.title}")
+        subprocess.run(
+            ["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", hls,
+             "-vn", "-ac", "1", "-ar", "16000", "-c:a", "aac", str(dest)],
+            check=True, timeout=3600,
+        )
+        return dest
+
     if ref.media_url.endswith(".mp4"):
         # Direct file. Stream it and strip to mono 16k audio, which is
         # all Whisper wants and a fraction of the bytes to hold on disk.
@@ -454,7 +575,8 @@ def process(ref: VideoRef, roster: list[str], agenda: str = "") -> Doc | None:
             return _doc_from_markdown(ref, md)
 
     text = fetch_captions(ref)
-    method = "published captions"
+    method = ("vimeo auto-generated captions" if "vimeo.com" in ref.media_url
+              else "published captions")
     if not text or len(text) < 2000:
         text = transcribe_audio(ref)
         method = f"whisper {VIDEO_CFG.get('whisper_model', 'base.en')}"
