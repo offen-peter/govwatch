@@ -35,6 +35,7 @@ import os
 import sys
 import json
 import smtplib
+import collections
 import datetime as dt
 from pathlib import Path
 from email.message import EmailMessage
@@ -521,6 +522,40 @@ def _gaps() -> list[str]:
 
 # =============================================================== alerts
 
+def _watchlist_terms(values, watchlist: list[str]):
+    """
+    Reduce whatever extraction returned down to the configured terms it
+    actually names. Returns (terms, unmatched_count).
+
+    The prompt asks for terms from the watchlist and nothing else, and
+    document extractions obey it: "stormwater", "decorum", "public
+    comment". Transcript extractions drift. The 2026-06-22 county record
+    came back with 20 entries shaped like "landfill capacity declines
+    and decisions about future of solid waste system" rather than
+    "landfill".
+
+    Inside records.json that phrasing is useful context and is left
+    alone. In an alert it is the difference between something scannable
+    in a notification and twenty sentences nobody reads. So the
+    normalizing happens here, at the alert boundary, and the record
+    keeps what the model wrote.
+
+    A string naming no configured term is dropped rather than passed
+    through. The prompt forbids inventing hits, and an alert firing on
+    something that is not on the list is exactly what teaches a reader
+    to stop opening alerts.
+    """
+    terms, unmatched = set(), 0
+    for raw in values:
+        low = str(raw).lower()
+        found = [t for t in watchlist if t.lower() in low]
+        if found:
+            terms.update(found)
+        else:
+            unmatched += 1
+    return sorted(terms), unmatched
+
+
 def alert(new_records: list[dict]) -> None:
     """
     Watchlist hits between digests.
@@ -532,22 +567,46 @@ def alert(new_records: list[dict]) -> None:
     if not CONFIG.get("alerts", {}).get("enabled", True):
         return
 
-    hits = []
+    watchlist = CONFIG.get("watchlist", [])
+    blocks, tally, dropped = [], collections.Counter(), 0
     for rec in new_records:
-        terms = rec.get("watchlist_hits") or []
+        raw = rec.get("watchlist_hits") or []
+        if not raw:
+            continue
+        terms, unmatched = _watchlist_terms(raw, watchlist)
+        dropped += unmatched
         if not terms:
             continue
+        tally.update(terms)
         src = rec.get("_source", {})
-        hits.append(
+        blocks.append(
             f"{', '.join(terms)}\n"
             f"  {src.get('body', '')} {src.get('kind', '')}: {src.get('title', '')}\n"
             f"  {src.get('url', '')}"
         )
 
-    if not hits:
+    if dropped:
+        print(f"{dropped} reported watchlist hit(s) named no configured term "
+              f"and were ignored for alerting")
+    if not blocks:
         return
-    send_email(f"GovWatch alert: {len(hits)} watchlist hit(s)",
-               "\n\n".join(hits) + "\n\nFull context lands in the next brief.\n")
+
+    # The terms belong in the subject. That is the part read on a phone
+    # without opening anything, and it is what decides whether this is
+    # worth interrupting for.
+    #
+    # Ordered by how often each term came up, not alphabetically. Sorted
+    # by name the line opened with "DEQ, DSS, Department of Environmental
+    # Quality" regardless of what the cycle was actually about. Held to
+    # three terms because mail clients cut a subject around 78
+    # characters, and a term truncated mid word is worse than a count.
+    named = [t for t, _ in tally.most_common()]
+    subject = "GovWatch alert: " + ", ".join(named[:3])
+    if len(named) > 3:
+        subject += f", and {len(named) - 3} more"
+
+    send_email(subject,
+               "\n\n".join(blocks) + "\n\nFull context lands in the next brief.\n")
 
 
 # ================================================================ email
