@@ -177,15 +177,42 @@ understanding what it does and does not give you.
 
 ### Captions first, Whisper second
 
-The school board and the city both publish full meetings to YouTube,
-which generates automatic captions within about an hour of upload. Those
-are free, instant, and made from cleaner audio than we can get by
-re-encoding a stream, so the pipeline always tries them first. Whisper
-runs only where no captions exist, which in practice means the county.
+All three bodies publish captions, so in practice captions are not the
+first choice, they are the only one. Whisper has never run.
 
-That ordering keeps almost all of the cost off the CPU. A typical week
-is two caption fetches taking seconds and one county meeting taking
-twenty to forty five minutes.
+| Body | Source | Captions |
+|---|---|---|
+| County | Vimeo, linked from the county's own meetings index | auto-generated, fetched from the player config endpoint |
+| City | YouTube, the council's own meetings playlist | auto-generated |
+| School board | YouTube | auto-generated |
+
+The county was supposed to be the body that needed Whisper. It turned
+out to stream every meeting to its own Vimeo account, and Vimeo
+generates an English track for each one. Three hops get it, none of them
+needing credentials: the event URL from the meetings index, the event
+embed page for the player id, then `player.vimeo.com/video/{id}/config`
+for the caption track.
+
+That matters more than it sounds, because yt-dlp cannot reach Vimeo at
+all any more. Vimeo withdrew anonymous extraction and its extractor now
+demands a login. The player config endpoint is a different path and
+still answers, which is the only reason county video is reachable.
+
+A typical week is therefore three caption fetches taking seconds
+between them, and no CPU time at all.
+
+### YouTube blocks datacenter addresses
+
+The city and school board paths run through yt-dlp, and yt-dlp works
+from a laptop and fails on a GitHub runner. YouTube requires a proof of
+origin token for subtitle requests and challenges datacenter addresses
+far harder than residential ones. On 2026-08-06 all three city videos
+failed in Actions and the same three succeeded locally minutes later.
+
+The workflow answers that with three things the runner was missing:
+deno for the JavaScript runtime, curl-cffi for TLS impersonation, and
+the bgutil proof of origin token provider. The county is unaffected,
+since Vimeo never touches yt-dlp.
 
 ### Whisper settings, and why
 
@@ -204,6 +231,14 @@ the library defaults:
   GitHub runner. `small.en` handles gavel bangs, crosstalk and room echo
   noticeably better at about half the speed. Switch in `config.yml` if
   the county audio disappoints you, and it may.
+
+None of the above has been exercised. Every one of these settings is
+reasoning about meeting audio, not a measurement of it, because every
+body turned out to publish captions. Whisper is the fallback for a
+meeting whose caption track is missing, which has not happened yet but
+nearly did: the school board's 2026-06-16 video was removed from YouTube
+before it could be fetched. Treat this section as untested until a
+transcript actually comes back marked `whisper base.en`.
 
 ### Speaker attribution is inference
 
@@ -280,32 +315,47 @@ outcomes. Transcripts record:
 
 ### Cost
 
-**About $0.74 a month in API spend, $0 in infrastructure.**
+**About $1.00 a month now, nearer $1.30 from September, $0 in
+infrastructure.**
 
-### Where the money was going
+Higher than the $0.74 this section used to claim, for three reasons,
+none of them a regression:
 
-Before optimizing, two thirds of every token in the project went to
-reading the same transcripts twice: once for speaker attribution, once
-for fact extraction.
+- Sonnet's introductory rate ends 31 August. Output goes from $10 to
+  $15 per million, and brief synthesis is output-heavy.
+- Agenda packets are now read whole. The old 180,000 character cap was
+  discarding between 22% and 32% of every city packet in silence, so the
+  old figure was partly the price of not reading things.
+- The county now produces transcripts. It was the body the old model
+  assumed would have none.
 
-| Stage | Input tokens | Share |
-|---|---|---|
-| Speaker attribution | 183,000 | 37% |
-| Transcript extraction | 150,000 | 30% |
-| City agenda packets | 50,000 | 10% |
-| Brief synthesis | 48,000 | 10% |
-| Everything else | 67,500 | 13% |
+### Where the money goes
 
-The separation bought nothing. Extraction already has to know who said
-what in order to report public comment and attribute a split, so it was
-doing the identification work anyway and being billed for it twice.
-Merging them into one pass is the whole optimization.
+Measured from one full cycle, five meetings a month across the three
+bodies, rather than estimated.
 
-| Version | Input | Output | Cost |
-|---|---|---|---|
-| Two passes | 498,500 | 94,200 | $1.10 |
-| Merged pass | 315,500 | 64,200 | $0.76 |
-| Merged plus prompt caching | 315,500 | 64,200 | **$0.74** |
+| Stage | Model | Input | Output | Cost |
+|---|---|---|---|---|
+| Transcript extraction, 5 meetings | Haiku | 156,000 | 18,000 | $0.25 |
+| City agenda packets, 2 | Haiku | 125,000 | 3,000 | $0.14 |
+| County minutes, agendas, notices | Haiku | 45,000 | 14,000 | $0.11 |
+| Brief synthesis, ~4 digests | Sonnet | 86,000 | 34,000 | $0.77 |
+| | | **412,000** | **69,000** | **~$1.27** |
+
+Synthesis is now the largest line, which is a change worth noticing. It
+is a fifth of the input and three fifths of the cost, because output
+tokens are five times the price of input and a brief is mostly output.
+The lever there, if one is ever wanted, is `digest_days` and how many
+records a single brief has to read, not the extraction side.
+
+### Why extraction is one pass
+
+Before optimizing, two thirds of every token went to reading the same
+transcripts twice: once for speaker attribution, once for fact
+extraction. The separation bought nothing. Extraction already has to
+know who said what in order to report public comment and attribute a
+split, so it was doing the identification work anyway and being billed
+for it twice.
 
 Accuracy is unaffected or slightly better. The merged prompt sees the
 roster, the agenda and the full transcript at once, where the old
@@ -313,7 +363,16 @@ extraction pass only ever saw a pre-labelled summary of who spoke.
 
 Rates verified 24 July 2026: Haiku 4.5 at $1.00/$5.00 per million
 tokens, Sonnet 5 at $2.00/$10.00 introductory through 31 August, then
-$3.00/$15.00. From September this becomes about $0.87.
+$3.00/$15.00. The figures above use the September rates.
+
+### The cheap way to interrogate the archive
+
+`run.py ask` exists because the alternative is expensive. Six meetings
+is 768,000 characters, so putting one question to the whole archive
+would cost more than a month of everything else here. Grepping first and
+sending only matching paragraphs put a real cross-meeting question at
+9,048 tokens, about a twentieth of that, and the ratio improves with
+every meeting added.
 
 ### What was left on the table, deliberately
 
@@ -336,14 +395,24 @@ actual meetings.
 | Run type | Count | Minutes each | Total |
 |---|---|---|---|
 | Exited immediately, no window open | 38 | 1 | 38 |
-| Working run | 22 | 2 | 44 |
-| County meeting, Whisper transcription | 2 | 75 | 150 |
-| | | | **232 min** |
+| Working run, documents only | 12 | 2 | 24 |
+| Video window open, media stack installed | 10 | 5 | 50 |
+| County meeting, Whisper transcription | 0 | n/a | 0 |
+| | | | **~112 min** |
 
-Public repositories get unlimited free minutes. Private repositories get
-2,000 a month free, so this costs nothing either way. Note that Whisper
-is now most of the total, which means the remaining lever is transcription
-time, not scheduling.
+Down from the 232 this table used to show, and for an unexpected reason:
+150 of those minutes were budgeted for county Whisper runs that will
+never happen, because the county publishes captions. What replaced them
+is smaller and different. A video-window run now installs faster-whisper,
+ffmpeg, deno and pulls the token provider image, which is about three
+minutes of setup for a fallback that has not yet been needed.
+
+That is insurance, not waste, but it is worth knowing it is insurance.
+The remaining lever is scheduling again, not transcription time.
+
+This repository is public, so Actions minutes are unlimited and free.
+Private repositories get 2,000 a month, which this would still sit well
+inside.
 
 ### The real cost
 
