@@ -109,7 +109,13 @@ video:
 
   # Videos are large and slow. Keep this window tight and let the daily
   # document poll do the broad watching.
-  lookback_days: 21
+  #
+  # TEMPORARILY 60 for a one time backfill, so the county meetings
+  # already sitting in transcripts/ get extracted into records. Put this
+  # back to 21 once that run has been through. Nothing is refetched at
+  # 60: the pointer files in state/video mean an existing transcript is
+  # read off disk rather than downloaded again.
+  lookback_days: 60
 
   # Hard ceiling per run so one bad discovery cannot burn an hour of CI
   # on a backlog you did not ask for.
