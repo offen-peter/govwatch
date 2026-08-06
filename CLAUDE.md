@@ -12,28 +12,72 @@ Claude-generated briefs. Python, GitHub Actions, no server, no database.
 Read those three first. This file is only what a session needs that
 isn't already written down there: priorities and standing rules.
 
-## Priority: unverified, needs live network access
+## Verified against the real endpoints, 2026-08-05 and 06
 
-This project was built in an environment whose network is allowlisted
-to package registries only (pypi, npm, github). It could not reach
-transylvaniacounty.org, granicus.com, or civicclerk.com, so the
-following were built from documentation and one example tenant, never
-executed against the real endpoints. If you have normal network access,
-do these first, in this order, and fix whatever the real output
-contradicts:
+This was built without network access to any of its sources, so the
+first three priorities were to check it against reality. All three are
+done. Recorded here because each one contradicted the design, and
+knowing what was already wrong is worth more than the instruction to
+check it again.
 
-1. `python run.py probe`, find the county's working Granicus `view_id`.
-   If nothing responds, the county has likely moved off legacy Granicus
-   entirely with no public feed. Do not scrape the HTML UI to compensate,
-   its robots.txt disallows it. Leave `video.granicus.view_id` blank and
-   note the gap in `config.yml`'s `known_gaps` instead.
-2. `python run.py discover`, confirm the CivicClerk Events payload shape
-   for the `brevardnc` tenant matches what `CityCouncil.collect()` in
-   `sources.py` expects. Field names were verified on a different
-   tenant, not this one.
-3. `python run.py schedule`, confirm `tcdp-shared.js` parses. The parser
-   in `schedule.py: from_shared_js()` is tolerant on purpose, since the
-   actual file structure was never seen.
+1. **probe.** No usable county Granicus feed exists. Legacy RSS views
+   carry only 2022 training clips, view 2 returns 403, the legacy API
+   paths are gone. `video.granicus.enabled` is now false. County video
+   comes from Vimeo instead, see below.
+2. **discover.** The CivicClerk field names were right, and the query
+   was wrong in a way that returned nothing while raising nothing: no
+   upper bound on the filter, and `$top` capped at 15 server side with
+   the rest behind `@odata.nextLink`. The city adapter was silently
+   dead. Now bounded and paged.
+3. **schedule.** `tcdp-shared.js` parses, but every entry was being
+   discarded: the live array has no `body` field, only a title, and
+   `from_shared_js` consulted `body` and `entity` only. The
+   authoritative calendar was being ignored in silence and the pipeline
+   was falling back to recurrence rules.
+
+Two more things found the same way. The county's own `/meetings` index
+lists agendas, minutes and a Vimeo recording per meeting, which replaced
+URL guessing and closed the county video gap. And YouTube refuses
+subtitle requests from datacenter addresses, so city and school board
+video works locally and needs a proof of origin token in Actions.
+
+The lesson worth keeping: every one of these failed silently. Prefer a
+loud failure to a tidy empty result.
+
+## Next, not started
+
+**Add the Transylvania County Board of Elections as a fourth body.**
+<https://www.transylvaniaelections.org/>
+
+Nothing has been looked at yet beyond noting that it lives on its own
+domain: `transylvaniacounty.org/departments/elections` is a 404, and the
+county's `/meetings` index carries commissioners only. So this is a new
+adapter against an unexamined site, not a variation on the county one.
+
+Before anything else, read that domain's robots.txt. The standing rule
+below is not negotiable and the county's own Granicus tenant is the
+example of why: an hour was spent on an entry that turned out to be
+disallowed.
+
+What a fourth body touches, so the size is known up front:
+
+- `sources.py`, a new adapter, and `ADAPTERS`
+- `schedule.py`, the `BODIES` tuple and a branch in `_norm_body`
+- `brief.py`, `BODY_NAMES`
+- `config.yml`, and `known_gaps` if coverage turns out partial
+- `tcdp-shared.js`, which is the calendar's authority. Meetings absent
+  from it are treated as cancelled, so elections meetings have to be
+  added there or the pipeline will never open a window for them. That
+  is a change to the events widget's file, not just to this repo.
+- `video.py`, only if they publish recordings
+
+One design question worth settling before writing code: the window and
+cadence model assumes a body that meets on a predictable monthly rhythm.
+A board of elections meets rarely for most of the year and then often,
+sometimes at short notice, around an election and a canvass. The
+recurrence-rule fallback in `schedule.py` has nothing sensible to say
+about that, so this body may need to be calendar-only, with no rule
+behind it.
 
 ## Standing rules
 
