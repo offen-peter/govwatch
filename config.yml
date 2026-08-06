@@ -112,12 +112,17 @@ video:
   # Videos are large and slow. Keep this window tight and let the daily
   # document poll do the broad watching.
   #
-  # TEMPORARILY 60 for a one time backfill, so the county meetings
-  # already sitting in transcripts/ get extracted into records. Put this
-  # back to 21 once that run has been through. Nothing is refetched at
-  # 60: the pointer files in state/video mean an existing transcript is
-  # read off disk rather than downloaded again.
-  lookback_days: 60
+  # Back to 21 now the 2026-08-06 backfill is done, six transcripts and
+  # all six extracted. This is a safety net, not the primary mechanism:
+  # the T+1 to T+4 video window is what catches a meeting in normal
+  # operation, and this only decides how far back a windowless run like
+  # `transcribe` will reach.
+  #
+  # Widen it temporarily, not permanently, if a body's video needs
+  # sweeping up after an outage. At 60 the school board's monthly
+  # meetings come into range, which 21 misses, and that gap is worth
+  # settling properly rather than by leaving this wide.
+  lookback_days: 21
 
   # Hard ceiling per run so one bad discovery cannot burn an hour of CI
   # on a backlog you did not ask for.

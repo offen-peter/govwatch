@@ -3626,5 +3626,403 @@
       "open meetings - Representative Ferguson attending council meeting; livestreaming of meetings mentioned",
       "agenda modification - Motion made to modify agenda (moving M2 to L1, adding resolution to consent agenda); motion to amend agenda to add legislative request item (failed)"
     ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "transcript",
+      "meeting_date": "2026-06-22",
+      "title": "Board of Commissioners June 22, 2026 (transcript)",
+      "url": "https://vimeo.com/event/6005609"
+    },
+    "actions_taken": [
+      {
+        "amount": "$82,536,220",
+        "vote": "Aye",
+        "what": "FY27 Budget adopted",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Consent agenda approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Reappoint Juvenile Crime Prevention Council members",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Table Regional Council on Aging appointment",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Appoint Jason Davis to Relief Fund board",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Approve agenda as submitted",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Renew Veterans History Museum lease for two years",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$100,000",
+        "vote": "Aye",
+        "what": "Approve FY 2027 nonprofit funding contracts",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$10,000",
+        "vote": "Aye",
+        "what": "Approve second $10,000 housing funds to be brought back for approval when requested",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$2,184,218",
+        "vote": "Aye",
+        "what": "Approve appropriation from Education Capital Fund Balance for secure vestibule standard",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Approve up to 5% movement between school bond project scopes",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Enter closed session per GS 143-318.11A1 and 3",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Seal closed session minutes",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Aye",
+        "what": "Direct county attorney and staff to send certified letter to Conestee Fire and Rescue regarding audit compliance",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "Coming months",
+        "what": "Provide guidance on museum lease arrangement potential including single tenant or multiple tenant configurations for courthouse",
+        "who": "County Manager and staff"
+      },
+      {
+        "by_when": "Before lease decision final",
+        "what": "Explore mini-split HVAC options as alternative to full unit replacement at museum",
+        "who": "County Manager and maintenance"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Work with DEQ and contractors to resolve construction-related sediment issues at landfill",
+        "who": "County staff"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Conduct water testing and measures to determine impact of landfill site sediment",
+        "who": "County staff"
+      },
+      {
+        "by_when": "After closed session motion",
+        "what": "Send certified letter to Conestee Fire and Rescue regarding audit compliance questions for contract negotiation and/or 90-day termination",
+        "who": "County attorney and staff"
+      },
+      {
+        "by_when": "2026-06-30",
+        "what": "Submit FY25 audit report to Local Government Commission",
+        "who": "Finance director and auditors"
+      },
+      {
+        "by_when": "2026-07-13",
+        "what": "Vote on NCACC Legislative Goals at next meeting",
+        "who": "Board of Commissioners"
+      },
+      {
+        "by_when": "Upon request",
+        "what": "Bring Housing Assistance Corporation's second $10,000 housing grant back for approval when requested",
+        "who": "County staff"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-06-30",
+        "what": "FY27 budget adoption deadline"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "FY25 audit submission deadline"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "Veterans History Museum lease expiration"
+      },
+      {
+        "date": "2026-07-10",
+        "what": "Flood Insurance Rate Map comments deadline"
+      },
+      {
+        "date": "2026-08-14",
+        "what": "NCACC Legislative Goals submission deadline"
+      },
+      {
+        "date": "2028",
+        "what": "New courthouse completion target"
+      },
+      {
+        "date": "2028-12",
+        "what": "All school bond projects completion target"
+      },
+      {
+        "date": "2026-09",
+        "what": "Landfill expansion project completion"
+      }
+    ],
+    "disagreements": [],
+    "money": [
+      {
+        "amount": "$720,000",
+        "fund": "General Fund 10",
+        "item": "Solid Waste Enterprise Fund supplemental property tax"
+      },
+      {
+        "amount": "$164,000,000",
+        "fund": "School Bond",
+        "item": "Education capital five-year plan improvements"
+      },
+      {
+        "amount": "$65,000,000",
+        "fund": "State Grant",
+        "item": "State grant for CTE wing at BHS"
+      },
+      {
+        "amount": "$38,000,000",
+        "fund": "Bond Sale (November 2026)",
+        "item": "Courthouse construction"
+      },
+      {
+        "amount": "$220,000,000",
+        "fund": "Various, including $120,000,000 in capital grants",
+        "item": "Current capital projects"
+      },
+      {
+        "amount": "$1,200,000",
+        "fund": "General Fund",
+        "item": "SNAP benefit contribution administration potential impact"
+      },
+      {
+        "amount": "$1,200,000",
+        "fund": "General Fund",
+        "item": "Teacher raises estimated impact"
+      },
+      {
+        "amount": "$5,400,000",
+        "fund": "Education Capital Fund; $3,200,000 reallocated from savings; $2,184,218 from fund balance",
+        "item": "Secure vestibule standard expansion"
+      },
+      {
+        "amount": null,
+        "fund": "2% increase funded in full",
+        "item": "School board operational increase"
+      },
+      {
+        "amount": null,
+        "fund": "42% increase as requested",
+        "item": "School board annual capital funding increase"
+      },
+      {
+        "amount": "$100,000",
+        "fund": "General Fund",
+        "item": "FY 2027 nonprofit funding allocations"
+      },
+      {
+        "amount": "$10,000",
+        "fund": "General Fund",
+        "item": "Housing nonprofit funding held in reserve"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "Museum responsibility",
+        "item": "Museum HVAC compressor temporary fix estimate"
+      },
+      {
+        "amount": "$20,000",
+        "fund": "Museum responsibility",
+        "item": "Museum HVAC unit replacement estimate"
+      },
+      {
+        "amount": "$15,000",
+        "fund": "Museum responsibility",
+        "item": "Mini-split HVAC installation estimate"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-07-13",
+        "next_step": "Vote on goals at next board meeting",
+        "what": "NCACC Legislative Goals submission"
+      },
+      {
+        "date": null,
+        "next_step": "Committee to study courthouse future; RFPs to be issued",
+        "what": "Courthouse facilities RFP and future use planning"
+      },
+      {
+        "date": null,
+        "next_step": "Series of public hearings on solid waste funding",
+        "what": "Solid waste funding options public hearings"
+      },
+      {
+        "date": "2026-09",
+        "next_step": "Begin salary review study",
+        "what": "County salary study"
+      },
+      {
+        "date": "2026-09",
+        "next_step": "Continue construction",
+        "what": "Landfill expansion project"
+      },
+      {
+        "date": "2028-12",
+        "next_step": "Continue design and construction",
+        "what": "School bond projects remaining work"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Schematic design package with pricing expected",
+        "what": "CTE Grant project at Brevard High School"
+      },
+      {
+        "date": null,
+        "next_step": "Bring back for approval upon request",
+        "what": "Housing Assistance Corporation second $10,000 grant"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "Chair thanked him for comments",
+        "speaker": "Owen Carson",
+        "summary": "Resident thanked staff for transparent budget process. Expressed concern about public understanding of interconnected fiscal challenges including school bond repayments, new courthouse, landfill capacity decline, and potential state/federal cost shifts. Recommended creating a public-facing financial roadmap showing five, ten, and twenty-year plans with underlying assumptions to help citizens understand long-term county financial picture.",
+        "topic": "FY27 budget and long-term financial planning"
+      },
+      {
+        "response": "",
+        "speaker": "Doug Powell",
+        "summary": "Speaker discussed Declaration of Independence, emphasizing that government's purpose is to protect rights derived from God. Urged county commissioners to acknowledge God of the Bible in public buildings and meetings to protect civil and religious liberties. Referenced Liberty Bell passage from Leviticus and Moses depiction at Supreme Court. Encouraged Independence Day celebrations.",
+        "topic": "Declaration of Independence and religious references in government"
+      },
+      {
+        "response": "",
+        "speaker": "Chuck Gilmore",
+        "summary": "Speaker addressed General Assembly's passed amendment limiting property tax increases that will appear on November ballot. Warned commissioners that budgeting will become much more difficult. Noted amendment presents as one-size-fits-all approach limiting local flexibility. Requested commissioners use public platform to educate public on issue because ballot language may mislead voters into voting against measure.",
+        "topic": "Property tax limit constitutional amendment"
+      },
+      {
+        "response": "",
+        "speaker": "David Mora",
+        "summary": "Museum president thanked commissioners for extending lease two years. Requested involvement in discussions regarding necessary HVAC work. Noted museum was warm that day and questioned whether work could be completed before July 4th.",
+        "topic": "Veterans History Museum lease extension and HVAC work"
+      },
+      {
+        "response": "",
+        "speaker": "Ashley Hart",
+        "summary": "Resident and first vice chair of North Carolina 11th Congressional District Republican Party thanked board for museum lease extension. Requested county establish policy to provide confirmation of receipt for freedom of information requests, noting other counties and cities provide simple acknowledgment that request was received and will be addressed.",
+        "topic": "Freedom of information request process"
+      }
+    ],
+    "public_process": [
+      "Budget public hearing held at meeting with three-minute speaker limit per open meetings rules",
+      "Public comment period held with three-minute speaker limit, no sign-up required",
+      "Agenda modified provisions allowed but no modifications requested",
+      "Budget information tab added to county website with all files related to budget viewable by public",
+      "Budget workshops and presentations held throughout six months prior to adoption",
+      "All budget-related meeting agendas pre-announced with public access to materials",
+      "Meetings archived online for public viewing at leisure",
+      "Nonprofit funding application process moved to online format for FY2027",
+      "Nonprofit funding committee review process with online ranking scale for objectivity",
+      "Contracts required for all nonprofit funding with spending reports required during and after grant period",
+      "NCACC legislative goals process involves grassroots county submission, steering committee review, county voting delegate at state conference, and publicly available approved goals list",
+      "All goals and advocacy information available through NCACC website"
+    ],
+    "quotes": [
+      {
+        "speaker": "Owen Carson",
+        "start": "00:14:21",
+        "text": "What stood out to me is many of our biggest fiscal questions are not about this year's budget."
+      },
+      {
+        "speaker": "Teresa McCall",
+        "start": "01:21:13",
+        "text": "This is an easy year. Last year was one of the hardest years voting on a budget."
+      },
+      {
+        "speaker": "Larry Chapman",
+        "start": "01:32:25",
+        "text": "If you don't ask, you don't have a chance for state funding and advocacy."
+      }
+    ],
+    "roll_call": [
+      "Teresa McCall, Chair",
+      "Larry Chapman, Vice Chair",
+      "Jason Chappell, Commissioner",
+      "Jake Dalton, Commissioner",
+      "Chase McKelvey, Commissioner",
+      "Jaime Laughter, County Manager",
+      "Trisha Hogan, Clerk to the Board",
+      "John Cubas, County Attorney (remote)"
+    ],
+    "schedule_changes": [
+      "10-minute break taken mid-meeting before new business items",
+      "Closed session called before commissioner comments concluding meeting"
+    ],
+    "unanswered": [
+      "Will Housing Assistance Corporation's remaining $10,000 housing grant funds be available if not spent as initially anticipated?",
+      "What specific timeline exists for completing HVAC repairs at Veterans History Museum before July 4th?",
+      "Will the courthouse facilities master plan include demolition or repurposing of current old administration building?",
+      "What are the exact architectural designs for secure vestibules at each school, and when will full designs be completed?",
+      "How will Rosman High and Rosman Middle schools coordinate single main vestibule entry during school day with students parking across street?"
+    ],
+    "watchlist_hits": [
+      "landfill expansion and infrastructure projects continue with associated grants",
+      "landfill capacity declines and decisions about future of solid waste system",
+      "Solid Waste Enterprise Fund operates separately from general fund with supplemental property tax",
+      "Solid waste rate study conducted by Smith and Gardner Engineers to guide funding options",
+      "Fiscal 27 budget includes recommending holding series of hearings to obtain public input on recommended options for funding future solid waste disposal",
+      "landfill leachate pretreatment in DEQ review",
+      "construction-related sediment traveling off-site from landfill project; county staff working with DEQ",
+      "DEQ involved in landfill sediment issue coordination",
+      "Department of Environmental Quality (DEQ) involvement in multiple projects",
+      "capital improvement plan discussed extensively throughout budget presentation",
+      "courthouse capital project update provided with financing and bond sale planned",
+      "school bond projects (Joint School Bond Project Committee represented)",
+      "secure vestibule improvements at all schools approved",
+      "revenue neutral budget goal attempted; no tax rate increase recommended",
+      "fund balance discussion and maintenance of reserves addressed",
+      "staffing contract considerations mentioned for Public Health Alliance",
+      "stormwater and water/sewer projects ongoing",
+      "affordable housing project potential funding through tax credits",
+      "public comment period rules and decorum established",
+      "closed session held for attorney-client privilege and confidential matters"
+    ]
   }
 ]
