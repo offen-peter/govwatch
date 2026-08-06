@@ -211,3 +211,8 @@ video:
     - Beecher Allison, Joint School Bond Project Manager
     - Wilson Hooper, Brevard City Manager
     - Christy Wentzell, Brevard Police Chief
+    # Not an official. Listed because the roster's job is to correct
+    # names speech recognition mangles, and this one was coming back as
+    # both "Peter Offen" and "Peter Often" across two meetings in the
+    # same extraction batch.
+    - Peter Offen, frequent public comment speaker
