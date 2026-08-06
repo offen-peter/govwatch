@@ -123,12 +123,20 @@ def _close_window(doc) -> None:
 # ============================================================ documents
 
 def _collect_documents(only_bodies: set[str] | None):
-    """Run the document adapters. Returns (docs, failures)."""
+    """
+    Run the document adapters. Returns (docs, failures, attempted).
+
+    attempted is every body we actually ran, which is not recoverable
+    from docs or failures. An adapter that returns an empty list without
+    raising appears in neither, and that is the exact shape of a scraper
+    that has quietly stopped working.
+    """
     lookback = CONFIG.get("lookback_days", 60)
-    docs, failures = [], {}
+    docs, failures, attempted = [], {}, []
     for adapter in ADAPTERS:
         if only_bodies and adapter.body not in only_bodies:
             continue
+        attempted.append(adapter.body)
         try:
             got = adapter.collect(lookback)
         except Exception as e:
@@ -139,7 +147,7 @@ def _collect_documents(only_bodies: set[str] | None):
             print(f"adapter failed for {adapter.body}: {e}")
             continue
         docs.extend(got)
-    return docs, failures
+    return docs, failures, attempted
 
 
 def poll(only_bodies: set[str] | None = None, dry: bool = False) -> list[dict]:
@@ -154,11 +162,16 @@ def poll(only_bodies: set[str] | None = None, dry: bool = False) -> list[dict]:
     and returns nothing. See _dry_report_docs for why it writes no state.
     """
     seen = _load(SEEN, {})
-    docs, failures = _collect_documents(only_bodies)
-    fresh = [d for d in docs if d.uid not in seen]
+    docs, failures, attempted = _collect_documents(only_bodies)
+    stubs = [d for d in docs if len(d.text) < MIN_USEFUL_CHARS]
+    fresh = [d for d in docs
+             if d.uid not in seen and len(d.text) >= MIN_USEFUL_CHARS]
+    for d in stubs:
+        print(f"placeholder, leaving for a later poll: {d.body} {d.kind} "
+              f"{d.meeting_date} ({len(d.text)} chars)")
 
     if dry:
-        _dry_report_docs(docs, fresh, failures)
+        _dry_report_docs(docs, fresh, failures, attempted)
         return []
 
     from govwatch import brief
@@ -241,13 +254,33 @@ def transcribe(only_bodies: set[str] | None = None, dry: bool = False) -> list[d
 MIN_EXTRACT_CHARS = 200
 MAX_EXTRACT_CHARS = 180_000
 
+# Below this a document is a placeholder, not a document: a meeting node
+# that exists because the meeting is scheduled, with the packet not yet
+# attached. The school board publishes these about a week ahead.
+#
+# They must not be recorded as seen. Doc.uid hashes body, kind and url,
+# and the url is stable from the moment the node is created, so marking
+# a stub seen means the real agenda inherits the same uid and gets
+# skipped as already handled when it finally lands. The document would
+# never be read at all. Skipping them entirely leaves the window open so
+# the next poll picks up the real thing.
+#
+# Set from measurement, and the margin is narrow, so move it carefully.
+# On 2026-08-05 the school board stub for the 2026-08-17 meeting was 218
+# characters, and the shortest genuine document across all four adapters
+# was a 378 character committee notice. Too high and real short notices
+# get skipped every poll and never recorded at all, which is a worse
+# failure than the one this guards against.
+MIN_USEFUL_CHARS = 300
+
 # Haiku 4.5 input, dollars per million tokens, per the README's rate
 # table. Output is a small fraction of a run's cost and is ignored here,
 # so treat the figure as a floor, not a quote.
 HAIKU_INPUT_PER_MTOK = 1.00
 
 
-def _dry_report_docs(docs: list, fresh: list, failures: dict) -> None:
+def _dry_report_docs(docs: list, fresh: list, failures: dict,
+                     attempted: list) -> None:
     """
     What a real poll would do, without doing it.
 
@@ -259,9 +292,12 @@ def _dry_report_docs(docs: list, fresh: list, failures: dict) -> None:
     """
     print("\nDRY RUN. Nothing extracted, nothing written, no API spend.\n")
 
-    bodies = sorted({d.body for d in docs} | set(failures))
+    # Driven by what ran, not by what came back. A body that returned
+    # nothing has to appear here or the empty result is invisible, which
+    # is the whole failure mode this report is for.
+    bodies = sorted(set(attempted) | {d.body for d in docs} | set(failures))
     if not bodies:
-        print("  no adapter returned anything and none reported an error.")
+        print("  no adapter ran.")
 
     fresh_uids = {d.uid for d in fresh}
     for body in bodies:

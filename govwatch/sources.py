@@ -130,16 +130,36 @@ class SchoolBoard:
         return docs
 
     def _rows(self, html: str):
+        """
+        One row per meeting node, preferring the copy that has a date.
+
+        The page renders the same view twice: a <ul> of <li> carrying the
+        title on its own, and a <table> whose <tr> carries the title, the
+        date and the author. The same node id shows up in both.
+
+        So the dedupe has to prefer the dated copy. Keeping the first
+        occurrence kept the <li>, which has no date anywhere in it, and
+        _recent drops anything with no date. That quietly cost every
+        meeting appearing in both renderings, which is the three most
+        recent ones, including both upcoming meetings. Those are exactly
+        the meetings whose agendas are still worth polling for, so the
+        adapter was blind to the only ones that matter and coverage
+        stopped dead at the last meeting that had scrolled out of the
+        upcoming block.
+        """
         soup = BeautifulSoup(html, "html.parser")
-        seen = set()
+        best: dict[str, tuple] = {}
         for a in soup.select('a[href^="/node/"]'):
             m = re.match(r"/node/(\d+)$", a.get("href", ""))
-            if not m or m.group(1) in seen:
+            if not m:
                 continue
-            seen.add(m.group(1))
+            nid = m.group(1)
             row = a.find_parent("tr")
-            date_txt = row.get_text(" ") if row else a.get_text(" ")
-            yield m.group(1), a.get_text(strip=True), self._parse_date(date_txt)
+            when = self._parse_date(row.get_text(" ") if row else a.get_text(" "))
+            # Replace a dateless entry the moment a dated one turns up.
+            if nid not in best or (when is not None and best[nid][2] is None):
+                best[nid] = (nid, a.get_text(strip=True), when)
+        return list(best.values())
 
     @staticmethod
     def _parse_date(s: str):
