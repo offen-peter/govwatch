@@ -63,6 +63,21 @@ contradicts:
 - **Transcripts are committed markdown in `transcripts/`, not JSON.**
   Costs the same tokens either way, the API bills what you send. The
   point is a browsable, diffable, greppable archive.
+- **Hosted runners, not self hosted, even though self hosted would fix
+  YouTube.** YouTube gates subtitle requests behind a proof of origin
+  token and challenges datacenter addresses far harder than residential
+  ones, so city and school board captions fetch fine from a laptop and
+  fail in Actions. A self hosted runner on a home connection solves that
+  outright. It was built and backed out on 2026-08-06 anyway, because it
+  makes every run depend on one machine being awake at 12:17 and 19:17
+  UTC, and a missed slot there is missed rather than queued. Trading a
+  visible failure for a silent one is a bad trade. It also avoids the
+  question GitHub raises about self hosted runners on public repos.
+  The cloud answer is deno, curl-cffi and the bgutil token provider, see
+  the workflow. If that proves insufficient, the fallback is a split:
+  cloud does documents and county video, which never touches yt-dlp, and
+  city video gets swept up by running `transcribe` locally inside
+  `video.lookback_days`.
 - **City council committees are in scope, not noise.** Brevard prefixes
   every committee with "City Council", so `CityCouncil.collect()`'s
   substring match takes them all. Confirmed keep, 2026-08-06: 7 full
