@@ -1,1 +1,250 @@
-{}
+{
+  "00ba91f948305cbb": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-16",
+    "title": "City Council Rosenwald Community Advisory Board 2026-07-16: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6347,plainText=false)"
+  },
+  "08e7fcd55f0ac05e": {
+    "body": "schools",
+    "first_seen": "2026-08-06",
+    "kind": "packet",
+    "meeting_date": "2026-06-15",
+    "title": "Regular Meeting",
+    "url": "https://transylvania.schoolboard.net/node/7225"
+  },
+  "0ebfaf48cf3a00eb": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "transcript",
+    "meeting_date": "2026-06-08",
+    "title": "Board of Commissioners June 8, 2026 (transcript)",
+    "url": "https://vimeo.com/event/5977272"
+  },
+  "14649e816e153e81": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "notice",
+    "meeting_date": "2026-06-18",
+    "title": "City Council Rosenwald Community Advisory Board 2026-06-18: Notice",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6327,plainText=false)"
+  },
+  "16f08ea4c38ecdc4": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-27",
+    "title": "City Council Public Safety (Police & Fire) Committee 2026-07-27: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7353,plainText=false)"
+  },
+  "2012c0c0ff787823": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "transcript",
+    "meeting_date": "2026-07-20",
+    "title": "Brevard City Council | July 20, 2026 (transcript)",
+    "url": "https://www.youtube.com/watch?v=EIW0ZQEbI04"
+  },
+  "26ead83d16a47597": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-27",
+    "title": "City Council Finance and Human Resources Committee 2026-07-27: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7354,plainText=false)"
+  },
+  "361c1f55cefc73ad": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-08-03",
+    "title": "City Council 2026-08-03: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7362,plainText=false)"
+  },
+  "3c1dd66f2471979d": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-20",
+    "title": "City Council 2026-07-20: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6352,plainText=false)"
+  },
+  "3f36b505b7054e7f": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "transcript",
+    "meeting_date": "2026-06-15",
+    "title": "Brevard City Council | June 15, 2026 (transcript)",
+    "url": "https://www.youtube.com/watch?v=9LVUWi6gAnc"
+  },
+  "42fa8bb1766df1ea": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-22",
+    "title": "City Council Public Safety (Police & Fire) Committee 2026-06-22: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6334,plainText=false)"
+  },
+  "45cb5fe5bbc91394": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "notice",
+    "meeting_date": "2026-07-08",
+    "title": "City Council Downtown Master Plan Committee 2026-07-08: Notice",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6337,plainText=false)"
+  },
+  "4924479441471db6": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-08",
+    "title": "Commissioners agenda 06/08/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-06-08%20BOC%20Agenda.pdf"
+  },
+  "4bf7ffcc1125e06c": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-22",
+    "title": "City Council Finance and Human Resources Committee 2026-06-22: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6333,plainText=false)"
+  },
+  "4f5e5416cfee5e27": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-22",
+    "title": "Commissioners agenda 06/22/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-06-22%20BOC%20Agenda.pdf"
+  },
+  "5862b5f0529a3ab2": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "transcript",
+    "meeting_date": "2026-06-22",
+    "title": "Board of Commissioners June 22, 2026 (transcript)",
+    "url": "https://vimeo.com/event/6005609"
+  },
+  "5bf00429c4134ba7": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "minutes",
+    "meeting_date": "2026-06-08",
+    "title": "Commissioners minutes 06/08/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-08%20reg%20mtg.pdf"
+  },
+  "5c7973cc2b182f38": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "notice",
+    "meeting_date": "2026-08-06",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
+  },
+  "5ca3d5acb1f0ca1e": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-15",
+    "title": "City Council 2026-06-15: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6331,plainText=false)"
+  },
+  "664722d9fa2eb53c": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-15",
+    "title": "City Council Parks, Trails & Recreation Committee 2026-07-15: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6343,plainText=false)"
+  },
+  "666e0180ced9ce80": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-20",
+    "title": "City Council 2026-07-20: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6351,plainText=false)"
+  },
+  "9783c24a727e2532": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "transcript",
+    "meeting_date": "2026-08-03",
+    "title": "Brevard City Council Meeting August 3, 2026 (transcript)",
+    "url": "https://www.youtube.com/watch?v=gex3gGY3gi0"
+  },
+  "9920e50b41fbadd2": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-17",
+    "title": "City Council Parks, Trails & Recreation Committee 2026-06-17: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6329,plainText=false)"
+  },
+  "b5035c10a61d45c2": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-15",
+    "title": "City Council 2026-06-15: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6330,plainText=false)"
+  },
+  "bd4a35483efddfe1": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-06-10",
+    "title": "City Council Downtown Master Plan Committee 2026-06-10: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6326,plainText=false)"
+  },
+  "bd53720fd9f51346": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "transcript",
+    "meeting_date": "2026-07-13",
+    "title": "Board of Commissioners July 13, 2026 (transcript)",
+    "url": "https://vimeo.com/event/6043511"
+  },
+  "beb139dc6503ee2e": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-13",
+    "title": "Commissioners agenda 07/13/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-07-13%20BOC%20Agenda.pdf"
+  },
+  "c3a7663a85787a52": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-07-01",
+    "title": "City Council Public Works & Utilities Committee 2026-07-01: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6336,plainText=false)"
+  },
+  "cdfa9870f11debf7": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-08-05",
+    "title": "City Council Public Works & Utilities Committee 2026-08-05: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7364,plainText=false)"
+  },
+  "e31a08db3e845102": {
+    "body": "city",
+    "first_seen": "2026-08-06",
+    "kind": "agenda",
+    "meeting_date": "2026-08-03",
+    "title": "City Council 2026-08-03: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7363,plainText=false)"
+  },
+  "ec2e47c4114298d7": {
+    "body": "county",
+    "first_seen": "2026-08-06",
+    "kind": "minutes",
+    "meeting_date": "2026-06-22",
+    "title": "Commissioners minutes 06/22/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-22%20reg%20mtg%20_%20PH.pdf"
+  }
+}

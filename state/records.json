@@ -1,1 +1,3630 @@
-[]
+[
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "schools",
+      "kind": "packet",
+      "meeting_date": "2026-06-15",
+      "title": "Regular Meeting",
+      "url": "https://transylvania.schoolboard.net/node/7225"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approval of June 15, 2026 Agenda",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Consent Agenda items: Minutes (May 18, 2026), Personnel Report (June 15, 2026), FY26 Budget Amendment No. 8, 2025-26 Year-End Budget Amendments Authorization Resolution, FY 2026-27 Interim Budget Resolution, HVAC Service Agreement, TCS Long Range Plan",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "$353,556.00",
+        "vote": "",
+        "what": "Purchase of 800 Chromebooks for Brevard High School (grades 9-12) from Trafera, post-July 1, 2026",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Supplemental budget request to accommodate Education Capital Project scope changes (safety vestibules), subject to Board of Commissioners approval",
+        "who": "Board of Education"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "5:00 p.m., at least 6 days prior to meeting",
+        "what": "Board agenda item requests (in writing)"
+      },
+      {
+        "date": "June 8 - August 20, 2026",
+        "what": "Free Summer Meals Program (Champion Pool location, Rosman)"
+      },
+      {
+        "date": "June 9 - August 18, 2026",
+        "what": "Free Summer Meals Program (Pisgah Forest Elementary School, Groceries to Go)"
+      },
+      {
+        "date": "June 8 - August 20, 2026",
+        "what": "County-wide home meal deliveries"
+      },
+      {
+        "date": "August 24, 2026",
+        "what": "First Day of School for Students"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$353,556.00",
+        "fund": "District equipment replacement plan; TIPS Interlocal Purchasing System",
+        "item": "Chromebooks purchase (800 units for Brevard High School, grades 9-12, including 4-year accidental warranty)"
+      },
+      {
+        "amount": "",
+        "fund": "General Fund",
+        "item": "FY26 Budget Amendment No. 8"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Second reading and potential approval",
+        "what": "First-read of Spring 2026 Custom Policy Updates (two sets)"
+      },
+      {
+        "date": "",
+        "next_step": "Board of Commissioners approval",
+        "what": "Education Capital Project scope changes (safety vestibules)"
+      }
+    ],
+    "public_process": [
+      "Public comment period available at regularly scheduled Board meetings; limited public forum restricted to issues relevant to Board jurisdiction",
+      "Sign-up sheet available 30 minutes before meeting for speakers",
+      "Each speaker receives 3 minutes; total public comment session limited to 30 minutes unless extended by majority Board vote",
+      "Board Chair recognizes speakers in sign-up order; no substitute speakers permitted; no time donation allowed",
+      "Board Members will not respond to speakers except for clarification; public comment is not dialogue",
+      "Board does not transact business during public comment",
+      "Individualized personnel and student matters confidential; not appropriate for public comment; grievance procedures available",
+      "Personal attacks on employees or Board Members prohibited; disruptions subject to G.S. 143-318.17",
+      "Meeting open to public; doors open at 5:30 p.m.",
+      "Meeting livestreamed at https://www.youtube.com/user/tcsnc",
+      "No public comment provided if no regular meeting held in a month, unless Board votes otherwise or meeting is a public hearing"
+    ],
+    "quotes": [
+      {
+        "speaker": "Document",
+        "text": "Class of 2026 celebrated culmination of K-12 educational careers"
+      }
+    ],
+    "schedule_changes": [
+      "July 20, 2026 BOE Meeting CANCELLED"
+    ],
+    "watchlist_hits": [
+      "Joint School Bond Project Committee",
+      "vestibule",
+      "capital improvement plan",
+      "public comment",
+      "decorum",
+      "closed session",
+      "open meetings"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "agenda",
+      "meeting_date": "2026-07-13",
+      "title": "Commissioners agenda 07/13/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-07-13%20BOC%20Agenda.pdf"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-07-13",
+        "what": "Board of Commissioners Regular Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-07-13",
+        "next_step": "consent agenda vote",
+        "what": "Approval of Minutes"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "consent agenda vote",
+        "what": "Discovery, Release & Monthly Settlement Report: June 23-30, 2026"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "consent agenda vote",
+        "what": "Resolution Declaring Certain Products, Equipment, Systems, and Services for Courthouse Project Available from Sole Source Providers"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "consent agenda vote",
+        "what": "Request to Use Commissioners' Multipurpose Chambers for Family Court and Cancel September 14 Board Meeting"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "consent agenda vote",
+        "what": "Out-of-State Travel Request - Health Department"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "appointment",
+        "what": "Voting Delegate to NCACC Annual Conference"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "appointment",
+        "what": "Juvenile Crime Prevention Council"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "appointment",
+        "what": "Nursing and Adult Care Home Advisory Committee"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "appointment",
+        "what": "Personnel Board"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "appointment",
+        "what": "Transylvania Economic Alliance Board of Directors"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "old business discussion",
+        "what": "Grant-Funded Infrastructure Projects"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "old business discussion",
+        "what": "NCACC Legislative Goals"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "old business discussion",
+        "what": "Request to Extend Contract with Allies 4 Outcomes"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "new business discussion",
+        "what": "2025 Tax Settlement Report"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "new business discussion",
+        "what": "2026 Order to Collect all Real and Personal Property Taxes"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "new business discussion",
+        "what": "FY 2026 Contract to Audit Accounts"
+      },
+      {
+        "date": "2026-07-13",
+        "next_step": "new business discussion",
+        "what": "Approval of Multi-Year Contract with ThreatLocker, Inc. for Cybersecurity Platform"
+      }
+    ],
+    "public_process": [
+      "Public Comment period limited to 15 minutes with 3-minute speaker limit; sign-up required",
+      "Second public comment period at end of meeting with 3-minute speaker limit; no sign-up required",
+      "Agenda modifications allowed",
+      "Meeting viewable online at www.transylvaniacounty.org",
+      "Closed session scheduled"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Request to cancel September 14 Board Meeting due to use of Commissioners' Multipurpose Chambers for Family Court"
+    ],
+    "watchlist_hits": [
+      "courthouse",
+      "public comment",
+      "decorum",
+      "closed session",
+      "open meetings",
+      "public records",
+      "agenda modification"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "agenda",
+      "meeting_date": "2026-06-22",
+      "title": "Commissioners agenda 06/22/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-06-22%20BOC%20Agenda.pdf"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-06-22",
+        "what": "Public Hearing on FY 2027 Budget"
+      },
+      {
+        "date": "2026-06-22",
+        "what": "Public Comment period (15-minute limit)"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-06-22",
+        "next_step": "Public hearing and board consideration",
+        "what": "FY 2027 Budget"
+      },
+      {
+        "date": "2026-06-22",
+        "next_step": "Board consideration",
+        "what": "Amendments to School Bond Project Scopes, Budget, and Timeline"
+      },
+      {
+        "date": "2026-06-22",
+        "next_step": "Board consideration",
+        "what": "FY 2027 Nonprofit Funding Approval"
+      },
+      {
+        "date": "2026-06-22",
+        "next_step": "Board consideration",
+        "what": "Lease Agreement with Veterans History Museum of the Carolinas"
+      }
+    ],
+    "public_process": [
+      "Public Hearing on FY 2027 Budget scheduled",
+      "Public Comment period limited to 15 minutes total; speakers limited to three minutes each",
+      "Sign-up required for public comment",
+      "Meeting viewable online at www.transylvaniacounty.org",
+      "Closed session scheduled per N.C.G.S. 143-318.11 for privileged/confidential information and attorney-client consultation"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Rescheduled Health Department Annual Training Day"
+    ],
+    "watchlist_hits": [
+      "School Bond Project Scopes, Budget, and Timeline amendments (school bond, Joint School Bond Project Committee related)",
+      "FY 2027 Budget hearing and consideration",
+      "Closed session (open meetings)"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "agenda",
+      "meeting_date": "2026-06-08",
+      "title": "Commissioners agenda 06/08/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-06-08%20BOC%20Agenda.pdf"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Cancellation of July 27 and August 10 Board of Commissioners' Meetings",
+        "who": ""
+      }
+    ],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Board consideration",
+        "what": "Agricultural Advisory Board appointments"
+      },
+      {
+        "date": "",
+        "next_step": "Board consideration",
+        "what": "Library Board of Trustees appointments"
+      },
+      {
+        "date": "",
+        "next_step": "Board consideration",
+        "what": "Regional Council on Aging appointments"
+      },
+      {
+        "date": "",
+        "next_step": "Board consideration",
+        "what": "Social Services Board appointments"
+      },
+      {
+        "date": "",
+        "next_step": "Board discussion",
+        "what": "NCACC Legislative Goals"
+      }
+    ],
+    "public_process": [
+      "Public Comment period with 15-minute time limit; sign-up required",
+      "Speakers limited to three minutes during public comment",
+      "Second public comment period with three-minute speaker limit",
+      "Meeting viewable online at www.transylvaniacounty.org",
+      "Closed session scheduled"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "July 27 Board of Commissioners' Meeting cancelled",
+      "August 10 Board of Commissioners' Meeting cancelled"
+    ],
+    "watchlist_hits": [
+      "social services",
+      "public comment",
+      "decorum",
+      "closed session",
+      "open meetings",
+      "agenda modification"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "minutes",
+      "meeting_date": "2026-06-08",
+      "title": "Commissioners minutes 06/08/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-08%20reg%20mtg.pdf"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved minutes of May 26, 2026 regular meeting",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved proclamation honoring 250th anniversary of United States of America",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved out-of-state travel request for Communications staff training",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved cancellation of July 27 and August 10 Board meetings",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved updates to procurement policy for transit services compliance with NCDOT",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Acknowledged County Commissioner review requirement satisfied for TCTDA Market Connections contract FY 2026-2027",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Acknowledged County Commissioner review requirement satisfied for TCTDA Media One contract FY 2026-2027",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed Tracie Gant to Agricultural Advisory Board",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappointed Sarah Justice to Library Board of Trustees",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Tabled Library Board vacancy pending applicant eligibility",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappointed Kathe Harris to Regional Council on Aging",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed Woodie Dyches to Regional Council on Aging community member vacancy",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed Kathy Klepfer to Social Services Board effective July 1, 2026",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved consent agenda",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-06-22",
+        "what": "FY 2027 budget public hearing"
+      },
+      {
+        "date": "2026-08-14",
+        "what": "NCACC legislative goals submission deadline"
+      },
+      {
+        "date": "2026-07-13",
+        "what": "County Commissioner final legislative goals approval deadline"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "Kathe Harris Regional Council on Aging term expiration"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "Jessica Shanor Social Services Board term expiration"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "Sarah Justice Library Board term expiration"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "Karen Cole Library Board term expiration"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$2,000,000",
+        "fund": "State grant",
+        "item": "County shared state grant with Henderson County for farmland preservation"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-08-14",
+        "next_step": "Board to continue discussion and refine goal submissions during next two meetings; staff to request final approval by July 13",
+        "what": "NCACC legislative goals final approval and submission"
+      },
+      {
+        "date": "2026-06-22",
+        "next_step": "Public hearing scheduled June 22, staff will recommend final budget adoption effective July 1, 2026",
+        "what": "FY 2027 budget adoption"
+      },
+      {
+        "date": "",
+        "next_step": "Tabled pending applicant meeting eligibility requirements or receipt of additional application",
+        "what": "Library Board of Trustees vacancy"
+      }
+    ],
+    "public_process": [
+      "Public comment period held; approximately 15 people in audience; three speakers addressed Board",
+      "County Manager reminded public of multiple ways to provide budget comments: two public comment periods at each regular meeting plus required public hearings",
+      "State law requires only one public comment period per month; County provides two",
+      "No agenda modifications made; agenda approved unanimously",
+      "Clerk to Board directed to publish required public notice for cancellation of July 27 and August 10 meetings",
+      "Board encouraged commissioners to gather legislative priorities before August 14 NCACC submission deadline for public input opportunities"
+    ],
+    "quotes": [
+      {
+        "speaker": "Owen Carson",
+        "text": "Opportunity Zones are intended to attract private investment and do not approve development."
+      },
+      {
+        "speaker": "Commissioner Chapman",
+        "text": "County ordinance requires trash on vehicles to be properly tarped."
+      },
+      {
+        "speaker": "Chairwoman McCall",
+        "text": "Board will hold budget public hearing and vote at next meeting."
+      }
+    ],
+    "schedule_changes": [
+      "Cancellation of July 27, 2026 Board of Commissioners regular meeting",
+      "Cancellation of August 10, 2026 Board of Commissioners regular meeting",
+      "Special meeting may be scheduled if necessary during cancellation period"
+    ],
+    "watchlist_hits": [
+      "social services",
+      "DSS",
+      "public comment",
+      "decorum",
+      "open meetings",
+      "public records",
+      "agenda modification",
+      "affordable housing",
+      "rezoning"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-08-06",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-20",
+        "what": "Planning Board Public Hearing"
+      },
+      {
+        "date": "2026-05-27",
+        "what": "FY 2027 Recommended Budget available for review"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-08-20",
+        "next_step": "Public hearing at regular meeting",
+        "what": "Planning Board Public Hearing"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Community Transportation Program Application Public Hearing"
+      }
+    ],
+    "public_process": [
+      "Planning Board Public Hearing scheduled for August 20, 2026",
+      "Community Transportation Program Application Public Hearing noticed",
+      "Joint School Bond Project Committee meeting held May 29, 2026",
+      "FY 2027 Recommended Budget presented to Board of Commissioners on May 26, 2026 and made available for review",
+      "Budget survey conducted to gather public input on county priorities",
+      "Joint Historic Preservation Commission Public Hearing held July 23, 2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of Commissioners cancelled July 27, 2026 regular meeting",
+      "Board of Commissioners cancelled August 10, 2026 regular meeting",
+      "Next regular meeting scheduled for Monday, August 24, 2026",
+      "SWCD Board of Supervisors June 18th meeting cancelled; regular meetings resume July 16, 2026",
+      "Tourism Development Authority Destination Infrastructure Committee meeting cancelled for July 1, 2026 at 11 am",
+      "Public Transportation Fixed Route service ended early at 2 PM on June 19 and June 24, 2026"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "public comment",
+      "open meetings",
+      "public records"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-05",
+      "title": "City Council Public Works & Utilities Committee 2026-08-05: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7364,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-02",
+        "what": "Next Public Works & Utilities Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Stormwater Master Plan"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Hillview Street Culvert Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Water Treatment Plant Renovation Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Gallimore Sewer Rehab Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Sewer Lift Station Rehabilitation Project"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Wastewater Treatment Plant Update"
+      },
+      {
+        "date": "",
+        "next_step": "Revisit",
+        "what": "FOG Code Changes"
+      }
+    ],
+    "public_process": [
+      "Public comment period scheduled",
+      "Agenda posted to website and bulletin board on 07/31/2026",
+      "Agenda forwarded to media and Sunshine List on 07/31/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-03",
+      "title": "City Council 2026-08-03: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7362,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-03",
+        "what": "Regular City Council Meeting"
+      },
+      {
+        "date": "2026-07-30",
+        "what": "Agenda posted to website and Sunshine List"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Proposed Amendment to UDO Chapters 9 and 19, and Code Chapter 38 - Sight Triangle Regulations"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Proposed Amendments to UDO Chapters 6, 17 and 19, and Code Chapter 38 - Stormwater Management Development Regulations"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Proposed Amendments to Code Chapter 42 - Loitering, Trespassing, Public Intoxication, and Hours of Operation"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Municipal Service District (MSD) Task Force Proposal"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Letter of Interest to County re Old Courthouse"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Appointment of Member to Parks, Trails and Recreation Committee"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda materials posted on City website Thursday afternoon prior to Monday meeting",
+      "Agenda posted to website and Sunshine List on July 30, 2026",
+      "Closed Session(s) scheduled"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater",
+      "closed session",
+      "public comment",
+      "open meetings",
+      "courthouse"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-03",
+      "title": "City Council 2026-08-03: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7363,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "$1,108,748",
+        "vote": "unanimous",
+        "what": "Hillview Street Culvert Replacement Project construction contract award",
+        "who": "Hyatt Pipeline, LLC"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Rezoning 2 parcels on Deavor Road to PGX district",
+        "who": "CDP Aloe Properties LLC"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Name fourth Bracken Preserve trail 'Mountain Rush'",
+        "who": "Parks, Trails and Recreation Committee"
+      },
+      {
+        "amount": "$100 permit fee",
+        "vote": "unanimous",
+        "what": "Adopt Food Vendor Pilot Program",
+        "who": "City of Brevard"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappoint Lisa Conner to ABC Board",
+        "who": "Lisa Conner"
+      },
+      {
+        "amount": "$8,575,000",
+        "vote": "unanimous",
+        "what": "Capital Project Amendment - Wastewater Treatment Plant Upgrade",
+        "who": "City of Brevard"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-08-03",
+        "what": "PRO Housing Federal Grant application deadline"
+      },
+      {
+        "date": "2026-11-01",
+        "what": "PRO Housing grant award announcements expected"
+      },
+      {
+        "date": "2026-12-31",
+        "what": "Food Vendor Pilot Program operating period"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$1,108,748",
+        "fund": "FEMA funding (fully committed)",
+        "item": "Hillview Street Culvert Replacement Project"
+      },
+      {
+        "amount": "$8,575,000",
+        "fund": "NCDEQ Session Law 2023-134 earmark",
+        "item": "Wastewater Treatment Plant Upgrade Project"
+      },
+      {
+        "amount": "$25,426",
+        "fund": "General Fund",
+        "item": "Health insurance subsidy cap proposal (FY27 impact)"
+      },
+      {
+        "amount": "$100",
+        "fund": "Permits",
+        "item": "Food Vendor Pilot Program permit fee"
+      },
+      {
+        "amount": "$10,000,000",
+        "fund": "HUD federal grant",
+        "item": "PRO Housing grant application"
+      },
+      {
+        "amount": "$820.46",
+        "fund": "Tax year 2025",
+        "item": "Property tax releases"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Council consideration after July 20 public hearing",
+        "what": "Proposed Amendment to UDO Chapters 9 & 19, Code Chapter 38 - Sight Triangle Regulations"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration after July 20 public hearing",
+        "what": "Proposed Amendments to UDO Chapters 6, 17, 19 & Code Chapter 38 - Stormwater Management"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration after July 20 public hearing; data on incidents to be presented",
+        "what": "Proposed Amendments to Code Chapter 42 - Loitering, Trespassing, Public Intoxication"
+      },
+      {
+        "date": "2026-08-03",
+        "next_step": "Application deadline August 3; awards expected November 2026",
+        "what": "PRO Housing Federal Grant Application for affordable housing"
+      },
+      {
+        "date": "",
+        "next_step": "Staff to readvertise seeking retail, restaurant, or advisory board experience",
+        "what": "Recruitment for second ABC Board member"
+      }
+    ],
+    "public_process": [
+      "Public hearing on Sight Triangle Regulations held July 20, 2026 with no public participation",
+      "Public hearing on Stormwater Management Development Regulations held July 20, 2026 with no public participation",
+      "Public hearing on Loitering, Trespassing, Public Intoxication held July 20, 2026; Doug Powell provided extended public comment on homelessness and enforcement",
+      "Public hearing on PRO Housing grant application held July 20, 2026 with no public participation",
+      "Public comment period held July 20, 2026 with Doug Powell commending Council on July 4th Declaration of Independence reading and Rodney Locks addressing voting access and state legislation concerns",
+      "Consent agenda items approved without individual discussion: Tax Settlement Report, Capital Projects, Committee Meeting Minutes",
+      "Quarterly reporting on loitering enforcement requested by Council as oversight measure",
+      "Chief Wentzell directed to provide data on incidents and enforcement impacts for Chapter 42 amendments"
+    ],
+    "quotes": [
+      {
+        "speaker": "Doug Powell (public comment)",
+        "text": "Rights endowed by Creator protect even non-believers from government removal."
+      },
+      {
+        "speaker": "Chief Christy Wentzell",
+        "text": "This is not about making more arrests; enforcement option when compliance fails."
+      },
+      {
+        "speaker": "Mayor Maureen Copelof",
+        "text": "Eight years from vision to complete; legacy from predecessors we continue building."
+      }
+    ],
+    "schedule_changes": [
+      "Five-minute break taken at 6:59 p.m. during regular meeting",
+      "35-minute lunch break taken during April 10, 2026 budget workshop"
+    ],
+    "watchlist_hits": [
+      "stormwater - Proposed amendments to stormwater management development regulations requiring new thresholds and design standards",
+      "steep slope - Stormwater amendments include requirements for all development in steep slope areas",
+      "conditional use - Rezoning item and various development approval processes discussed",
+      "affordable housing - PRO Housing grant application for 26 affordable homes and $400,000 for preservation in Rosenwald Community",
+      "rezoning - Rezoning of 2 parcels on Deavor Road from RMX to PGX district approved",
+      "homelessness - Public comment and ordinance amendments addressing loitering, trespassing, and encampment policy",
+      "open meetings - Public comment period structure and transparency noted",
+      "public comment - Three public hearings with designated comment periods held July 20, 2026"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-07-27",
+      "title": "City Council Public Safety (Police & Fire) Committee 2026-07-27: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7353,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Traffic Calming Measures/Crosswalk Improvement Grant"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Revisit Internal ALPR Policy and Axon Contract Review"
+      }
+    ],
+    "public_process": [
+      "Public Comments session scheduled",
+      "Agenda Posted Upon Website & Bulletin Board 07/22/2026",
+      "Agenda Forwarded to Media & Sunshine List 07/22/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-07-27",
+      "title": "City Council Finance and Human Resources Committee 2026-07-27: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7354,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-24",
+        "what": "Next Finance & Human Resources Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Remote Participation Policy Update"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Ecusta Trail Advisory Board Applications and Recommendation"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Parks, Trails, and Recreation Committee Applications and Recommendation"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Fire Department On-Call Pay"
+      }
+    ],
+    "public_process": [
+      "Public Comments scheduled on agenda",
+      "Agenda posted on website and bulletin board 07/22/2026",
+      "Agenda forwarded to media and Sunshine List 07/22/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-07-20",
+      "title": "City Council 2026-07-20: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6351,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [
+      {
+        "amount": "$8,575,000",
+        "fund": "",
+        "item": "Capital Project Amendment - Wastewater Treatment Plant Upgrade"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendment to City of Brevard Unified Development Ordinance - Chapters 9 and 19, and Code of Ordinances Chapter 38 - Sight Triangle Regulations"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendments to City of Brevard Unified Development Ordinance - Chapters 6, 17 and 19; and Code of Ordinances Chapter 38 - Stormwater Management Development Regulations"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendments to City of Brevard Code of Ordinances Chapter 42 - Loitering, Trespassing, Public Intoxication, and Hours of Operation"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing",
+        "what": "Pathways to Removing Obstacles to Housing (PRO Housing) Federal Grant Application"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Unfinished business consideration",
+        "what": "Proposed Amendment to the Official Zoning Map of the City of Brevard - 2 Parcels on Deavor Road to PGX"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "New business consideration",
+        "what": "Proposed Bracken Trail Name"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "New business consideration",
+        "what": "Food Vendor Pilot Program"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "New business consideration",
+        "what": "Appointment of ABC Board Member"
+      }
+    ],
+    "public_process": [
+      "Public Comments section included in agenda",
+      "Public Hearings scheduled for proposed ordinance amendments and federal grant application",
+      "Agenda posted on website July 16, 2026",
+      "Agenda packet materials posted Thursday afternoon prior to Monday meeting",
+      "Closed sessions scheduled for Economic Development, Property Acquisition, and Pending Litigation"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater",
+      "affordable housing",
+      "rezoning",
+      "public comment",
+      "open meetings",
+      "closed session"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-07-20",
+      "title": "City Council 2026-07-20: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6352,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Comprehensive Transportation Plan adoption with amendment",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$57,000",
+        "vote": "unanimous",
+        "what": "Parks and Recreation Capital Projects Fund establishment",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$11,000",
+        "vote": "unanimous",
+        "what": "Rosenwald Revitalization Fund amendment - transfer to Parks and Recreation Fund",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$27,422,661",
+        "vote": "4-1",
+        "what": "FY 2026-2027 Budget Ordinance approval with 3.0% COLA",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$60,000",
+        "vote": "unanimous",
+        "what": "Budget Amendment 26-07 - Stormwater Utility Fund increase",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$240,000",
+        "vote": "unanimous",
+        "what": "Budget Amendment 26-08 - Water and Sewer Utility Fund increase",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$525,000",
+        "vote": "unanimous",
+        "what": "Budget Amendment 26-09 - General Fund increase",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$8,575,000",
+        "vote": "unanimous",
+        "what": "Wastewater Treatment Plant Upgrade Phase 1 funding acceptance",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "$436,600",
+        "vote": "unanimous",
+        "what": "Norton Creek Stream Restoration Project grant application authorization",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Asset Inventory and Assessment results acceptance for water and wastewater systems",
+        "who": "Brevard City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Ecusta Trail Advisory Board representative appointment",
+        "who": "Brevard City Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-07-20",
+        "what": "Public hearing on Sight Triangle Regulations amendments"
+      },
+      {
+        "date": "2026-07-20",
+        "what": "Public hearing on Stormwater Management Development Regulations amendments"
+      },
+      {
+        "date": "2026-07-20",
+        "what": "Public hearing on Chapter 42 amendments - Loitering, Trespassing, Public Intoxication, Hours of Operation"
+      },
+      {
+        "date": "2026-07-20",
+        "what": "Public hearing on PRO Housing Federal Grant Application"
+      },
+      {
+        "date": "one year from adoption of ordinance",
+        "what": "Illicit stormwater connection removal deadline for non-hazardous violations"
+      },
+      {
+        "date": "mid-to-late August 2026",
+        "what": "Hillview Avenue culvert replacement project completion"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$57,000",
+        "fund": "General Fund and Rosenwald Revitalization Fund",
+        "item": "Parks and Recreation Capital Projects Fund - initial funding"
+      },
+      {
+        "amount": "$8,575,000",
+        "fund": "North Carolina Department of Environmental Quality",
+        "item": "Wastewater Treatment Plant Upgrade Phase 1 construction"
+      },
+      {
+        "amount": "$436,600",
+        "fund": "Water Resources Development Grant",
+        "item": "Norton Creek Stream Restoration Project"
+      },
+      {
+        "amount": "$14,961,433",
+        "fund": "General Fund",
+        "item": "FY 2026-2027 General Fund appropriations"
+      },
+      {
+        "amount": "$7,782,900",
+        "fund": "Water and Sewer Utility Fund",
+        "item": "FY 2026-2027 Water and Sewer Utility Fund appropriations"
+      },
+      {
+        "amount": "$1,762,228",
+        "fund": "Fire District Fund",
+        "item": "FY 2026-2027 Fire District Fund appropriations"
+      },
+      {
+        "amount": "$60,000",
+        "fund": "Stormwater Utility Fund",
+        "item": "Stormwater Master Plan project acceleration"
+      },
+      {
+        "amount": "$240,000",
+        "fund": "Water and Sewer Fund",
+        "item": "RBC Shaft Replacement, SCADA improvements, overtime costs"
+      },
+      {
+        "amount": "$525,000",
+        "fund": "General Fund",
+        "item": "General Fund various department needs including Police, Building and Grounds, Public Works"
+      },
+      {
+        "amount": "$57,000",
+        "fund": "General Fund revenue",
+        "item": "Commercial Recycling and Cardboard fee increases"
+      },
+      {
+        "amount": "$0.0225 per $100",
+        "fund": "General Fund",
+        "item": "Property tax increase"
+      },
+      {
+        "amount": "$0.045 per unit",
+        "fund": "Water and Sewer Utility Fund",
+        "item": "Water rate increase"
+      },
+      {
+        "amount": "$0.0065 per $100",
+        "fund": "Heart of Brevard Municipal Service District",
+        "item": "Municipal service tax increase"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing held; recommendation from Planning Board for approval",
+        "what": "Proposed Amendment to Unified Development Ordinance - Sight Triangle Regulations"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing; Planning Board recommended approval",
+        "what": "Proposed Amendments to Unified Development Ordinance - Stormwater Management Development Regulations"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing; no action requested at this time",
+        "what": "Proposed Amendments to Code of Ordinances Chapter 42 - Loitering, Trespassing, Public Intoxication, Hours of Operation"
+      },
+      {
+        "date": "2026-07-20",
+        "next_step": "Public hearing scheduled",
+        "what": "Pathways to Removing Obstacles to Housing (PRO Housing) Federal Grant Application"
+      },
+      {
+        "date": "2026-06-15",
+        "next_step": "Public hearing held; Planning Board unanimously recommended approval",
+        "what": "Proposed Amendment to Official Zoning Map - 2 Parcels on Deavor Road to PGX"
+      }
+    ],
+    "public_process": [
+      "June 15, 2026 meeting minutes approved as presented",
+      "Agenda modification requested and approved for FY 2026-2027 Budget Ordinance discussion",
+      "Failed motion to amend agenda to add $300,000 legislative request for Silversteen Park bathrooms",
+      "Public comment period held June 15, 2026 with comments from Rodney Locks regarding budget priorities, Randy Austin regarding parking and homeless/substance abuse issues, Doug Powell regarding founding fathers history, and Representative Anna Ferguson introducing herself",
+      "Public hearing on Sight Triangle Regulations held July 20, 2026; no public participation",
+      "Planning Board consistency statements submitted for stormwater and sight triangle amendments",
+      "Agenda posted on website July 16, 2026; packet materials posted Thursday afternoon prior to Monday meeting",
+      "Oaths of Office administered July 20, 2026 to Alan Bonanno as Deputy Chief of Police and Tanner Green as Police Sergeant"
+    ],
+    "quotes": [
+      {
+        "speaker": "Rodney Locks",
+        "text": "If Council does not do anything to make it affordable to live in Brevard you cannot continue to support."
+      },
+      {
+        "speaker": "Randy Austin",
+        "text": "What we have is a substance abuse problem, not a homeless problem on Main Street."
+      },
+      {
+        "speaker": "Mayor Copelof",
+        "text": "For a small community of 8000 people we have incredible amount going on."
+      }
+    ],
+    "schedule_changes": [
+      "Brevard City Council meeting scheduled for July 20, 2026 to approve budget and hear public hearings"
+    ],
+    "watchlist_hits": [
+      "stormwater",
+      "steep slope",
+      "homelessness",
+      "affordable housing",
+      "rezoning",
+      "conditional use",
+      "public comment",
+      "decorum",
+      "open meetings",
+      "public records",
+      "agenda modification",
+      "capital improvement plan",
+      "tax rate",
+      "revenue neutral",
+      "fund balance"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-07-16",
+      "title": "City Council Rosenwald Community Advisory Board 2026-07-16: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6347,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Public Comments scheduled on agenda",
+      "Agenda posted to website and bulletin board on 07/13/2026",
+      "Agenda forwarded to media and Sunshine List on 07/13/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "public comment"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-07-15",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-07-15: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6343,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-19",
+        "what": "Next Parks, Trails & Recreation Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Franklin Park Discussion"
+      }
+    ],
+    "public_process": [
+      "Public comment period scheduled",
+      "Agenda posted to website and bulletin board on 07/10/2026",
+      "Agenda forwarded to media and Sunshine List on 07/10/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "notice",
+      "meeting_date": "2026-07-08",
+      "title": "City Council Downtown Master Plan Committee 2026-07-08: Notice",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6337,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-12",
+        "what": "Downtown Master Plan Committee regular meeting"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Meeting cancellation notice posted to website and bulletin board",
+      "Cancellation forwarded to media and Sunshine List"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Downtown Master Plan Committee regular meeting scheduled for Wednesday, July 8, 2026 at 3:30 PM cancelled",
+      "Next regularly scheduled meeting rescheduled to Wednesday, August 12, 2026 at 3:30 PM"
+    ],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-07-01",
+      "title": "City Council Public Works & Utilities Committee 2026-07-01: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6336,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-05",
+        "what": "Next Public Works & Utilities Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Stormwater Master Plan"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Hillview Street Culvert Update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Water Treatment Plant Renovation Update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Gallimore Sewer Rehab Update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Sewer Lift Station Rehabilitation Project"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Wastewater Treatment Plant Update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Tannery Smokestack"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review",
+        "what": "Fats, Oils, and Grease (FOG) Code Changes"
+      }
+    ],
+    "public_process": [
+      "Public comment period scheduled",
+      "Agenda posted to website and bulletin board 06/26/2026",
+      "Agenda forwarded to media and Sunshine List 06/26/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-06-22",
+      "title": "City Council Public Safety (Police & Fire) Committee 2026-06-22: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6334,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-07-27",
+        "what": "Next Public Safety Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Traffic Calming Measures"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Ordinance Changes re: Loitering, Trespassing, Public Intoxication, and Hours of Operation"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "ALPR Camera Usage Policies"
+      }
+    ],
+    "public_process": [
+      "Public Comment period scheduled",
+      "Agenda posted on website and bulletin board 06/17/2026",
+      "Agenda forwarded to media and Sunshine List 06/17/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-06-22",
+      "title": "City Council Finance and Human Resources Committee 2026-06-22: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6333,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-07-27",
+        "what": "Next Finance & Human Resources Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "ABC Board Applications Review and Recommendation"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Food Truck Pilot Program"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Staff Merit Increase Program Discussion"
+      }
+    ],
+    "public_process": [
+      "Public Comments scheduled on agenda",
+      "Agenda posted on website and bulletin board 06/17/2026",
+      "Agenda forwarded to media and Sunshine List 06/17/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "notice",
+      "meeting_date": "2026-06-18",
+      "title": "City Council Rosenwald Community Advisory Board 2026-06-18: Notice",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6327,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [
+      "Rosenwald Community Advisory Board regular meeting scheduled for Thursday, June 18, 2026 at 6pm has been canceled",
+      "Next regular meeting rescheduled for Thursday, July 16, 2026 at 6pm at Mary C. Jenkins Community and Cultural Center"
+    ],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-06-17",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-06-17: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6329,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Naming and Direction of New Bracken Trail"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Schedule Bracken Trail Opening/Ribbon Cutting"
+      }
+    ],
+    "public_process": [
+      "Public Comment period scheduled",
+      "Agenda Posted Upon Website & Bulletin Board 06/10/2026",
+      "Agenda Forwarded to Media & Sunshine List 06/10/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-06-15",
+      "title": "City Council 2026-06-15: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6330,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-06-15",
+        "what": "Regular City Council Meeting"
+      },
+      {
+        "date": "2026-06-11",
+        "what": "Agenda posted to website"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$8,575,000",
+        "fund": "",
+        "item": "Wastewater Treatment Plant Upgrade Phase 1 Funding Modification"
+      },
+      {
+        "amount": "$60,000",
+        "fund": "BA 26-07",
+        "item": "Budget Amendment - Stormwater Utility Fund"
+      },
+      {
+        "amount": "$240,000",
+        "fund": "BA 26-08",
+        "item": "Budget Amendment - Water and Sewer Utility Fund"
+      },
+      {
+        "amount": "$525,000",
+        "fund": "BA 26-09",
+        "item": "Budget Amendment - General Fund"
+      },
+      {
+        "amount": "$11,000",
+        "fund": "",
+        "item": "Capital Project Amendment - Rosenwald Revitalization Fund"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-06-15",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendment to the Official Zoning Map - 2 Parcels on Deavor Road to PGX"
+      },
+      {
+        "date": "2026-06-15",
+        "next_step": "Approval",
+        "what": "FY 2026-2027 Budget Ordinance and Fee Schedule"
+      },
+      {
+        "date": "2026-06-15",
+        "next_step": "Approval",
+        "what": "FY 2025-2026 Wrap-up Budget Amendments (BA 26-07, BA 26-08, BA 26-09)"
+      },
+      {
+        "date": "2026-06-15",
+        "next_step": "Approval",
+        "what": "FY 2026-2027 Preparatory Project Amendments"
+      }
+    ],
+    "public_process": [
+      "Public Comments session scheduled",
+      "Public Hearing on Proposed Amendment to Official Zoning Map",
+      "Agenda materials available on City website under 'Your Government' followed by 'Agenda Packets'",
+      "Agenda packet materials posted Thursday afternoon prior to Monday meeting",
+      "Closed Session(s) scheduled"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater",
+      "rezoning"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-06-15",
+      "title": "City Council 2026-06-15: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6331,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Adopt 2026 Transylvania County Comprehensive Transportation Plan",
+        "who": "City Council"
+      },
+      {
+        "amount": "$60,000 (BA 26-07)",
+        "vote": "pending",
+        "what": "Budget Amendment, Stormwater Utility Fund",
+        "who": "City Council"
+      },
+      {
+        "amount": "$240,000 (BA 26-08)",
+        "vote": "pending",
+        "what": "Budget Amendment, Water and Sewer Utility Fund",
+        "who": "City Council"
+      },
+      {
+        "amount": "$525,000 (BA 26-09)",
+        "vote": "pending",
+        "what": "Budget Amendment, General Fund",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "pending",
+        "what": "Approve FY 2026-2027 Budget Ordinance and Fee Schedule",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "pending",
+        "what": "Establishment of Sports Complex Capital Project Fund",
+        "who": "City Council"
+      },
+      {
+        "amount": "$11,000",
+        "vote": "pending",
+        "what": "Capital Project Amendment - Rosenwald Revitalization Fund",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Adopt 2026 Transylvania County Comprehensive Transportation Plan",
+        "who": "Planning Board (recommended); Council vote pending"
+      },
+      {
+        "amount": "",
+        "vote": "pending",
+        "what": "Appoint Mark Tooley to Ecusta Trail Advisory Board",
+        "who": "City Council"
+      },
+      {
+        "amount": "$8,575,000",
+        "vote": "pending",
+        "what": "Accept $8,575,000 Funding Modification for Wastewater Treatment Plant Upgrade Phase 1",
+        "who": "City Council"
+      },
+      {
+        "amount": "$506,500 (survey cost)",
+        "vote": "pending",
+        "what": "Adopt Asset Inventory and Assessment Plans for Water and Wastewater Systems",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "June 5, 2026",
+        "what": "City Council Budget Workshop"
+      },
+      {
+        "date": "June 15, 2026",
+        "what": "Final vote on FY 2026-2027 Budget"
+      },
+      {
+        "date": "June 11, 2026",
+        "what": "Rosenwald Listening Session"
+      },
+      {
+        "date": "June 15, 2026",
+        "what": "Public Hearing - Proposed Amendment to Official Zoning Map"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$288,750",
+        "fund": "Estatoe Trail Project (approved June 1)",
+        "item": "Tannery North Smokestack/Vault Removal"
+      },
+      {
+        "amount": "$200,000",
+        "fund": "General Fund transfer",
+        "item": "Tannery North Estatoe Trail funding"
+      },
+      {
+        "amount": "$100,000",
+        "fund": "Fund Balance",
+        "item": "Tannery North Estatoe Trail funding"
+      },
+      {
+        "amount": "$60,000",
+        "fund": "FY 2025-2026 wrap-up",
+        "item": "Budget Amendment - Stormwater Utility Fund"
+      },
+      {
+        "amount": "$240,000",
+        "fund": "FY 2025-2026 wrap-up",
+        "item": "Budget Amendment - Water and Sewer Utility Fund"
+      },
+      {
+        "amount": "$525,000",
+        "fund": "FY 2025-2026 wrap-up",
+        "item": "Budget Amendment - General Fund"
+      },
+      {
+        "amount": "$9,346,000",
+        "fund": "Capital Improvement Plan (6 highest priority items)",
+        "item": "Water System Asset Inventory and Assessment"
+      },
+      {
+        "amount": "$18,430,000",
+        "fund": "Capital Improvement Plan (6 highest priority items)",
+        "item": "Wastewater System Asset Inventory and Assessment"
+      },
+      {
+        "amount": "$506,500",
+        "fund": "$387,000 NCDEQ grant; $119,500 Water/Sewer Fund",
+        "item": "AIA Survey cost completion"
+      },
+      {
+        "amount": "$8,575,000",
+        "fund": "NC Direct Appropriation from 2023 state budget",
+        "item": "Wastewater Treatment Plant Upgrade Phase 1 - Funding Modification"
+      },
+      {
+        "amount": "$11,000",
+        "fund": "Capital Project",
+        "item": "Rosenwald Revitalization Fund Amendment"
+      }
+    ],
+    "pending": [
+      {
+        "date": "June 15, 2026",
+        "next_step": "Council vote",
+        "what": "FY 2026-2027 Budget Ordinance and Fee Schedule"
+      },
+      {
+        "date": "June 15, 2026",
+        "next_step": "Public hearing and Council vote",
+        "what": "Proposed Amendment to Official Zoning Map - 2 Parcels on Deavor Road to PGX"
+      },
+      {
+        "date": "July 2026 (executive staff planning session)",
+        "next_step": "Strategic plan development with new Chief Wentzell; six-month and one-year strategic plans to be developed",
+        "what": "Berry Dunn Police Department organizational recommendations"
+      },
+      {
+        "date": "",
+        "next_step": "Staff research and proposal",
+        "what": "Review and update City ordinances re: loitering, trespassing, public substance use"
+      },
+      {
+        "date": "",
+        "next_step": "Budget consideration",
+        "what": "Ecusta parking lot and restroom improvements"
+      }
+    ],
+    "public_process": [
+      "Public comment period held June 1, 2026 regarding athletic facilities on Ecusta Road (parking lot, bathroom facilities)",
+      "Public comment received from multiple speakers regarding safety and health concerns at Ecusta Soccer Field",
+      "Planning Board unanimously recommended adoption of 2026 Transylvania County Comprehensive Transportation Plan",
+      "Planning Board reviewed and recommended 2 Deavor Road parcels rezoning to PGX on May 26, 2026",
+      "Public Hearing scheduled for June 15, 2026 on proposed zoning map amendment",
+      "Rosenwald Community Listening Session scheduled June 11, 2026 for community project updates",
+      "Meet the Mayor sessions scheduled June 2 and June 30, 2026",
+      "Berry Dunn assessment conducted through surveys, interviews, and workshops with all department levels"
+    ],
+    "quotes": [
+      {
+        "speaker": "Davis Whitfield-Cargile",
+        "text": "What we spend our money on and what we take care of is important."
+      },
+      {
+        "speaker": "Anna Heard",
+        "text": "We cannot solve infrastructure challenges that properly belong to the city."
+      },
+      {
+        "speaker": "Owen Carson",
+        "text": "Soccer brings people together and weaves community fabric."
+      }
+    ],
+    "schedule_changes": [
+      "Berry Dunn executive staff planning session rescheduled from June to July 2026 to include newly hired Deputy Chief and newly promoted sergeants"
+    ],
+    "watchlist_hits": [
+      "stormwater (Budget Amendment BA 26-07 for Stormwater Utility Fund $60,000)",
+      "capital improvement plan (Water and Wastewater System CIP identified $27.7M in priority needs)",
+      "tax rate (discussed in Budget Workshop; Mayor noted budget deliberations; staff sought no tax increase recommendation)",
+      "fund balance (Tannery North project funded $100,000 from Estatoe Trail Fund Balance; $200,000 from General Fund; Budget Amendment using Fund Balance Approp)"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-06-10",
+      "title": "City Council Downtown Master Plan Committee 2026-06-10: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6326,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-07-08",
+        "what": "Next Downtown Master Plan Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Discussion and consideration",
+        "what": "Downtown Master Plan Implementation Plan Update"
+      }
+    ],
+    "public_process": [
+      "Public Comments scheduled on agenda",
+      "Agenda posted on website and bulletin board on 06/05/2026",
+      "Agenda forwarded to media and Sunshine List on 06/05/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "transcript",
+      "meeting_date": "2026-07-13",
+      "title": "Board of Commissioners July 13, 2026 (transcript)",
+      "url": "https://vimeo.com/event/6043511"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approve modified agenda - add landfill erosion control update, move Helene update to C",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approve consent agenda including minutes, discovery release, monthly settlement report, courthouse project sole source resolution, family court chambers request, September 14 meeting cancellation, health department out-of-state travel",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Appoint Vice Chair Larry Chapman as voting delegate to NCACC 119th Annual Conference",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Appoint Chair Teresa McCall as alternate delegate to NCACC conference",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Appoint Samantha Salyards to Juvenile Crime Prevention Council",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Reappoint Dr. Ben Lamb to Nursing and Adult Care Home Advisory Committee",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Appoint Mark Emery to Personnel Board member at-large position",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Reappoint Steve Warner to Transylvania Economic Alliance Board of Directors",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Accept recommendation on grant-funded infrastructure projects - authorize manager and engineer to reallocate DEQ at-risk funding, execute resolutions, and adjust MOUs",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approve legislative goals as presented",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": 114515.85,
+        "vote": "unanimous",
+        "what": "Extend contract with Allies for Outcomes and carry forward funds from FY26 to FY27",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Accept 2025 tax settlement report and approve 2026 order to collect real and personal property taxes",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": 124500,
+        "vote": "unanimous",
+        "what": "Approve FY26 audit contract with Martin, Starnes & Associates and budget amendment",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approve multi-year contract with ThreatLocker Incorporated for cybersecurity platform",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "Ongoing - working through summer",
+        "what": "Coordinate with Representative Ferguson and Senator Corbin on state legislative action to fund three water/sewer projects (Azalea Avenue, Rosman, Brevard High School)",
+        "who": "County Manager Jaime Laughter"
+      },
+      {
+        "by_when": "Ongoing - as information received",
+        "what": "Authorize manager and engineer to reallocate DEQ at-risk funding and adjust MOUs as needed for remaining projects",
+        "who": "County Manager Jaime Laughter, Michael Goforth"
+      },
+      {
+        "by_when": "After this meeting",
+        "what": "Post contact information for DEQ sedimentation concerns on county website with link to DEQ",
+        "who": "David McNeil (Assistant County Manager)"
+      },
+      {
+        "by_when": "Soon (anticipated)",
+        "what": "NCDQ to conduct follow-up inspection on landfill corrective actions and include county staff in inspection",
+        "who": "County Manager and NCDQ"
+      },
+      {
+        "by_when": "Quarterly",
+        "what": "Provide quarterly reports on Allies for Outcomes contract usage including number of cases and spending",
+        "who": "Amanda Vanderhoff (DSS Director)"
+      },
+      {
+        "by_when": "In progress",
+        "what": "Determine budget impact of state teacher raises on individual positions with multiple factors",
+        "who": "County staff with School administration"
+      },
+      {
+        "by_when": "In progress",
+        "what": "Work on secure solution to allow Proton Mail through while maintaining cybersecurity",
+        "who": "IT Department"
+      },
+      {
+        "by_when": "August 2026",
+        "what": "Begin onboarding implementation of cybersecurity platform with interim work first week of August",
+        "who": "ThreatLocker and IT Department"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Continue working through state budget details and provide guidance from Local Government Commission and NCACC",
+        "who": "County Manager"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "December 31, 2026 (verify)",
+        "what": "DEQ Session Law 2023 infrastructure grant spend deadline"
+      },
+      {
+        "date": "December 2028",
+        "what": "Dogwood Foundation housing infrastructure grant spend deadline"
+      },
+      {
+        "date": "August 19, 2026",
+        "what": "NCACC voting delegate designation due"
+      },
+      {
+        "date": "November 2, 2026",
+        "what": "Multifamily Housing Program applications close"
+      },
+      {
+        "date": "January 5 (annual)",
+        "what": "Tax collection deadline with no interest"
+      },
+      {
+        "date": "July 13, 2026 (this meeting)",
+        "what": "Legislative goals deadline for approval"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "Speed and thoroughness of county infrastructure project implementation",
+        "positions": [
+          {
+            "position": "County delays projects excessively, sits on funds causing inflation losses, needs faster action and accountability",
+            "who": "Peter Often, Jacob Swope (public commenters)"
+          },
+          {
+            "position": "Deliberate planning and procurement is critical for proper project execution, grant compliance requires extensive documentation and coordination",
+            "who": "County Manager Jaime Laughter, County staff"
+          }
+        ]
+      },
+      {
+        "issue": "Leachate pretreatment project necessity and design approach",
+        "positions": [
+          {
+            "position": "County should send leachate to Brevard (more capable) and consider partnership with City as they upgrade treatment plant",
+            "who": "Owen Carson (public commenter)"
+          },
+          {
+            "position": "Rosman receiving grant funds for aerated equalization basin addresses original concerns; DEQ requirements made project scope/cost escalate beyond practicality",
+            "who": "Michael Goforth (High Country Engineering), County staff"
+          }
+        ]
+      },
+      {
+        "issue": "Leachate sedimentation in Browns Mill Creek - source attribution",
+        "positions": [
+          {
+            "position": "NOV documented multiple sedimentation infusions; 2023 milky discharge sighting suggests ongoing problem; forensic testing should identify sources",
+            "who": "Owen Carson (public commenter)"
+          },
+          {
+            "position": "Investigation shows residential construction/grading activities causing sedimentation downstream; landfill corrective measures working; clear water at discharge point",
+            "who": "David McNeil (Assistant County Manager), Josh Rue (Smith & Garner Engineering)"
+          }
+        ]
+      },
+      {
+        "issue": "County enforcement of land disturbance permits for residential projects",
+        "positions": [
+          {
+            "position": "County ordinance Section 12.6 needs clarification on enforcement authority, process, and outcomes; should use advisory councils like TNRC",
+            "who": "Owen Carson (public commenter)"
+          },
+          {
+            "position": "Residential projects under 4,000 sq ft exempt; state handles over-1-acre permits; county jurisdiction for 4,000 sq ft-1 acre permits; non-jurisdictional issues reported to DEQ",
+            "who": "County staff (implicit)"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": 10000000,
+        "fund": "State infrastructure funding",
+        "item": "Session Law 2023 infrastructure grant (originally allocated)"
+      },
+      {
+        "amount": 150000,
+        "fund": "State infrastructure funding",
+        "item": "Session Law 2023 - DEQ administrative allocation"
+      },
+      {
+        "amount": 4000000,
+        "fund": "State Helene recovery",
+        "item": "Helene recovery relief allocated to Transylvania County"
+      },
+      {
+        "amount": 6000000,
+        "fund": "State infrastructure",
+        "item": "Infrastructure funding reallocated to other regional needs"
+      },
+      {
+        "amount": 4000000,
+        "fund": "State allocation",
+        "item": "State funding for Blue Ridge Community College and EMS/Fire"
+      },
+      {
+        "amount": 7000000,
+        "fund": "State/ARPA infrastructure",
+        "item": "DEQ At-Risk infrastructure funds"
+      },
+      {
+        "amount": 2000000,
+        "fund": "Private foundation",
+        "item": "Dogwood Foundation housing infrastructure funds"
+      },
+      {
+        "amount": 300000,
+        "fund": "Federal economic development",
+        "item": "Appalachian Regional Commission - US 64 sewer extension"
+      },
+      {
+        "amount": 880000,
+        "fund": "State economic development",
+        "item": "NC Department of Commerce Industrial Fund - US 64 sewer extension"
+      },
+      {
+        "amount": 1500000,
+        "fund": "State stream restoration",
+        "item": "STRAP funds for streambank restoration"
+      },
+      {
+        "amount": 600000,
+        "fund": "Federal watershed protection",
+        "item": "Federal Emergency Watershed Protection funds"
+      },
+      {
+        "amount": 2300000,
+        "fund": "State/federal communications",
+        "item": "Communication tower grants"
+      },
+      {
+        "amount": 800000,
+        "fund": "Federal communications",
+        "item": "Communication tower equipment grant"
+      },
+      {
+        "amount": 114515.85,
+        "fund": "DSS staffing - child welfare",
+        "item": "Allies for Outcomes contract extension (carried forward)"
+      },
+      {
+        "amount": 47467688.44,
+        "fund": "Local property tax",
+        "item": "2025 tax levy - county only"
+      },
+      {
+        "amount": 54330548.35,
+        "fund": "Local property tax",
+        "item": "2025 tax levy - all districts"
+      },
+      {
+        "amount": 124500,
+        "fund": "County general fund",
+        "item": "Audit contract - Martin, Starnes & Associates FY26"
+      },
+      {
+        "amount": 15000,
+        "fund": "County general fund",
+        "item": "Audit contract budget amendment"
+      },
+      {
+        "amount": 215000,
+        "fund": "IT budget savings",
+        "item": "ThreatLocker cybersecurity multi-year contract (5-year savings)"
+      }
+    ],
+    "pending": [
+      {
+        "date": null,
+        "next_step": "NCDQ to conduct inspection and provide feedback",
+        "what": "DEQ follow-up inspection on landfill corrective actions"
+      },
+      {
+        "date": null,
+        "next_step": "Representative Ferguson and Senator Corbin working with General Assembly",
+        "what": "State legislative action on funding for three water/sewer projects (Azalea Avenue, Rosman, Brevard High School pump station)"
+      },
+      {
+        "date": null,
+        "next_step": "Pending confirmation of funding stream assignment",
+        "what": "Finalize MOU with City of Brevard for Azalea Road sewer extension project"
+      },
+      {
+        "date": null,
+        "next_step": "Town to confirm availability of funds",
+        "what": "Confirm match funds from Town of Rosman for Calvert Road sewer extension"
+      },
+      {
+        "date": null,
+        "next_step": "State scoping meeting scheduled",
+        "what": "Upper Transylvania Watershed Study"
+      },
+      {
+        "date": null,
+        "next_step": "RFQ process underway, federal compliance required",
+        "what": "Pisgah Labs sewer extension engineering contract review"
+      },
+      {
+        "date": null,
+        "next_step": "IT staff working on secure alternative to allow emails through",
+        "what": "IT resolution of Proton Mail blocking issue"
+      },
+      {
+        "date": null,
+        "next_step": "Working with school administration on calculations",
+        "what": "School budget impact analysis of state teacher raises"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "",
+        "speaker": "Peter Often",
+        "summary": "Raised concerns about ambiguity in the $10 million funding situation and pattern of county sitting on allocated funds leading to loss due to inflation. Cited school bonds losing $15 million to inflation, $2 million Dogwood grant requiring extension, courthouse funding from 2019 with only drawings 7 years later. Requested concrete public timeline detailing clerical error, funding sources, and commitment to help Azalea Avenue and Rosman without reservation.",
+        "topic": "10 million in infrastructure funding and county commission accountability"
+      },
+      {
+        "response": "",
+        "speaker": "Jacob Swope",
+        "summary": "New homeowner in Pisgah Forest criticizing board for poor leadership, delayed spending decisions, 20 years of courthouse discussions, raised taxes for school bonds without fixes, lower employee wages causing vacancies, FOIA delays, social media restrictions, removal of advisory committees. Called board to account for inaction and urged voters to hold them accountable.",
+        "topic": "County leadership quality and lack of accountability"
+      },
+      {
+        "response": "Chair McCall thanked Mr. Powell",
+        "speaker": "Doug Powell",
+        "summary": "Commended commissioners who participated in July 4th Declaration reading at Main Street Stage. Emphasized that Declaration affirms civil and religious liberties endowed by Creator, not government, protecting rights permanently. Referenced John Adams on separation of church and state, noting that God-based foundation protects even non-believers.",
+        "topic": "Declaration of Independence reading and foundational principles"
+      },
+      {
+        "response": "",
+        "speaker": "Owen Carson",
+        "summary": "Used rumble strip analogy to describe financial challenges, revenue uncertainty, state policy shifts, $10 million funding redirect surprise, housing affordability worsening, infrastructure demands growing. Urged board to listen to warning signs, engage earlier, work proactively with municipalities and legislators to prevent crises.",
+        "topic": "Warning signs and proactive leadership (rumble strips metaphor)"
+      },
+      {
+        "response": "Chair McCall ended comment period due to time limit",
+        "speaker": "Owen Carson",
+        "summary": "Challenged landfill presentation stating NOV documented multiple sedimentation infusions to Woodruff Branch (not just landscaping), violations of sediment traps. Noted 2023 Google Maps waypoint showing milky discharge. Recommended forensic soil science testing and suggested county strengthen land disturbance enforcement ordinance Section 12.6. Questioned why leachate not sent to more capable Brevard treatment plant and suggested City of Brevard partnership.",
+        "topic": "Landfill NOV details and enforcement concerns"
+      }
+    ],
+    "public_process": [
+      "Meeting held in public; public comment period with sign-up required for first round (4-5 speakers), limited to 3 minutes each",
+      "Second public comment period held at end of meeting without sign-up required",
+      "Chair reminded audience this is meeting held in public (not a public meeting); public welcome to listen and comment but not interject during board discussion",
+      "Public comment decorum enforced - Chair ended Owen Carson's second comment when time limit reached",
+      "Agenda modifications requested and voted on; modified agenda approved unanimously",
+      "Representative Anna Ferguson invited to speak as public official regarding misinformation about funding situation",
+      "All votes recorded as unanimous Ayes",
+      "Consent agenda used for routine items (minutes, settlements, travel requests, sole source resolutions)",
+      "Recognition of citizen advisory council members conducted publicly",
+      "All presentations with staff names stated for record (David McNeil, Josh Rue, Michael Goforth, Amanda Vanderhoff, Jessica McCall, Megan O'Neal, Nathaniel Carver)"
+    ],
+    "quotes": [
+      {
+        "speaker": "Owen Carson",
+        "start": "00:20:29",
+        "text": "A good driver doesn't get upset when the rumble strips start vibrating. A good driver snaps to, grabs the wheel and corrects course."
+      },
+      {
+        "speaker": "Peter Often",
+        "start": "00:11:01",
+        "text": "This is a continuous pattern. How much did it lose over three years of waiting?"
+      },
+      {
+        "speaker": "Teresa McCall (Chair)",
+        "start": "02:23:05",
+        "text": "Facts matter. The facts are on the county website. Facts matter."
+      }
+    ],
+    "roll_call": [
+      "Teresa McCall, Chair",
+      "Larry Chapman, Vice Chair",
+      "Jason Chappell, Commissioner",
+      "Chase McKelvey, Commissioner",
+      "Jaime Laughter, County Manager",
+      "Trisha Hogan, Clerk to the Board",
+      "Jake Dalton, Commissioner (out of town)"
+    ],
+    "schedule_changes": [
+      "September 14th Board of Commissioners meeting cancelled"
+    ],
+    "unanswered": [
+      "How many buckets of sediment actually made it into Woodruff Creek from landfill sedimentation events?",
+      "What will be the detailed forensic soil science analysis to determine source of sedimentation from various upstream sources?",
+      "When will county determine who is responsible for enforcement of land disturbance violations on residential projects upstream?",
+      "What is the exact breakdown and timeline for the $10 million clerical error and how it was misidentified four years ago? (verify - county manager referenced 5-page timeline available)",
+      "Has the county formally approached City of Brevard about accepting leachate as they upgrade their wastewater treatment plant?",
+      "What is the county's contingency plan if Rosman cannot adequately treat leachate even with their new aerated equalization basin?",
+      "What specific flash flood notification system does Haywood County have that Transylvania should consider? (Commissioner mentioned but not answered by staff)",
+      "Will the county consider implementing flash flood notification systems countywide as a life-saving tool?"
+    ],
+    "watchlist_hits": [
+      "landfill - extensive discussion of landfill erosion control, Phase 7 cell nearing completion",
+      "solid waste - landfill operations, future transfer station model discussion, leachate management",
+      "leachate - pretreatment project discussed, ongoing leachate management obligation, sedimentation concerns",
+      "DEQ - Department of Environmental Quality - multiple references to DEQ review, NOVs, grant management, inspector communications",
+      "transfer station - Commissioner Chapman mentioned county moving toward transfer station model for solid waste",
+      "stormwater - Morris Road stormwater project, water quality requirements, courthouse site stormwater management",
+      "steep slope - landfill east and west slopes discussed with erosion control challenges",
+      "affordable housing - Azalea Road sewer extension supporting affordable housing project, Housing Assistance Corporation sewer extension",
+      "public comment - two public comment periods held with decorum enforced",
+      "open meetings - Chair clarified meeting is held in public but not a public meeting",
+      "DSS - staffing contract - Allies for Outcomes contract extended for child welfare staffing due to vacancies",
+      "tax rate - 2025 tax settlement report and 2026 order to collect presented and approved",
+      "fund balance - commitment to monitor fund balance and available resources mentioned in landfill discussion"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "county",
+      "kind": "transcript",
+      "meeting_date": "2026-06-08",
+      "title": "Board of Commissioners June 8, 2026 (transcript)",
+      "url": "https://vimeo.com/event/5977272"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "All in favor - Aye",
+        "what": "Approval of consent agenda including minutes for May 26th, proclamation on 250th anniversary, out-of-state travel request, cancellation of July 27th and August 10th Board meetings, NCDOT policy, TCDA contract with Market Connections, TDA contract with Media One",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor - Aye",
+        "what": "Appointment of Tracy Gant to Agricultural Advisory Board",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor - Aye",
+        "what": "Reappointment of Sarah Justice to Library Board of Trustees and tabling of Dr. Julia Elmer appointment pending voter registration requirement",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor - Aye",
+        "what": "Reappointment of Cathy Harris to Regional Council on Aging and appointment of Woody Akes to fill community member vacancy",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor - Aye",
+        "what": "Appointment of Cathy Klepfer to Social Services Board effective July 1st",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Approved",
+        "what": "Approval of proclamation 26-2026 recognizing 250th anniversary of United States of America",
+        "who": "Teresa McCall, Chair"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "June 22nd meeting",
+        "what": "Review NCACC legislative goals packet and prepare for further discussion",
+        "who": "Board of Commissioners"
+      },
+      {
+        "by_when": "July 13th meeting",
+        "what": "Finalize and approve legislative goals list for NCACC submission",
+        "who": "Board of Commissioners"
+      },
+      {
+        "by_when": "June 22nd meeting",
+        "what": "Present fiscal year 27 budget during public hearing",
+        "who": "County Staff"
+      },
+      {
+        "by_when": "September or October",
+        "what": "Provide year in review with additional information on occupancy tax case",
+        "who": "Clark Lovelace, TDA"
+      },
+      {
+        "by_when": "June 9th (mentioned as 'tomorrow')",
+        "what": "Travel to Raleigh to participate on legislative committees and meet with state legislators",
+        "who": "Three Commissioners (Chapman, McKelvey, Dalton)"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "August 14th",
+        "what": "NCACC legislative goals submission deadline"
+      },
+      {
+        "date": "July 13th",
+        "what": "Board staff request approval of final legislative goals list"
+      },
+      {
+        "date": "August 4th",
+        "what": "Commercial District Revitalization Program application deadline"
+      },
+      {
+        "date": "June 30th",
+        "what": "Library Board appointments - terms expire"
+      },
+      {
+        "date": "June 30th",
+        "what": "Regional Council on Aging appointment - term expires"
+      },
+      {
+        "date": "June 30th",
+        "what": "Social Services Board appointment - term expires"
+      },
+      {
+        "date": "June 24th, 4:00-5:30 PM",
+        "what": "Pisgah Legal Services open house"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "Conservation easement cap policy",
+        "positions": [
+          {
+            "position": "Opposes capping conservation easements; argues it contradicts property rights, county values, and proper use of available federal tax credits",
+            "who": "Owen Carson (public commenter)"
+          },
+          {
+            "position": "Listed as legislative goal #20 seeking ability to cap percentage of land in conservation easement (no explanation of reasoning provided in transcript)",
+            "who": "Board of Commissioners"
+          }
+        ]
+      },
+      {
+        "issue": "Blue Ridge Community College support",
+        "positions": [
+          {
+            "position": "Advocates for increased county institutional and financial support for BRCC as valuable workforce development resource",
+            "who": "Owen Carson (public commenter)"
+          },
+          {
+            "position": "No explicit position stated; discussion focused on budget constraints and tax pressures",
+            "who": "Board of Commissioners"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": "$40 million",
+        "fund": "Federal disaster relief",
+        "item": "Commercial District Revitalization Program federal funding"
+      },
+      {
+        "amount": "$2 million (verify)",
+        "fund": "State allocation shared with Henderson County",
+        "item": "Farmland preservation state allocation"
+      }
+    ],
+    "pending": [
+      {
+        "date": "June 22nd and July 13th meetings",
+        "next_step": "Board review and finalization",
+        "what": "NCACC legislative goals - final list approval needed"
+      },
+      {
+        "date": "June 22nd",
+        "next_step": "Public hearing followed by board approval of recommended budget",
+        "what": "Fiscal year 27 budget - public hearing and approval"
+      },
+      {
+        "date": "When requirements are met",
+        "next_step": "Table pending voter registration requirement or receipt of additional applicants",
+        "what": "Library Board appointment of Dr. Julia Elmer"
+      },
+      {
+        "date": "Not specified",
+        "next_step": "Bid process",
+        "what": "Hazard mitigation buyout group - contractor selection"
+      },
+      {
+        "date": "Timeline unknown",
+        "next_step": "Review by FEMA",
+        "what": "FEMA review of 115 previously denied private property debris removal applications"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "Commissioner responded that Opportunity Zone designations are state-controlled; county spent tens of millions on water/sewer infrastructure on Highway 64 corridor; farmland preservation was funded with $2 million state allocation shared with Henderson County. Data centers are not happening in county; any looked at were years ago and found infeasible due to power limitations.",
+        "speaker": "Owen Carson",
+        "summary": "Carson discussed misconceptions about Opportunity Zones, noting they do not approve development or commit tax dollars but are federal tools for private investment. Emphasized importance of infrastructure capacity and community engagement. Advocated for farmland preservation funding and plan updates. Urged board to communicate clearly on data center position due to community speculation.",
+        "topic": "Opportunity Zones, farmland preservation, data centers"
+      },
+      {
+        "response": "",
+        "speaker": "Doug Powell",
+        "summary": "Powell delivered extensive historical reflection on Founding Fathers' sacrifices on behalf of American independence, detailing losses of signatories including lives, fortunes, families, and estates. Quoted Declaration and John Adams. Encouraged commissioners and public to honor this legacy and pass torch of freedom to next generation.",
+        "topic": "Declaration of Independence 250th anniversary, historical sacrifice"
+      },
+      {
+        "response": "",
+        "speaker": "Daniel Carey, Pisgah Legal Services",
+        "summary": "Carey invited commissioners and public to open house at Brevard office on June 24th, 4:00-5:30 PM. Distributed 2025 impact report for Transylvania County. Thanked board for funding support and invited commissioners to discuss services.",
+        "topic": "Pisgah Legal Services announcement and funding appreciation"
+      },
+      {
+        "response": "No direct response recorded.",
+        "speaker": "Owen Carson (second public comment)",
+        "summary": "Carson questioned how five commissioners arrived at 21 legislative priorities and whether public input sessions were available. Disagreed with goal to cap conservation easements, arguing it contradicts property rights principles and county values. Advocated strongly for county support of Blue Ridge Community College for workforce development and student outcomes.",
+        "topic": "Legislative goals process transparency, conservation easement policy, BRCC support"
+      },
+      {
+        "response": "",
+        "speaker": "Clark Lovelace, Executive Director, Transylvania County Tourism Development Authority",
+        "summary": "Lovelace explained history of occupancy tax law (1983 passage, 1997 standardization), noted Currituck County's grandfathered status in recent court case, and expressed hope for state clarification. Acknowledged state's first ruling on tourism-related spending. Paid tribute to deceased community member Tim Gaffney and his contributions.",
+        "topic": "Occupancy tax legal case, TDA history, tribute to Tim Gaffney"
+      },
+      {
+        "response": "",
+        "speaker": "Commissioner Jake Dalton",
+        "summary": "Dalton described incident where 80-year-old woman broke wrist removing trash bag from Rosman Highway while attempting to prevent accident. Urged citizens to call sheriff or highway patrol rather than handle trash themselves to enable investigation. Noted county ordinance requiring tarped trash on trucks. Warned of pressure from Henderson County's 18% law enforcement salary increase proposal related to new jail opening.",
+        "topic": "Litter/trash on roads, Woodrick Landfill, Henderson County salary comparison"
+      },
+      {
+        "response": "",
+        "speaker": "Commissioner Chase McKelvey",
+        "summary": "McKelvey announced three commissioners (Chapman, McKelvey, Dalton) traveling to Raleigh next day for legislative meetings. Thanked county manager for budget planning. Provided comparative tax increase data: Buncombe 4.3 cents and 4.95 cents (city), Asheville 4.95 cents, Haywood 7 cents plus fund balance withdrawal, Waynesville 4 cents, Henderson 4 cents plus 18% law enforcement increase, Jackson 6.5 cents new service district, Brevard 2.5 cents plus county funding request. Emphasized fiscal responsibility.",
+        "topic": "Upcoming Raleigh legislative meetings, budget planning, comparative tax analysis"
+      }
+    ],
+    "public_process": [
+      "Two public comment periods held during meeting - first 15 minutes with required sign-up and 3-minute limit, second without sign-up requirement",
+      "Speakers asked to approach podium when name called, speak directly into microphone for remote viewing and recording",
+      "Speakers instructed to address board, not public",
+      "Public hearing on fiscal year 27 budget mandated by state statute, scheduled for June 22nd",
+      "Board holds two public comment periods during each regular meeting",
+      "Commissioners encouraged to note questions and comments in packet materials for future discussion"
+    ],
+    "quotes": [
+      {
+        "speaker": "Owen Carson",
+        "start": "00:05:44",
+        "text": "Infrastructure ultimately determines what can be built."
+      },
+      {
+        "speaker": "Jake Dalton",
+        "start": "00:48:35",
+        "text": "Don't open them yourself, call the sheriff."
+      },
+      {
+        "speaker": "Chase McKelvey",
+        "start": "00:57:33",
+        "text": "The picture doesn't get any prettier from this point forward."
+      }
+    ],
+    "roll_call": [
+      "Teresa McCall, Chair",
+      "Larry Chapman, Vice Chair",
+      "Jason Chappell, Commissioner (out of town)",
+      "Jake Dalton, Commissioner",
+      "Chase McKelvey, Commissioner",
+      "Jaime Laughter, County Manager",
+      "Trisha Hogan, Clerk to the Board",
+      "Bill Bulford, County Attorney"
+    ],
+    "schedule_changes": [
+      "July 27th and August 10th Board of Commissioners meetings cancelled; special call meeting possible if needed",
+      "Legislative goals discussion scheduled for June 22nd and July 13th due to cancellation of second July and first August meetings"
+    ],
+    "unanswered": [
+      "How long will FEMA's review of 115 previously denied debris removal applications take?",
+      "How were the 21 NCACC legislative goals selected, and were public input sessions held?",
+      "What is the specific reasoning for legislative goal #20 to cap conservation easements in the county?"
+    ],
+    "watchlist_hits": [
+      "social services (Social Services Board appointment discussed)",
+      "staffing (Henderson County law enforcement salary increase and pressure on county deputies mentioned)",
+      "solid waste (Trash bag incident on Rosman Highway; mention of Woodrick Landfill)",
+      "transfer station (Woodrick Landfill referenced)",
+      "affordable housing (Commercial District Revitalization Program mentioned for affordable housing restoration post-Hurricane Helene)",
+      "homelessness (Pisgah Legal Services invoked for legal aid services)",
+      "capital improvement plan (Water and sewer infrastructure spending on Highway 64 corridor mentioned)",
+      "public comment (Two public comment periods; first speaker sign-up requirement noted)",
+      "decorum (Speaker instructions on podium approach, microphone use, addressing board)",
+      "open meetings (Meeting held with quorum; public comment periods structured)",
+      "agenda modification (Agenda review and approval process followed)",
+      "stormwater (Infrastructure evaluations on waterways for Helene recovery mentioned)"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "transcript",
+      "meeting_date": "2026-08-03",
+      "title": "Brevard City Council Meeting August 3, 2026 (transcript)",
+      "url": "https://www.youtube.com/watch?v=gex3gGY3gi0"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Approved amended agenda - removed Item M1 (Municipal Service District Task Force Proposal), added Item I1 (Cashers Valley Road Sewer Extension)",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Approved April 10, 2026 budget workshop minutes",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Approved July 20, 2026 regular meeting minutes",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Approved consent agenda (property tax releases, committee minutes)",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Adopted amendment to city code chapters 9, 19, and 38 regarding site triangle regulations",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Adopted amendment to city code chapters 6, 17, 19, and 38 regarding stormwater management development regulations",
+        "who": "Council"
+      },
+      {
+        "amount": "$88,400 (verify)",
+        "vote": "All in favor",
+        "what": "Approved funding strategy for Cashers Valley Road sewer extension - $88,400 (verify) commitment from city funds",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Adopted amendment to city code chapter 42 regarding loitering, trespassing, public intoxication, and hours of operation - modified to remove 'loitering generally' and amend section 42-5(C) to specify 'loiter or congregate' only where obstructing free passage",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Transmitted letter of interest to Transylvania County regarding feasibility study for courthouse as potential city hall location",
+        "who": "Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Appointed Shauna Powell to Parks, Trails, and Recreation Committee",
+        "who": "Council"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "Two weeks (approximately August 17, 2026)",
+        "what": "Present budget amendment with specific funding source options for $88,400 Cashers Valley Road sewer extension",
+        "who": "City Manager Wilson Cooper / Staff"
+      },
+      {
+        "by_when": "To be coordinated with Transylvania County (timeline TBD)",
+        "what": "Conduct feasibility study of old courthouse for city hall use, including structural analysis, cost estimates, and appraisal",
+        "who": "City Manager Wilson Cooper / County collaboration"
+      },
+      {
+        "by_when": "Beginning immediately; quarterly reports ongoing",
+        "what": "Implement data collection improvements: new CAD clearance codes for unhoused population identification, officer documentation requirements, daily watch commander reports, quarterly and annual detailed reporting to council on loitering/trespassing/intoxication enforcement metrics",
+        "who": "Police Chief Christy Wentzell / City Manager"
+      },
+      {
+        "by_when": "Before ordinance implementation (timeline not specified)",
+        "what": "Compile complete list of city-owned properties subject to concealed weapons prohibition and operating hours restrictions",
+        "who": "Police Department"
+      },
+      {
+        "by_when": "Ongoing; actively deployed as of late July 2026",
+        "what": "Increase bike patrol presence on city greenways and bike paths to address camping and quality-of-life concerns",
+        "who": "Police Department"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Collaborate with Bread of Life, Haven, Sharing House, and mobile crisis services to develop referral protocols and service coordination",
+        "who": "City Manager / Police Department"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "August 3, 2026 at 11:59 PM",
+        "what": "HUD ProHousing grant application submission"
+      },
+      {
+        "date": "Two weeks after August 3, 2026 (approximately August 17, 2026)",
+        "what": "Budget amendment for sewer extension funding sources to be presented to council"
+      },
+      {
+        "date": "County to begin construction fall 2026; two-year frame for courthouse completion",
+        "what": "Cashers Valley housing project tied to county's new courthouse construction timeline"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "Appropriate funding source for Cashers Valley Road sewer extension ($88,400 commitment)",
+        "positions": [
+          {
+            "position": "Opposed using Rosenwald fund ($25,000) as proposed source; advocated for finding alternative from maintenance budget with larger balance; expressed concern about impact on Rosenwald area road/sidewalk improvements and Silverstein Park bathroom funding",
+            "who": "Councilwoman Pamela Holder"
+          },
+          {
+            "position": "Cautioned that maintenance budget line item is already allocated to non-revenue water efforts and new trucks; moving funds risks those priorities; acknowledged support for project but concerned about funding source trade-offs",
+            "who": "Councilman Lauren Weise"
+          },
+          {
+            "position": "Emphasized the 11th-hour nature of $88,000 request (quotes came in within weeks); stressed importance of knowing funding sources in advance given tight budgets; requested that council revisit decision in two weeks after examining all options with full information",
+            "who": "Councilman Dean Lidle"
+          },
+          {
+            "position": "Proposed three funding sources (water/sewer capital reserve, Rosenwald fund, water/sewer operating); stated willingness to present alternative options in two weeks but initially defended proposed combination; explained quotes came in late",
+            "who": "City Manager Wilson Cooper"
+          }
+        ]
+      },
+      {
+        "issue": "Framing of loitering/disruptive behavior ordinance as homelessness issue vs. broader community quality-of-life issue",
+        "positions": [
+          {
+            "position": "Argued ordinances disproportionately impact unhoused population; warned of creating criminal barriers to housing eligibility; advocated for working with service providers and existing plans rather than criminalization",
+            "who": "Peter Offen (public comment)"
+          },
+          {
+            "position": "Argued that ignoring disruptive behavior enables bad habits; emphasized personal responsibility and law enforcement as compassionate measure; cited tourism and business impacts; warned of community decline without enforcement",
+            "who": "Doug Powell (public comment)"
+          },
+          {
+            "position": "Pushed back against framing as homelessness issue; noted that data shows 52% of calls involve non-unhoused individuals; emphasized this is community-wide problem, not exclusive to unhoused population; stated preference not to fall into narrative trap",
+            "who": "Councilman Lauren Weise"
+          },
+          {
+            "position": "Acknowledged difficulty of balancing policy; explicitly rejected 'cruelty as policy' approach; emphasized that seeing unhoused person doesn't mean witnessing crime; called for mental health resources from state/federal government; reaffirmed commitment to safe housing as city goal; acknowledged behavioral health crisis requires resources beyond city capacity",
+            "who": "Councilman Aaron Baker"
+          },
+          {
+            "position": "Echoed baker's concern about balancing enforcement and support; emphasized need to tackle 'crisis from all ends' including law enforcement ability to act plus downstream social services and housing; committed to seriousness about underlying crisis",
+            "who": "Councilman Dean Lidle"
+          }
+        ]
+      },
+      {
+        "issue": "Legal interpretation of 'loitering' language and officer enforcement discretion",
+        "positions": [
+          {
+            "position": "Concerned that 'habitually loaf or loiter on the streets' is too vague and creates liability for officers; proposed amendment to make second clause ('obstruct or interfere with free passage') apply to first clause, or strike first part entirely to require actual obstruction for violation",
+            "who": "Councilman Aaron Baker"
+          },
+          {
+            "position": "Interpreted ordinance as two separate and independent clauses connected by comma: (1) habitually loaf/loiter, and (2) congregate to obstruct/interfere; noted this has been on books for long time; only penalty is changing; noted that any amendment to remove vagueness would be political decision",
+            "who": "City Attorney Mcceler"
+          },
+          {
+            "position": "Acknowledged discretion challenge; stated that 'loitering' might apply to single person intentionally obstructing passage, while 'congregating' would apply to multiple people; indicated officer judgment varies by specific situation; acknowledged amendment might be 'fair enough' to improve enforceability and reduce liability",
+            "who": "Chief Christy Wentzell"
+          },
+          {
+            "position": "Moved amended language: remove 'loitering generally' from section title; amend section 42-5(C) to read 'It shall be unlawful to loiter or congregate on the streets or sidewalks of the city in such a way as to obstruct or interfere with free passage into or out of any public business or private property' - making obstruction requirement apply to both loitering and congregating",
+            "who": "Councilman Aaron Baker (final position)"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": "$88,400 (verify)",
+        "fund": "Water/sewer fund (sources to be determined: water/sewer capital reserve, Rosenwald fund, and/or water/sewer operating)",
+        "item": "Cashers Valley Road sewer extension - city match"
+      },
+      {
+        "amount": "$100,000 per home up to",
+        "fund": "HUD ProHousing grant (pending approval)",
+        "item": "Rosenwald neighborhood home repair - proposed within HUD grant application"
+      },
+      {
+        "amount": "$2,300,000 (verify)",
+        "fund": "County facility maintenance",
+        "item": "Courthouse maintenance needs identified in county analysis"
+      }
+    ],
+    "pending": [
+      {
+        "date": "Two weeks after August 3, 2026",
+        "next_step": "Return with specific funding source options for council vote",
+        "what": "Budget amendment for Cashers Valley Road sewer extension funding sources - decision deferred pending two-week review"
+      },
+      {
+        "date": "To be determined with county",
+        "next_step": "County-city collaboration on structural analysis and cost estimates",
+        "what": "Feasibility study of old courthouse for potential city hall use"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "",
+        "speaker": "Peter Offen",
+        "summary": "Urged caution on ordinances that would criminalize conduct already covered by state law. Warned that criminal charges create barriers to affordable housing eligibility, perpetuating poverty. Advocated for enforcement of existing state law and oversight of new ordinances to prevent unfair targeting of unhoused people. Opposed license plate reader cameras as privacy risk and data vulnerability. Recommended working with service providers (Haven, Cove) to implement existing homelessness plan addressing root causes rather than criminalization.",
+        "topic": "Proposed ordinances criminalizing civil offenses; impact on unhoused population; license plate reader cameras"
+      },
+      {
+        "response": "",
+        "speaker": "Rodney Locks",
+        "summary": "Asked for definitions and clarification on multiple proposed ordinances: social district alcohol permits vs. open consumption, definition of 'loitering' and 'habitual loafing', reported ban on cruising midnight-6am, sidewalk obstruction rules vs. e-scooter/bike use, concealed weapons on public vs. county property, encampment policy location.",
+        "topic": "Clarity needed on proposed ordinances: social district alcohol rules, loitering definitions, cruising hours, sidewalk assembly, concealed weapons on public property, encampment policy"
+      },
+      {
+        "response": "",
+        "speaker": "Doug Powell",
+        "summary": "Argued that living on streets is not normal and communities should enforce laws to discourage this lifestyle as compassionate measure. Cited personal experience in another community addressing homelessness through business impact assessment. Recounted cautionary tale of Ventura, California's decline due to inadequate law enforcement response to disruptive behavior, culminating in random violence (stabbing death). Warned that ignoring enforcement issues while investing in tourism puts Brevard at risk of similar transformation.",
+        "topic": "Law enforcement and quality of life; homelessness as unsustainable; cautionary example from Ventura, California"
+      },
+      {
+        "response": "",
+        "speaker": "James Beal",
+        "summary": "Expressed appreciation for Bracken Trail and its developer while raising concerns about unintended consequences. Stated that nine properties on Pinnacle Road (formerly Mackie Ridge Road) are adversely affected because vehicle access was eliminated after trail construction. Residents can no longer drive to purchase groceries and return to unload. Claimed the city 'did something wrong' in eminent domain process and urged deeper investigation, stating council is uniquely positioned to solve problem.",
+        "topic": "Bracken Trail property access issues and city's eminent domain process"
+      },
+      {
+        "response": "",
+        "speaker": "Adam Perkins",
+        "summary": "Requested that MSD task force include Heart of Brevard organization given 30-year partnership and 4-year contract administration experience. Proposed two-phase process: Phase 1 (defining downtown needs and scope) should include Heart of Brevard's executive director or another executive committee member; Phase 2 (bid review/scoring) could maintain distance for conflict-of-interest concerns. Noted that North Carolina Main Street program confirmed involvement in Phase 1 is standard best practice and not a conflict. If direct representation excluded, requested ability to appoint representative from partner organization (tourism authority or downtown property owner).",
+        "topic": "Municipal Service District (MSD) task force composition and Heart of Brevard representation"
+      }
+    ],
+    "public_process": [
+      "Meeting is Brevard City Council regular meeting held August 3, 2026; transcript produced by automated speech recognition",
+      "Quorum confirmed present at start of meeting",
+      "Invocation provided by Associate Pastor Vic Foster of Glade Creek Baptist Church",
+      "Pledge of Allegiance recited",
+      "Draft agenda modifications made: removed Item M1 (MSD Task Force), added Item I1 (Cashers Valley Road Sewer Extension); amended agenda approved by motion",
+      "Public comment period held; speakers registered with city clerk; 30-second warnings given for time limits; three-minute limit enforced; five speakers addressed council on various topics",
+      "All roll call votes announced aloud; specific vote counts sometimes not recorded (described as 'all in favor' or 'opposed')",
+      "Two public hearings were held previously (July 20, 2026) for site triangle regulations and stormwater management amendments",
+      "Planning board recommendations included in council packets for both ordinance amendments",
+      "No closed sessions held during this meeting",
+      "Meeting concluded with remarks from council members and staff on future agenda items and community events",
+      "Note: Transcript quality issues noted - speech recognition mangles proper nouns, requires verification against source video for accuracy"
+    ],
+    "quotes": [
+      {
+        "speaker": "Councilman Aaron Baker",
+        "start": "02:13:49",
+        "text": "This is the people's building and keeping it civic."
+      },
+      {
+        "speaker": "Police Chief Christy Wentzell",
+        "start": "01:13:00",
+        "text": "Class three is the lowest level of non-felony charges."
+      },
+      {
+        "speaker": "Councilman Lauren Weise",
+        "start": "02:15:46",
+        "text": "I moved to Brevard in 2009. Still being discussed. 2026."
+      }
+    ],
+    "roll_call": [
+      "Mayor Moren Copel",
+      "Councilman Lauren Weise",
+      "Councilwoman Pamela Holder",
+      "Councilman and Mayor Prom Aaron Baker",
+      "City Clerk Denise Hodston",
+      "Councilman Gary Daniel",
+      "Councilman Dean Lidle",
+      "City Manager Wilson Cooper",
+      "City Attorney Mcceler (verify)"
+    ],
+    "schedule_changes": [
+      "Item M1 (Municipal Service District Task Force Proposal) removed from agenda and moved to future meeting",
+      "Item I1 (Cashers Valley Road Sewer Extension) added to agenda for early presentation due to HUD grant application deadline of August 3, 2026 at 11:59 PM"
+    ],
+    "unanswered": [
+      "Where can residents find definition of 'loitering' and 'habitual loafing' in city code?",
+      "Will there be written or verbal-only trespass warnings, and what documentation exists?",
+      "How many unique individuals represent the 182 calls for service in July (vs. repeat contacts)?",
+      "What is the complete list of city-owned properties subject to new operating hours and weapons restrictions under proposed ordinance?",
+      "What resources exist in Brevard (beyond Bread of Life, Haven, Sharing House, mobile crisis) for persons with behavioral/mental health issues?",
+      "Commitment: Police Department will conduct data collection improvements including new CAD clearance codes for unhoused population contacts, reinforced officer documentation, daily watch commander reports, and quarterly/annual reporting to council"
+    ],
+    "watchlist_hits": [
+      "affordable housing - Cashers Valley Road project for 26 homes for sale; 69-person wait list with Housing Assistance Corporation; Rosenwald neighborhood targeted for home repair program within HUD grant",
+      "homelessness - extensive discussion of quality-of-life ordinances and their impact on unhoused population; 48% of police calls in July involved unhoused individuals; 15 known repeat individuals; service provider collaboration (Bread of Life, Haven, Sharing House)",
+      "stormwater - adopted amendments to stormwater management ordinance establishing 20,000 square feet built-upon area threshold as development trigger; consistent with comprehensive plan and green growth audit",
+      "capital improvement plan - courthouse feasibility study initiated as potential city hall location; current city hall from 1970 requires major renovation or replacement; police department moved out due to basement water problems",
+      "rezoning/conditional use - no explicit rezoning items on agenda, but site triangle regulation and stormwater amendments affect development standards",
+      "public comment - detailed public comment period with five speakers addressing homelessness, law enforcement, trail access, and MSD task force representation",
+      "decorum - addressed distinction between lawful protest/assembly with sidewalk access maintained vs. loitering that obstructs passage; first amendment considerations noted by city attorney"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "transcript",
+      "meeting_date": "2026-07-20",
+      "title": "Brevard City Council | July 20, 2026 (transcript)",
+      "url": "https://www.youtube.com/watch?v=EIW0ZQEbI04"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approval of agenda",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approval of June 15, 2026 meeting minutes",
+        "who": "City Council"
+      },
+      {
+        "amount": 8575000,
+        "vote": "unanimous",
+        "what": "Approval of consent agenda including tax settlement, wastewater treatment plant capital amendment, and committee minutes",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approval of zoning map amendment for two parcels on Daver Road to PGX",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approval of Mountain Rush trail name for new Bracken Extension trail",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Approval of food vendor pilot program resolution",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous",
+        "what": "Reappointment of Lisa Connor to ABC board for three-year term and direction to staff to recruit member with retail or restaurant experience",
+        "who": "City Council"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "At later date",
+        "what": "Compile and provide data on loitering, open consumption, and related calls for service that would constitute behavior triggering enforcement",
+        "who": "Chief Christy Wentzell"
+      },
+      {
+        "by_when": "As part of stormwater master plan implementation",
+        "what": "Review and update stormwater enterprise fund fees to ensure equitable alignment with actual building impacts",
+        "who": "City Manager Wilson Hooper / Emily Brewer"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Recruit ABC board member with retail or restaurant experience",
+        "who": "City staff"
+      },
+      {
+        "by_when": "End of pilot program (December 31, 2026)",
+        "what": "Document and report on food vendor pilot program outcomes including vendor participation, business impact feedback, and compliance",
+        "who": "City staff"
+      },
+      {
+        "by_when": "2026-08-03",
+        "what": "Submit HUD PROHousing grant application for affordable housing projects",
+        "who": "City staff"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-08-03",
+        "what": "HUD PROHousing grant application deadline"
+      },
+      {
+        "date": "2026-12-31",
+        "what": "Food vendor pilot program operation period"
+      },
+      {
+        "date": "2026-11-30",
+        "what": "HUD PROHousing grant awards expected announcement"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "Jordan Street parking lot food vendor location within MSD (Merchant Service District)",
+        "positions": [
+          {
+            "position": "Expressed concern that vendors on city property won't pay MSD tax while competing brick-and-mortar restaurants across the street will have fees and taxes raised. Questioned how policy allows this. Found the location questionable.",
+            "who": "Gary Daniel"
+          },
+          {
+            "position": "Acknowledged hesitation but noted other downtown restaurants may not directly pay MSD tax, though it may be passed through rent. Suggested complaint collection may occur through other mechanisms. Supported pilot program and activating public spaces.",
+            "who": "Erin Baker"
+          },
+          {
+            "position": "Noted pilot program allows assessment of reaction from business owners. Expressed sensitivity to concerns but wanted to see data on impacts. Recommended quarterly or more frequent reporting on arrests and enforcement related to new ordinances.",
+            "who": "Lauren Wise"
+          }
+        ]
+      },
+      {
+        "issue": "Sight triangle requirements and enforcement on existing properties",
+        "positions": [
+          {
+            "position": "Asked whether violation enforcement is complaint-driven until there is crash history or complaint. Asked about the height of clear zone and how it interacts with existing property violations.",
+            "who": "L Dean Lidle"
+          },
+          {
+            "position": "Confirmed enforcement is typically complaint-driven and staff lacks capacity to proactively search for violations. When complaints come in, particularly through police or nuisance code reports, staff investigates.",
+            "who": "Erin Bland"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": 8575000,
+        "fund": "Capital improvement",
+        "item": "Wastewater treatment plant upgrade capital project amendment"
+      },
+      {
+        "amount": 400,
+        "fund": "Operating",
+        "item": "Food vendor pilot program setup costs for signage and electrical"
+      },
+      {
+        "amount": 100,
+        "fund": "Vendor permits",
+        "item": "Food vendor permit fee"
+      },
+      {
+        "amount": 10000000,
+        "fund": "Federal grant",
+        "item": "HUD Pathways to Removing Obstacles to Housing (PROHousing) grant request"
+      },
+      {
+        "amount": 10000000,
+        "fund": "HUD PROHousing grant",
+        "item": "Affordable homeownership community project (Cashers Valley Road) - Housing Assistance Corporation development"
+      },
+      {
+        "amount": 500000,
+        "fund": "HUD PROHousing grant",
+        "item": "Affordable housing preservation (Rosenwald community home repair)"
+      },
+      {
+        "amount": 600000,
+        "fund": "City donation",
+        "item": "City property donation to Housing Assistance Corporation (Cashers Valley)"
+      },
+      {
+        "amount": 400000,
+        "fund": "Dogwood Health Trust grant",
+        "item": "Sewer utility extension (Cashers Valley Road)"
+      }
+    ],
+    "pending": [
+      {
+        "date": null,
+        "next_step": "Return for vote at next meeting",
+        "what": "Proposed amendment to city unified development ordinance chapters 9 and 19 and code of ordinances chapter 38 regarding sight triangle regulations"
+      },
+      {
+        "date": null,
+        "next_step": "Return for vote at next meeting",
+        "what": "Proposed amendments to unified development ordinance chapters 6, 17, 19 and code of ordinances chapter 38 regarding stormwater management regulations"
+      },
+      {
+        "date": null,
+        "next_step": "Staff to recruit and interview candidates",
+        "what": "Recruitment for ABC board member with retail or restaurant experience"
+      },
+      {
+        "date": "2026-08-01",
+        "next_step": "Program begins operations",
+        "what": "Food vendor pilot program implementation"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "Thank you, Mr. Powell.",
+        "speaker": "Doug Powell",
+        "summary": "Powell commended council members for their participation in reading the Declaration of Independence on July 4th. He compared their readings to various founding fathers, noting the eloquence and authority with which they embodied the spirit of the occasion. He emphasized the importance of civil and religious liberties being endowed by Creator, making them permanent and unimpeachable.",
+        "topic": "Commendation for July 4th Declaration of Independence reading at main street stage"
+      },
+      {
+        "response": "Thank you, Mr. Locks.",
+        "speaker": "Rodney Locks",
+        "summary": "Locks asked council to develop a plan of action to ensure citizens can safely vote and access polling places in Brevard and Transylvania County. He did not discuss the property tax referendum, Senate Bill 50 on concealed carry, House Bill 437 anti-homeless initiative, or state budget cuts to minority business programs, but raised concerns about threats to judiciary and changes making voting access more difficult.",
+        "topic": "Voting access and protection in Brevard and Transylvania County"
+      },
+      {
+        "response": "Thank you, Mr. Powell.",
+        "speaker": "Doug Powell",
+        "summary": "Powell spoke on compassion and fairness regarding homelessness. Based on his ministry experience, he argued homelessness is a symptom of underlying addiction and mental health issues, not primarily a housing issue. He expressed concern that subsidizing homeless communities enables destructive behavior. He advocated for distinguishing between local residents and transients from other areas, noting that homeless people account for disproportionate emergency calls (20-50% vs. less than 1% of population). He argued true compassion requires making it uncomfortable for people not to change behavior, citing successes only when people become sober and productive.",
+        "topic": "Homelessness, compassion, and fairness in law enforcement response"
+      }
+    ],
+    "public_process": [
+      "Public comment period held at beginning of meeting. Speakers required to register with clerk, state name and address clearly, limit comments to three minutes or less, avoid repetition. Mayor warned when 30 seconds remained.",
+      "Four public hearings held: sight triangle regulations, stormwater management development regulations, loitering/trespassing/public intoxication ordinance, and HUD PROHousing grant application. Each hearing opened by motion, closed by motion. No speakers at three of the hearings; one speaker (Doug Powell) at loitering hearing.",
+      "Public hearing guidelines stated speakers should register, step to podium, state name and address clearly, be concise, avoid repetition, limit to five minutes or less with 30-second warning. Comments directed to full council, not individual members or staff. Public hearing noted as time for comments, not questions.",
+      "Quorum confirmed present at start of meeting by city clerk.",
+      "Agenda approved with proposed changes motion.",
+      "Meeting adjourned to closed session for economic development discussion.",
+      "Mayor provided ongoing 'meet the mayor' office hours at varying times (Thursday 11:30 a.m. to 1 p.m. in July, evening in August)."
+    ],
+    "quotes": [
+      {
+        "speaker": "Doug Powell",
+        "start": "00:14:30",
+        "text": "Our rights come from God, protecting even those who disbelieve."
+      },
+      {
+        "speaker": "Erin Bland",
+        "start": "00:19:58",
+        "text": "Sight triangles reduce crash likelihood allowing drivers time to avoid collisions."
+      },
+      {
+        "speaker": "Emily Brewer",
+        "start": "00:40:05",
+        "text": "Low impact development techniques incentivize more environmentally conscious infrastructure."
+      }
+    ],
+    "roll_call": [
+      "Mayor Moren Copelof",
+      "Councilman Lauren Wise",
+      "Councilwoman Pamela Holder",
+      "Councilman Erin Baker",
+      "Councilman Gary Daniel",
+      "Councilman L Dean Lidle",
+      "City Manager Wilson Hooper",
+      "City Clerk Denise Hodston",
+      "City Attorney Mac McKeler"
+    ],
+    "schedule_changes": [
+      "No agenda modifications announced during public comment period."
+    ],
+    "unanswered": [
+      "Pamela Holder asked for data and description of what conduct has taken place that would constitute enforcement and how big the loitering/homeless issue actually is in Brevard, and how to determine if someone is in the social district. Chief Wentzell deferred provision of data to a later date.",
+      "Gary Daniel asked whether the list of city-owned properties subject to trespassing ordinance is complete, citing parklets and public alleyways. Chief Wentzell confirmed the list may be incomplete.",
+      "Erin Baker asked whether there would be additional reporting requirements at the public safety committee level beyond annual crime statistics to catch potential overpolicing of loitering ordinance. No firm commitment made to specific reporting frequency.",
+      "Lauren Wise asked for clarification on how state general statutes versus local ordinances work, specifically whether loitering is addressed at state level. Chief Wentzell explained loitering alone is not a state crime except on state highways."
+    ],
+    "watchlist_hits": [
+      "affordable housing",
+      "rezoning",
+      "conditional use",
+      "stormwater",
+      "steep slope",
+      "homelessness",
+      "public comment",
+      "decorum",
+      "open meetings",
+      "agenda modification"
+    ]
+  },
+  {
+    "_extracted": "2026-08-06",
+    "_source": {
+      "body": "city",
+      "kind": "transcript",
+      "meeting_date": "2026-06-15",
+      "title": "Brevard City Council | June 15, 2026 (transcript)",
+      "url": "https://www.youtube.com/watch?v=9LVUWi6gAnc"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Modified agenda: moved item M2 to L1 (budget-related matter); added resolution for North Carolina Water Resources Development Grant for Norton Creek stream restoration to consent agenda",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Approved June 1, 2026 meeting minutes",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous",
+        "what": "Proclaimed June 19, 2026 as Juneteenth in the City of Brevard",
+        "who": "Mayor Copelof"
+      },
+      {
+        "amount": null,
+        "vote": "Motion passes",
+        "what": "Adopted Comprehensive Transportation Plan with modification: removed Railroad Avenue Extension (Project 17), replaced with Wilson Road extension project",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "All in favor",
+        "what": "Approved consent agenda items 1-9 including tax settlement report, asset inventory, resolution appointing Friends of the Accotink Trail representative, resolution accepting $8,575,000 funding modification for wastewater treatment plant upgrade phase one, and committee meeting minutes",
+        "who": "City Council"
+      },
+      {
+        "amount": 57000,
+        "vote": "Motion passes",
+        "what": "Established Parks and Recreation capital fund with $46,000 transfer from general fund and $11,000 from Rosenwald revitalization fund for sports complex capital project",
+        "who": "City Council"
+      },
+      {
+        "amount": 11000,
+        "vote": "All in favor",
+        "what": "Approved capital project amendment moving $11,000 from Rosenwald revitalization fund to Parks and Recreation capital improvement fund for sports complex project",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "Three in favor (Wise, Daniel, Weidel)",
+        "what": "Approved FY 2026-27 governing board budget allocation",
+        "who": "City Council (Lytle, Holder, Copelof recused)"
+      },
+      {
+        "amount": null,
+        "vote": "Four ayes, one no",
+        "what": "Approved FY 2026-27 overall budget ordinance with 3% COLA increase option",
+        "who": "City Council"
+      },
+      {
+        "amount": 60000,
+        "vote": "All in favor",
+        "what": "Approved budget amendment 2607 for stormwater utility fund increase",
+        "who": "City Council"
+      },
+      {
+        "amount": 240000,
+        "vote": "All in favor",
+        "what": "Approved budget amendment 2608 for water and sewer utility fund increase",
+        "who": "City Council"
+      },
+      {
+        "amount": 525000,
+        "vote": "All in favor",
+        "what": "Approved budget amendment 2609 for general fund increase",
+        "who": "City Council"
+      },
+      {
+        "amount": null,
+        "vote": "Two ayes, three nays",
+        "what": "Motion to add legislative request item to agenda for $300,000 bathrooms at Silverstein failed",
+        "who": "City Council"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "Tomorrow (day after meeting)",
+        "what": "Provide detailed road closure schedule and timing for Hillview Avenue culvert replacement project",
+        "who": "City Manager"
+      },
+      {
+        "by_when": "Before road closures begin (week of June 22, 2026)",
+        "what": "Conduct all-out publicity campaign to notify community of road closures during Hillview Avenue culvert replacement",
+        "who": "City"
+      },
+      {
+        "by_when": "July 2026 meeting with Berry Dunn",
+        "what": "Continue working with Berry Dunn to develop 6-month and 1-year strategic plan with measurable goals and priorities",
+        "who": "Police Department (Chief Wentzell)"
+      },
+      {
+        "by_when": "July 20, 2026",
+        "what": "Hold July 20th council meeting for possible deputy chief swearing-in",
+        "who": "Police Department"
+      },
+      {
+        "by_when": "To be scheduled",
+        "what": "Arrange full-day briefing with Representative Ferguson including staff, elected officials, legislative requests, and city tour",
+        "who": "Mayor Copelof"
+      },
+      {
+        "by_when": "Upon mutual adoption by all member governments",
+        "what": "Finalize Comprehensive Transportation Plan with removal of Railroad Avenue Extension and addition of Wilson Road extension as Project 17",
+        "who": "NCDOT/Land of Sky RPO"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "June 30, 2026",
+        "what": "FY 2026-27 budget approval deadline"
+      },
+      {
+        "date": "Mid to late August 2026",
+        "what": "Hillview Avenue culvert replacement project completion"
+      },
+      {
+        "date": "Early 2027",
+        "what": "Stormwater master plan completion"
+      },
+      {
+        "date": "June 19-21, 2026",
+        "what": "Juneteenth celebrations"
+      },
+      {
+        "date": "July 3-4, 2026",
+        "what": "Independence Day celebrations"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "Parks and Recreation capital fund structure: single project-specific fund vs. umbrella fund with multiple projects",
+        "positions": [
+          {
+            "position": "Advocated for comprehensive Parks and Recreation umbrella fund with sports complex as earmarked project, to ensure coordinated planning across all three recreation facilities (sports complex, Franklin Park, Silverstein), establish unified standards, and enable long-term capital improvement planning",
+            "who": "Weidel"
+          },
+          {
+            "position": "Initially recommended separate sports complex capital project fund to maintain specificity and prevent funds from being diverted to other purposes; noted preference for clear fund names to track distinct capital projects",
+            "who": "Luby (Finance Director)"
+          },
+          {
+            "position": "Supported Luby's initial approach, noting that the $46,000 and $11,000 were specifically targeted amounts based on engineering plan by McAdams for specific use",
+            "who": "Wise"
+          },
+          {
+            "position": "Agreed with spirit of Weidel's concerns about comprehensive planning but acknowledged trade-off: specific funds establish priority but limit flexibility for future needs and contingency money; suggested decision needed at project completion about leftover funds",
+            "who": "Baker"
+          },
+          {
+            "position": "Recalled earlier conversation supporting comprehensive recreational fund concept with sports complex as initial priority; supported Weidel's position",
+            "who": "Holder"
+          }
+        ]
+      },
+      {
+        "issue": "COLA adjustment: 2.7% vs. 3% for employee salary increase",
+        "positions": [
+          {
+            "position": "Recommended 3% option, noting $28,000 savings from tipper cart removal nearly equals cost to bump from 2.7% to 3%; argued 3% gets closer to matching CPI (reported 4.8-5%)",
+            "who": "City Manager Luby"
+          },
+          {
+            "position": "Concerned about losing merit raise opportunities; suggested 2.8% or 2.9% to preserve merit compensation pool funding",
+            "who": "Holder"
+          },
+          {
+            "position": "Supported 3% as important signal to staff that their work is valued; cited need to maintain competitive salaries to retain employees",
+            "who": "Wise"
+          },
+          {
+            "position": "Supported 3% citing new CPI report showing 4.2% inflation, immediate impact on salary ranges for open positions, and need for competitiveness",
+            "who": "Baker"
+          },
+          {
+            "position": "Acknowledged merit raises important but agreed $28,000 insufficient for effective merit pool; supported using money for COLA but emphasized merit raises should not be lost sight of",
+            "who": "Daniel"
+          }
+        ]
+      },
+      {
+        "issue": "Railroad Avenue Extension project in Comprehensive Transportation Plan",
+        "positions": [
+          {
+            "position": "Strongly opposed Railroad Avenue Extension (Project 17), raised alarm bells in TAC meeting; made motion to remove (failed); advocated for replacement with Wilson Road project as workable alternative; stated Railroad Avenue is not a bypass despite some calling it that",
+            "who": "Wise"
+          },
+          {
+            "position": "Responded that project on plan but acknowledged alternatives; supported Wilson Road project as replacement after discussion",
+            "who": "NCDOT/Vicky Easterling"
+          },
+          {
+            "position": "Agreed with Wise; noted project discussed for 20 years, bubbled up 10-12 years ago with public input causing shelving; supported removal and Wilson Road replacement",
+            "who": "Baker"
+          }
+        ]
+      },
+      {
+        "issue": "Legislative request addition for $300,000 bathroom facilities at Silverstein Park",
+        "positions": [
+          {
+            "position": "Requested addition of $300,000 for bathrooms at Silverstein to legislative request; noted request made to city manager before budget retreat but not included in retreat report; wanted updated legislative request submitted to representatives",
+            "who": "Holder"
+          },
+          {
+            "position": "Argued legislative requests are separate from budget, not part of current budget vote; suggested postponing discussion and potentially reopening entire legislative request in future agenda rather than singular project",
+            "who": "Baker"
+          },
+          {
+            "position": "Advised motion to add legislative request item to agenda would require amending agenda",
+            "who": "City Attorney"
+          },
+          {
+            "position": "Voted down (2 ayes, 3 nays) motion to amend agenda to add legislative request discussion",
+            "who": "Council majority"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": 46000,
+        "fund": "General Fund transfer",
+        "item": "Parks and Recreation capital fund for sports complex (parking lot and bathrooms)"
+      },
+      {
+        "amount": 11000,
+        "fund": "Rosenwald revitalization fund transfer",
+        "item": "Parks and Recreation capital fund for sports complex"
+      },
+      {
+        "amount": 60000,
+        "fund": "Stormwater Fund",
+        "item": "Stormwater utility fund increase"
+      },
+      {
+        "amount": 240000,
+        "fund": "Water and Sewer Fund",
+        "item": "Water and sewer utility fund increase"
+      },
+      {
+        "amount": 525000,
+        "fund": "General Fund (offset by FEMA reimbursements)",
+        "item": "General fund budget amendment"
+      },
+      {
+        "amount": 8575000,
+        "fund": "Wastewater treatment fund (verify)",
+        "item": "Wastewater treatment plant upgrade phase one funding modification"
+      }
+    ],
+    "pending": [
+      {
+        "date": "July 20, 2026 (next council meeting in one month)",
+        "next_step": "Vote on rezoning amendment",
+        "what": "Zoning map amendment for two parcels on Deaver Road to PGX - public hearing held, vote pending"
+      },
+      {
+        "date": "Construction begins Monday of next week; completion targeted mid to late August 2026",
+        "next_step": "Contractor to provide detailed road closure schedule tomorrow; public notification campaign",
+        "what": "Hillview Avenue culvert replacement project"
+      },
+      {
+        "date": "July 20, 2026 council meeting",
+        "next_step": "Swearing-in ceremony",
+        "what": "Deputy Chief confirmation and swearing-in"
+      },
+      {
+        "date": "Early 2027",
+        "next_step": "Plan delivery",
+        "what": "Stormwater master plan completion"
+      },
+      {
+        "date": "July 2026 (postponed from June due to personnel staffing issues)",
+        "next_step": "Develop 6-month and 1-year strategic plan",
+        "what": "Police Department follow-up meeting with Berry Dunn"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "Mayor thanked Sharing House as strong community partner",
+        "speaker": "Unidentified speaker (Sharing House representative)",
+        "summary": "45th anniversary celebration; 14% increase in services this year on top of hurricane year; reported out of space and need for more showers, funding; 130 volunteers weekly, 270 on roster; thanked city as community partner",
+        "topic": "Sharing House services and community need"
+      },
+      {
+        "response": "No direct response recorded",
+        "speaker": "Rodney Locks",
+        "summary": "Praised council thoughtfulness but noted citizens cannot afford continued tax increases; criticized inability to keep from raising property taxes 2.5 cents, water rates 4.5 cents, and municipal service tax 65 cents; noted 57% of general budget for personnel, 28% for operations; warned of worse budget year ahead; recommended independent assessment of council priorities, staffing, healthcare plans, and investments",
+        "topic": "Budget concerns and city spending priorities"
+      },
+      {
+        "response": "No direct response recorded",
+        "speaker": "Randy Austin",
+        "summary": "Business owner at 78 West Main Street (West Main Barber Shop) for 38 years; encouraged council to start conversations about parking garage/lots before Ecusta Trail finished; distinguished between homeless people and those with substance abuse problems; reported troubling behavior on benches, trash, liquor consumption, fornication; requested police be given tools to address the problem",
+        "topic": "Downtown Main Street parking and homelessness/substance abuse"
+      },
+      {
+        "response": "Mayor thanked Powell and noted council members received blue wristbands from him",
+        "speaker": "Doug Powell",
+        "summary": "Discussed misconceptions about founding of United States; urged citizens to watch council meetings and read Declaration of Independence directly; described sacrifices of 56 signers: seven lost lives, two lost health, five were prisoners of war, 17 lost estates/fortunes, five incurred heavy debt, four lost children, four lost wives; quoted John Adams on preserving freedom for posterity",
+        "topic": "Historical accuracy regarding founding fathers and national founding principles"
+      },
+      {
+        "response": "Mayor welcomed her, noted meeting with her a couple weeks ago, expressed looking forward to fuller briefing with staff and officials",
+        "speaker": "Anna Ferguson, NC House Representative (newly appointed)",
+        "summary": "Appointed in spring, began session with less than a week notice; watches city council livestreams; stated role is to be conduit between city and state to help obtain needed resources; emphasized expertise lies with council and she is there to listen and facilitate state support",
+        "topic": "Introduction and role as representative"
+      }
+    ],
+    "public_process": [
+      "Public comment period held with sign-up requirement; speakers registered with city clerk; three-minute limit per speaker with 30-second warning; direct comments to full council, not individual members or staff",
+      "Public hearing held for zoning map amendment for two parcels on Deaver Road; no speakers signed up; public hearing opened and closed per standard procedure",
+      "Planning board reviewed rezoning proposal at May meeting and unanimously recommended approval; state highway also approved",
+      "City held special half-day budget session after public input session specifically to address issues raised by public",
+      "City held town hall meeting at Rosenwald with great attendance to discuss projects and gather community input",
+      "Budget process included multiple workshops with council on June 5th for final decision-making",
+      "Comprehensive Transportation Plan developed with county transportation advisory board as steering committee; larger monthly community working group also gathered; federal criteria considered to ensure federal grant compatibility; process included public outreach and consensus-building",
+      "City council meetings livestreamed and available online; hard copies of comprehensive plans mailed to council members; public documents available online",
+      "Ethical recusal requirement enforced: Lytle, Holder, and Copelof recused from governing board budget discussion due to nonprofit board membership"
+    ],
+    "quotes": [
+      {
+        "speaker": "Rodney Locks",
+        "start": "00:13:53",
+        "text": "Council needs a total reassessment of its priorities, level of service, health care plans, staffing expenditures, and investments."
+      },
+      {
+        "speaker": "Doug Powell",
+        "start": "00:20:11",
+        "text": "Posterity, you will never know how much it cost the present generation to preserve your freedom."
+      },
+      {
+        "speaker": "City Manager Luby",
+        "start": "02:00:14",
+        "text": "This is how to hurt the most people the least."
+      }
+    ],
+    "roll_call": [
+      "Maureen Copelof, Mayor",
+      "City Council members present (quorum confirmed)"
+    ],
+    "schedule_changes": [
+      "July 20th council meeting will be held (normally this would be optional determination)",
+      "Police Department meeting with Berry Dunn postponed from June to July 2026 due to personnel staffing issues"
+    ],
+    "unanswered": [
+      "How will future councils manage contingency money left over after capital projects are completed, and should such money stay in the fund or return to general fund?",
+      "What is the comprehensive long-term capital improvement plan for all three recreation facilities (sports complex, Franklin Park, Silverstein)?",
+      "What are the unified standards and facility specifications that should apply across all city recreation properties?",
+      "What was the specific public input history regarding Project 17 (Railroad Avenue Extension) that led to its shelving 10-12 years ago?",
+      "Will the city pursue higher COLA adjustments in future years to continue tracking CPI inflation (currently 4.8-5%)?",
+      "What is the exact schedule and duration for each Hillview Avenue/Cashiers Valley Road closure during culvert replacement?",
+      "How will merit compensation pool be funded and implemented in subsequent fiscal years after FY 2026-27?"
+    ],
+    "watchlist_hits": [
+      "homelessness - Randy Austin public comment regarding substance abuse and unhoused individuals on Main Street",
+      "affordable housing - Not explicitly discussed but implied in homelessness concerns",
+      "rezoning - Public hearing and potential approval of zoning map amendment for two Deaver Road parcels to PGX (Pisgah Gateway District)",
+      "conditional use - Not discussed",
+      "stormwater - Budget amendment for stormwater master plan funding increase; Hillview Avenue culvert project involves stormwater",
+      "capital improvement plan - Comprehensive Transportation Plan adopted; sports complex capital project established; parks and recreation capital planning discussed",
+      "public comment - Multiple public comment speakers addressing budget, downtown issues, and historical concerns",
+      "decorum - Public comment rules established (3-minute limit, no repetition, direct to council)",
+      "open meetings - Representative Ferguson attending council meeting; livestreaming of meetings mentioned",
+      "agenda modification - Motion made to modify agenda (moving M2 to L1, adding resolution to consent agenda); motion to amend agenda to add legislative request item (failed)"
+    ]
+  }
+]
