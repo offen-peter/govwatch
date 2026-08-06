@@ -35,6 +35,7 @@ import os
 import re
 import sys
 import json
+import math
 import smtplib
 import collections
 import datetime as dt
@@ -724,6 +725,12 @@ ASK_STOPWORDS = {
 # check is worth less than one built from 10,000 they might.
 ASK_MAX_CHARS = 120_000
 
+# A second bound, on count rather than size. The character budget alone
+# would happily pass sixty weak matches, and an answer assembled from
+# sixty loosely related paragraphs is worse than one from the fifteen
+# that actually bear on the question, as well as costing more.
+ASK_MAX_PARAGRAPHS = 40
+
 
 def _ask_terms(question: str) -> list[str]:
     words = re.findall(r"[a-z0-9'\-]{3,}", question.lower())
@@ -759,7 +766,7 @@ def _grep_transcripts(terms: list[str], budget: int = ASK_MAX_CHARS):
     corpus is a few hundred paragraphs per meeting, not a search engine
     problem.
     """
-    hits = []
+    paras = []
     for path in sorted(TRANSCRIPTS.glob("*.md")):
         raw = path.read_text(encoding="utf-8")
         meta = _frontmatter(raw)
@@ -768,14 +775,40 @@ def _grep_transcripts(terms: list[str], budget: int = ASK_MAX_CHARS):
             para = para.strip()
             if not para or para.startswith((">", "#")):
                 continue
-            low = para.lower()
-            score = sum(1 for t in terms if t in low)
-            if score:
-                hits.append([score, path.name, meta, para])
+            paras.append((path.name, meta, para, para.lower()))
+
+    # Weight rare terms above common ones, roughly as tf-idf does.
+    #
+    # Plain term counting ranks badly on real questions. "zoning variance
+    # on Broad Street" matched 72 paragraphs across every meeting in the
+    # archive, because the county offices are at 101 S. Broad St. and the
+    # word street is everywhere, while zoning and variance are the terms
+    # that actually carry the question. Counting matches treats all four
+    # as equal.
+    #
+    # A term appearing in most paragraphs is behaving like a stopword for
+    # this corpus whatever the dictionary says, so it is dropped outright
+    # rather than merely down-weighted.
+    total_paras = len(paras) or 1
+    df = {t: sum(1 for _n, _m, _p, low in paras if t in low) for t in terms}
+    useful = [t for t in terms if 0 < df[t] <= total_paras * 0.5]
+    if not useful:
+        # Every term is either absent or ubiquitous. Fall back to whatever
+        # was present, so a valid question about a common subject still
+        # returns something.
+        useful = [t for t in terms if df[t]]
+    weight = {t: 1.0 / (1 + math.log(df[t])) for t in useful}
+
+    hits = []
+    for name, meta, para, low in paras:
+        matched = [t for t in useful if t in low]
+        if matched:
+            hits.append([sum(weight[t] for t in matched), name, meta, para])
 
     considered = len(hits)
     hits.sort(key=lambda h: h[1], reverse=True)   # newest meeting first
     hits.sort(key=lambda h: -h[0])                # then best match, stably
+    hits = hits[:ASK_MAX_PARAGRAPHS]
 
     kept, total = [], 0
     for h in hits:
@@ -783,7 +816,7 @@ def _grep_transcripts(terms: list[str], budget: int = ASK_MAX_CHARS):
             break
         kept.append(h)
         total += len(h[3])
-    return kept, total, considered
+    return kept, total, considered, df, useful
 
 
 def _format_excerpts(hits) -> str:
@@ -819,9 +852,22 @@ def ask(question: str, dry: bool = False) -> None:
     of the answer can point at a meeting and a timestamp.
     """
     terms = _ask_terms(question)
-    hits, total, considered = _grep_transcripts(terms)
+    hits, total, considered, df, useful = _grep_transcripts(terms)
 
-    print(f"terms: {', '.join(terms)}")
+    # Report each term's standing, because a term the archive has never
+    # heard of contributes nothing and the answer then rests entirely on
+    # whichever terms did match. Silently answering a narrower question
+    # than the one asked is the failure worth guarding against here.
+    absent = [t for t in terms if not df.get(t)]
+    common = [t for t in terms if df.get(t) and t not in useful]
+    print("terms: " + ", ".join(f"{t}({df.get(t, 0)})" for t in terms))
+    if absent:
+        print(f"  not in the archive at all: {', '.join(absent)}")
+    if common:
+        print(f"  in over half of all paragraphs, so ignored: {', '.join(common)}")
+    if absent and len(absent) == len(terms):
+        print("  every term is absent, so there is nothing to answer from")
+
     print(f"{considered} matching paragraph(s) in the archive, "
           f"{len(hits)} within budget, {total:,} chars "
           f"~ {total // 4:,} tokens")
@@ -837,7 +883,7 @@ def ask(question: str, dry: bool = False) -> None:
     if dry:
         print("\nDRY RUN. No API call, no spend. Best matches:\n")
         for score, name, _meta, para in hits[:8]:
-            print(f"  [{score} term(s)] {name}")
+            print(f"  [{score:.2f}] {name}")
             print(f"    {para[:180]}\n")
         return
 
