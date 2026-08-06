@@ -180,12 +180,8 @@ def poll(only_bodies: set[str] | None = None, dry: bool = False) -> list[dict]:
     watchlist = CONFIG.get("watchlist", [])
 
     print(f"{len(fresh)} new document(s)")
-    new_records, settled = _extract_all(fresh, brief, watchlist)
-    for doc in settled:
-        _remember(seen, doc)
+    new_records = _extract_all(fresh, brief, watchlist, None, seen, records)
 
-    _save(SEEN, seen)
-    _save(RECORDS, records + new_records)
     _save(FAILURES, {
         "run": dt.datetime.now().isoformat(timespec="seconds"),
         "mode": "poll",
@@ -237,14 +233,9 @@ def transcribe(only_bodies: set[str] | None = None, dry: bool = False) -> list[d
     # Same rule as poll: seen is written from the extraction verdict, not
     # from having tried. Retrying costs nothing extra here, since the
     # transcript markdown and its pointer file already exist, so a retry
-    # skips straight past captions and Whisper.
-    new_records, settled = _extract_all(fresh, brief, watchlist, roster)
-    for doc in settled:
-        _remember(seen, doc)
-
-    _save(SEEN, seen)
-    _save(RECORDS, records + new_records)
-    return new_records
+    # skips straight past captions and Whisper and only repeats the
+    # Haiku call.
+    return _extract_all(fresh, brief, watchlist, roster, seen, records)
 
 
 # ============================================================== dry run
@@ -366,30 +357,43 @@ def _dry_report_videos(only_bodies: set[str] | None, vcfg: dict) -> None:
           f"transcript\n  and would be reused rather than fetched again.\n")
 
 
-def _extract_all(docs, brief, watchlist, roster=None):
+def _extract_all(docs, brief, watchlist, roster, seen: dict, records: list):
     """
-    One Haiku call per document. Returns (records, settled).
+    One Haiku call per document. Returns the records added this call.
 
-    settled is the documents that may now be recorded in seen.json, and
-    it is deliberately not the same as docs. A document is settled when
-    extraction reached a verdict about it, not merely when we tried:
+    Owns its own persistence, and writes after every document rather
+    than once at the end. A document is recorded as seen when extraction
+    reached a verdict about it, not merely when we tried:
 
-      returned a record   settled, it worked
-      returned {}         settled, the content is unusable and always
-                          will be, either too short or unparseable
-      raised              NOT settled. Auth, network and rate limit
+      returned a record   seen, it worked
+      returned {}         seen, the content is unusable and always will
+                          be, either too short or unparseable
+      raised              NOT seen. Auth, network and rate limit
                           failures all land here and all are temporary.
                           Leave it unseen so the next run tries again.
 
-    This distinction is the whole point. Recording a document as seen
-    before knowing extraction worked means one bad run silently consumes
-    the backlog: the documents are marked handled, the records are
-    empty, and nothing ever revisits them. That is exactly what the
-    2026-08-05 tick did, 26 documents marked seen against an empty
-    records.json, because the API rejected every call and the per
-    document except swallowed it.
+    Two orderings here are load bearing, and both were learned by
+    getting them wrong.
+
+    Persist before closing the window. The window is the pipeline's
+    claim that it already holds an artifact, so closing one without
+    having saved the record means the pipeline stops looking for
+    something it cannot show you. Saving first makes the failure mode
+    harmless: a window that fails to close just gets rechecked, and
+    seen.json stops the document being extracted twice.
+
+    Save every document, not every run. On 2026-08-06 a transcribe run
+    extracted three transcripts, closed their video windows, then died
+    before the single save at the end. acquired.json had advanced,
+    records.json had not, and three meetings were marked as held while
+    the records for them were gone. Batching the write meant a crash
+    discarded every success that preceded it.
+
+    _close_window is also inside a try now. It reads the calendar, which
+    can touch the network, and no bookkeeping step should be able to
+    kill a run that has already done the expensive part.
     """
-    out, settled = [], []
+    added = []
     for doc in docs:
         try:
             rec = brief.extract(doc.to_dict(), watchlist, roster)
@@ -397,15 +401,28 @@ def _extract_all(docs, brief, watchlist, roster=None):
             print(f"extraction failed, leaving unseen for a retry: "
                   f"{doc.title}: {e}")
             continue
-        settled.append(doc)
+
+        _remember(seen, doc)
+        if rec:
+            rec["_extracted"] = dt.date.today().isoformat()
+            records.append(rec)
+            added.append(rec)
+
+        # Durable before bookkeeping, and before the next API call.
+        _save(SEEN, seen)
+        _save(RECORDS, records)
+
         if not rec:
             print(f"nothing extractable in {doc.title}, not retrying")
             continue
-        rec["_extracted"] = dt.date.today().isoformat()
-        out.append(rec)
-        _close_window(doc)
+
+        try:
+            _close_window(doc)
+        except Exception as e:
+            print(f"window bookkeeping failed for {doc.title}, "
+                  f"it will be rechecked: {e}")
         print(f"extracted {doc.body} {doc.kind}: {doc.title}")
-    return out, settled
+    return added
 
 
 # =============================================================== digest
