@@ -178,11 +178,11 @@ def poll(only_bodies: set[str] | None = None, dry: bool = False) -> list[dict]:
 
     records = _load(RECORDS, [])
     watchlist = CONFIG.get("watchlist", [])
-    for doc in fresh:
-        _remember(seen, doc)
 
     print(f"{len(fresh)} new document(s)")
-    new_records = _extract_all(fresh, brief, watchlist)
+    new_records, settled = _extract_all(fresh, brief, watchlist)
+    for doc in settled:
+        _remember(seen, doc)
 
     _save(SEEN, seen)
     _save(RECORDS, records + new_records)
@@ -231,15 +231,16 @@ def transcribe(only_bodies: set[str] | None = None, dry: bool = False) -> list[d
         only_bodies=only_bodies,
     )
 
-    fresh = []
-    for doc in docs:
-        if doc.uid in seen:
-            continue
-        _remember(seen, doc)
-        fresh.append(doc)
+    fresh = [d for d in docs if d.uid not in seen]
 
     print(f"{len(fresh)} new transcript(s)")
-    new_records = _extract_all(fresh, brief, watchlist, roster)
+    # Same rule as poll: seen is written from the extraction verdict, not
+    # from having tried. Retrying costs nothing extra here, since the
+    # transcript markdown and its pointer file already exist, so a retry
+    # skips straight past captions and Whisper.
+    new_records, settled = _extract_all(fresh, brief, watchlist, roster)
+    for doc in settled:
+        _remember(seen, doc)
 
     _save(SEEN, seen)
     _save(RECORDS, records + new_records)
@@ -365,27 +366,46 @@ def _dry_report_videos(only_bodies: set[str] | None, vcfg: dict) -> None:
           f"transcript\n  and would be reused rather than fetched again.\n")
 
 
-def _extract_all(docs, brief, watchlist, roster=None) -> list[dict]:
+def _extract_all(docs, brief, watchlist, roster=None):
     """
-    One Haiku call per document. For transcripts this call does speaker
-    identification as well, see brief.extract on why those are not two
-    passes any more.
+    One Haiku call per document. Returns (records, settled).
+
+    settled is the documents that may now be recorded in seen.json, and
+    it is deliberately not the same as docs. A document is settled when
+    extraction reached a verdict about it, not merely when we tried:
+
+      returned a record   settled, it worked
+      returned {}         settled, the content is unusable and always
+                          will be, either too short or unparseable
+      raised              NOT settled. Auth, network and rate limit
+                          failures all land here and all are temporary.
+                          Leave it unseen so the next run tries again.
+
+    This distinction is the whole point. Recording a document as seen
+    before knowing extraction worked means one bad run silently consumes
+    the backlog: the documents are marked handled, the records are
+    empty, and nothing ever revisits them. That is exactly what the
+    2026-08-05 tick did, 26 documents marked seen against an empty
+    records.json, because the API rejected every call and the per
+    document except swallowed it.
     """
-    out = []
+    out, settled = [], []
     for doc in docs:
         try:
             rec = brief.extract(doc.to_dict(), watchlist, roster)
         except Exception as e:
-            print(f"extraction failed for {doc.title}: {e}")
+            print(f"extraction failed, leaving unseen for a retry: "
+                  f"{doc.title}: {e}")
             continue
+        settled.append(doc)
         if not rec:
-            print(f"nothing extracted from {doc.title}, skipping")
+            print(f"nothing extractable in {doc.title}, not retrying")
             continue
         rec["_extracted"] = dt.date.today().isoformat()
         out.append(rec)
         _close_window(doc)
         print(f"extracted {doc.body} {doc.kind}: {doc.title}")
-    return out
+    return out, settled
 
 
 # =============================================================== digest
