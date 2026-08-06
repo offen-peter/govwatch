@@ -660,6 +660,37 @@ MODES = {
 DRY_CAPABLE = ("tick", "poll", "transcribe", "digest")
 
 
+def _require_api_key() -> None:
+    """
+    Fail fast, before any collection, when the key is missing.
+
+    GitHub substitutes an empty string for ${{ secrets.NAME }} when no
+    secret of that name exists, so the variable arrives present and
+    blank rather than absent. brief.py's os.environ[...] therefore does
+    not raise, anthropic.Anthropic constructs happily on an empty key,
+    and every call fails auth. The per document except in _extract_all
+    then turns that into one swallowed line per document: a run that
+    fetches every PDF, extracts nothing, and exits 0.
+
+    That happened twice, on 2026-08-05 and 2026-08-06. Checking here
+    turns 25 identical errors and a wasted crawl into one message.
+    """
+    if (os.environ.get("ANTHROPIC_API_KEY") or "").strip():
+        return
+    raise SystemExit(
+        "ANTHROPIC_API_KEY is empty or unset, stopping before doing any work.\n"
+        "\n"
+        "In GitHub Actions an empty value means no repository secret of that\n"
+        "exact name exists. GitHub substitutes an empty string rather than\n"
+        "failing, so the variable is present and blank.\n"
+        "\n"
+        "Check Settings, Secrets and variables, Actions, Repository secrets.\n"
+        "The name must match ANTHROPIC_API_KEY exactly, with no trailing\n"
+        "space, and be a repository secret rather than an environment or\n"
+        "organization one unless the workflow declares that environment."
+    )
+
+
 def main() -> int:
     args = list(sys.argv[1:])
     dry = False
@@ -678,6 +709,11 @@ def main() -> int:
               f"without writing or spending.")
         print("it applies to: " + ", ".join(DRY_CAPABLE))
         return 2
+
+    # DRY_CAPABLE is exactly the set of modes that reach the API, so it
+    # doubles as the set that needs a key. A dry run never calls out.
+    if mode in DRY_CAPABLE and not dry:
+        _require_api_key()
 
     MODES[mode](dry)
     return 0

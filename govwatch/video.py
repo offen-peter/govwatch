@@ -397,14 +397,23 @@ def fetch_captions(ref: VideoRef) -> str | None:
     dest.mkdir(exist_ok=True)
     for args in (["--write-subs", "--sub-langs", "en.*"],
                  ["--write-auto-subs", "--sub-langs", "en.*"]):
-        subprocess.run(
+        proc = subprocess.run(
             ["yt-dlp", "--skip-download", "--sub-format", "vtt",
              *args, "-o", str(dest / "cap"), ref.media_url],
-            capture_output=True, timeout=300,
+            capture_output=True, text=True, timeout=300,
         )
         vtts = list(dest.glob("*.vtt"))
         if vtts:
             return _vtt_to_text(vtts[0].read_text(errors="ignore"))
+        if proc.returncode != 0:
+            # yt-dlp's own message is the only thing that separates "this
+            # video has no caption track", which is normal and means fall
+            # through to Whisper, from "YouTube refused the request",
+            # which is not normal and Whisper cannot rescue because the
+            # audio download uses the same blocked client. Throwing the
+            # stderr away made those two look identical.
+            tail = " ".join((proc.stderr or "").strip().splitlines()[-2:])
+            print(f"yt-dlp captions failed for {ref.title}: {tail[:400]}")
     return None
 
 
@@ -540,12 +549,19 @@ def _download_audio(ref: VideoRef) -> Path:
         )
         tmp.unlink(missing_ok=True)
     else:
-        subprocess.run(
+        proc = subprocess.run(
             ["yt-dlp", "-f", "bestaudio", "-x", "--audio-format", "m4a",
              "--postprocessor-args", "-ac 1 -ar 16000",
              "-o", str(WORK / f"{ref.vid}.%(ext)s"), ref.media_url],
-            check=True, capture_output=True, timeout=3600,
+            capture_output=True, text=True, timeout=3600,
         )
+        if proc.returncode != 0:
+            # Raise with what yt-dlp actually said. check=True alone
+            # reports only the exit status, which tells you nothing about
+            # whether the video is private, the extractor is broken, or
+            # YouTube is refusing this IP.
+            tail = " ".join((proc.stderr or "").strip().splitlines()[-3:])
+            raise RuntimeError(f"yt-dlp audio download failed: {tail[:500]}")
     return dest
 
 
