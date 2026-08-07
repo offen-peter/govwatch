@@ -239,6 +239,14 @@
     "title": "City Council 2026-08-03: Agenda Packet",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7363,plainText=false)"
   },
+  "e431ef190847564c": {
+    "body": "county",
+    "first_seen": "2026-08-07",
+    "kind": "notice",
+    "meeting_date": "2026-08-07",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
+  },
   "ec2e47c4114298d7": {
     "body": "county",
     "first_seen": "2026-08-06",

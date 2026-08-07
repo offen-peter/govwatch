@@ -4024,5 +4024,61 @@
       "public comment period rules and decorum established",
       "closed session held for attorney-client privilege and confidential matters"
     ]
+  },
+  {
+    "_extracted": "2026-08-07",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-08-07",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-11",
+        "what": "See Off Solid Waste Collection Center closure for facility maintenance"
+      },
+      {
+        "date": "2026-08-13",
+        "what": "See Off Solid Waste Collection Center reopens"
+      },
+      {
+        "date": "2026-08-20",
+        "what": "Planning Board Public Hearing"
+      },
+      {
+        "date": "2026-08-24",
+        "what": "Board of Commissioners regular meeting"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Planning Board Public Hearing scheduled for August 20, 2026 at 6:00 PM",
+      "Community Transportation Program Application Public Hearing noticed",
+      "Joint Historic Preservation Commission Public Hearing held",
+      "Tourism Development Authority Budget Proposal public hearing held",
+      "Board of Commissioners seeking applications to Citizen Advisory Councils",
+      "FY 2027 Recommended Budget presented to Board of Commissioners and available for public review"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of Commissioners July 27, 2026 regular meeting cancelled",
+      "Board of Commissioners August 10, 2026 regular meeting cancelled",
+      "Transportation Advisory Board (TAB) regular quarterly meeting scheduled July 27, 2026",
+      "TCTDA Grant Committee special meeting scheduled July 28, 2026",
+      "SWCD Board of Supervisors June 18 meeting cancelled; resumes July 16",
+      "Tourism Development Authority Destination Infrastructure Committee meeting cancelled July 1, 2026"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "transfer station",
+      "Joint School Bond Project Committee",
+      "public comment",
+      "open meetings"
+    ]
   }
 ]
