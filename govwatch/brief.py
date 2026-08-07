@@ -45,6 +45,13 @@ MAX_INPUT_CHARS = 600_000
 # of a brief with nothing to show it happened.
 MAX_SYNTH_CHARS = 400_000
 
+# Output ceiling for one brief. Raised from 8,000 because a brief that
+# covers five meetings across four bodies, with a section per body and a
+# gaps list that names every document not retrieved, is a long document,
+# and being cut off mid sentence at the end is a failure the reader has
+# to notice for themselves.
+SYNTH_MAX_TOKENS = 16_000
+
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 BODY_NAMES = {
@@ -343,7 +350,7 @@ def synthesize(records: list[dict], missing: list[str], period: str) -> str:
 
     msg = client.messages.create(
         model=SYNTH_MODEL,
-        max_tokens=8000,
+        max_tokens=SYNTH_MAX_TOKENS,
         system=SYNTH_SYSTEM,
         messages=[{
             "role": "user",
@@ -354,4 +361,23 @@ def synthesize(records: list[dict], missing: list[str], period: str) -> str:
             ),
         }],
     )
-    return "".join(b.text for b in msg.content if b.type == "text").strip()
+    out = "".join(b.text for b in msg.content if b.type == "text").strip()
+
+    if msg.stop_reason == "max_tokens":
+        print(f"WARNING: synthesis hit the {SYNTH_MAX_TOKENS} token output cap. "
+              f"The brief is cut off at the end. Raise SYNTH_MAX_TOKENS or "
+              f"narrow digest_days.")
+
+    # On 2026-08-07 this returned nothing at all, and digest wrote the
+    # empty string out as briefs/2026-08-07-brief.md and committed it. A
+    # brief is the one thing here that is pure output, so an empty one is
+    # not a degraded result, it is a failed run wearing the costume of a
+    # successful one. Refuse rather than write it.
+    if len(out) < 200:
+        raise RuntimeError(
+            f"synthesis returned {len(out)} characters from {len(records)} "
+            f"records, stop_reason={msg.stop_reason!r}, "
+            f"{len(msg.content)} content block(s) of type(s) "
+            f"{[b.type for b in msg.content]}. Refusing to write that as a brief."
+        )
+    return out

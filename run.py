@@ -443,8 +443,9 @@ def digest(force: bool = False, dry: bool = False) -> str | None:
     the meeting happened, and windowing on meeting date would drop them
     on the floor.
     """
-    from govwatch import brief
-
+    # brief is imported after the dry return below, not here. Importing it
+    # builds an Anthropic client, which needs a key, and a dry digest that
+    # demands a key it never uses is not a dry run.
     records = _load(RECORDS, [])
     days = CONFIG.get("digest_days", 14)
     today = dt.date.today()
@@ -477,6 +478,8 @@ def digest(force: bool = False, dry: bool = False) -> str | None:
             print(f"    - {m[:110]}")
         print()
         return None
+
+    from govwatch import brief
 
     text = brief.synthesize(window, missing, period)
 
