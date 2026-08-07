@@ -61,7 +61,20 @@ CALENDAR = STATE / "calendar.json"
 ACQUIRED = STATE / "acquired.json"
 CHECKED = STATE / "last_checked.json"
 
-BODIES = ("county", "city", "schools")
+BODIES = ("county", "city", "schools", "elections")
+
+# Which artifacts a body actually produces. A body absent from here is
+# assumed to produce all of them.
+#
+# The elections board publishes minutes and nothing else. Opening a video
+# window for it would be worse than useless: a video window is what makes
+# the workflow install faster-whisper, ffmpeg, deno and pull the token
+# provider image, about three minutes of setup, to go looking for a
+# recording that does not exist. An agenda window would be merely
+# pointless, since the board publishes none.
+BODY_ARTIFACTS = {
+    "elections": ("minutes",),
+}
 
 
 @dataclass
@@ -219,6 +232,31 @@ def from_mobilize() -> list[Meeting]:
     return out
 
 
+def from_boe_schedule() -> list[Meeting]:
+    """
+    The elections board's own six month schedule PDF.
+
+    Authoritative for that body, and not a supplement. The other three
+    keep a standing rhythm that a recurrence rule can approximate when
+    every other source fails. This one alternates between monthly and
+    near daily depending on where it sits in an election cycle, so there
+    is no rule to fall back on. If the PDF cannot be read, the honest
+    answer is that we do not know when they meet.
+
+    Note these meetings are not in tcdp-shared.js and do not need to be.
+    The treat-as-cancelled rule in build() only applies to meetings that
+    came from a recurrence rule, so these survive their absence from it.
+    """
+    from govwatch.sources import BoardOfElections
+
+    out = []
+    for when, at, desc in BoardOfElections().scheduled_meetings():
+        title = f"{desc.title()}, {at}" if at else desc.title()
+        out.append(Meeting("elections", when.isoformat(), title,
+                           source="boe schedule pdf"))
+    return out
+
+
 def from_rules(horizon_days: int = 120) -> list[Meeting]:
     """
     Last resort so the pipeline degrades rather than going blind.
@@ -256,7 +294,7 @@ def build() -> list[Meeting]:
 
     merged: dict[str, Meeting] = {}
     for resolver in (from_rules, from_mobilize, from_official_sites,
-                     lambda: shared_meetings):
+                     from_boe_schedule, lambda: shared_meetings):
         for m in resolver():
             if not m.date:
                 continue
@@ -350,7 +388,10 @@ def open_windows(today: dt.date | None = None,
         if m.cancelled:
             continue
         when = _d(m.date)
+        allowed = BODY_ARTIFACTS.get(m.body)
         for artifact, (lo, hi, cadence) in WINDOWS.items():
+            if allowed is not None and artifact not in allowed:
+                continue
             if not (when + dt.timedelta(days=lo) <= today <= when + dt.timedelta(days=hi)):
                 continue
             if artifact in acquired.get(m.key, []):
@@ -464,6 +505,11 @@ def _d(s: str) -> dt.date:
 
 def _norm_body(s: str) -> str:
     s = (s or "").lower()
+    # Elections first, and the order is load bearing. The body's full
+    # name is "Transylvania County Board of Elections", which contains
+    # "count", so any later test for county claims it first.
+    if "election" in s:
+        return "elections"
     if "count" in s or "commission" in s:
         return "county"
     if "city" in s or "council" in s or "brevard" in s:

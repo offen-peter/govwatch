@@ -95,6 +95,16 @@ known_gaps:
     recording is the only account of who spoke and what they said.
   - School board agendas post roughly a week ahead. Minutes appear in
     the following month's consent agenda, not as standalone documents.
+  - >-
+    Board of Elections coverage is close to nil, and the cause is the
+    source rather than the pipeline. The board publishes no agendas and
+    no recordings, so its minutes are the only account of any of its
+    meetings that will ever exist, and 93 percent of those minutes are
+    scanned images of paper with no extractable text. Measured
+    2026-08-06 over the sixteen most recent sets: one readable, fourteen
+    scanned, one linking a file that 404s. Assume any elections meeting
+    is unreported here unless a record for it says otherwise. This would
+    be fixed by OCR, which is not installed.
 
 alerts:
   enabled: true

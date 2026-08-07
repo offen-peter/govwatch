@@ -51,6 +51,7 @@ BODY_NAMES = {
     "city": "Brevard City Council",
     "county": "Transylvania County Board of Commissioners",
     "schools": "Transylvania County Board of Education",
+    "elections": "Transylvania County Board of Elections",
     "press": "local press coverage",
 }
 

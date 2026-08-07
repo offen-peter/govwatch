@@ -44,40 +44,40 @@ video works locally and needs a proof of origin token in Actions.
 The lesson worth keeping: every one of these failed silently. Prefer a
 loud failure to a tidy empty result.
 
-## Next, not started
+## Next: decide whether to OCR the elections minutes
 
-**Add the Transylvania County Board of Elections as a fourth body.**
-<https://www.transylvaniaelections.org/>
+The Board of Elections is wired in as a fourth body and works. It is
+also, right now, capturing almost nothing, and the reason is the source.
 
-Nothing has been looked at yet beyond noting that it lives on its own
-domain: `transylvaniacounty.org/departments/elections` is a 404, and the
-county's `/meetings` index carries commissioners only. So this is a new
-adapter against an unexamined site, not a variation on the county one.
+**93 percent of its minutes are scanned images.** Measured 2026-08-06
+over the sixteen most recent sets: one readable, fourteen scanned with
+no extractable text, one linking a file that 404s. The board publishes
+no agendas and no recordings, so minutes are the only account any of its
+meetings will ever get, and this pipeline can read one meeting in
+sixteen.
 
-Before anything else, read that domain's robots.txt. The standing rule
-below is not negotiable and the county's own Granicus tenant is the
-example of why: an hour was spent on an entry that turned out to be
-disallowed.
+Everything else about the body is done. Its own six month schedule PDF
+is the calendar source, parsed by `from_boe_schedule`, which matters
+because no recurrence rule describes it: the gaps between its next
+thirteen meetings run 28, 19, 7, 7, 7, 7, 6, 1, 3, 6, 1, 27 days,
+monthly most of the year and near daily through a canvass.
+`BODY_ARTIFACTS` restricts it to the minutes window, so no video window
+ever opens for a body with no video, which also keeps the media stack
+out of runs that would have no use for it.
 
-What a fourth body touches, so the size is known up front:
+So the one open question is OCR. Arguments for: the documents are typed
+and then scanned, which is the case OCR handles best, they are short, a
+few pages each, and without it this body is decoration. Against: it
+means tesseract as a system dependency, a slower document poll, and text
+of a quality nothing else in the pipeline has to caveat.
 
-- `sources.py`, a new adapter, and `ADAPTERS`
-- `schedule.py`, the `BODIES` tuple and a branch in `_norm_body`
-- `brief.py`, `BODY_NAMES`
-- `config.yml`, and `known_gaps` if coverage turns out partial
-- `tcdp-shared.js`, which is the calendar's authority. Meetings absent
-  from it are treated as cancelled, so elections meetings have to be
-  added there or the pipeline will never open a window for them. That
-  is a change to the events widget's file, not just to this repo.
-- `video.py`, only if they publish recordings
+If OCR is added, keep it failing soft. A missing tesseract should leave
+the gap recorded, exactly as now, not break the document poll for the
+other three bodies.
 
-One design question worth settling before writing code: the window and
-cadence model assumes a body that meets on a predictable monthly rhythm.
-A board of elections meets rarely for most of the year and then often,
-sometimes at short notice, around an election and a canvass. The
-recurrence-rule fallback in `schedule.py` has nothing sensible to say
-about that, so this body may need to be calendar-only, with no rule
-behind it.
+Worth trying first, since it costs nothing: ask the board whether they
+can publish minutes as text. They are produced in a word processor and
+then scanned, so the digital originals exist.
 
 ## Standing rules
 

@@ -492,6 +492,184 @@ class CityCouncil:
         return docs
 
 
+# ------------------------------------------------------------- elections
+
+class BoardOfElections:
+    """
+    Transylvania County Board of Elections.
+
+    A different shape from the other three, in two ways that matter.
+
+    It publishes minutes and nothing else. There is no agenda anywhere on
+    the site and no recording of any kind, so minutes are not the slow
+    confirmation of a meeting already covered by an agenda and a video,
+    they are the only account that will ever exist. That makes them worth
+    more here than county minutes are, and it is why `elections` is
+    restricted to the minutes window in schedule.BODY_ARTIFACTS.
+
+    And it meets on two rhythms rather than one. Monthly regular meetings
+    for most of the year, then a burst from late September through the
+    canvass: absentee meetings weekly, then daily, as measured off the
+    board's own schedule on 2026-08-06, where the gaps between the
+    thirteen listed meetings run 28, 19, 7, 7, 7, 7, 6, 1, 3, 6, 1, 27
+    days. No recurrence rule describes that, which is why the board's own
+    published schedule is the calendar source rather than a fallback.
+
+    Access: the site serves no robots.txt at all, so nothing is
+    disallowed. Checked 2026-08-06.
+    """
+
+    ROOT = "https://www.transylvaniaelections.org"
+    MINUTES_INDEX = ROOT + "/Minutes.shtml"
+    SCHEDULE_PDF = ROOT + "/pdfs/BoardMeetingSchedule.pdf"
+    body = "elections"
+
+    MONTHS = ("JANUARY FEBRUARY MARCH APRIL MAY JUNE JULY AUGUST SEPTEMBER "
+              "OCTOBER NOVEMBER DECEMBER").split()
+
+    _schedule_cache: list | None = None
+
+    def collect(self, lookback_days: int = 90) -> list[Doc]:
+        cutoff = dt.date.today() - dt.timedelta(days=lookback_days)
+        docs, scanned, missing = [], [], []
+
+        for when, title, url in self.minutes_index():
+            if when < cutoff:
+                continue
+            try:
+                r = get(url)
+            except Exception as e:
+                # The listing is hand maintained and does not always
+                # match the files. The 2025-11-04 entry links a file
+                # named 20241104M.pdf, which 404s.
+                missing.append(f"{when} {title}: {type(e).__name__}")
+                continue
+            if "pdf" not in r.headers.get("content-type", "").lower():
+                missing.append(f"{when} {title}: not served as a PDF")
+                continue
+            text = pdf_text(r.content)
+            if not text:
+                # A valid PDF holding an image of a page. pdfplumber has
+                # nothing to extract and nor would anything else without
+                # OCR. Never silent: this is most of the body's record.
+                scanned.append(f"{when} {title}")
+                continue
+            docs.append(Doc(self.body, "minutes",
+                            f"Board of Elections minutes {when:%m/%d/%y}, {title}",
+                            when.isoformat(), url, text))
+
+        if scanned:
+            print(f"elections: {len(scanned)} set(s) of minutes are scanned "
+                  f"images with no extractable text, skipped: "
+                  f"{'; '.join(scanned[:4])}"
+                  + (f"; and {len(scanned) - 4} more" if len(scanned) > 4 else ""))
+        if missing:
+            print(f"elections: {len(missing)} set(s) could not be fetched: "
+                  f"{'; '.join(missing[:3])}")
+        return docs
+
+    def minutes_index(self) -> list[tuple]:
+        """
+        (date, description, url) for every published set of minutes.
+
+        The date comes from the link text rather than the filename, and
+        the difference is not academic: the November 4 2025 entry links
+        20241104M.pdf, a year out. The listing text is maintained by hand
+        and sits under a year heading, so it is the one to trust, with
+        the filename as the fallback when the text will not parse.
+        """
+        try:
+            html = get(self.MINUTES_INDEX).text
+        except Exception as e:
+            print(f"elections minutes index unavailable: {e}")
+            return []
+
+        soup = BeautifulSoup(html, "html.parser")
+        out, seen = [], set()
+        for a in soup.select("a[href]"):
+            href = a.get("href", "")
+            if "/Minutes/" not in href or not href.lower().endswith(".pdf"):
+                continue
+            label = a.get_text(" ", strip=True)
+            when = self._parse_label_date(label) or self._parse_href_date(href)
+            if not when:
+                continue
+            url = href if href.startswith("http") else self.ROOT + href
+            if url in seen:
+                continue
+            seen.add(url)
+            # "May 14, 2026 (Regular Meeting)" to "Regular Meeting".
+            m = re.search(r"\(([^)]+)\)", label)
+            out.append((when, m.group(1) if m else "Board Meeting", url))
+        return out
+
+    def scheduled_meetings(self) -> list[tuple]:
+        """
+        (date, time, description) from the board's own schedule PDF.
+
+        This is the calendar source for the body, not a supplement. The
+        other three bodies keep a standing rhythm that a recurrence rule
+        can approximate when everything else fails. This one does not,
+        so if the PDF cannot be read there is nothing sensible to fall
+        back on and the right answer is no meetings rather than invented
+        ones.
+        """
+        if BoardOfElections._schedule_cache is not None:
+            return BoardOfElections._schedule_cache
+        try:
+            r = get(self.SCHEDULE_PDF)
+            text = pdf_text(r.content)
+        except Exception as e:
+            print(f"elections schedule pdf unavailable: {e}")
+            return []
+
+        pat = re.compile(
+            rf"^({'|'.join(self.MONTHS)})\s+(\d{{1,2}}),?\s+(\d{{4}})\s+"
+            r"(\d{1,2}:\d{2}\s*[AP]M)\s+(.+)$",
+            re.I | re.M,
+        )
+        out = []
+        for m in pat.finditer(text):
+            month, day, year, at, rest = m.groups()
+            # The "Important Dates" column bleeds onto the same line, so
+            # cut the description at the first thing shaped like a date.
+            desc = re.split(r"\s+\d{1,2}/\d{1,2}/\d{2}", rest)[0].strip()
+            desc = re.sub(r"\s{2,}", " ", desc)
+            try:
+                when = dt.datetime.strptime(f"{month} {day} {year}",
+                                            "%B %d %Y").date()
+            except ValueError:
+                continue
+            out.append((when, at.strip(), desc))
+
+        if not out:
+            print("elections schedule pdf parsed to no meetings, format may have changed")
+        BoardOfElections._schedule_cache = out
+        return out
+
+    @staticmethod
+    def _parse_label_date(label: str):
+        m = re.search(r"([A-Z][a-z]+\s+\d{1,2},?\s+\d{4})", label)
+        if not m:
+            return None
+        for fmt in ("%B %d, %Y", "%B %d %Y"):
+            try:
+                return dt.datetime.strptime(m.group(1), fmt).date()
+            except ValueError:
+                continue
+        return None
+
+    @staticmethod
+    def _parse_href_date(href: str):
+        m = re.search(r"(\d{8})", href)
+        if not m:
+            return None
+        try:
+            return dt.datetime.strptime(m.group(1), "%Y%m%d").date()
+        except ValueError:
+            return None
+
+
 # --------------------------------------------------------------- newspaper
 
 class Newspaper:
@@ -531,4 +709,4 @@ class Newspaper:
         return docs
 
 
-ADAPTERS = [SchoolBoard(), County(), CityCouncil(), Newspaper()]
+ADAPTERS = [SchoolBoard(), County(), CityCouncil(), BoardOfElections(), Newspaper()]
