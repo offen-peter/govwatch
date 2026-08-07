@@ -147,6 +147,8 @@ python run.py poll         # documents, ignores windows
 python run.py transcribe   # video, ignores windows
 python run.py digest       # build and send the brief
 python run.py ask "..."    # question the transcript archive, grep first
+python run.py reextract    # rebuild records from transcripts already on disk
+python run.py reextract county   # ... or just the ones matching a filter
 python run.py probe        # county Granicus endpoints, setup only
 python run.py discover     # CivicClerk payload shape, setup only
 ```

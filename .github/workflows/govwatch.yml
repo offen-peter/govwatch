@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "tick, schedule, poll, transcribe, digest, discover, probe"
+        description: "tick, schedule, poll, transcribe, digest, reextract, discover, probe"
         default: tick
 
 permissions:

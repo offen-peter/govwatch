@@ -711,6 +711,103 @@ def tick(dry: bool = False) -> None:
         digest(dry=dry)
 
 
+# ============================================================ reextract
+
+def _docs_from_transcripts():
+    """
+    Rebuild Doc objects straight from the committed transcript markdown.
+
+    No discovery, no windows, no lookback. The markdown in transcripts/
+    is the durable artifact and this reads it, which is the point: a
+    transcript from a meeting three months ago is as re-readable as one
+    from yesterday.
+
+    The uid this produces matches the one video.py produced originally,
+    because both hash body, kind and the source URL, and the frontmatter
+    records that URL. So seen.json lines up and nothing is extracted
+    twice by accident.
+    """
+    from govwatch.sources import Doc
+
+    out = []
+    for path in sorted(TRANSCRIPTS.glob("*.md")):
+        raw = path.read_text(encoding="utf-8")
+        meta = _frontmatter(raw)
+        if not meta.get("body") or not meta.get("source"):
+            print(f"skipping {path.name}, frontmatter has no body or source")
+            continue
+        text = raw.split("---", 2)[-1].lstrip() if raw.startswith("---") else raw
+        out.append(Doc(
+            body=meta["body"],
+            kind="transcript",
+            title=f"{meta.get('title', path.stem)} (transcript)",
+            meeting_date=meta.get("meeting_date", ""),
+            url=meta["source"],
+            text=text,
+        ))
+    return out
+
+
+def reextract(match: str = "", dry: bool = False) -> None:
+    """
+    Re-extract records from transcripts already on disk.
+
+    Needed whenever something upstream of extraction changes and the
+    existing records were produced under the old version of it. The
+    roster is the usual reason: adding a name only affects transcripts
+    extracted afterwards, and nothing in the normal flow ever revisits
+    the rest, because seen.json correctly says they were handled.
+
+    Costs one Haiku call per transcript and downloads nothing. Optional
+    match narrows it by date, body or title, since redoing six
+    transcripts to fix one is wasteful.
+    """
+    docs = _docs_from_transcripts()
+    if match:
+        low = match.lower()
+        docs = [d for d in docs
+                if low in f"{d.body} {d.meeting_date} {d.title}".lower()]
+
+    if not docs:
+        print(f"no transcripts on disk match {match!r}"
+              if match else "no transcripts on disk")
+        return
+
+    print(f"{len(docs)} transcript(s) to re-extract:")
+    for d in docs:
+        print(f"   {d.meeting_date}  {d.body:9s} {len(d.text):>7} chars  {d.title[:46]}")
+
+    chars = sum(len(d.text) for d in docs)
+    print(f"\nroughly {chars // 4:,} input tokens, about "
+          f"${chars / 4 / 1_000_000 * 1.00:.2f} at Haiku input rates")
+
+    if dry:
+        print("\nDRY RUN. Nothing re-extracted, nothing written.")
+        return
+
+    from govwatch import brief
+
+    seen = _load(SEEN, {})
+    records = _load(RECORDS, [])
+    watchlist = CONFIG.get("watchlist", [])
+    roster = CONFIG.get("video", {}).get("roster", [])
+
+    # Drop the old record and the seen entry together. Out of step, the
+    # run either extracts twice or refuses to extract at all.
+    urls = {d.url for d in docs}
+    uids = {d.uid for d in docs}
+    before = len(records)
+    records = [r for r in records if r.get("_source", {}).get("url") not in urls]
+    for uid in uids:
+        seen.pop(uid, None)
+    print(f"\ndropped {before - len(records)} old record(s), re-extracting")
+    _save(SEEN, seen)
+    _save(RECORDS, records)
+
+    new = _extract_all(docs, brief, watchlist, roster, seen, records)
+    print(f"{len(new)} record(s) rebuilt")
+
+
 # ================================================================== ask
 
 # Words too common to narrow anything down. Deliberately short: this is a
@@ -931,7 +1028,7 @@ MODES = {
 # prints which paragraphs the grep found and what sending them would
 # cost, which is the cheapest way to tell a badly worded question from
 # an archive that genuinely has nothing on the subject.
-DRY_CAPABLE = ("tick", "poll", "transcribe", "digest", "ask")
+DRY_CAPABLE = ("tick", "poll", "transcribe", "digest", "ask", "reextract")
 
 
 def _require_api_key() -> None:
@@ -974,6 +1071,14 @@ def main() -> int:
             dry = True
 
     mode = args[0] if args else "tick"
+
+    # reextract takes an optional filter, so like ask it is dispatched
+    # here rather than through MODES.
+    if mode == "reextract":
+        if not dry:
+            _require_api_key()
+        reextract(" ".join(args[1:]).strip(), dry=dry)
+        return 0
 
     # ask carries a question rather than nothing, so it is dispatched
     # here rather than through MODES, whose entries all take only dry.

@@ -99,14 +99,63 @@ Audience and purpose: he uses this to decide where to show up, what to
 write about, and when public comment actually matters. Lead with what
 changed and what is decidable soon.
 
-Structure:
-  1. Short "what to watch" opener. Three items maximum, each tied to a date.
-  2. One section per body: what happened, then what is coming.
-  3. Cross-cutting threads. Only where a genuine connection exists across
-     two or more bodies. Do not manufacture themes.
-  4. Calendar table.
-  5. Gaps. Name every document you did not have. This section is not
-     optional and it is not padding.
+Structure. Use these headings, in this order, every week, so the brief
+reads the same way each time and a section can be found without hunting:
+
+  # GovWatch Brief
+  A bold reporting period line directly under it.
+
+  ## What to watch
+  Three items maximum. Each starts with a bold date, then one or two
+  sentences. Nothing else goes in this section.
+
+  Then one H2 per body that has anything to report, in this order:
+  ## Brevard City Council
+  ## Transylvania County Board of Commissioners
+  ## Transylvania County Board of Education
+  ## Transylvania County Board of Elections
+
+  Under a body, one H3 per meeting, never a shared block covering
+  several. Date first, then what kind of meeting it was:
+  ### August 3, 2026, regular meeting
+  ### July 27, 2026, Public Safety Committee
+
+  This matters more than it looks. A body can hold four meetings in a
+  fortnight, a council meeting and three committees, and running them
+  together into one narrative is what makes a brief unreadable.
+
+  Under each meeting, use only the H4s that have something in them.
+  Never write a heading followed by "none" or "nothing to report":
+  #### Decided
+  #### Heard, not decided
+  #### Public comment
+  #### Unanswered questions and commitments
+  #### Money
+
+  Decided and "Heard, not decided" are separate headings on purpose.
+  The difference between a vote taken and a matter merely discussed is
+  usually the whole story, and a heading enforces it better than a
+  sentence does.
+
+  Then, once, at the end:
+  ## Coming up
+  ## Cross-cutting threads
+  ## Calendar
+  ## Gaps
+
+  Cross-cutting threads only where a genuine connection exists across
+  two or more bodies. Do not manufacture themes. Omit the section
+  entirely rather than padding it.
+
+  Gaps names every document you did not have. Not optional, not padding.
+
+Scanning:
+  Open each bullet with the subject in bold, so the page can be read by
+  its bold text alone: "**Cashers Valley Road sewer extension.** Council
+  deferred..."
+  One or two sentences per bullet. Split anything longer.
+  Put the evidence caveat at the end of the sentence, not the start, so
+  the substance leads.
 
 Hard rules:
   Every factual claim must trace to a supplied extraction record. If
