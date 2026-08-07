@@ -7,3 +7,9 @@ beautifulsoup4>=4.12
 PyYAML>=6.0
 pdfplumber>=0.11
 anthropic>=0.40
+
+# Renders the brief to HTML for the email. Without it the brief arrives
+# as raw markdown, hashes and asterisks and pipe-delimited tables, which
+# reads worse than plain prose would have. Pure python, no system
+# dependencies, and run.py degrades to plain text if it is absent.
+markdown>=3.5

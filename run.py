@@ -619,6 +619,56 @@ def alert(new_records: list[dict]) -> None:
 
 # ================================================================ email
 
+# Deliberately plain. Mail clients strip or ignore a great deal of CSS,
+# so this leans on semantic HTML doing the work and treats the styling as
+# an improvement where it survives rather than a requirement.
+EMAIL_CSS = """
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+         font-size: 15px; line-height: 1.55; color: #1a1a1a;
+         max-width: 46em; margin: 0 auto; padding: 1.2em; }
+  h1 { font-size: 1.5em; border-bottom: 2px solid #333; padding-bottom: .3em;
+       margin-top: 0; }
+  h2 { font-size: 1.25em; background: #f0f0f0; padding: .4em .6em;
+       border-left: 4px solid #444; margin-top: 1.8em; }
+  h3 { font-size: 1.08em; margin-top: 1.4em; margin-bottom: .3em;
+       border-bottom: 1px solid #ccc; padding-bottom: .2em; }
+  h4 { font-size: .95em; margin-top: 1em; margin-bottom: .2em;
+       text-transform: uppercase; letter-spacing: .04em; color: #555; }
+  ul { margin-top: .3em; padding-left: 1.4em; }
+  li { margin-bottom: .5em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0;
+          font-size: .93em; }
+  th, td { border: 1px solid #ccc; padding: .4em .6em; text-align: left; }
+  th { background: #f0f0f0; }
+  blockquote { border-left: 3px solid #bbb; margin-left: 0;
+               padding-left: 1em; color: #444; }
+  code { background: #f3f3f3; padding: .1em .3em; }
+"""
+
+
+def _markdown_to_html(text: str) -> str | None:
+    """
+    Render the brief for mail clients.
+
+    Without this the brief arrives as raw markdown, hashes and asterisks
+    and pipe-delimited tables, which is markedly harder to read than
+    plain prose would have been. All the structure the synthesis prompt
+    works to produce is present and being thrown away at the last step.
+
+    Optional on purpose. A missing markdown package degrades to the plain
+    text that was being sent before, rather than failing to send a brief
+    that has already been written and committed.
+    """
+    try:
+        import markdown
+    except ImportError:
+        print("markdown package not installed, sending plain text only")
+        return None
+    rendered = markdown.markdown(text, extensions=["tables", "sane_lists"])
+    return (f"<!doctype html><html><head><meta charset='utf-8'>"
+            f"<style>{EMAIL_CSS}</style></head><body>{rendered}</body></html>")
+
+
 def send_email(subject: str, body: str) -> None:
     """
     Gmail SMTP with an app password. Never fatal: a send failure must not
@@ -644,7 +694,15 @@ def send_email(subject: str, body: str) -> None:
     msg["Subject"] = subject
     msg["From"] = user
     msg["To"] = ", ".join(to)
+
+    # Plain text first, then HTML as an alternative. Mail clients show
+    # the richest part they understand, so this reads as a formatted
+    # document in Gmail and as the original markdown anywhere that will
+    # not render HTML. Nothing is lost either way.
     msg.set_content(body)
+    html = _markdown_to_html(body)
+    if html:
+        msg.add_alternative(html, subtype="html")
 
     try:
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=60) as smtp:

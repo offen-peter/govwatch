@@ -397,36 +397,59 @@ def synthesize(records: list[dict], missing: list[str], period: str) -> str:
               f"from an incomplete set. Narrow digest_days or raise the cap.")
     gaps = "\n".join(f"- {m}" for m in missing) or "- none recorded"
 
-    msg = client.messages.create(
-        model=SYNTH_MODEL,
-        max_tokens=SYNTH_MAX_TOKENS,
-        system=SYNTH_SYSTEM,
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Reporting period: {period}\n\n"
-                f"Documents that could not be retrieved:\n{gaps}\n\n"
-                f"Extraction records:\n{payload}"
-            ),
-        }],
-    )
-    out = "".join(b.text for b in msg.content if b.type == "text").strip()
+    prompt = (f"Reporting period: {period}\n\n"
+              f"Documents that could not be retrieved:\n{gaps}\n\n"
+              f"Extraction records:\n{payload}")
 
-    if msg.stop_reason == "max_tokens":
-        print(f"WARNING: synthesis hit the {SYNTH_MAX_TOKENS} token output cap. "
-              f"The brief is cut off at the end. Raise SYNTH_MAX_TOKENS or "
-              f"narrow digest_days.")
-
-    # On 2026-08-07 this returned nothing at all, and digest wrote the
-    # empty string out as briefs/2026-08-07-brief.md and committed it. A
-    # brief is the one thing here that is pure output, so an empty one is
-    # not a degraded result, it is a failed run wearing the costume of a
-    # successful one. Refuse rather than write it.
-    if len(out) < 200:
-        raise RuntimeError(
-            f"synthesis returned {len(out)} characters from {len(records)} "
-            f"records, stop_reason={msg.stop_reason!r}, "
-            f"{len(msg.content)} content block(s) of type(s) "
-            f"{[b.type for b in msg.content]}. Refusing to write that as a brief."
+    # Two attempts. Synthesis has come back short twice on live runs, once
+    # empty and once cut off mid sentence partway through the second
+    # meeting, both well inside the output ceiling. Neither raised
+    # anything. A brief is a single expensive call at the end of a long
+    # pipeline, so retrying once is far cheaper than losing the week.
+    last = None
+    for attempt in (1, 2):
+        msg = client.messages.create(
+            model=SYNTH_MODEL,
+            max_tokens=SYNTH_MAX_TOKENS,
+            system=SYNTH_SYSTEM,
+            messages=[{"role": "user", "content": prompt}],
         )
-    return out
+        out = "".join(b.text for b in msg.content if b.type == "text").strip()
+        why = _incomplete(out, msg)
+        if not why:
+            return out
+        last = (out, msg, why)
+        print(f"synthesis attempt {attempt} came back incomplete: {why}. "
+              + ("retrying" if attempt == 1 else "giving up"))
+
+    out, msg, why = last
+    raise RuntimeError(
+        f"synthesis incomplete after two attempts: {why}. "
+        f"{len(records)} records in, {len(out)} characters out, "
+        f"stop_reason={msg.stop_reason!r}, blocks={[b.type for b in msg.content]}, "
+        f"output_tokens={msg.usage.output_tokens}. Refusing to write a partial "
+        f"brief, since a truncated one reads as a complete account of a quiet "
+        f"week."
+    )
+
+
+def _incomplete(out: str, msg) -> str | None:
+    """
+    Why this response is not a usable brief, or None if it is.
+
+    Length alone is not enough. The 2026-08-07 run produced 1,403
+    characters that stopped mid sentence inside the second meeting, with
+    no county section, no calendar and no gaps. It read as a plausible
+    short brief and was completely wrong about the week.
+
+    So the test is structural. The prompt requires a Gaps section last,
+    and that requirement is what makes its absence a reliable signal that
+    the response stopped early, whatever the reason.
+    """
+    if msg.stop_reason == "max_tokens":
+        return f"hit the {SYNTH_MAX_TOKENS} token output cap"
+    if len(out) < 200:
+        return f"only {len(out)} characters"
+    if "## Gaps" not in out:
+        return "no Gaps section, so it stopped before the end"
+    return None
