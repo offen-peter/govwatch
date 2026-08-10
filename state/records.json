@@ -4256,5 +4256,48 @@
       "tax rate - revenue and fund balance sources discussed for sewer extension funding",
       "fund balance - multiple fund sources proposed for sewer extension including water sewer reserve, Rosenwald fund, and maintenance budget"
     ]
+  },
+  {
+    "_extracted": "2026-08-10",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-12",
+      "title": "City Council Downtown Master Plan Committee 2026-08-12: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7372,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-09",
+        "what": "Next Downtown Master Plan Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Co-Ed Theater update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Ecusta Trail integration into Downtown"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Pisgah Health Parking Lot"
+      }
+    ],
+    "public_process": [
+      "Public comments section on agenda",
+      "Agenda posted on website and bulletin board 08/07/2026",
+      "Agenda forwarded to media and Sunshine List 08/07/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]

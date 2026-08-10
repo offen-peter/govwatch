@@ -7,6 +7,14 @@
     "title": "City Council Rosenwald Community Advisory Board 2026-07-16: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6347,plainText=false)"
   },
+  "047b31db044043fb": {
+    "body": "city",
+    "first_seen": "2026-08-10",
+    "kind": "agenda",
+    "meeting_date": "2026-08-12",
+    "title": "City Council Downtown Master Plan Committee 2026-08-12: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7372,plainText=false)"
+  },
   "08e7fcd55f0ac05e": {
     "body": "schools",
     "first_seen": "2026-08-06",
