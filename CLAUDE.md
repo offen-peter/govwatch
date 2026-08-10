@@ -104,6 +104,14 @@ then scanned, so the digital originals exist.
   artifacts in simulation. Anchoring uses a window (could this artifact
   exist) and a separate cadence (how often to check within that window),
   don't collapse them back into one number.
+- **Synthesis sets `thinking` and `effort` explicitly, and its
+  `max_tokens` budgets for both.** Sonnet 5 thinks by default where
+  Sonnet 4.6 did not, so passing no `thinking` parameter stopped meaning
+  no thinking. `max_tokens` caps thinking and text together, so the
+  16,000 token budget went entirely to reasoning and three digests came
+  back with no text block at all. Do not lower `SYNTH_MAX_TOKENS` back
+  toward the length of a brief: it has to cover the reasoning first.
+  Lower `SYNTH_EFFORT` instead if the cost moves.
 - **Transcripts are committed markdown in `transcripts/`, not JSON.**
   Costs the same tokens either way, the API bills what you send. The
   point is a browsable, diffable, greppable archive.

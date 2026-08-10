@@ -6,7 +6,10 @@ requests>=2.32
 beautifulsoup4>=4.12
 PyYAML>=6.0
 pdfplumber>=0.11
-anthropic>=0.40
+# Floor raised from 0.40 on 2026-08-10. Synthesis now passes thinking and
+# output_config, and 0.40 predates both, so the old pin would have let a
+# runner install a version that rejects the call the fix depends on.
+anthropic>=0.69
 
 # Renders the brief to HTML for the email. Without it the brief arrives
 # as raw markdown, hashes and asterisks and pipe-delimited tables, which

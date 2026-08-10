@@ -50,7 +50,34 @@ MAX_SYNTH_CHARS = 400_000
 # gaps list that names every document not retrieved, is a long document,
 # and being cut off mid sentence at the end is a failure the reader has
 # to notice for themselves.
-SYNTH_MAX_TOKENS = 16_000
+#
+# Raised again to 32,000 on 2026-08-10, for a different reason: max_tokens
+# is a ceiling on thinking plus text together, not on text. See the
+# thinking note below. 16,000 was enough for the brief and not enough for
+# the brief plus the reasoning that precedes it.
+SYNTH_MAX_TOKENS = 32_000
+
+# Sonnet 5 thinks by default. Sonnet 4.6 did not, and omitting the
+# parameter meant no thinking at all, so this code asked for nothing and
+# silently started getting adaptive thinking when the model string moved.
+#
+# That is what produced three failed digests. max_tokens caps thinking and
+# text combined, so the model spent the entire 16,000 token budget
+# reasoning and never began the text block: stop_reason max_tokens,
+# blocks ['thinking'], zero characters out. The earlier 1,403 character
+# brief cut off mid sentence was the same failure caught partway.
+#
+# Two things fix it, and both are wanted. The budget is now large enough
+# that text has room after thinking, and effort is set explicitly rather
+# than left at the default of high. Thinking is worth keeping here: this
+# is the pass that has to hold five meetings across four bodies apart and
+# not let a committee recommendation read as a council decision.
+SYNTH_THINKING = {"type": "adaptive"}
+SYNTH_EFFORT = "medium"
+
+# Same exposure, lower ceiling. `ask` had 4,000 tokens and no guard, so
+# the first real question would have come back as an empty string.
+ASK_MAX_TOKENS = 12_000
 
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
@@ -299,12 +326,24 @@ def answer(question: str, excerpts: str) -> str:
     """
     msg = client.messages.create(
         model=SYNTH_MODEL,
-        max_tokens=4000,
+        max_tokens=ASK_MAX_TOKENS,
+        thinking=SYNTH_THINKING,
+        output_config={"effort": SYNTH_EFFORT},
         system=ASK_SYSTEM,
         messages=[{"role": "user",
                    "content": f"Question: {question}\n\n---\n\n{excerpts}"}],
     )
-    return "".join(b.text for b in msg.content if b.type == "text").strip()
+    out = "".join(b.text for b in msg.content if b.type == "text").strip()
+    if not out:
+        # Same failure that killed three digests, and here it would have
+        # printed an empty answer as though the archive had nothing to say.
+        raise RuntimeError(
+            f"the model answered with no text, only "
+            f"{[b.type for b in msg.content]}, stop_reason="
+            f"{msg.stop_reason!r}, output_tokens={msg.usage.output_tokens}. "
+            f"The whole budget went to reasoning. Raise ASK_MAX_TOKENS."
+        )
+    return out
 
 
 def extract(doc: dict, watchlist: list[str], roster: list[str] | None = None) -> dict:
@@ -408,12 +447,20 @@ def synthesize(records: list[dict], missing: list[str], period: str) -> str:
     # pipeline, so retrying once is far cheaper than losing the week.
     last = None
     for attempt in (1, 2):
-        msg = client.messages.create(
+        # Streamed because the SDK refuses a non streaming request whose
+        # max_tokens implies a response long enough to outlast the HTTP
+        # timeout. Nothing here consumes the events, get_final_message
+        # assembles the whole thing, so this is a transport detail rather
+        # than a change in how the brief is built.
+        with client.messages.stream(
             model=SYNTH_MODEL,
             max_tokens=SYNTH_MAX_TOKENS,
+            thinking=SYNTH_THINKING,
+            output_config={"effort": SYNTH_EFFORT},
             system=SYNTH_SYSTEM,
             messages=[{"role": "user", "content": prompt}],
-        )
+        ) as stream:
+            msg = stream.get_final_message()
         out = "".join(b.text for b in msg.content if b.type == "text").strip()
         why = _incomplete(out, msg)
         if not why:
@@ -445,7 +492,17 @@ def _incomplete(out: str, msg) -> str | None:
     So the test is structural. The prompt requires a Gaps section last,
     and that requirement is what makes its absence a reliable signal that
     the response stopped early, whatever the reason.
+
+    The no text block case is separated out because it has a specific
+    cause and a specific fix, and reporting it as a generic cap makes the
+    next person chase the prompt instead of the budget.
     """
+    blocks = [b.type for b in msg.content]
+    if "text" not in blocks:
+        return (f"no text block at all, only {blocks or ['nothing']}. "
+                f"max_tokens covers thinking and text together, so the "
+                f"budget went entirely to reasoning. Raise SYNTH_MAX_TOKENS "
+                f"or lower SYNTH_EFFORT")
     if msg.stop_reason == "max_tokens":
         return f"hit the {SYNTH_MAX_TOKENS} token output cap"
     if len(out) < 200:
