@@ -4299,5 +4299,114 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-13",
+    "_source": {
+      "body": "schools",
+      "kind": "packet",
+      "meeting_date": "2026-08-17",
+      "title": "Regular Meeting",
+      "url": "https://transylvania.schoolboard.net/node/7245"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approval of August 17, 2026 Agenda",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approval of consent agenda items including Minutes, Personnel Report, Paid Non-Faculty Coaches Fall 2026, and Federal Applications 2026-2027",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approval of Spring 2026 Custom Policy Updates (Sets 1 and 2)",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Extension of TCS engagement with Carolina Demography",
+        "who": "Board of Education"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-08-24",
+        "what": "First day of school for students"
+      },
+      {
+        "date": "2026-09-21",
+        "what": "Regular Board Meeting"
+      },
+      {
+        "date": "2026-10-19",
+        "what": "Regular Board Meeting"
+      },
+      {
+        "date": "30 minutes before meeting begins",
+        "what": "Public comment sign-up sheet available"
+      }
+    ],
+    "money": [
+      {
+        "amount": "66,000 meals",
+        "fund": "School Nutrition Program",
+        "item": "Summer Food Service Program meals provided"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Monthly updates on 2025-30 Strategic Plan implementation",
+        "what": "Strategic Plan Progress presentation by Superintendent Dr. Lisa Fletcher"
+      },
+      {
+        "date": "",
+        "next_step": "Monthly report presentation",
+        "what": "Facilities Update on Joint School Bond Projects by Beecher Allison"
+      }
+    ],
+    "public_process": [
+      "Board meetings are open to the public; doors open at 5:00 p.m.",
+      "Meeting livestreamed at youtube.com/user/tcsnc",
+      "Public comment section held each month at regularly scheduled Board meetings as limited public forum",
+      "Sign-up sheet available 30 minutes before meeting for individuals to indicate desire to address Board",
+      "Each speaker receives three (3) minutes; public comment session limited to 30 minutes total except by majority Board vote",
+      "Board Chair recognizes speakers in order signed in; no substitute speakers permitted; no time donations between speakers",
+      "Written submissions accepted if speaker cannot present all information within time limit",
+      "Public comment limited to issues relevant to and within jurisdiction of Board of Education",
+      "Board will not discriminate based on viewpoint expressed on permissible topics",
+      "Public comment not appropriate forum for complaints about identified school employees or students; grievance procedures available",
+      "Board Members will not respond to individuals except to request clarification",
+      "Personal attacks on school employees or Board Members prohibited",
+      "Disruptions subject to action in accordance with G.S. 143-318.17",
+      "Except in emergencies, information from presentations not acted upon at time received; requires unanimous vote for unusual or emergency nature actions",
+      "If no regular meeting held during a month, Board will not provide public comment at other meetings unless majority votes to allow or meeting is public hearing"
+    ],
+    "quotes": [
+      {
+        "speaker": "Superintendent Dr. Lisa Fletcher (regarding School Nutrition staff)",
+        "text": "Day-in and day-out, year-round, they make a difference in thousands of lives."
+      }
+    ],
+    "schedule_changes": [
+      "No School \u2013 Labor Day on September 7th",
+      "No School \u2013 Teacher Workday on October 2nd"
+    ],
+    "watchlist_hits": [
+      "Joint School Bond Project Committee",
+      "public comment",
+      "decorum",
+      "closed session",
+      "open meetings",
+      "public records",
+      "agenda modification"
+    ]
   }
 ]
