@@ -4408,5 +4408,277 @@
       "public records",
       "agenda modification"
     ]
+  },
+  {
+    "_extracted": "2026-08-14",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-08-14",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-20",
+        "what": "Planning Board Public Hearing"
+      },
+      {
+        "date": "2026-05-29",
+        "what": "Joint School Bond Project Committee Meeting"
+      },
+      {
+        "date": "2026-08-24",
+        "what": "Next regular Board of Commissioners meeting"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "See Off Solid Waste Collection Center closure notice for facility maintenance",
+      "Transylvania County Community Transportation Program Application Public Hearing",
+      "Planning Board Public Hearing scheduled for August 20, 2026",
+      "Board of Commissioners seeking applications to Citizen Advisory Councils",
+      "Joint Historic Preservation Commission Public Hearing",
+      "FY 2027 Recommended Budget presented to Board of Commissioners; budget available for review"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "See Off Solid Waste Collection Center closed at noon Tuesday, August 11 for facility maintenance; reopened Thursday, August 13",
+      "Transylvania County Board of Commissioners cancelled July 27, 2026 and August 10, 2026 regular meetings",
+      "SWCD Board of Supervisors June 18 meeting cancelled; resume regularly scheduled meetings July 16",
+      "Tourism Development Authority Destination Infrastructure Committee cancelled July 1 meeting",
+      "Public Transportation Fixed Route ended early at 2pm on June 24, 2026",
+      "Public Transportation Fixed Route ended early at 2pm on June 19, 2026",
+      "Pisgah Forest Collection site closed at 4:30 PM on May 26, 2026 for staff training"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "transfer station",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "open meetings"
+    ]
+  },
+  {
+    "_extracted": "2026-08-14",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-17",
+      "title": "City Council 2026-08-17: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7380,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-13",
+        "what": "Agenda posted on website and Sunshine List"
+      },
+      {
+        "date": "2026-08-17",
+        "what": "Regular City Council meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-08-17",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendment to the City of Brevard Unified Development Ordinance Chapter 17 and Code of Ordinances Chapter 70 - Fats, Oils and Grease (FOG) Regulations"
+      },
+      {
+        "date": "2026-08-17",
+        "next_step": "Council consideration",
+        "what": "Consider Updates to Brevard-Davidson River Presbyterian Church Lease Amendment for LMI Housing"
+      },
+      {
+        "date": "2026-08-17",
+        "next_step": "Council consideration",
+        "what": "Proposed Remote Participation Policy for Appointed Boards and Committees"
+      },
+      {
+        "date": "2026-08-17",
+        "next_step": "Council consideration",
+        "what": "Renaming of the Downtown Master Plan Committee to the Downtown Master Plan Implementation and Downtown Advisory Committee"
+      }
+    ],
+    "public_process": [
+      "Public comment period included in agenda",
+      "Public hearing scheduled for Proposed Amendment to the City of Brevard Unified Development Ordinance",
+      "Agenda materials posted on City website Thursday afternoon prior to Monday meeting",
+      "Agenda posted on website and Sunshine List on August 13, 2026",
+      "Closed session scheduled for Economic Development under NCGS 143-318.11(a)(4)"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "affordable housing",
+      "public comment",
+      "open meetings",
+      "closed session"
+    ]
+  },
+  {
+    "_extracted": "2026-08-14",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-17",
+      "title": "City Council 2026-08-17: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7381,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved Sight Triangle Regulations amendments to Chapters 9 and 19 of UDO and Chapter 38 of Code of Ordinances",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved Stormwater Management Development Regulations amendments to UDO Chapters 6, 17, 19 and Code of Ordinances Chapter 38",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved amendments to Code of Ordinances Chapter 42 regarding Loitering, Trespassing, Public Intoxication, and Hours of Operation with modification to Section 42-5(C)",
+        "who": "Council"
+      },
+      {
+        "amount": "$88,400",
+        "vote": "unanimous",
+        "what": "Funding commitment of $88,400 for Cashiers Valley Road Sewer Extension",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed Shanna Powell to Parks, Trails and Recreation Committee",
+        "who": "Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "September 19, 2026, 6:00 AM \u2013 7:00 PM",
+        "what": "Brevard Plein Air Festival road closure"
+      },
+      {
+        "date": "October 24, 2026, 6:00 AM \u2013 7:00 PM",
+        "what": "Halloweenfest road closure"
+      },
+      {
+        "date": "4-6 months after program approval",
+        "what": "FOG program initial compliance inspection period"
+      },
+      {
+        "date": "August 3, 2026 (August 17 meeting date indicates already passed)",
+        "what": "HAC Project grant application due"
+      },
+      {
+        "date": "June 30, 2030 (proposed extension from June 13, 2027)",
+        "what": "Church lease extension deadline for entering Development Agreement"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$88,400",
+        "fund": "Water & Sewer Fund; specific source to be determined at next meeting",
+        "item": "Cashiers Valley Road Sewer Extension funding commitment"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "WWTP Operating Budget",
+        "item": "FOG Program Coordinator position reclassification FY27 impact"
+      },
+      {
+        "amount": "less than $10,000",
+        "fund": "WWTP Operating Budget",
+        "item": "FOG Program equipment and training"
+      },
+      {
+        "amount": "approximately $88,000",
+        "fund": "Various sources redirected to Water & Sewer Fund",
+        "item": "HAC Project affordable housing development parking lot utilities extension"
+      },
+      {
+        "amount": "$820.46",
+        "fund": "Tax collection",
+        "item": "Property tax releases July 2026"
+      },
+      {
+        "amount": "$25,654.87",
+        "fund": "City interest income",
+        "item": "NCCMT main investment account interest revenue July 2026"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Public hearing and City Council consideration for approval",
+        "what": "Proposed Amendment to City of Brevard Unified Development Ordinance Chapter 17 and Code of Ordinances Chapter 70 - Fats, Oils and Grease (FOG) Regulations"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration; Manager authorized to sign extension or Council may table or reject",
+        "what": "Updates to Brevard-Davidson River Presbyterian Church Lease Amendment for LMI Housing - request to extend lease three years"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration and adoption",
+        "what": "Proposed Remote Participation Policy for Appointed Boards and Committees"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration and adoption",
+        "what": "Renaming of Downtown Master Plan Committee to Downtown Master Plan Implementation and Downtown Advisory Committee"
+      }
+    ],
+    "public_process": [
+      "Public hearing held July 20, 2026 on Sight Triangle Regulations amendments",
+      "Public hearing held July 20, 2026 on Stormwater Management amendments",
+      "Public hearing held July 20, 2026 on Loitering and related ordinance amendments",
+      "Public hearing scheduled for August 17, 2026 on FOG program amendments to UDO Chapter 17 and Code of Ordinances Chapter 70",
+      "Public comments received regarding criminalizing civil offenses and impact on unhoused population",
+      "Public comments received regarding loitering definitions and concerns about targeting unhoused persons",
+      "Public comments received regarding license plate reader cameras and privacy concerns",
+      "Agenda items posted on city website with supporting materials",
+      "FOG program roll-out includes public education and communication plan with semiannual FOG brochures distribution",
+      "Finance, Human Resources and Citizen Appointment Committee reviewed remote participation policy and recommended approval"
+    ],
+    "quotes": [
+      {
+        "speaker": "Peter Offen",
+        "text": "Don't undermine your own progress by targeting a larger population."
+      },
+      {
+        "speaker": "Rodney Locks",
+        "text": "Most people I talk to are confused about loitering definitions."
+      },
+      {
+        "speaker": "Dean Lytle",
+        "text": "This crisis has to be attacked from all ends, not just law enforcement."
+      }
+    ],
+    "schedule_changes": [
+      "Agenda item M-1 (Municipal Service District Task Force) removed from August 3, 2026 meeting"
+    ],
+    "watchlist_hits": [
+      "Department of Environmental Quality (DEQ) - FOG program compliance finding issued April 2025",
+      "leachate - FOG and sewer collection system impacts",
+      "solid waste - FOG management and septage pretreatment",
+      "stormwater - Stormwater Management Development Regulations amendments approved",
+      "steep slope - mentioned in Building Brevard 2030 Comprehensive Plan goals",
+      "homelessness - Public comments regarding ordinances criminalizing behaviors affecting unhoused population",
+      "affordable housing - Brevard-Davidson River Presbyterian Church ground lease for LMI housing development",
+      "public comment - Multiple public commenters addressed council on various issues",
+      "decorum - Ordinances regarding loitering and public behavior",
+      "open meetings - Policy for remote participation in appointed boards and committees discussed",
+      "public records - FOG program education and enforcement documentation requirements"
+    ]
   }
 ]

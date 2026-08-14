@@ -15,6 +15,14 @@
     "title": "City Council Downtown Master Plan Committee 2026-08-12: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7372,plainText=false)"
   },
+  "05a24c651c874371": {
+    "body": "city",
+    "first_seen": "2026-08-14",
+    "kind": "agenda",
+    "meeting_date": "2026-08-17",
+    "title": "City Council 2026-08-17: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7381,plainText=false)"
+  },
   "08e7fcd55f0ac05e": {
     "body": "schools",
     "first_seen": "2026-08-06",
@@ -174,6 +182,22 @@
     "meeting_date": "2026-07-20",
     "title": "City Council 2026-07-20: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6351,plainText=false)"
+  },
+  "6b223ca4cad7f876": {
+    "body": "city",
+    "first_seen": "2026-08-14",
+    "kind": "agenda",
+    "meeting_date": "2026-08-17",
+    "title": "City Council 2026-08-17: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7380,plainText=false)"
+  },
+  "83543ebcc57936f1": {
+    "body": "county",
+    "first_seen": "2026-08-14",
+    "kind": "notice",
+    "meeting_date": "2026-08-14",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
   },
   "9783c24a727e2532": {
     "body": "city",
