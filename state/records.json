@@ -4680,5 +4680,95 @@
       "open meetings - Policy for remote participation in appointed boards and committees discussed",
       "public records - FOG program education and enforcement documentation requirements"
     ]
+  },
+  {
+    "_extracted": "2026-08-17",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-08-17",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-17",
+        "what": "See Off Solid Waste Collection Center closure for facility maintenance"
+      },
+      {
+        "date": "2026-08-20",
+        "what": "Planning Board Public Hearing"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Planning Board Public Hearing scheduled for August 20, 2026 at 6:00 PM in Community Services Conference Room"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of Commissioners cancelled July 27, 2026 meeting",
+      "Board of Commissioners cancelled August 10, 2026 meeting",
+      "Next regular meeting scheduled for Monday, August 24, 2026"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "transfer station"
+    ]
+  },
+  {
+    "_extracted": "2026-08-17",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-19",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-08-19: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7379,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-16",
+        "what": "Next Parks, Trails & Recreation Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "MCJCCC Bathrooms"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Franklin Park Future Needs"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Sports Complex Improvements"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Naming Conventions for City Trails"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Visioning for Next Phases of City Multi-Use Path"
+      }
+    ],
+    "public_process": [
+      "Public Comments session included on agenda",
+      "Agenda posted to website and bulletin board on 08/14/2026",
+      "Agenda forwarded to media and Sunshine List on 08/14/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
