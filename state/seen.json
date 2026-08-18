@@ -71,6 +71,14 @@
     "title": "City Council Finance and Human Resources Committee 2026-07-27: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7354,plainText=false)"
   },
+  "27df18ed86d6ceae": {
+    "body": "city",
+    "first_seen": "2026-08-18",
+    "kind": "agenda",
+    "meeting_date": "2026-08-20",
+    "title": "City Council Rosenwald Community Advisory Board 2026-08-20: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7378,plainText=false)"
+  },
   "361c1f55cefc73ad": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -230,6 +238,14 @@
     "meeting_date": "2026-06-15",
     "title": "City Council 2026-06-15: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6330,plainText=false)"
+  },
+  "b9da2b2a7ad2dfcf": {
+    "body": "press",
+    "first_seen": "2026-08-18",
+    "kind": "notice",
+    "meeting_date": "2026-08-18",
+    "title": "Arts council announces winners of juried exhibition",
+    "url": "https://www.transylvaniatimes.com/arts/arts-council-announces-winners-of-juried-exhibition/article_33b81ff8-ddbd-417a-8fe8-b4f40c17ed47.html"
   },
   "bd4a35483efddfe1": {
     "body": "city",

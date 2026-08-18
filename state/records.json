@@ -4770,5 +4770,61 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-18",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-20",
+      "title": "City Council Rosenwald Community Advisory Board 2026-08-20: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7378,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-17",
+        "what": "Next Brevard City Council Rosenwald Community Advisory Board meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Feedback on Silversteen Picnic Shelter Lights"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Bathroom Signage at Silversteen Park"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda posted on website and bulletin board 08/17/2026",
+      "Agenda forwarded to media and Sunshine List 08/17/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-18",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-08-18",
+      "title": "Arts council announces winners of juried exhibition",
+      "url": "https://www.transylvaniatimes.com/arts/arts-council-announces-winners-of-juried-exhibition/article_33b81ff8-ddbd-417a-8fe8-b4f40c17ed47.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
