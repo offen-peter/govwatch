@@ -7,6 +7,14 @@
     "title": "City Council Rosenwald Community Advisory Board 2026-07-16: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6347,plainText=false)"
   },
+  "01f621b52c7c44a5": {
+    "body": "press",
+    "first_seen": "2026-08-21",
+    "kind": "notice",
+    "meeting_date": "2026-08-21",
+    "title": "Transylvania County Schools staff members gathe\u2026",
+    "url": "https://www.transylvaniatimes.com/education/transylvania-county-schools-staff-members-gather-before-school-starts/article_6dbf7d50-f78a-4a87-b81c-7d341de2f1c4.html"
+  },
   "047b31db044043fb": {
     "body": "city",
     "first_seen": "2026-08-10",
@@ -78,6 +86,14 @@
     "meeting_date": "2026-08-20",
     "title": "City Council Rosenwald Community Advisory Board 2026-08-20: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7378,plainText=false)"
+  },
+  "33766ee322dd9774": {
+    "body": "city",
+    "first_seen": "2026-08-21",
+    "kind": "minutes",
+    "meeting_date": "2026-07-20",
+    "title": "City Council 2026-07-20: Minutes",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7389,plainText=false)"
   },
   "361c1f55cefc73ad": {
     "body": "city",
@@ -175,6 +191,14 @@
     "title": "City Council 2026-06-15: Agenda Packet",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6331,plainText=false)"
   },
+  "62eae0fba02154de": {
+    "body": "city",
+    "first_seen": "2026-08-21",
+    "kind": "agenda",
+    "meeting_date": "2026-08-24",
+    "title": "City Council Public Safety (Police & Fire) Committee 2026-08-24: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7383,plainText=false)"
+  },
   "664722d9fa2eb53c": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -263,6 +287,14 @@
     "title": "Board of Commissioners July 13, 2026 (transcript)",
     "url": "https://vimeo.com/event/6043511"
   },
+  "be7484f5b6185eb3": {
+    "body": "press",
+    "first_seen": "2026-08-21",
+    "kind": "notice",
+    "meeting_date": "2026-08-21",
+    "title": "Council hears objections to housing project",
+    "url": "https://www.transylvaniatimes.com/news/council-hears-objections-to-housing-project/article_5e771156-a7cd-4d8a-89af-01241e611424.html"
+  },
   "beb139dc6503ee2e": {
     "body": "county",
     "first_seen": "2026-08-06",
@@ -311,6 +343,14 @@
     "title": "County news and public notices",
     "url": "https://www.transylvaniacounty.org/news"
   },
+  "e54aa27cf7395293": {
+    "body": "city",
+    "first_seen": "2026-08-21",
+    "kind": "agenda",
+    "meeting_date": "2026-08-24",
+    "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-08-24: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7388,plainText=false)"
+  },
   "ec2e47c4114298d7": {
     "body": "county",
     "first_seen": "2026-08-06",
@@ -318,6 +358,14 @@
     "meeting_date": "2026-06-22",
     "title": "Commissioners minutes 06/22/26",
     "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-22%20reg%20mtg%20_%20PH.pdf"
+  },
+  "f7e6caf6067c1e05": {
+    "body": "press",
+    "first_seen": "2026-08-21",
+    "kind": "notice",
+    "meeting_date": "2026-08-21",
+    "title": "Transylvania County Schools welcomes new teachers",
+    "url": "https://www.transylvaniatimes.com/education/transylvania-county-schools-welcomes-new-teachers/article_59d711a5-df37-4e2e-b407-5f1f8f6f24c1.html"
   },
   "f805750f21513492": {
     "body": "city",

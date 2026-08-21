@@ -4826,5 +4826,407 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-21",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-24",
+      "title": "City Council Public Safety (Police & Fire) Committee 2026-08-24: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7383,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Traffic Calming Measures"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Body Camera Policy"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda posted to website and bulletin board 08/19/2026",
+      "Agenda forwarded to media and Sunshine List 08/19/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-21",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-08-24",
+      "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-08-24: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7388,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Next Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Credit Card Processing Fee Discussion"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Follow-up on Ecusta Trail Advisory Board Applications and Recommendation"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Revisit Staff Evaluation Program"
+      }
+    ],
+    "public_process": [
+      "Public Comments period included on agenda",
+      "Agenda posted to website and bulletin board on 08/19/2026",
+      "Agenda forwarded to media and Sunshine List on 08/19/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-21",
+    "_source": {
+      "body": "city",
+      "kind": "minutes",
+      "meeting_date": "2026-07-20",
+      "title": "City Council 2026-07-20: Minutes",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7389,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved agenda as presented",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved June 15, 2026 Regular Meeting minutes",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Administered Oath of Office to Deputy Chief of Police Alan Bonanno",
+        "who": "City Clerk Denise Hodsdon"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Administered Oath of Office to Police Sergeant Tanner Green",
+        "who": "City Clerk Denise Hodsdon"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved amendment to City of Brevard Unified Development Ordinance Chapters 9 and 19; and Code of Ordinances Chapter 38 - Sight Triangles",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved amendments to City of Brevard Unified Development Ordinance, Chapters 6, 17 and 19; and Code of Ordinances Chapter 38 - Stormwater Management Development Regulations",
+        "who": "City Council"
+      },
+      {
+        "amount": "$8,575,000",
+        "vote": "unanimous",
+        "what": "Approved consent agenda including Capital Project Amendment - Wastewater Treatment Plant Upgrade (Ordinance No. 2026-32)",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved amendment to Official Zoning Map - 2 parcels on Deavor Road to PGX (Ordinance No. 2026-33)",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved naming of fourth trail at Bracken Preserve as Mountain Rush Trail",
+        "who": "City Council"
+      },
+      {
+        "amount": "$100",
+        "vote": "unanimous",
+        "what": "Adopted Food Vendor Pilot Program (Resolution No. 2026-38)",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappointed Lisa Conner to Brevard ABC Board (Resolution No. 2026-39)",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-08-03",
+        "what": "HUD PRO Housing Federal Grant Application deadline"
+      },
+      {
+        "date": "2026-08-01 to 2026-12-31",
+        "what": "Food Vendor Pilot Program operating period"
+      },
+      {
+        "date": "2026-11",
+        "what": "HUD PRO Housing award announcement"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$8,575,000",
+        "fund": "NCDEQ SRP-W-134-0175",
+        "item": "Wastewater Treatment Plant Upgrade Project - NCDEQ funding"
+      },
+      {
+        "amount": "$1,230,000",
+        "fund": "Capital Project Fund",
+        "item": "Wastewater Treatment Plant Upgrade Project - Professional Services"
+      },
+      {
+        "amount": "$575,000",
+        "fund": "Capital Project Fund",
+        "item": "Wastewater Treatment Plant Upgrade Project - Professional Services"
+      },
+      {
+        "amount": "$8,000,000",
+        "fund": "Capital Project Fund",
+        "item": "Wastewater Treatment Plant Upgrade Project - Capital Outlay"
+      },
+      {
+        "amount": "$10,000,000",
+        "fund": "Federal HUD funding",
+        "item": "HUD PRO Housing Grant Application - affordable homes on Cashiers Valley Rd"
+      },
+      {
+        "amount": "$400,000",
+        "fund": "Federal HUD funding",
+        "item": "HUD PRO Housing Grant - affordable housing preservation in Rosenwald Community"
+      },
+      {
+        "amount": "$600,000",
+        "fund": "In-kind donation",
+        "item": "City property donation to Housing Assistance Corporation"
+      },
+      {
+        "amount": "$400,000",
+        "fund": "Dogwood Health Trust grant",
+        "item": "Utility extension on Cashiers Valley Rd (County-funded via Dogwood Health Trust grant)"
+      },
+      {
+        "amount": "$100",
+        "fund": "Permitting",
+        "item": "Food Vendor Pilot Program permit fee"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Council to consider data on extent of problem and quarterly reporting on enforcement",
+        "what": "Proposed Amendments to City of Brevard Code of Ordinances Chapter 42 - Loitering, Trespassing, Public Intoxication, and Hours of Operation"
+      },
+      {
+        "date": "2026-08-03",
+        "next_step": "Application submission deadline August 3rd; awards expected to be announced in November",
+        "what": "HUD Pathways to Removing Obstacles to Housing (PRO Housing) Federal Grant Application"
+      },
+      {
+        "date": "",
+        "next_step": "Staff to readvertise and extend recruitment",
+        "what": "Recruitment for ABC Board member with retail, restaurant, or advisory board experience"
+      }
+    ],
+    "public_process": [
+      "Public comment period held on loitering, trespassing, public intoxication, and hours of operation ordinance amendments",
+      "Doug Powell provided public comment regarding compassion and fairness toward homeless individuals, discussing addiction, mental health, and selective assistance",
+      "Planning Board discussed sight triangle amendments at May 26th meeting and unanimously recommended approval",
+      "Planning Board reviewed stormwater management amendments at May 26th meeting and recommended adoption",
+      "Finance, Human Resources and Citizen Appointment Committee reviewed and unanimously recommended Food Vendor Pilot Program",
+      "Parks, Trails and Recreation Committee voted to recommend Mountain Rush Trail name at June 17th meeting",
+      "Public hearings held for sight triangles amendment, stormwater management amendments, and PRO Housing grant application with no public participation",
+      "Finance, Human Resources and Citizen Appointment Committee conducted open recruitment and interviews for ABC Board positions"
+    ],
+    "quotes": [
+      {
+        "speaker": "Doug Powell",
+        "text": "Let's just say I felt transported into Independence Hall during those very hot summer days of 1776."
+      },
+      {
+        "speaker": "Chief Wentzell",
+        "text": "The Police Department's response is based on the behavior, not the individual."
+      },
+      {
+        "speaker": "Rodney Locks",
+        "text": "I am going to ask Council to develop a plan of action to ensure citizens who want to vote, that it is safe to vote."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater",
+      "steep slope",
+      "affordable housing",
+      "rezoning",
+      "conditional use"
+    ]
+  },
+  {
+    "_extracted": "2026-08-21",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-08-21",
+      "title": "Transylvania County Schools staff members gathe\u2026",
+      "url": "https://www.transylvaniatimes.com/education/transylvania-county-schools-staff-members-gather-before-school-starts/article_6dbf7d50-f78a-4a87-b81c-7d341de2f1c4.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-21",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-08-21",
+      "title": "Transylvania County Schools welcomes new teachers",
+      "url": "https://www.transylvaniatimes.com/education/transylvania-county-schools-welcomes-new-teachers/article_59d711a5-df37-4e2e-b407-5f1f8f6f24c1.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [
+      {
+        "speaker": "Ginny Warriner",
+        "text": "Love students unconditionally, meet them where they are."
+      },
+      {
+        "speaker": "Jessica Bubenzer",
+        "text": "Relationships are the key to student progress and growth."
+      },
+      {
+        "speaker": "Benjamin Bouressa",
+        "text": "Genuine relationships with students are foundation for everything."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-08-21",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-08-21",
+      "title": "Council hears objections to housing project",
+      "url": "https://www.transylvaniatimes.com/news/council-hears-objections-to-housing-project/article_5e771156-a7cd-4d8a-89af-01241e611424.html"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Extend lease with Brevard-Davidson River Presbyterian Church for affordable housing project",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-08-21",
+        "what": "Public hearing on grease trap and interceptor ordinance amendments"
+      },
+      {
+        "date": "six months to one year from adoption",
+        "what": "Compliance deadline for commercial kitchen upgrades if ordinance adopted"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$1 per year",
+        "fund": "",
+        "item": "Church lease payment to city for 4.5-acre parcel"
+      },
+      {
+        "amount": "$25,000",
+        "fund": "",
+        "item": "Potential daily fines for city non-compliance with DEQ grease mandate"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Council approval at upcoming meeting",
+        "what": "Unified Development Ordinance (UDO) amendment requiring grease traps and interceptors in commercial kitchens"
+      },
+      {
+        "date": "",
+        "next_step": "Council approval at upcoming meeting",
+        "what": "Code of Ordinances amendment adding FOG enforcement language"
+      },
+      {
+        "date": "",
+        "next_step": "City evaluation pending review results",
+        "what": "Review of Greenway Development Group financials and pro forma by Development Finance Initiative"
+      }
+    ],
+    "public_process": [
+      "Public comment period held during council meeting on affordable housing project",
+      "Public hearing held on grease trap ordinance amendments",
+      "Planning board approved UDO revisions before council consideration",
+      "City planning department involvement in reviewing new food service construction compliance"
+    ],
+    "quotes": [
+      {
+        "speaker": "Lauren Wolf",
+        "text": "My concern is water. We don't want our houses flooded out."
+      },
+      {
+        "speaker": "Councilman Lauren Wise",
+        "text": "We've heard the public housing is critical for years."
+      },
+      {
+        "speaker": "City Manager Wilson Hooper",
+        "text": "We're not convinced they can manage the project."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "affordable housing",
+      "rezoning",
+      "conditional use",
+      "DEQ",
+      "Department of Environmental Quality",
+      "stormwater",
+      "steep slope",
+      "public comment",
+      "open meetings"
+    ]
   }
 ]
