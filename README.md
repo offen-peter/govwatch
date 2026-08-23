@@ -240,6 +240,30 @@ deno for the JavaScript runtime, curl-cffi for TLS impersonation, and
 the bgutil proof of origin token provider. The county is unaffected,
 since Vimeo never touches yt-dlp.
 
+Installing the token provider was not sufficient, and the reason is
+worth writing down because it looked like the provider had failed. On
+2026-08-23 both YouTube bodies came back with "Sign in to confirm you're
+not a bot" while the provider was confirmed running and answering on
+port 4416 for the whole job. The provider was never the problem. Nothing
+was asking it for anything.
+
+Which client fetches decides whether a token is even requested.
+Captions need a *subtitles* PO token, separately from the GVS token
+video formats need, and yt-dlp says so plainly when it skips them. `mweb`
+can fetch that token from the provider. `tv_simply` cannot use a PO token
+at all, which is precisely why it succeeds from a laptop: a residential
+address is not challenged, so nothing is asked of it. On a datacenter
+address it is challenged, has nothing to offer, and fails.
+
+The client list had `tv_simply` ahead of the only token capable client in
+it, so the challenged client answered first and the provider sat idle.
+`mweb` now leads and `tv_simply` follows. On a runner `mweb` takes the
+token. On a laptop it discards the subtitle track as a warning rather
+than an error, yt-dlp falls through, and `tv_simply` serves it as before.
+
+Whether that is enough from a datacenter address is still unverified.
+It is the one thing in this section that no local test can settle.
+
 ### Whisper settings, and why
 
 Meeting audio breaks Whisper in specific ways, so the defaults are not

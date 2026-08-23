@@ -411,8 +411,32 @@ def sources() -> list:
 # the default clients and both return a full English caption track on
 # tv_simply or web_embedded. The city is unaffected by the addition,
 # since default stays first in the list and still wins for its videos.
+# Order matters as much as membership, and the first version of this got
+# the order wrong. It read default,tv_simply,web_embedded, which put the
+# only client capable of proving itself last.
+#
+# Captions need a subtitles PO token, separately from the GVS token that
+# video formats need. yt-dlp says so explicitly when it skips them: "Some
+# mweb client subtitles require a PO Token which was not provided. They
+# will be discarded since they are not downloadable as-is."
+#
+# mweb can fetch that token from the bgutil provider. tv_simply cannot
+# use a PO token at all, which is exactly why it works from a laptop:
+# a residential address is not challenged, so no proof is asked for. On a
+# datacenter address it is challenged, has nothing to offer, and comes
+# back with "Sign in to confirm you're not a bot". That is what both
+# YouTube bodies recorded on the 2026-08-23 runner runs, with the token
+# provider confirmed up and answering on 4416 the whole time. The
+# provider was never the problem. Nothing was asking it for anything.
+#
+# So mweb leads, and tv_simply follows it. On a runner mweb takes the
+# token and the captions come back. On this laptop mweb discards the
+# subtitle track as a warning rather than an error, yt-dlp falls through,
+# and tv_simply serves it as before. Verified both ways on 2026-08-23
+# against the school board's made for kids video and the city's, 776KB
+# and 1,040KB of captions respectively.
 YT_CLIENT_ARGS = ["--extractor-args",
-                  "youtube:player_client=default,tv_simply,web_embedded"]
+                  "youtube:player_client=mweb,tv_simply"]
 
 # Without this, yt-dlp aborts with "Requested format is not available"
 # before it writes the subtitle file, whenever no downloadable A/V format
