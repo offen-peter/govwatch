@@ -38,6 +38,7 @@ from __future__ import annotations
 
 import os
 import re
+import html
 import json
 import shutil
 import hashlib
@@ -475,6 +476,7 @@ def fetch_captions(ref: VideoRef) -> str | None:
 
     dest = WORK / ref.vid
     dest.mkdir(exist_ok=True)
+    last_tail = ""
     for args in (["--write-subs", "--sub-langs", "en.*"],
                  ["--write-auto-subs", "--sub-langs", "en.*"]):
         proc = subprocess.run(
@@ -486,16 +488,25 @@ def fetch_captions(ref: VideoRef) -> str | None:
         vtts = list(dest.glob("*.vtt"))
         if vtts:
             return _vtt_to_text(vtts[0].read_text(errors="ignore"))
-        if proc.returncode != 0:
-            # yt-dlp's own message is the only thing that separates "this
-            # video has no caption track", which is normal and means fall
-            # through to Whisper, from "YouTube refused the request",
-            # which is not normal and Whisper cannot rescue because the
-            # audio download uses the same blocked client. Throwing the
-            # stderr away made those two look identical.
-            tail = " ".join((proc.stderr or "").strip().splitlines()[-2:])
-            print(f"yt-dlp captions failed for {ref.title}: {tail[:400]}")
-            LAST_CAPTION_ERROR[ref.vid] = tail[:400]
+
+        # No caption file, which is the only thing that actually matters
+        # here. Do not gate this on the exit code.
+        #
+        # --ignore-no-formats-error, which we pass so a missing A/V format
+        # cannot abort a subtitles only fetch, also makes yt-dlp exit 0
+        # when it comes back with nothing at all. So `returncode != 0`,
+        # which this used to test, was never true on precisely the runs
+        # that needed it: the 2026-08-23 runner recorded the Whisper
+        # fallback error twice more after this check was added, because
+        # the check itself was being skipped.
+        #
+        # yt-dlp's own message is still the only thing that separates
+        # "this video has no caption track", which is normal and means
+        # fall through to Whisper, from "YouTube refused the request",
+        # which is not and which Whisper cannot rescue.
+        tail = " ".join((proc.stderr or "").strip().splitlines()[-3:])
+        if tail:
+            last_tail = tail
             # A refusal is not a missing caption track, and only one of
             # the two is worth falling through to Whisper for. Whisper
             # downloads audio through the same client that was just
@@ -505,10 +516,19 @@ def fetch_captions(ref: VideoRef) -> str | None:
             # which points at the wrong thing entirely. That is exactly
             # what the 2026-08-23 runs recorded for both YouTube bodies.
             if BLOCKED_RE.search(tail):
+                LAST_CAPTION_ERROR[ref.vid] = tail[:400]
                 raise RuntimeError(
                     f"YouTube refused the caption request: {tail[:200]}. "
                     f"Whisper cannot rescue this, it downloads through the "
                     f"same client, so nothing was attempted.")
+
+    # Reported once, after both attempts, rather than per attempt. The
+    # first pass asks for published subtitles and these meetings only
+    # ever have automatic ones, so that pass comes back empty on a
+    # perfectly healthy run and logging it each time would cry wolf.
+    if last_tail:
+        print(f"yt-dlp found no captions for {ref.title}: {last_tail[:400]}")
+        LAST_CAPTION_ERROR[ref.vid] = last_tail[:400]
     return None
 
 
@@ -528,6 +548,19 @@ def _granicus_captions(ref: VideoRef) -> str | None:
 
 def _vtt_to_text(vtt: str) -> str:
     """Collapse WebVTT or SRT into timestamped paragraphs."""
+    # YouTube's caption files are HTML escaped, so the speaker change
+    # marker arrives as &gt;&gt; rather than >>. Measured across the three
+    # committed city transcripts: 1,170, 830 and 1,084 entities each.
+    #
+    # Two reasons to undo it. The transcripts are the durable artifact
+    # here and are meant to be read, and an escaped entity is noise in
+    # the middle of a sentence. And &gt;&gt; costs about four tokens where
+    # >> costs one, on every extraction, of every transcript, forever.
+    #
+    # The >> markers themselves are worth keeping: they are the caption
+    # track's own speaker change signal, and speaker attribution is
+    # inference from exactly this kind of cue.
+    vtt = html.unescape(vtt)
     lines, current, stamp = [], [], None
     for raw in vtt.splitlines():
         line = raw.strip()
