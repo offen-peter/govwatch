@@ -79,6 +79,20 @@ Worth trying first, since it costs nothing: ask the board whether they
 can publish minutes as text. They are produced in a word processor and
 then scanned, so the digital originals exist.
 
+**OCR would not have closed this gap in the last three months, and that
+changes the decision.** Measured 2026-08-23: the minutes index carries
+105 sets and parses correctly, but the most recent is 2026-05-14. The
+board has published nothing since. So the zero elections records in
+`state/records.json` are not an extraction failure and not the scanning
+problem either, they are a publication lag, and perfect OCR against this
+source today would still yield nothing for June, July or August.
+
+That reorders the two options. Asking the board for text originals is
+now clearly first, because it addresses both problems at once and OCR
+addresses neither until they publish. Revisit OCR when minutes for the
+2026-08-20 meeting appear, which on this board's own cadence means after
+the 2026-09-10 meeting approves them.
+
 ## Standing rules
 
 - No em dashes or en dashes, anywhere, including in code comments and
