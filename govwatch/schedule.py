@@ -86,6 +86,13 @@ class Meeting:
     source: str = ""     # which resolver supplied it
     key: str = field(default="")
 
+    # True when the only thing asserting this meeting is a recurrence
+    # rule, on a date the authoritative file does not cover. The meeting
+    # may have happened or may not, and nothing available here can tell
+    # the difference. The digest has to say so rather than reporting a
+    # failed retrieval for a meeting it cannot show ever took place.
+    unverified: bool = False
+
     def __post_init__(self):
         if not self.key:
             self.key = f"{self.body}:{self.date}"
@@ -307,14 +314,36 @@ def build() -> list[Meeting]:
 
     # A meeting the authoritative source dropped entirely is treated as
     # cancelled, so we stop watching for materials that will not appear.
+    #
+    # Bounded by the range shared.js actually covers, not by the future.
+    # The file carries a rolling window, 2026-07-13 onward as of writing,
+    # and says nothing whatever about dates before it begins. Absence
+    # inside the covered range is a real statement that no meeting
+    # happened. Absence before the range starts is not a statement at
+    # all, and reading it as one would erase meetings this repo holds
+    # transcripts for.
+    #
+    # The old guard was `date > today`, so the rule never fired on a past
+    # meeting at all. That let a recurrence rule invent county 2026-07-27,
+    # a date shared.js positively excludes and that was in fact cancelled,
+    # and every digest since has reported minutes missing for a meeting
+    # that never took place.
     shared = {m.key for m in shared_meetings}
     if shared:
+        dates = [m.date for m in shared_meetings]
+        covered_from, covered_to = min(dates), max(dates)
         for key, m in merged.items():
-            if (m.source == "recurrence rule"
-                    and key not in shared
-                    and _d(m.date) > dt.date.today()):
+            if m.source != "recurrence rule" or key in shared:
+                continue
+            if covered_from <= m.date <= covered_to:
                 m.cancelled = True
                 m.title = (m.title + " (not in shared.js, treated as cancelled)").strip()
+            else:
+                # Outside what the file speaks to. Keep watching, since
+                # the meeting may well have happened, but mark it so the
+                # digest does not claim a retrieval failure it cannot
+                # substantiate.
+                m.unverified = True
 
     cal = sorted(merged.values(), key=lambda m: (m.date, m.body))
     CALENDAR.write_text(json.dumps([m.to_dict() for m in cal], indent=2))
@@ -365,6 +394,22 @@ WINDOWS = {
     "video":   (1, 4, 5),
     "minutes": (14, 75, 168),
     "press":   (1, 10, 72),
+}
+
+# Days after a meeting past which a missing artifact is a failure rather
+# than a normal lag, used only for what the digest calls a gap. This is
+# deliberately not the same as the window opening.
+#
+# The minutes window opens at T+14 because that is the earliest minutes
+# could plausibly appear. It is nowhere near when they usually do. All
+# three bodies approve minutes at a subsequent meeting, and the county's
+# documented lag is four to six weeks, so treating T+14 as late listed
+# every recent meeting as missing minutes in every digest. Six weeks is
+# the top of that documented range: past it, absence is worth reporting.
+OVERDUE_AFTER = {
+    "agenda":  0,    # the meeting has happened, the agenda predates it
+    "video":   4,    # the end of the window, uploads land within days
+    "minutes": 42,
 }
 
 

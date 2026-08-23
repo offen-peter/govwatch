@@ -509,6 +509,16 @@ def _gaps() -> list[str]:
                     f"last poll: {err}")
 
     today = dt.date.today()
+
+    # Every meeting we hold any extracted record for. Used below to stop
+    # hedging about whether a meeting took place when the archive already
+    # settles it.
+    attested = set()
+    for rec in _load(RECORDS, []):
+        src = rec.get("_source") or {}
+        if src.get("body") and src.get("meeting_date"):
+            attested.add((src["body"], src["meeting_date"]))
+
     try:
         due = sched.open_windows(respect_cadence=False)
     except Exception as e:
@@ -522,9 +532,34 @@ def _gaps() -> list[str]:
         if artifact == "press":
             continue
         for m in meetings:
-            if dt.date.fromisoformat(m.date) <= today:
+            age = (today - dt.date.fromisoformat(m.date)).days
+            if age < 0:
+                continue
+            # A window opening is not the same as an artifact being late.
+            # The minutes window opens at T+14 because that is the
+            # earliest minutes could appear, but these bodies approve
+            # minutes at a later meeting and the county's own lag runs
+            # four to six weeks. Reporting a gap from T+14 listed every
+            # recent meeting as missing minutes every week, which is
+            # normal lag described as failure, and it buried the two or
+            # three entries that were real.
+            if age < sched.OVERDUE_AFTER.get(artifact, 0):
+                continue
+            # A record for that body and date is proof the meeting
+            # happened, whatever the calendar can or cannot vouch for.
+            # Without this the city meeting of 2026-06-15 was hedged as
+            # possibly never held while a transcript of it sat in the
+            # repo.
+            if getattr(m, "unverified", False) and (m.body, m.date) not in attested:
+                gaps.append(
+                    f"No {artifact} retrieved for a {m.body} meeting on "
+                    f"{m.date}, and the meeting itself is unconfirmed: it "
+                    f"comes from a recurrence rule, on a date the "
+                    f"authoritative calendar does not cover. It may not "
+                    f"have taken place.")
+            else:
                 gaps.append(f"No {artifact} retrieved for the {m.body} meeting "
-                            f"on {m.date}.")
+                            f"on {m.date}, now {age} days ago.")
     return gaps
 
 
