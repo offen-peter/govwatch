@@ -201,6 +201,32 @@ still answers, which is the only reason county video is reachable.
 A typical week is therefore three caption fetches taking seconds
 between them, and no CPU time at all.
 
+### The school board marks its videos "made for kids"
+
+This is a separate failure from the one below, and confusing the two
+cost the school board every transcript it should have had.
+
+Transylvania County Schools marks its uploads made for kids. The
+lightweight clients yt-dlp reaches for first, `visionos` and
+`android_vr`, refuse that content outright with "This video is not
+available", which reads exactly like a removed or private video. That is
+why the school board had never produced a single transcript while the
+city had produced three, and no proof of origin token would ever have
+helped, because the request was being refused before tokens entered the
+picture.
+
+Verified both ways on 2026-08-23 from a residential connection: the
+2026-08-17 board meeting fails on the default clients and returns 776KB
+of English captions on `tv_simply`. `YT_CLIENT_ARGS` in `video.py` now
+appends `tv_simply` and `web_embedded` behind `default`, so the city path
+is unchanged and the school board path works.
+
+Two things follow that are worth keeping in mind. This failed on a
+laptop as well as in Actions, so the documented "sweep city video
+locally" fallback would never have rescued the school board. And because
+the symptom is indistinguishable from a deleted video, it was written
+down here as a deleted video for weeks.
+
 ### YouTube blocks datacenter addresses
 
 The city and school board paths run through yt-dlp, and yt-dlp works
@@ -235,10 +261,15 @@ the library defaults:
 None of the above has been exercised. Every one of these settings is
 reasoning about meeting audio, not a measurement of it, because every
 body turned out to publish captions. Whisper is the fallback for a
-meeting whose caption track is missing, which has not happened yet but
-nearly did: the school board's 2026-06-16 video was removed from YouTube
-before it could be fetched. Treat this section as untested until a
-transcript actually comes back marked `whisper base.en`.
+meeting whose caption track is missing, which has not happened yet.
+Treat this section as untested until a transcript actually comes back
+marked `whisper base.en`.
+
+This section used to say the school board's June 2026 video had been
+removed from YouTube before it could be fetched. That was wrong. The
+video is still live and its captions fetch in seconds. What actually
+failed is described next, and it had nothing to do with the video being
+gone.
 
 ### Speaker attribution is inference
 

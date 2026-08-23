@@ -129,10 +129,20 @@ video:
   # `transcribe` will reach.
   #
   # Widen it temporarily, not permanently, if a body's video needs
-  # sweeping up after an outage. At 60 the school board's monthly
-  # meetings come into range, which 21 misses, and that gap is worth
-  # settling properly rather than by leaving this wide.
-  lookback_days: 21
+  # sweeping up after an outage.
+  #
+  # 45, not 21, and this is the settling the note here used to defer. The
+  # school board meets monthly, so consecutive meetings are 28 to 35 days
+  # apart. 21 is shorter than that gap, which means a windowless sweep
+  # run once per meeting cycle can land in a hole where the last meeting
+  # has already aged out and the next has not happened. 45 leaves a
+  # fortnight of slack either side. The T+1 to T+4 window is still what
+  # catches a meeting in normal operation and is unaffected by this.
+  #
+  # It costs nothing per extra day. Discovery is one RSS request either
+  # way, max_per_run still caps the work, and anything already in
+  # state/video is reused rather than fetched again.
+  lookback_days: 45
 
   # Hard ceiling per run so one bad discovery cannot burn an hour of CI
   # on a backlog you did not ask for.

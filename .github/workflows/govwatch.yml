@@ -101,6 +101,41 @@ jobs:
           echo "token provider did not come up, youtube captions will probably fail this run"
           docker logs bgutil-provider || true
 
+      # Installed is not the same as wired, and the previous version of
+      # this workflow checked neither. It pip installed the plugin, ran
+      # the container, and then had no way to tell a working token path
+      # from a broken one until a brief came back three weeks later
+      # saying no video was retrieved.
+      #
+      # Two things are checked here, both cheap and both offline. That
+      # the plugin module yt-dlp loads actually imports, and that the
+      # provider answers on the port the plugin defaults to
+      # (http://127.0.0.1:4416, which is what the -p above publishes).
+      #
+      # Neither proves YouTube will accept the token from a datacenter
+      # address. Only a real caption fetch settles that, and the Run step
+      # below is that test. What this catches is the case where the
+      # answer was never going to be yes because nothing was connected.
+      #
+      # Loud but not fatal, and the distinction matters here. The Run step
+      # below is a single `run.py tick` that does documents, video and the
+      # weekly brief in one process, so failing this step would abort all
+      # three. A broken token provider costs us city and school board
+      # video; it is not a reason to stop collecting agendas or to skip
+      # the digest. The ::error:: annotation surfaces it on the run
+      # summary, and the caption failure itself lands in failures.json
+      # and then in the brief's Gaps section, which is where it will
+      # actually be read.
+      - name: Verify the token provider is wired to yt-dlp
+        if: steps.windows.outputs.video == 'video' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: |
+          python -c "import yt_dlp_plugins.extractor.getpot_bgutil_http" \
+            || echo "::error::bgutil pot provider plugin is not importable, youtube captions cannot work"
+          curl -sf http://127.0.0.1:4416/ping \
+            || echo "::error::token provider is not answering on 127.0.0.1:4416"
+          echo "token provider check done"
+
       # The Whisper weights are ~150MB for base.en. Cache them or every
       # transcription run re-downloads before it can start.
       - name: Cache Whisper weights

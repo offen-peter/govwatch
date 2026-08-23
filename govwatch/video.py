@@ -380,6 +380,31 @@ def sources() -> list:
 
 # ============================================================== captions
 
+# Which yt-dlp client asks for the video decides whether a caption track
+# is reachable at all, and the defaults are wrong for one of our two
+# YouTube bodies.
+#
+# Transylvania County Schools marks its uploads "made for kids". The
+# lightweight clients yt-dlp reaches for first, visionos and android_vr,
+# refuse those outright with "This video is not available". That, not the
+# proof of origin token, is why the school board has never produced a
+# transcript while the city has produced three.
+#
+# Verified against the live videos on 2026-08-23, from a residential
+# connection: the 2026-08-17 and 2026-06-15 board meetings both fail on
+# the default clients and both return a full English caption track on
+# tv_simply or web_embedded. The city is unaffected by the addition,
+# since default stays first in the list and still wins for its videos.
+YT_CLIENT_ARGS = ["--extractor-args",
+                  "youtube:player_client=default,tv_simply,web_embedded"]
+
+# Without this, yt-dlp aborts with "Requested format is not available"
+# before it writes the subtitle file, whenever no downloadable A/V format
+# resolves. We are passing --skip-download and only ever want the
+# captions, so a missing media format is not a reason to give up on them.
+YT_SUBS_ONLY_ARGS = ["--ignore-no-formats-error"]
+
+
 def fetch_captions(ref: VideoRef) -> str | None:
     """
     Try published captions before spending CPU on Whisper.
@@ -399,6 +424,7 @@ def fetch_captions(ref: VideoRef) -> str | None:
                  ["--write-auto-subs", "--sub-langs", "en.*"]):
         proc = subprocess.run(
             ["yt-dlp", "--skip-download", "--sub-format", "vtt",
+             *YT_CLIENT_ARGS, *YT_SUBS_ONLY_ARGS,
              *args, "-o", str(dest / "cap"), ref.media_url],
             capture_output=True, text=True, timeout=300,
         )
@@ -437,6 +463,12 @@ def _vtt_to_text(vtt: str) -> str:
     for raw in vtt.splitlines():
         line = raw.strip()
         if not line or line in ("WEBVTT",) or line.isdigit():
+            continue
+        # YouTube's auto-caption files open with "Kind: captions" and
+        # "Language: en". They are file metadata, not speech, and they
+        # were landing in the first paragraph of every YouTube
+        # transcript in the archive.
+        if re.match(r"(Kind|Language|NOTE|STYLE|REGION):", line):
             continue
         m = re.match(r"(\d{2}:\d{2}:\d{2})[.,]\d+\s*-->", line)
         if m:
@@ -551,6 +583,7 @@ def _download_audio(ref: VideoRef) -> Path:
     else:
         proc = subprocess.run(
             ["yt-dlp", "-f", "bestaudio", "-x", "--audio-format", "m4a",
+             *YT_CLIENT_ARGS,
              "--postprocessor-args", "-ac 1 -ar 16000",
              "-o", str(WORK / f"{ref.vid}.%(ext)s"), ref.media_url],
             capture_output=True, text=True, timeout=3600,
@@ -664,6 +697,15 @@ def _doc_from_markdown(ref: VideoRef, path: Path) -> Doc:
     )
 
 
+# What the last collect() attempted and what went wrong, so a caller can
+# persist it. Printing to the job log was the only record a video failure
+# left, which is why the city path could fail on four consecutive runs
+# and produce nothing but a brief saying "no video was retrieved". Prefer
+# a loud failure to a tidy empty result.
+LAST_ATTEMPTED: set[str] = set()
+LAST_FAILURES: dict[str, str] = {}
+
+
 def collect(lookback_days: int, roster: list[str],
             agendas: dict[str, str] | None = None,
             only_bodies: set[str] | None = None) -> list[Doc]:
@@ -674,23 +716,36 @@ def collect(lookback_days: int, roster: list[str],
     """
     agendas = agendas or {}
     docs = []
+    LAST_ATTEMPTED.clear()
+    LAST_FAILURES.clear()
     for src in sources():
-        if only_bodies and getattr(src, "body", None) not in only_bodies:
+        body = getattr(src, "body", str(src))
+        if only_bodies and body not in only_bodies:
             continue
+        LAST_ATTEMPTED.add(body)
         try:
             refs = src.discover(lookback_days)
         except Exception as e:
-            print(f"video discovery failed for {getattr(src, 'body', src)}: {e}")
+            msg = f"discovery failed: {type(e).__name__}: {e}"
+            print(f"video discovery failed for {body}: {e}")
+            LAST_FAILURES[body] = msg[:300]
             continue
         for ref in refs[: VIDEO_CFG.get("max_per_run", 4)]:
             try:
                 doc = process(ref, roster, agendas.get(ref.date, ""))
             except Exception as e:
+                msg = f"{ref.title}: {type(e).__name__}: {e}"
                 print(f"transcription failed for {ref.title}: {e}")
+                LAST_FAILURES[body] = msg[:300]
                 continue
             if doc:
                 docs.append(doc)
                 print(f"transcribed {ref.title}")
+            else:
+                msg = (f"{ref.title}: no captions and no usable Whisper "
+                       f"output, nothing written")
+                print(msg)
+                LAST_FAILURES[body] = msg[:300]
     return docs
 
 
@@ -720,6 +775,13 @@ def _tag(xml: str, name: str) -> str:
 def _date_from_title(title: str):
     for pat, fmt in (
         (r"([A-Z][a-z]+ \d{1,2},? \d{4})", "%B %d %Y"),
+        # The school board titles every meeting "TCS Board Meeting
+        # MM-DD-YYYY". Neither pattern below it matched that, so every
+        # school board video fell back to its YouTube publish date, which
+        # is the morning after the meeting. The transcript would have
+        # been filed and dated one day late.
+        (r"(\d{4}-\d{2}-\d{2})", "%Y-%m-%d"),
+        (r"(\d{1,2}-\d{1,2}-\d{4})", "%m-%d-%Y"),
         (r"(\d{1,2}/\d{1,2}/\d{2,4})", "%m/%d/%Y"),
     ):
         m = re.search(pat, title)

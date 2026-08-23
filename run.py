@@ -233,6 +233,24 @@ def transcribe(only_bodies: set[str] | None = None, dry: bool = False) -> list[d
         only_bodies=only_bodies,
     )
 
+    # A video failure used to exist only as a line in the job log, which
+    # nobody reads until they notice three weeks of empty briefs. Merge it
+    # into the same failures file poll() writes so the Gaps section names
+    # the cause, not just the absence. Keyed "<body> video" so it cannot
+    # collide with the document adapter entry for the same body, and any
+    # stale entry for a body attempted this run is dropped first.
+    prior = _load(FAILURES, {})
+    merged = {k: v for k, v in (prior.get("failures") or {}).items()
+              if not (k.endswith(" video")
+                      and k[: -len(" video")] in video_source.LAST_ATTEMPTED)}
+    merged.update({f"{body} video": err
+                   for body, err in video_source.LAST_FAILURES.items()})
+    _save(FAILURES, {
+        "run": dt.datetime.now().isoformat(timespec="seconds"),
+        "mode": prior.get("mode", "transcribe"),
+        "failures": merged,
+    })
+
     fresh = [d for d in docs if d.uid not in seen]
 
     print(f"{len(fresh)} new transcript(s)")
