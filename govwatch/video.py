@@ -295,11 +295,27 @@ class VimeoSource:
     def discover(self, lookback_days: int) -> list[VideoRef]:
         from govwatch.sources import County
 
-        cutoff = dt.date.today() - dt.timedelta(days=lookback_days)
+        today = dt.date.today()
+        cutoff = today - dt.timedelta(days=lookback_days)
         out = []
         for row in County().rows():
             url, when = row.get("video"), row.get("date")
             if not url or "vimeo.com" not in url or not when or when < cutoff:
+                continue
+            # A meeting that has not happened yet has no recording, and
+            # the county publishes the event link ahead of time, so the
+            # row exists well before the video does.
+            #
+            # This was latent until the row dates got fixed. The
+            # 2026-08-24 agenda is filed under a 2024 filename, so that
+            # row used to be dated two years early and fell out of the
+            # lookback at the other end. Reading the date from the row
+            # text instead put it back in range, and the first county
+            # transcribe after that tried to fetch tomorrow's meeting and
+            # failed with "no caption track and no HLS stream", which
+            # reads exactly like a missing recording rather than one that
+            # does not exist yet.
+            if when >= today:
                 continue
             title = f"Board of Commissioners {when:%B} {when.day}, {when.year}"
             out.append(VideoRef(self.body, title, when.isoformat(), url, url))
@@ -404,6 +420,21 @@ YT_CLIENT_ARGS = ["--extractor-args",
 # captions, so a missing media format is not a reason to give up on them.
 YT_SUBS_ONLY_ARGS = ["--ignore-no-formats-error"]
 
+# yt-dlp's wording when YouTube refuses the request outright rather than
+# simply having no captions. Both phrasings mean the same thing in
+# practice, that this address is being challenged, and neither is
+# recoverable by trying harder from the same place.
+BLOCKED_RE = re.compile(
+    r"confirm you.{0,3}re not a bot|Sign in to confirm|"
+    r"not a bot|blocked it in your country|age.restricted",
+    re.I)
+
+# The last caption failure per video id, so the reason survives long
+# enough to reach failures.json and then the brief. Printing it to the
+# job log was not enough: the 2026-08-23 runner runs printed the real
+# cause and recorded a misleading one.
+LAST_CAPTION_ERROR: dict[str, str] = {}
+
 
 def fetch_captions(ref: VideoRef) -> str | None:
     """
@@ -440,6 +471,20 @@ def fetch_captions(ref: VideoRef) -> str | None:
             # stderr away made those two look identical.
             tail = " ".join((proc.stderr or "").strip().splitlines()[-2:])
             print(f"yt-dlp captions failed for {ref.title}: {tail[:400]}")
+            LAST_CAPTION_ERROR[ref.vid] = tail[:400]
+            # A refusal is not a missing caption track, and only one of
+            # the two is worth falling through to Whisper for. Whisper
+            # downloads audio through the same client that was just
+            # refused, so on a blocked request it re-fails several
+            # minutes and several hundred megabytes later, and the error
+            # that reaches failures.json is "audio download failed",
+            # which points at the wrong thing entirely. That is exactly
+            # what the 2026-08-23 runs recorded for both YouTube bodies.
+            if BLOCKED_RE.search(tail):
+                raise RuntimeError(
+                    f"YouTube refused the caption request: {tail[:200]}. "
+                    f"Whisper cannot rescue this, it downloads through the "
+                    f"same client, so nothing was attempted.")
     return None
 
 
@@ -735,6 +780,12 @@ def collect(lookback_days: int, roster: list[str],
                 doc = process(ref, roster, agendas.get(ref.date, ""))
             except Exception as e:
                 msg = f"{ref.title}: {type(e).__name__}: {e}"
+                # When Whisper is what failed, the caption attempt that
+                # preceded it is usually the more informative half, and
+                # it is the half that used to exist only in the job log.
+                why = LAST_CAPTION_ERROR.get(ref.vid)
+                if why and why not in msg:
+                    msg = f"{msg} (captions first failed with: {why})"
                 print(f"transcription failed for {ref.title}: {e}")
                 LAST_FAILURES[body] = msg[:300]
                 continue
