@@ -391,7 +391,24 @@ def extract(doc: dict, watchlist: list[str], roster: list[str] | None = None) ->
     # treated as permanently unextractable. Output is billed on tokens
     # actually generated, so a higher ceiling costs nothing on the
     # documents that never approach it.
-    max_tokens = 16000 if is_transcript else 4000
+    #
+    # The ceiling now follows the size of the document rather than its
+    # kind, because keying it on kind did not cover the document the
+    # paragraph above is about. That meeting's record is a 99,789
+    # character set of minutes, not a transcript, so it was taking the
+    # 4000 branch: half the 8000 that had already proved too small for
+    # it. It failed on every poll from 2026-08-06 to 2026-08-23, and
+    # because a failed extraction is deliberately left unseen for a
+    # retry, it failed again on each one.
+    #
+    # 40,000 characters is roughly ten thousand tokens of input. Nothing
+    # that size is a routine agenda: the county's own minutes run 19,000
+    # to 20,000 characters for an ordinary meeting, and the ones that
+    # pass this line are the long ones, with a full public comment period
+    # to itemise. That is transcript scale work and it needs transcript
+    # scale room to write the answer.
+    long_document = len(text) > 40_000
+    max_tokens = 16000 if (is_transcript or long_document) else 4000
 
     msg = client.messages.create(
         model=FAST_MODEL,
