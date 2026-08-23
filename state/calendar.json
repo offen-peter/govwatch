@@ -5,7 +5,8 @@
     "title": "Board of Commissioners 4:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-01-12"
+    "key": "county:2026-01-12",
+    "unverified": false
   },
   {
     "body": "county",
@@ -13,7 +14,8 @@
     "title": "Board of Commissioners 4:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-02-09"
+    "key": "county:2026-02-09",
+    "unverified": false
   },
   {
     "body": "county",
@@ -21,7 +23,8 @@
     "title": "Board of Commissioners 6:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-02-23"
+    "key": "county:2026-02-23",
+    "unverified": false
   },
   {
     "body": "county",
@@ -29,7 +32,8 @@
     "title": "Board of Commissioners 4:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-03-09"
+    "key": "county:2026-03-09",
+    "unverified": false
   },
   {
     "body": "county",
@@ -37,7 +41,8 @@
     "title": "Board of Commissioners 6:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-03-23"
+    "key": "county:2026-03-23",
+    "unverified": false
   },
   {
     "body": "county",
@@ -45,7 +50,8 @@
     "title": "Board of Commissioners 4:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-04-13"
+    "key": "county:2026-04-13",
+    "unverified": false
   },
   {
     "body": "county",
@@ -53,7 +59,8 @@
     "title": "Board of Commissioners 6:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-04-27"
+    "key": "county:2026-04-27",
+    "unverified": false
   },
   {
     "body": "county",
@@ -61,23 +68,8 @@
     "title": "Board of Commissioners 4:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-05-11"
-  },
-  {
-    "body": "city",
-    "date": "2026-05-18",
-    "title": "",
-    "cancelled": false,
-    "source": "recurrence rule",
-    "key": "city:2026-05-18"
-  },
-  {
-    "body": "schools",
-    "date": "2026-05-18",
-    "title": "",
-    "cancelled": false,
-    "source": "recurrence rule",
-    "key": "schools:2026-05-18"
+    "key": "county:2026-05-11",
+    "unverified": false
   },
   {
     "body": "county",
@@ -85,7 +77,8 @@
     "title": "",
     "cancelled": false,
     "source": "recurrence rule",
-    "key": "county:2026-05-25"
+    "key": "county:2026-05-25",
+    "unverified": true
   },
   {
     "body": "county",
@@ -93,7 +86,8 @@
     "title": "Board of Commissioners 6:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-05-26"
+    "key": "county:2026-05-26",
+    "unverified": false
   },
   {
     "body": "city",
@@ -101,7 +95,8 @@
     "title": "",
     "cancelled": false,
     "source": "recurrence rule",
-    "key": "city:2026-06-01"
+    "key": "city:2026-06-01",
+    "unverified": true
   },
   {
     "body": "county",
@@ -109,7 +104,8 @@
     "title": "Board of Commissioners 4:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-06-08"
+    "key": "county:2026-06-08",
+    "unverified": false
   },
   {
     "body": "city",
@@ -117,7 +113,8 @@
     "title": "",
     "cancelled": false,
     "source": "recurrence rule",
-    "key": "city:2026-06-15"
+    "key": "city:2026-06-15",
+    "unverified": true
   },
   {
     "body": "schools",
@@ -125,7 +122,8 @@
     "title": "",
     "cancelled": false,
     "source": "recurrence rule",
-    "key": "schools:2026-06-15"
+    "key": "schools:2026-06-15",
+    "unverified": true
   },
   {
     "body": "county",
@@ -133,7 +131,8 @@
     "title": "Board of Commissioners 6:00 PM",
     "cancelled": false,
     "source": "county site",
-    "key": "county:2026-06-22"
+    "key": "county:2026-06-22",
+    "unverified": false
   },
   {
     "body": "city",
@@ -141,7 +140,8 @@
     "title": "",
     "cancelled": false,
     "source": "recurrence rule",
-    "key": "city:2026-07-06"
+    "key": "city:2026-07-06",
+    "unverified": true
   },
   {
     "body": "county",
@@ -149,7 +149,8 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-07-13"
+    "key": "county:2026-07-13",
+    "unverified": false
   },
   {
     "body": "city",
@@ -157,7 +158,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-07-20"
+    "key": "city:2026-07-20",
+    "unverified": false
   },
   {
     "body": "schools",
@@ -165,15 +167,17 @@
     "title": "Board of Education Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "schools:2026-07-20"
+    "key": "schools:2026-07-20",
+    "unverified": false
   },
   {
     "body": "county",
     "date": "2026-07-27",
-    "title": "",
-    "cancelled": false,
+    "title": "(not in shared.js, treated as cancelled)",
+    "cancelled": true,
     "source": "recurrence rule",
-    "key": "county:2026-07-27"
+    "key": "county:2026-07-27",
+    "unverified": false
   },
   {
     "body": "city",
@@ -181,7 +185,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-08-03"
+    "key": "city:2026-08-03",
+    "unverified": false
   },
   {
     "body": "county",
@@ -189,7 +194,8 @@
     "title": "(not in shared.js, treated as cancelled)",
     "cancelled": true,
     "source": "recurrence rule",
-    "key": "county:2026-08-10"
+    "key": "county:2026-08-10",
+    "unverified": false
   },
   {
     "body": "city",
@@ -197,7 +203,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-08-17"
+    "key": "city:2026-08-17",
+    "unverified": false
   },
   {
     "body": "schools",
@@ -205,7 +212,17 @@
     "title": "Board of Education Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "schools:2026-08-17"
+    "key": "schools:2026-08-17",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-08-20",
+    "title": "Regular Board Meeting, 10:00 AM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-08-20",
+    "unverified": false
   },
   {
     "body": "county",
@@ -213,7 +230,8 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-08-24"
+    "key": "county:2026-08-24",
+    "unverified": false
   },
   {
     "body": "city",
@@ -221,7 +239,17 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-09-07"
+    "key": "city:2026-09-07",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-09-10",
+    "title": "Regular Board Meeting, 10:00 AM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-09-10",
+    "unverified": false
   },
   {
     "body": "county",
@@ -229,7 +257,8 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-09-14"
+    "key": "county:2026-09-14",
+    "unverified": false
   },
   {
     "body": "city",
@@ -237,7 +266,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-09-21"
+    "key": "city:2026-09-21",
+    "unverified": false
   },
   {
     "body": "schools",
@@ -245,7 +275,8 @@
     "title": "Board of Education Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "schools:2026-09-21"
+    "key": "schools:2026-09-21",
+    "unverified": false
   },
   {
     "body": "county",
@@ -253,7 +284,17 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-09-28"
+    "key": "county:2026-09-28",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-09-29",
+    "title": "Absentee Board Meeting, 3:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-09-29",
+    "unverified": false
   },
   {
     "body": "city",
@@ -261,7 +302,17 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-10-05"
+    "key": "city:2026-10-05",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-10-06",
+    "title": "Absentee / Regular Board Meeting, 3:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-10-06",
+    "unverified": false
   },
   {
     "body": "county",
@@ -269,7 +320,17 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-10-12"
+    "key": "county:2026-10-12",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-10-13",
+    "title": "Absentee Board Meeting, 3:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-10-13",
+    "unverified": false
   },
   {
     "body": "city",
@@ -277,7 +338,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-10-19"
+    "key": "city:2026-10-19",
+    "unverified": false
   },
   {
     "body": "schools",
@@ -285,7 +347,17 @@
     "title": "Board of Education Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "schools:2026-10-19"
+    "key": "schools:2026-10-19",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-10-20",
+    "title": "Absentee Board Meeting, 3:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-10-20",
+    "unverified": false
   },
   {
     "body": "county",
@@ -293,7 +365,17 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-10-26"
+    "key": "county:2026-10-26",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-10-27",
+    "title": "Absentee Board Meeting, 3:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-10-27",
+    "unverified": false
   },
   {
     "body": "city",
@@ -301,7 +383,35 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-11-02"
+    "key": "city:2026-11-02",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-11-02",
+    "title": "Absentee Board Meeting, 3:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-11-02",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-11-03",
+    "title": "Absentee Board Meeting, 7:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-11-03",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-11-06",
+    "title": "Provisional / Absentee Board Meeting, 1:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-11-06",
+    "unverified": false
   },
   {
     "body": "county",
@@ -309,7 +419,26 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-11-09"
+    "key": "county:2026-11-09",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-11-12",
+    "title": "Supplemental Absentee (Uocava) Meeting, 5:00 PM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-11-12",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-11-13",
+    "title": "Canvass, 11:00 AM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-11-13",
+    "unverified": false
   },
   {
     "body": "city",
@@ -317,7 +446,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-11-16"
+    "key": "city:2026-11-16",
+    "unverified": false
   },
   {
     "body": "schools",
@@ -325,7 +455,8 @@
     "title": "Board of Education Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "schools:2026-11-16"
+    "key": "schools:2026-11-16",
+    "unverified": false
   },
   {
     "body": "county",
@@ -333,7 +464,8 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-11-23"
+    "key": "county:2026-11-23",
+    "unverified": false
   },
   {
     "body": "city",
@@ -341,7 +473,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-12-07"
+    "key": "city:2026-12-07",
+    "unverified": false
   },
   {
     "body": "county",
@@ -349,7 +482,17 @@
     "title": "County Commission Organizational Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-12-07"
+    "key": "county:2026-12-07",
+    "unverified": false
+  },
+  {
+    "body": "elections",
+    "date": "2026-12-10",
+    "title": "Regular Board Meeting, 10:00 AM",
+    "cancelled": false,
+    "source": "boe schedule pdf",
+    "key": "elections:2026-12-10",
+    "unverified": false
   },
   {
     "body": "county",
@@ -357,7 +500,8 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-12-14"
+    "key": "county:2026-12-14",
+    "unverified": false
   },
   {
     "body": "city",
@@ -365,7 +509,8 @@
     "title": "Brevard City Council Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "city:2026-12-21"
+    "key": "city:2026-12-21",
+    "unverified": false
   },
   {
     "body": "schools",
@@ -373,7 +518,8 @@
     "title": "Board of Education Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "schools:2026-12-21"
+    "key": "schools:2026-12-21",
+    "unverified": false
   },
   {
     "body": "county",
@@ -381,6 +527,7 @@
     "title": "County Commission Meeting",
     "cancelled": false,
     "source": "tcdp-shared.js",
-    "key": "county:2026-12-29"
+    "key": "county:2026-12-29",
+    "unverified": false
   }
 ]
