@@ -5901,5 +5901,605 @@
       "public records",
       "agenda modification"
     ]
+  },
+  {
+    "_extracted": "2026-08-23",
+    "_source": {
+      "body": "county",
+      "kind": "minutes",
+      "meeting_date": "2026-06-22",
+      "title": "Commissioners minutes 06/22/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-22%20reg%20mtg%20_%20PH.pdf"
+    },
+    "actions_taken": [
+      {
+        "amount": "$82.5 million",
+        "vote": "unanimous",
+        "what": "Approved FY 2027 Budget ($82.5 million General Fund, 1.47% increase, no property tax increase)",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved minutes of June 2 and June 8, 2026 meetings and sealed closed session minutes",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$217,538",
+        "vote": "unanimous",
+        "what": "Approved FY 2027 Home and Community Care Block Grant County Funding Plan",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$125,977",
+        "vote": "unanimous",
+        "what": "Approved FY 2027 Juvenile Crime Prevention Council Funding Plan",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$8,500",
+        "vote": "unanimous",
+        "what": "Approved amendment to FY 2025 audit contract with Martin Starnes & Associates",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved transfer of CARE Coalition Director position to NC Public Health Alliance Staffing Agency",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved rescheduling of Health Department annual training day to September 30, 2026",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved out-of-state travel request for IT Director Nathanael Carver to National Association of Counties Annual Conference",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved Proclamation #27-2026 designating July as Park and Recreation Month",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved letter of support for AdventHealth's Certificate of Need application",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappointed seven members to Juvenile Crime Prevention Council",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Tabled appointment of Kay Argroves to Regional Council on Aging",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed Jason Davis to North Transylvania Fire Rescue Relief Fund Board",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$625 per month",
+        "vote": "unanimous",
+        "what": "Renewed lease agreement with Veterans' History Museum of the Carolinas for two years at current rate",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$100,000",
+        "vote": "unanimous",
+        "what": "Approved FY 2027 nonprofit funding contracts ($100,000 total)",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$2,184,218",
+        "vote": "unanimous",
+        "what": "Approved appropriation from Educational Capital Fund balance for secure vestibule standard",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved authority for up to 5% transfer of funds between school bond project scopes",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Directed County Attorney to send certified letter to Connestee Fire Rescue regarding audit compliance and contract revision/termination",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-07-01",
+        "what": "FY 2027 Budget adoption required by law"
+      },
+      {
+        "date": "2026-08-14",
+        "what": "NCACC Legislative Goals submission deadline"
+      },
+      {
+        "date": "2026-07-10",
+        "what": "FEMA public comment period for Floodplain Mapping Program study methods"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "Museum lease expires"
+      },
+      {
+        "date": "2026-07-13",
+        "what": "NCACC Legislative Goals final Board approval requested"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$82.5 million",
+        "fund": "General Fund",
+        "item": "FY 2027 General Fund Budget"
+      },
+      {
+        "amount": "$4.1 million",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste Enterprise Fund recommended budget"
+      },
+      {
+        "amount": "$720,000",
+        "fund": "General Fund",
+        "item": "General Fund subsidy for Solid Waste"
+      },
+      {
+        "amount": "$1.2 million",
+        "fund": "General Fund",
+        "item": "SNAP administration and benefit costs"
+      },
+      {
+        "amount": "$1.2 million",
+        "fund": "General Fund",
+        "item": "Teacher pay increases and related costs impact"
+      },
+      {
+        "amount": "$164 million",
+        "fund": "Capital",
+        "item": "School capital improvement plan (5-year)"
+      },
+      {
+        "amount": "$65 million",
+        "fund": "Capital",
+        "item": "State grant funding for CTE wing at Brevard High School"
+      },
+      {
+        "amount": "$38 million",
+        "fund": "Capital",
+        "item": "Courthouse project"
+      },
+      {
+        "amount": "$220 million",
+        "fund": "Capital",
+        "item": "School capital projects currently managing"
+      },
+      {
+        "amount": "$125,000",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - WNCSource Congregate Nutrition"
+      },
+      {
+        "amount": "$49,350",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - WNCSource Home Delivered Meals"
+      },
+      {
+        "amount": "$33,000",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - WNCSource Supplemental Meals"
+      },
+      {
+        "amount": "$10,000",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - WNCSource Information and Options Counseling"
+      },
+      {
+        "amount": "$19,048",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - CarePartners In-Home Aide Level I"
+      },
+      {
+        "amount": "$55,000",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - CarePartners In-Home Aide Level II"
+      },
+      {
+        "amount": "$8,115",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - Transylvania County Transportation General"
+      },
+      {
+        "amount": "$4,025",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - Transylvania County Transportation Medical"
+      },
+      {
+        "amount": "$15,000",
+        "fund": "Block Grant",
+        "item": "FY 2027 Home and Community Care Block Grant - Pisgah Legal Services"
+      },
+      {
+        "amount": "$47,732",
+        "fund": "JCPC",
+        "item": "FY 2027 Juvenile Crime Prevention Council - Project Rebound"
+      },
+      {
+        "amount": "$46,767",
+        "fund": "JCPC",
+        "item": "FY 2027 Juvenile Crime Prevention Council - Vocational Directions"
+      },
+      {
+        "amount": "$31,478",
+        "fund": "JCPC",
+        "item": "FY 2027 Juvenile Crime Prevention Council - Kids at Work"
+      },
+      {
+        "amount": "$8,500",
+        "fund": "General Fund",
+        "item": "FY 2025 Audit contract amendment"
+      },
+      {
+        "amount": "$3 million",
+        "fund": "General Fund",
+        "item": "General Fund balance increase FY 2025"
+      },
+      {
+        "amount": "$39.3 million",
+        "fund": "General Fund",
+        "item": "Available General Fund balance FY 2025"
+      },
+      {
+        "amount": "$15.4 million",
+        "fund": "General Fund",
+        "item": "Unassigned fund balance FY 2025"
+      },
+      {
+        "amount": "$1.1 million",
+        "fund": "General Fund",
+        "item": "Property tax revenues increase FY 2025"
+      },
+      {
+        "amount": "$259,000",
+        "fund": "General Fund",
+        "item": "Local option sales tax revenues increase FY 2025"
+      },
+      {
+        "amount": "$2 million",
+        "fund": "General Fund",
+        "item": "Restricted intergovernmental revenues increase FY 2025"
+      },
+      {
+        "amount": "$3.6 million",
+        "fund": "General Fund",
+        "item": "General Fund revenues increase FY 2025"
+      },
+      {
+        "amount": "$5.5 million",
+        "fund": "General Fund",
+        "item": "General Fund expenditures increase FY 2025"
+      },
+      {
+        "amount": "$1.5 million",
+        "fund": "General Fund",
+        "item": "Public Safety expenditures increase FY 2025"
+      },
+      {
+        "amount": "$1 million",
+        "fund": "General Fund",
+        "item": "General Government expenditures increase FY 2025"
+      },
+      {
+        "amount": "$3 million",
+        "fund": "Solid Waste",
+        "item": "Solid Waste Fund operating revenues"
+      },
+      {
+        "amount": "$3.6 million",
+        "fund": "Solid Waste",
+        "item": "Solid Waste Fund operating expenditures"
+      },
+      {
+        "amount": "$7.5 million",
+        "fund": "Solid Waste",
+        "item": "Solid Waste Fund net position"
+      },
+      {
+        "amount": "$3 million",
+        "fund": "Solid Waste",
+        "item": "Solid Waste Fund unrestricted net position"
+      },
+      {
+        "amount": "$1.5 million",
+        "fund": "Solid Waste",
+        "item": "Solid Waste Fund positive operational cash flow"
+      },
+      {
+        "amount": "$235.26",
+        "fund": "General Fund",
+        "item": "Tax dollars released May 2026"
+      },
+      {
+        "amount": "$1,218.78",
+        "fund": "General Fund",
+        "item": "Tax refunds May 2026"
+      },
+      {
+        "amount": "$1,361.62",
+        "fund": "General Fund",
+        "item": "Tax dollars released June 1-22, 2026"
+      },
+      {
+        "amount": "$100,000",
+        "fund": "General Fund",
+        "item": "FY 2027 nonprofit funding total allocation"
+      },
+      {
+        "amount": "$20,000",
+        "fund": "General Fund",
+        "item": "Designated housing grant funding"
+      },
+      {
+        "amount": "$7,500",
+        "fund": "General Fund",
+        "item": "Blue Ridge Community Health Services nonprofit award"
+      },
+      {
+        "amount": "$7,500",
+        "fund": "General Fund",
+        "item": "Bread of Life nonprofit award"
+      },
+      {
+        "amount": "$2,500",
+        "fund": "General Fund",
+        "item": "Cindy Platt Boys & Girls Club nonprofit award"
+      },
+      {
+        "amount": "$7,500",
+        "fund": "General Fund",
+        "item": "Haven of Transylvania County nonprofit award"
+      },
+      {
+        "amount": "$10,000",
+        "fund": "General Fund",
+        "item": "Housing Assistance Corporation nonprofit award"
+      },
+      {
+        "amount": "$10,000",
+        "fund": "General Fund",
+        "item": "Housing Assistance Corporation reserved nonprofit funding"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "General Fund",
+        "item": "Hunger Coalition nonprofit award"
+      },
+      {
+        "amount": "$7,500",
+        "fund": "General Fund",
+        "item": "Meals on Wheels Brevard nonprofit award"
+      },
+      {
+        "amount": "$7,500",
+        "fund": "General Fund",
+        "item": "TC STRONG nonprofit award"
+      },
+      {
+        "amount": "$7,500",
+        "fund": "General Fund",
+        "item": "Transylvania Christian Ministry nonprofit award"
+      },
+      {
+        "amount": "$7,500",
+        "fund": "General Fund",
+        "item": "Transylvania County Schools Educational Foundation nonprofit award"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "General Fund",
+        "item": "Heritage Museum nonprofit award"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "General Fund",
+        "item": "Historical Society nonprofit award"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "General Fund",
+        "item": "Mountain School of Strings nonprofit award"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "General Fund",
+        "item": "Transylvania Farmers Market nonprofit award"
+      },
+      {
+        "amount": "$3,000",
+        "fund": "General Fund",
+        "item": "Transylvania County Honor Guard annual funding"
+      },
+      {
+        "amount": "$5.4 million",
+        "fund": "School Bond",
+        "item": "Expanded security vestibule standard total cost"
+      },
+      {
+        "amount": "$3.2 million",
+        "fund": "School Bond",
+        "item": "Reallocated bond funds for security vestibules and other items"
+      },
+      {
+        "amount": "$2,184,218",
+        "fund": "Educational Capital",
+        "item": "Appropriation from Educational Capital Fund balance"
+      },
+      {
+        "amount": "$625 per month",
+        "fund": "General Fund",
+        "item": "Museum lease rate"
+      },
+      {
+        "amount": "$5,000",
+        "fund": "General Fund",
+        "item": "Estimated HVAC compressor replacement cost"
+      },
+      {
+        "amount": "$15,000",
+        "fund": "General Fund",
+        "item": "Estimated mini-split HVAC systems cost"
+      },
+      {
+        "amount": "$20,000",
+        "fund": "General Fund",
+        "item": "Estimated HVAC system replacement cost"
+      },
+      {
+        "amount": "$12 per square foot annually",
+        "fund": "General Fund",
+        "item": "Break-even lease rate for former Administration Building"
+      },
+      {
+        "amount": "$21 per square foot annually",
+        "fund": "General Fund",
+        "item": "Break-even lease rate for existing courthouse"
+      },
+      {
+        "amount": "$17.91 per square foot ($3,250 monthly)",
+        "fund": "General Fund",
+        "item": "NC Department of Adult Correction lease rate"
+      },
+      {
+        "amount": "$25.70 per square foot ($2,125 monthly)",
+        "fund": "General Fund",
+        "item": "Tourism Development Authority office lease rate"
+      },
+      {
+        "amount": "$25.70 per square foot ($3,832 monthly)",
+        "fund": "General Fund",
+        "item": "Tourism Development Authority Visitor Center lease rate"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-07-13",
+        "next_step": "Board discussion and final approval at July 13 meeting",
+        "what": "NCACC Legislative Goals final approval"
+      },
+      {
+        "date": "",
+        "next_step": "Request by Housing Assistance Corporation to be brought back to Board for approval",
+        "what": "Additional $10,000 housing funds from designated Housing Grant allocation"
+      },
+      {
+        "date": "",
+        "next_step": "County staff working with NCDEQ and contractor",
+        "what": "Landfill cell expansion sediment migration issue resolution"
+      },
+      {
+        "date": "",
+        "next_step": "Under review by NCDEQ",
+        "what": "Landfill leachate pretreatment project"
+      },
+      {
+        "date": "",
+        "next_step": "Under review by NCDEQ",
+        "what": "Morris Road project"
+      }
+    ],
+    "public_process": [
+      "Public hearing on FY 2027 Budget held at 6:15 p.m., reviewed public hearing procedures, invited public comment; closed at 6:18 p.m.",
+      "Public comment period held during meeting; speakers included Owen Carson regarding financial transparency and Chuck Gilmore regarding property tax constitutional amendment.",
+      "Budget documents available for public inspection at www.transylvaniacounty.org and hard copies in Office of Clerk to the Board and Transylvania County Library as of May 27, 2026.",
+      "Nonprofit funding applications reviewed by committee including representatives and two Commissioners; applications from 30 organizations totaling $250,000 requests competing for $100,000 allocation.",
+      "Education Capital Subcommittee approved scope revisions and budget amendments on May 29, 2026.",
+      "Board of Education unanimously approved school bond budget amendment on June 15, 2026.",
+      "Citizen Advisory Council recognition program held during meeting, presenting certificates and commemorative mugs to volunteers.",
+      "School security vestibule designs completed and reviewed by school staff but not made publicly available due to security considerations.",
+      "Public records request received; speaker Ashley Hart noted concern about lack of confirmation of receipt and requested Board consider updating policy to confirm receipt.",
+      "FEMA Floodplain Mapping Program public comments open through July 10 at flood.nc.gov/nccnms.",
+      "Future Request for Proposals anticipated for use of existing courthouse building once court operations relocate.",
+      "Closed session held to consult with County Attorney and discuss confidential matters; minutes sealed.",
+      "County Manager to direct County Attorney and staff regarding Connestee Fire Rescue contract compliance letter."
+    ],
+    "quotes": [
+      {
+        "speaker": "Owen Carson",
+        "text": "He encouraged the Board to consider developing a public-facing financial roadmap that would summarize major future obligations."
+      },
+      {
+        "speaker": "Commissioner Chappell",
+        "text": "One of the most significant takeaways is that all Step One bond projects are projected to be completed by the end of 2028."
+      },
+      {
+        "speaker": "Chairwoman McCall",
+        "text": "Commissioners are elected to make difficult decisions and that the Board has continued to do so."
+      }
+    ],
+    "schedule_changes": [
+      "Health Department annual training day rescheduled to September 30, 2026.",
+      "Meeting recessed for 10-minute break at 7:38 p.m., reconvened at 7:48 p.m.",
+      "Closed session entered at 8:54 p.m., left at 9:54 p.m."
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "leachate",
+      "DEQ",
+      "Department of Environmental Quality",
+      "transfer station",
+      "social services",
+      "DSS",
+      "capital improvement plan",
+      "courthouse",
+      "tax rate",
+      "revenue neutral",
+      "fund balance",
+      "SNAP",
+      "teacher supplement",
+      "public comment",
+      "decorum",
+      "closed session",
+      "open meetings",
+      "public records",
+      "agenda modification",
+      "affordable housing",
+      "joint school bond project committee"
+    ]
+  },
+  {
+    "_extracted": "2026-08-23",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-08-23",
+      "title": "The Ecology Corner: Weathering, erosion formed county",
+      "url": "https://www.transylvaniatimes.com/news/the-ecology-corner-weathering-erosion-formed-county/article_3dd7cae5-178e-444c-969c-84b1bdc10092.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "steep slope"
+    ]
   }
 ]

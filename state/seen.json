@@ -15,6 +15,14 @@
     "title": "Transylvania County Schools staff members gathe\u2026",
     "url": "https://www.transylvaniatimes.com/education/transylvania-county-schools-staff-members-gather-before-school-starts/article_6dbf7d50-f78a-4a87-b81c-7d341de2f1c4.html"
   },
+  "0359f70f2ee12321": {
+    "body": "press",
+    "first_seen": "2026-08-23",
+    "kind": "notice",
+    "meeting_date": "2026-08-23",
+    "title": "The Ecology Corner: Weathering, erosion formed county",
+    "url": "https://www.transylvaniatimes.com/news/the-ecology-corner-weathering-erosion-formed-county/article_3dd7cae5-178e-444c-969c-84b1bdc10092.html"
+  },
   "047b31db044043fb": {
     "body": "city",
     "first_seen": "2026-08-10",
@@ -374,6 +382,14 @@
     "meeting_date": "2026-08-24",
     "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-08-24: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7388,plainText=false)"
+  },
+  "ec2e47c4114298d7": {
+    "body": "county",
+    "first_seen": "2026-08-23",
+    "kind": "minutes",
+    "meeting_date": "2026-06-22",
+    "title": "Commissioners minutes 06/22/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-22%20reg%20mtg%20_%20PH.pdf"
   },
   "f7e6caf6067c1e05": {
     "body": "press",
