@@ -5228,5 +5228,678 @@
       "public comment",
       "open meetings"
     ]
+  },
+  {
+    "_extracted": "2026-08-23",
+    "_source": {
+      "body": "county",
+      "kind": "agenda",
+      "meeting_date": "2026-08-24",
+      "title": "Commissioners agenda 08/24/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2024-08-24%20BOC%20Agenda.pdf"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-08-24",
+        "what": "Public Hearing - Transylvania County Public Transportation Program Application"
+      },
+      {
+        "date": "2026-08-24",
+        "what": "Public Comment period (15-minute limit, 3 minutes per speaker)"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-08-24",
+        "next_step": "Public hearing and consent agenda vote",
+        "what": "Transylvania County Public Transportation Program Application"
+      },
+      {
+        "date": "2026-08-24",
+        "next_step": "Old business discussion",
+        "what": "Proposed Contract Amendment with Connestee Fire Rescue"
+      },
+      {
+        "date": "2026-08-24",
+        "next_step": "Presentation and new business discussion",
+        "what": "Comprehensive Transportation Plan"
+      },
+      {
+        "date": "2026-08-24",
+        "next_step": "New business discussion",
+        "what": "FY 2026 4th Quarter Budget Amendments"
+      },
+      {
+        "date": "2026-08-24",
+        "next_step": "New business discussion",
+        "what": "Tyler Technologies County Financial Software subscription"
+      },
+      {
+        "date": "2026-08-24",
+        "next_step": "New business discussion",
+        "what": "Public Safety Tower Construction and Equipment Grants"
+      }
+    ],
+    "public_process": [
+      "Public hearing held for Transportation Program Application",
+      "Public comment period with 15-minute limit and 3-minute speaker limit",
+      "Sign-up required for public comment speakers",
+      "Chairman will limit number of speakers on same subject",
+      "No repetitive speaking on same subject permitted",
+      "Meeting viewable online at www.transylvaniacounty.org",
+      "Agenda modifications allowed",
+      "Closed session authorized per N.C.G.S. 143-318.11"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "Public comment",
+      "decorum",
+      "closed session",
+      "open meetings",
+      "agenda modification",
+      "social services",
+      "capital improvement plan"
+    ]
+  },
+  {
+    "_extracted": "2026-08-23",
+    "_source": {
+      "body": "county",
+      "kind": "minutes",
+      "meeting_date": "2026-06-02",
+      "title": "Commissioners minutes 06/02/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-02%20Budget%20Workshop.pdf"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved agenda for budget workshop",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-06-22",
+        "what": "Public hearing on FY 2027 proposed budget"
+      },
+      {
+        "date": "2026-07-01",
+        "what": "Budget adoption requirement"
+      },
+      {
+        "date": "2026-10-01",
+        "what": "SNAP cost-sharing changes begin"
+      },
+      {
+        "date": "2027-10-01",
+        "what": "SNAP benefit cost-sharing requirements begin"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$82.5 million",
+        "fund": "General Fund",
+        "item": "FY 2027 General Fund Budget"
+      },
+      {
+        "amount": "$4.1 million",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste Enterprise Fund"
+      },
+      {
+        "amount": "$720,000",
+        "fund": "General Fund property tax support",
+        "item": "General Fund subsidy to Solid Waste"
+      },
+      {
+        "amount": "$3.3 million",
+        "fund": "General Fund",
+        "item": "County fee revenue (excluding remitted fees)"
+      },
+      {
+        "amount": "$164 million",
+        "fund": "Bond funds, grant funds, Education Capital Fund",
+        "item": "School capital improvement plan"
+      },
+      {
+        "amount": "$38 million",
+        "fund": "Capital funds",
+        "item": "Courthouse project"
+      },
+      {
+        "amount": "$220 million",
+        "fund": "Various",
+        "item": "Total capital projects under management"
+      },
+      {
+        "amount": "$120 million",
+        "fund": "Grants",
+        "item": "Grant-funded portion of capital projects"
+      },
+      {
+        "amount": "$6.9 million",
+        "fund": "Fire district property tax",
+        "item": "Fire department district total spending"
+      },
+      {
+        "amount": "$500,000",
+        "fund": "Social Services",
+        "item": "SNAP benefit payments (monthly average)"
+      },
+      {
+        "amount": "$125,000-$150,000",
+        "fund": "General Fund",
+        "item": "Estimated SNAP local cost impact (FY 2027 partial year)"
+      },
+      {
+        "amount": "$175,000-$200,000",
+        "fund": "General Fund",
+        "item": "Estimated annual SNAP cost impact (ongoing)"
+      },
+      {
+        "amount": "$1 million",
+        "fund": "General Fund",
+        "item": "Potential SNAP benefit cost share to County"
+      },
+      {
+        "amount": "$1 million",
+        "fund": "General Fund and Education Fund",
+        "item": "Estimated teacher compensation increases local impact"
+      },
+      {
+        "amount": "$2 million",
+        "fund": "General Fund",
+        "item": "Implementation cost of 2023 compensation study"
+      },
+      {
+        "amount": "$37,742,710",
+        "fund": "Combined state and local funds",
+        "item": "Total school system payroll and benefits"
+      },
+      {
+        "amount": "$4,894,318",
+        "fund": "General Fund",
+        "item": "Locally funded school payroll and benefits"
+      },
+      {
+        "amount": "$3,201,117",
+        "fund": "General Fund",
+        "item": "Locally funded teacher supplement cost"
+      },
+      {
+        "amount": "$4,079,650",
+        "fund": "General Fund",
+        "item": "Non-mandated services total support"
+      },
+      {
+        "amount": "$4,691,597.50",
+        "fund": "General Fund",
+        "item": "Non-mandated services with estimated overhead"
+      },
+      {
+        "amount": "$15 million",
+        "fund": "Capital Fund",
+        "item": "Capital needs for non-mandated services"
+      },
+      {
+        "amount": "$18,804,559",
+        "fund": "General Fund property tax",
+        "item": "Outside agency funding total"
+      },
+      {
+        "amount": "$16,274,163",
+        "fund": "General Fund property tax",
+        "item": "Transylvania County Schools appropriation"
+      },
+      {
+        "amount": "$823,059",
+        "fund": "General Fund",
+        "item": "Blue Ridge Community College appropriation"
+      },
+      {
+        "amount": "$563,612",
+        "fund": "General Fund",
+        "item": "Transylvania Rescue Squad appropriation"
+      },
+      {
+        "amount": "$620,655",
+        "fund": "General Fund",
+        "item": "Parks and Recreation budget"
+      },
+      {
+        "amount": "$1,667,307",
+        "fund": "General Fund",
+        "item": "Library budget"
+      },
+      {
+        "amount": "$383,826",
+        "fund": "General Fund",
+        "item": "Economic Development appropriation"
+      },
+      {
+        "amount": "$250,000",
+        "fund": "Health benefits",
+        "item": "Employee wellness clinic operating cost estimate"
+      },
+      {
+        "amount": "$500,000",
+        "fund": "Health benefits",
+        "item": "Projected equivalent clinic cost with traditional healthcare"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-06-22",
+        "next_step": "Public hearing scheduled",
+        "what": "Public hearing on FY 2027 proposed budget"
+      },
+      {
+        "date": "2026-07-01",
+        "next_step": "Must be adopted by state law",
+        "what": "Budget adoption"
+      },
+      {
+        "date": "",
+        "next_step": "Community meetings to gather input on funding and disposal alternatives",
+        "what": "Solid waste fee study and disposal options review"
+      },
+      {
+        "date": "",
+        "next_step": "Staff to research jurisdictional fee structures and bring recommendations to Board",
+        "what": "Parks and Recreation field-use fees research"
+      },
+      {
+        "date": "",
+        "next_step": "Request for services to be issued in fall 2026, study completion and recommendations expected early 2028",
+        "what": "Compensation and classification study"
+      }
+    ],
+    "public_process": [
+      "Budget presentations, supporting materials, FY 2027 recommended budget, and schools budget request made available on County website to promote transparency and public engagement",
+      "Public hearing scheduled for June 22, 2026 on proposed budget",
+      "Series of public meetings recommended during FY 2027 to gather community input on future solid waste funding and disposal options",
+      "Parks and Recreation Commission and partner organizations to be engaged in developing field-fee recommendations",
+      "Budget survey indicated residents preferred user fees over property tax increases when appropriate and allowable by law"
+    ],
+    "quotes": [
+      {
+        "speaker": "County Manager",
+        "text": "A budget must be adopted before July 1."
+      },
+      {
+        "speaker": "Chairwoman McCall",
+        "text": "County's current financial position reflects years of planning and disciplined fiscal management."
+      },
+      {
+        "speaker": "Commissioner Chappell",
+        "text": "Citizens should be proud of the County's investment in education."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "solid waste",
+      "transfer station",
+      "parcel fee",
+      "availability fee",
+      "DSS",
+      "SNAP",
+      "teacher supplement",
+      "average daily membership",
+      "public comment",
+      "capital improvement plan",
+      "courthouse",
+      "tax rate",
+      "revenue neutral",
+      "fund balance",
+      "stormwater",
+      "affordable housing",
+      "rezoning",
+      "conditional use"
+    ]
+  },
+  {
+    "_extracted": "2026-08-23",
+    "_source": {
+      "body": "county",
+      "kind": "minutes",
+      "meeting_date": "2026-05-26",
+      "title": "Commissioners minutes 05/26/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-05-26%20reg%20mtg.pdf"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved May 11, 2026 regular meeting minutes",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$3,219.60 released; $2,974.25 refunds",
+        "vote": "unanimous",
+        "what": "Approved April 2026 Discovery, Release & Monthly Settlement Report",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$3,000 additional per year",
+        "vote": "unanimous",
+        "what": "Approved multi-year agreement for poll worker software with additional funding for years 2-3",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Authorized Fire Marshal to finalize applications and issue aerial fireworks display permits",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$1,473,449.49",
+        "vote": "unanimous",
+        "what": "Approved contract between Transylvania County Schools and Optimal Tek for district-wide intercom/PA/bell system",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappointed Nicole Bentley and Katherine Poe to Joint Historic Preservation Commission",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed Liam McKissock to Joint Historic Preservation Commission vacancy",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappointed James Felty to Transportation Advisory Committee",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Accepted Town of Rosman's appointment of Jimmy Whitmire to Transportation Advisory Committee",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Accepted City of Brevard's appointment of Councilman Lauren Wise to Transportation Advisory Committee",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed David Carter to Transportation Advisory Committee vacancy",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved agenda",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Nominated both Opportunity Zone tracts for state submission",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-05-15",
+        "what": "School budgets submission deadline"
+      },
+      {
+        "date": "2026-06-01",
+        "what": "County Manager budget submission deadline per statute"
+      },
+      {
+        "date": "2026-06-07",
+        "what": "North Carolina Department of Commerce Opportunity Zone nominations deadline"
+      },
+      {
+        "date": "2026-06-02 and 2026-06-04",
+        "what": "Budget workshops"
+      },
+      {
+        "date": "2026-06-22",
+        "what": "FY 2027 budget public hearing and adoption"
+      },
+      {
+        "date": "2026-06-30",
+        "what": "Budget adoption deadline per statute"
+      },
+      {
+        "date": "2026-08-14",
+        "what": "NCACC legislative goal proposals submission"
+      },
+      {
+        "date": "2026-06-15",
+        "what": "Rosman High School storage tank replacement work start"
+      },
+      {
+        "date": "2026-09-30",
+        "what": "Landfill Cell Expansion completion estimate"
+      },
+      {
+        "date": "2026-06-08 mobilization; 2028-12-31 completion",
+        "what": "GMP 1 construction completion timeline"
+      },
+      {
+        "date": "2028-12-31",
+        "what": "GMP 2 completion estimate"
+      },
+      {
+        "date": "2026-06-05",
+        "what": "Library Amphitheater ribbon-cutting and first summer concert"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$82.5 million",
+        "fund": "General Fund",
+        "item": "FY 2027 Recommended General Fund Budget"
+      },
+      {
+        "amount": "$4.1 million",
+        "fund": "Solid Waste Enterprise",
+        "item": "Solid Waste Enterprise Fund FY 2027 budget"
+      },
+      {
+        "amount": "$720,000",
+        "fund": "General Fund",
+        "item": "General Fund subsidy for Solid Waste"
+      },
+      {
+        "amount": "$164 million",
+        "fund": "School Bond Funds",
+        "item": "School capital improvement plan"
+      },
+      {
+        "amount": "$38 million",
+        "fund": "Capital Project",
+        "item": "Courthouse project"
+      },
+      {
+        "amount": "$120 million",
+        "fund": "Various grants",
+        "item": "Grant funding for capital projects"
+      },
+      {
+        "amount": "$220 million",
+        "fund": "Various",
+        "item": "Capital projects currently managed"
+      },
+      {
+        "amount": "Over $120 million in grant support",
+        "fund": "Various grants",
+        "item": "Total county capital managing with grants"
+      },
+      {
+        "amount": "$1.2 million",
+        "fund": "General Fund",
+        "item": "Potential state cost shifts - SNAP administration and benefits"
+      },
+      {
+        "amount": "$1.2 million",
+        "fund": "General Fund",
+        "item": "Potential state cost shifts - Teacher pay increases"
+      },
+      {
+        "amount": "$3,219.60",
+        "fund": "General Fund",
+        "item": "Tax dollars released (April 2026)"
+      },
+      {
+        "amount": "$2,974.25",
+        "fund": "General Fund",
+        "item": "Refunds issued (April 2026)"
+      },
+      {
+        "amount": "$3,000",
+        "fund": "Elections Department",
+        "item": "Poll worker software additional funding per year"
+      },
+      {
+        "amount": "$1,473,449.49",
+        "fund": "School Bond Proceeds (Scope 1)",
+        "item": "Optimal Tek intercom/PA/bell system contract"
+      },
+      {
+        "amount": "$1.2 million in revenue per cent",
+        "fund": "General Fund",
+        "item": "Property tax rate value per cent"
+      },
+      {
+        "amount": "$800,000",
+        "fund": "General Fund",
+        "item": "Annual loss in Medicaid Hold Harmless sales tax revenues"
+      },
+      {
+        "amount": "4-5 cents per $100 property tax rate plus operating costs",
+        "fund": "General Fund",
+        "item": "Proposed Blue Ridge Community College campus financial modeling"
+      },
+      {
+        "amount": "$7,640",
+        "fund": "General Fund",
+        "item": "Personnel recommendations fund impact"
+      },
+      {
+        "amount": "$15,413 per student",
+        "fund": "School Operations",
+        "item": "Transylvania County per-pupil school funding (2025)"
+      },
+      {
+        "amount": "$6,603 annual payment per teacher",
+        "fund": "School Operations",
+        "item": "Average teacher supplement"
+      },
+      {
+        "amount": "1,816 adults enrolled",
+        "fund": "SNAP/DSS",
+        "item": "Food & Nutrition Services enrollment"
+      },
+      {
+        "amount": "More than 7,500 county residents",
+        "fund": "Medicaid",
+        "item": "Medicaid benefits recipients"
+      },
+      {
+        "amount": "1.47%",
+        "fund": "General Fund",
+        "item": "FY 2027 budget increase over FY 2026"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-05-29",
+        "next_step": "Committee meeting to review and make recommendations",
+        "what": "Joint School Bond Project Committee review of remaining scope items, Rosman High School retaining wall, school security vestibule expansion, and bid package scheduling"
+      },
+      {
+        "date": "2026-06-22",
+        "next_step": "Budget workshops on June 2 and June 4; public hearing and adoption",
+        "what": "FY 2027 Budget adoption"
+      },
+      {
+        "date": "",
+        "next_step": "Series of public hearings during FY 2027 to gather community input",
+        "what": "Solid waste funding structure and future disposal options"
+      },
+      {
+        "date": "",
+        "next_step": "Staff to evaluate financial impact",
+        "what": "Evaluation of solid waste bag fees and parcel fees as cost reduction options"
+      },
+      {
+        "date": "2026-06-07",
+        "next_step": "State submission",
+        "what": "Opportunity Zone designation applications"
+      }
+    ],
+    "public_process": [
+      "Public comment period held; approximately 10 people in attendance",
+      "Agenda modification discussion: no modifications",
+      "All budget presentations and supporting materials available online in FY 2027 Budget Folder",
+      "Prior budgets, quarterly financial reports, and annual audits publicly available",
+      "More than 12 hours of public meeting time devoted to FY 2027 budget process",
+      "Public survey conducted to gather input on service priorities and cost-control strategies",
+      "Multiple public comment periods provided during regular meetings (June 8 and June 22 noted)",
+      "State law requires only one public comment period per month; County provides two",
+      "Public hearing required on budget per state statute",
+      "Commissioners and staff participated in extensive public engagement throughout budget process",
+      "Budget workshops scheduled for public discussion before adoption",
+      "Series of public hearings planned during FY 2027 for solid waste funding options input",
+      "Online access to budget documents and historical financial information provided"
+    ],
+    "quotes": [
+      {
+        "speaker": "Doug Powell",
+        "text": "Meaningful tribute to fallen military service members"
+      },
+      {
+        "speaker": "Commissioner Chapman",
+        "text": "Commitment to school and student safety"
+      },
+      {
+        "speaker": "Aaron Baker",
+        "text": "One of the busiest fire departments"
+      }
+    ],
+    "schedule_changes": [
+      "Board of Commissioners meeting held Tuesday, May 26, 2026 instead of Monday, May 25, 2026 due to Memorial Day holiday closure",
+      "Audiovisual upgrade to Commissioners'/Multipurpose Chambers scheduled to begin June 23 following June 22 Board meeting",
+      "Additional week between meetings in late June and early July scheduled to allow completion of AV upgrade prior to July 13 meeting"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "leachate",
+      "DEQ",
+      "transfer station",
+      "parcel fee",
+      "availability fee",
+      "social services",
+      "DSS",
+      "capital improvement plan",
+      "courthouse",
+      "tax rate",
+      "revenue neutral",
+      "fund balance",
+      "SNAP",
+      "teacher supplement",
+      "public comment",
+      "decorum",
+      "open meetings",
+      "public records",
+      "agenda modification"
+    ]
   }
 ]
