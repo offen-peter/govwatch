@@ -38,6 +38,29 @@ from bs4 import BeautifulSoup
 UA = {"User-Agent": "TCDP-GovWatch/1.0 (civic monitoring; contact: info@transcodems.com)"}
 TIMEOUT = 45
 
+# How far back the adapters reach for minutes specifically, regardless of
+# the lookback the caller asks for.
+#
+# schedule.WINDOWS gives minutes a T+14 to T+75 window, and run.py passes
+# every adapter config.yml's lookback_days, which is 60. Those two numbers
+# disagree by fifteen days, so a meeting between 61 and 75 days old sits in
+# a minutes window the pipeline holds open while the adapter that would
+# satisfy it can no longer see the meeting at all. The window then stays
+# open until T+75, and every digest in between reports the minutes as not
+# retrieved.
+#
+# Measured against the live sources on 2026-08-23: County.collect(60)
+# returned zero minutes, while the 2026-06-08 and 2026-06-22 sets were both
+# linked from the county's index and both carried extractable text, 19,522
+# and 99,789 characters. The 2026-06-22 set was named in that day's brief as
+# missing.
+#
+# 90 is T+75 plus a fortnight of slack, so a poll that skips a week still
+# reaches back past the end of the window rather than up to its edge.
+# Minutes only, because widening the whole lookback would also re-fetch
+# city agenda packets, which run to a quarter of a million characters each.
+MINUTES_LOOKBACK_DAYS = 90
+
 
 @dataclass
 class Doc:
@@ -243,30 +266,53 @@ class County:
     _rows_cache: list | None = None
 
     def collect(self, lookback_days: int = 90) -> list[Doc]:
-        docs = []
+        docs, empty, unreachable = [], [], []
         today = dt.date.today()
         cutoff = today - dt.timedelta(days=lookback_days)
+        # Minutes reach further back than everything else. See
+        # MINUTES_LOOKBACK_DAYS: the minutes window outlives the lookback
+        # run.py passes, so without this the adapter goes blind on a
+        # meeting the pipeline is still actively waiting on.
+        minutes_cutoff = today - dt.timedelta(
+            days=max(lookback_days, MINUTES_LOOKBACK_DAYS))
 
         for row in self.rows():
             when = row["date"]
-            if not when or when < cutoff:
+            if not when or when < minutes_cutoff:
                 continue
             for kind in ("agenda", "minutes"):
+                if kind != "minutes" and when < cutoff:
+                    continue
                 url = row.get(kind)
                 if not url:
                     continue
                 try:
                     r = get(url)
-                except Exception:
+                except Exception as e:
+                    # Was a bare continue. An agenda PDF that has started
+                    # 404ing looks exactly like a meeting that has not
+                    # posted one yet, and only one of those is a problem.
+                    unreachable.append(f"{when} {kind}: {type(e).__name__}")
                     continue
                 text = (pdf_text(r.content)
                         if "pdf" in r.headers.get("content-type", "").lower()
                         else html_text(r.text))
-                if not text:
+                if not text.strip():
+                    # A valid PDF holding an image of a page, as most of
+                    # the elections board's minutes are. Nothing here can
+                    # read it, so say so rather than dropping it.
+                    empty.append(f"{when} {kind}")
                     continue
                 docs.append(Doc(self.body, kind,
                                 f"Commissioners {kind} {when:%m/%d/%y}",
                                 when.isoformat(), url, text))
+
+        if unreachable:
+            print(f"county: {len(unreachable)} document(s) could not be "
+                  f"fetched: {'; '.join(unreachable[:4])}")
+        if empty:
+            print(f"county: {len(empty)} document(s) had no extractable "
+                  f"text, probably scanned images: {'; '.join(empty[:4])}")
         docs.extend(self._notices())
         return docs
 
@@ -306,23 +352,36 @@ class County:
     @staticmethod
     def _row_date(rec: dict, row) -> dt.date | None:
         """
-        Filename first, row text second.
+        Row text first, filename second.
 
-        The PDF filenames carry an unambiguous YYYY-MM-DD. The row text
-        carries MM/DD/YY, which is the only date a row with a video but
-        no documents yet will have.
+        This used to be the other way round, on the reasoning that a
+        YYYY-MM-DD filename is unambiguous where MM/DD/YY is not. Both
+        are unambiguous. The difference is that the row text is rendered
+        by the county from the meeting record, while the filename is
+        typed by hand once and never looked at again.
+
+        Checked against all 25 rows of the live index on 2026-08-23: the
+        two agree everywhere except the 08/24/26 meeting, whose agenda is
+        filed as "2024-08-24 BOC Agenda.pdf" and opens "MONDAY, AUGUST
+        24, 2026". Trusting the filename dated that row two years early,
+        put it outside every lookback, and meant the agenda for the next
+        county meeting was never fetched at all.
+
+        The filename stays as the fallback, and it is not a formality:
+        the two budget workshop rows carry no date in their text and are
+        dated from their filenames alone.
         """
+        m = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{2})\b", row.get_text(" ", strip=True))
+        if m:
+            try:
+                return dt.date(2000 + int(m.group(3)), int(m.group(1)), int(m.group(2)))
+            except ValueError:
+                pass
         m = re.search(r"/(?:agendas|minutes)/(\d{4}-\d{2}-\d{2})",
                       rec["agenda"] + rec["minutes"])
         if m:
             try:
                 return dt.date.fromisoformat(m.group(1))
-            except ValueError:
-                pass
-        m = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{2})\b", row.get_text(" ", strip=True))
-        if m:
-            try:
-                return dt.date(2000 + int(m.group(3)), int(m.group(1)), int(m.group(2)))
             except ValueError:
                 pass
         return None
@@ -373,10 +432,19 @@ class CityCouncil:
     API = f"https://{TENANT}.api.civicclerk.com/v1"
     body = "city"
 
-    # The server caps a page at 15 no matter what $top asks for. Four
-    # pages covers the window with room to spare: the live tenant returns
-    # 42 events across three for a 105 day span.
-    MAX_PAGES = 4
+    # The server caps a page at 15 no matter what $top asks for.
+    #
+    # This said four pages, on the measurement that a 105 day span
+    # returned 42 events across three. That had no room in it at all. The
+    # sort is descending, so the page cap truncates the oldest events,
+    # which are precisely the past meetings that minutes attach to, and it
+    # truncates them without a word. Re-measured on 2026-08-23 with the
+    # widened minutes window: 59 events across four pages, one event short
+    # of silently losing the far end of the window.
+    #
+    # Twelve is a backstop rather than a working limit, and the loop below
+    # says so out loud if it ever reaches it.
+    MAX_PAGES = 12
 
     # Agendas post about a week ahead, so the window has to reach past
     # today to catch them. Matches the lookahead the other adapters use.
@@ -405,6 +473,13 @@ class CityCouncil:
         no agenda posted yet, so the adapter finds nothing and raises
         nothing. Measured before this fix, against the live tenant: 15
         events returned, all in 2027, zero already held, zero files.
+
+        The page cap is the same trap one step further on. Descending
+        order means running out of pages drops the oldest events, and
+        minutes only ever attach to a past meeting, so a cap that fits
+        the window exactly loses minutes and nothing else. Confirmed
+        against the live tenant on 2026-08-23, which is why MAX_PAGES is
+        now a backstop and exhausting it prints.
         """
         today = dt.date.today()
         since = (today - dt.timedelta(days=lookback_days)).isoformat()
@@ -426,15 +501,33 @@ class CityCouncil:
             url = payload.get("@odata.nextLink")
             if not url:
                 break
+        else:
+            if url:
+                print(f"city: stopped at {self.MAX_PAGES} pages with more "
+                      f"events still behind a nextLink. The oldest part of "
+                      f"the {since} to {until} window was not read, which is "
+                      f"the part minutes live in. Raise MAX_PAGES.")
         return out
 
     def collect(self, lookback_days: int = 60) -> list[Doc]:
+        today = dt.date.today()
+        cutoff = (today - dt.timedelta(days=lookback_days)).isoformat()
+        # Same split as County.collect. The query reaches back far enough
+        # to cover the whole minutes window, and everything that is not
+        # minutes is then held to the ordinary lookback, because a city
+        # agenda packet is a quarter of a million characters and there is
+        # no reason to re-read June's.
         try:
-            events = self._events(lookback_days)
-        except Exception:
+            events = self._events(max(lookback_days, MINUTES_LOOKBACK_DAYS))
+        except Exception as e:
+            # Was a bare return []. An adapter returning nothing because
+            # the API refused it is the exact shape of the silent failure
+            # this project keeps rediscovering.
+            print(f"city events query failed, returning no documents: "
+                  f"{type(e).__name__}: {e}")
             return []
 
-        docs = []
+        docs, scanned, unreachable = [], [], []
         for ev in events:
             name = ev.get("eventName") or ev.get("name") or "Meeting"
             # Deliberately loose, and it is a decision rather than an
@@ -474,6 +567,9 @@ class CityCouncil:
                 kind = ("minutes" if "minute" in label
                         else "notice" if "notice" in label
                         else "agenda")
+                # The widened query above is for minutes only.
+                if kind != "minutes" and when < cutoff:
+                    continue
                 url = (f"{self.API}/Meetings/GetMeetingFileStream"
                        f"(fileId={fid},plainText=false)")
                 try:
@@ -481,7 +577,28 @@ class CityCouncil:
                     text = (pdf_text(r.content)
                             if "pdf" in r.headers.get("content-type", "").lower()
                             else r.text)
-                except Exception:
+                except Exception as e:
+                    unreachable.append(f"{when} {kind} fileId={fid}: "
+                                       f"{type(e).__name__}")
+                    continue
+                if not text.strip():
+                    # The city publishes most of its minutes as a scan of
+                    # the signed copy: a valid PDF whose pages carry an
+                    # image and no font, so pdfplumber has nothing to
+                    # extract and nor would anything else without OCR.
+                    #
+                    # This has to be said out loud, and used to be the
+                    # opposite. A text-free Doc was appended anyway, and
+                    # run.py then discarded it as a placeholder, meaning a
+                    # meeting whose minutes were scanned looked identical
+                    # to one whose minutes had not been published yet. The
+                    # minutes window stayed open, the digest reported "no
+                    # minutes retrieved" every cycle, and nothing anywhere
+                    # said why. Measured against the live tenant on
+                    # 2026-08-23: of the five most recent sets of council
+                    # minutes, four were scans of exactly this kind and
+                    # one, 2026-07-20, carried text.
+                    scanned.append(f"{when} {f.get('type') or kind}")
                     continue
                 # One meeting can publish an agenda, a packet and minutes.
                 # Without the file label in the title they arrive as three
@@ -489,6 +606,15 @@ class CityCouncil:
                 # the brief impossible to trace back to the right one.
                 title = f"{name} {when}: {f.get('type') or f.get('name') or kind}"
                 docs.append(Doc(self.body, kind, title, when, url, text))
+
+        if scanned:
+            print(f"city: {len(scanned)} published file(s) are scanned images "
+                  f"with no extractable text, skipped: "
+                  f"{'; '.join(scanned[:4])}"
+                  + (f"; and {len(scanned) - 4} more" if len(scanned) > 4 else ""))
+        if unreachable:
+            print(f"city: {len(unreachable)} file(s) could not be fetched: "
+                  f"{'; '.join(unreachable[:3])}")
         return docs
 
 

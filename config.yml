@@ -96,6 +96,17 @@ known_gaps:
   - School board agendas post roughly a week ahead. Minutes appear in
     the following month's consent agenda, not as standalone documents.
   - >-
+    Brevard council minutes are mostly published as scans of the signed
+    copy, with no text layer that any tool can read without OCR.
+    Measured 2026-08-23 over the five most recent sets: one readable,
+    2026-07-20, and four scanned. So a city meeting is usually
+    represented here by its agenda packet and its recording, and the
+    approved minutes that would confirm how a vote actually went are
+    present on the city's site but unreadable to this pipeline. Where a
+    city vote count or figure appears in this brief and no city minutes
+    record is cited, it comes from the recording's auto-generated
+    captions and is unconfirmed.
+  - >-
     Board of Elections coverage is close to nil, and the cause is the
     source rather than the pipeline. The board publishes no agendas and
     no recordings, so its minutes are the only account of any of its

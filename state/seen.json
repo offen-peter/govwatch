@@ -351,14 +351,6 @@
     "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-08-24: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7388,plainText=false)"
   },
-  "ec2e47c4114298d7": {
-    "body": "county",
-    "first_seen": "2026-08-06",
-    "kind": "minutes",
-    "meeting_date": "2026-06-22",
-    "title": "Commissioners minutes 06/22/26",
-    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-22%20reg%20mtg%20_%20PH.pdf"
-  },
   "f7e6caf6067c1e05": {
     "body": "press",
     "first_seen": "2026-08-21",

@@ -44,7 +44,39 @@ video works locally and needs a proof of origin token in Actions.
 The lesson worth keeping: every one of these failed silently. Prefer a
 loud failure to a tidy empty result.
 
-## Next: decide whether to OCR the elections minutes
+## Next: decide whether to OCR, and it is no longer just elections
+
+**The city publishes most of its minutes as scans too.** Measured
+2026-08-23 over the five most recent sets of Brevard council minutes:
+one readable, four scanned images with no text layer, verified by font
+count as well as by extraction. The city is in the same condition as the
+Board of Elections and nobody noticed, because a zero text minutes file
+was appended as a Doc and then discarded upstream with the message meant
+for an agenda that has not posted yet. A scanned minutes set and an
+unpublished one looked identical, so the digest reported "no minutes
+retrieved" every cycle and nothing anywhere said why.
+
+That changes the OCR question from a decision about the smallest body to
+the main lever on the largest gap in the brief. It now covers roughly
+80 percent of city minutes and 93 percent of elections minutes. The city
+is the body with the most documents, the most decisions and the most
+readers, and its approved minutes are the only record that confirms how
+a vote actually went, since everything else about a city meeting comes
+from an agenda packet written beforehand or auto captions written by a
+machine.
+
+The counter argument has not changed and is still real: tesseract as a
+system dependency, a slower document poll, and text of a quality nothing
+else in the pipeline has to caveat. What has changed is the size of the
+prize.
+
+Sequence worth following, cheapest first. Ask both bodies for text
+originals, since the documents are typed and then scanned and the
+digital originals exist. Then, if that fails, OCR the city first and the
+elections board second, because the city has meetings to OCR right now
+and the elections board has published nothing since May.
+
+## The elections board specifically
 
 The Board of Elections is wired in as a fourth body and works. It is
 also, right now, capturing almost nothing, and the reason is the source.
