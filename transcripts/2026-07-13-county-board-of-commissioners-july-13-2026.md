@@ -4,7 +4,7 @@ meeting_date: 2026-07-13
 title: Board of Commissioners July 13, 2026
 source: https://vimeo.com/event/6043511
 method: vimeo auto-generated captions
-transcribed: 2026-08-06
+transcribed: 2026-08-23
 speaker_labels: none. speakers are identified at extraction time,
   from what was said aloud, not by voice matching.
 ---
