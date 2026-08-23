@@ -1,5 +1,9 @@
 {
-  "failures": {},
+  "failures": {
+    "city video": "Brevard City Council | July 20, 2026: RuntimeError: yt-dlp audio download failed: WARNING: Post-Processor arguments given without specifying name. The arguments will be given to all post-processors ERROR: [youtube] EIW0ZQEbI04: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --coo",
+    "county video": "Board of Commissioners August 24, 2026: RuntimeError: no caption track and no HLS stream for Board of Commissioners August 24, 2026",
+    "schools video": "TCS Board Meeting 08-17-2026: RuntimeError: yt-dlp audio download failed: WARNING: Post-Processor arguments given without specifying name. The arguments will be given to all post-processors ERROR: [youtube] Rt38tJHGEhc: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for"
+  },
   "mode": "poll",
-  "run": "2026-08-23T15:41:20"
+  "run": "2026-08-23T15:45:47"
 }
