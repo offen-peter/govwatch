@@ -343,6 +343,14 @@
     "title": "City Council Public Works & Utilities Committee 2026-07-01: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6336,plainText=false)"
   },
+  "c48b1bf9ae9c01b1": {
+    "body": "county",
+    "first_seen": "2026-08-25",
+    "kind": "transcript",
+    "meeting_date": "2026-08-24",
+    "title": "Board of Commissioners August 24, 2026 (transcript)",
+    "url": "https://vimeo.com/event/6126232"
+  },
   "cdfa9870f11debf7": {
     "body": "city",
     "first_seen": "2026-08-06",

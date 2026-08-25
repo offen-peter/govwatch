@@ -1,8 +1,5 @@
 {
-  "failures": {
-    "city video": "Brevard City Council | July 20, 2026: RuntimeError: YouTube refused the caption request: WARNING: [youtube] Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  . Whisper c",
-    "schools video": "TCS Board Meeting 08-17-2026: RuntimeError: YouTube refused the caption request: WARNING: [youtube] Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  . Whisper cannot re"
-  },
+  "failures": {},
   "mode": "poll",
-  "run": "2026-08-24T23:46:46"
+  "run": "2026-08-25T13:12:43"
 }
