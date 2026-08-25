@@ -261,8 +261,35 @@ it, so the challenged client answered first and the provider sat idle.
 token. On a laptop it discards the subtitle track as a warning rather
 than an error, yt-dlp falls through, and `tv_simply` serves it as before.
 
-Whether that is enough from a datacenter address is still unverified.
-It is the one thing in this section that no local test can settle.
+It was not enough from a datacenter address, and that question is now
+settled. On 2026-08-24, with the corrected client order and the token
+provider confirmed up and answering for the whole job, both YouTube
+bodies came back refused: "Sign in to confirm you're not a bot". The
+same fetches succeed from a laptop in seconds. Whisper is no escape
+either, since it downloads through the same refused client.
+
+### So the split is the arrangement, not the contingency
+
+Actions does documents, the county's Vimeo video, and the digest, none
+of which touch yt-dlp. City and school board video are fetched weekly
+from a residential connection by `tools/transcribe-weekly.ps1`, which
+pulls, runs `transcribe`, and pushes the transcripts back so the next
+digest reads them. Register it once with
+`tools/install-weekly-task.ps1`.
+
+Wednesday morning, because the three bodies meet on Monday evenings and
+captions are usually up overnight. The day matters less than it looks:
+`video.lookback_days` is 45, so a week that slips is swept up by the
+next run rather than lost. The scheduled task is registered with
+`StartWhenAvailable`, so a laptop asleep on Wednesday runs the job when
+it next wakes instead of skipping the week in silence.
+
+The runner still attempts YouTube on every video window, and should.
+It costs seconds now that a refusal stops at the caption stage rather
+than proceeding to a doomed audio download, it records the refusal in
+`state/failures.json` where the Gaps section will report it, and it
+means the day YouTube stops challenging the runner, this simply starts
+working again with nothing to undo.
 
 ### Whisper settings, and why
 

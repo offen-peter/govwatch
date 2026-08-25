@@ -1,5 +1,10 @@
 state/archive/
 
+# Local run logs from tools/transcribe-weekly.ps1. That script commits
+# state/ wholesale, so without this every weekly run would push its own
+# log file into the repo.
+state/logs/
+
 __pycache__/
 *.pyc
 .venv/
