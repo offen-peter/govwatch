@@ -188,10 +188,22 @@ def poll(only_bodies: set[str] | None = None, dry: bool = False) -> list[dict]:
     print(f"{len(fresh)} new document(s)")
     new_records = _extract_all(fresh, brief, watchlist, None, seen, records)
 
+    # Carry the video entries through. poll() used to write this file
+    # wholesale, which meant a tick wiped whatever transcribe had just
+    # recorded: the 2026-08-24 run captured "YouTube refused the caption
+    # request" for both YouTube bodies, and the next morning's tick
+    # cleared the file to empty before any digest could read it. The
+    # entries exist to reach the Gaps section, and they were being
+    # deleted a few minutes after being written.
+    #
+    # Only transcribe owns "<body> video" keys, and only poll owns the
+    # rest, so each side rewrites its own and leaves the other alone.
+    prior = {k: v for k, v in (_load(FAILURES, {}).get("failures") or {}).items()
+             if k.endswith(" video")}
     _save(FAILURES, {
         "run": dt.datetime.now().isoformat(timespec="seconds"),
         "mode": "poll",
-        "failures": failures,
+        "failures": {**prior, **failures},
     })
     return new_records
 
@@ -247,7 +259,7 @@ def transcribe(only_bodies: set[str] | None = None, dry: bool = False) -> list[d
                    for body, err in video_source.LAST_FAILURES.items()})
     _save(FAILURES, {
         "run": dt.datetime.now().isoformat(timespec="seconds"),
-        "mode": prior.get("mode", "transcribe"),
+        "mode": "transcribe",
         "failures": merged,
     })
 
