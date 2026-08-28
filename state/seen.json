@@ -247,6 +247,14 @@
     "title": "City Council 2026-07-20: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6351,plainText=false)"
   },
+  "69410a43da31a98c": {
+    "body": "county",
+    "first_seen": "2026-08-28",
+    "kind": "minutes",
+    "meeting_date": "2026-07-13",
+    "title": "Commissioners minutes 07/13/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-07-13%20reg%20mtg.pdf"
+  },
   "6b223ca4cad7f876": {
     "body": "city",
     "first_seen": "2026-08-14",
@@ -254,6 +262,14 @@
     "meeting_date": "2026-08-17",
     "title": "City Council 2026-08-17: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7380,plainText=false)"
+  },
+  "82cc1a135d76e2dc": {
+    "body": "city",
+    "first_seen": "2026-08-28",
+    "kind": "agenda",
+    "meeting_date": "2026-09-02",
+    "title": "City Council Public Works & Utilities Committee 2026-09-02: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7396,plainText=false)"
   },
   "83543ebcc57936f1": {
     "body": "county",

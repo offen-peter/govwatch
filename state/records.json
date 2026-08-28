@@ -7128,5 +7128,451 @@
       "rezoning - not mentioned; data centers and zoning discussed at NCACC conference as item affecting counties",
       "conditional use - not mentioned"
     ]
+  },
+  {
+    "_extracted": "2026-08-28",
+    "_source": {
+      "body": "county",
+      "kind": "minutes",
+      "meeting_date": "2026-07-13",
+      "title": "Commissioners minutes 07/13/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-07-13%20reg%20mtg.pdf"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Agenda modifications approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Minutes of June 22, 2026 regular meeting approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$312.16 in releases; $1,153.69 in refunds",
+        "vote": "unanimous",
+        "what": "Tax Administrator's Discovery, Release, and Monthly Settlement Report for June 23-30, 2026 approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Resolution 28-2026 declaring certain courthouse project products and services available from sole source providers approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Request to use Commissioners' Multipurpose Chambers for family court on September 14 approved; September 14 Board meeting canceled",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Out-of-state travel for Health Department staff to National Reentry Workforce Collaborative Annual Conference approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Larry Chapman appointed as Voting Delegate to NCACC Annual Conference",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Teresa McCall appointed as Alternate Voting Delegate to NCACC Annual Conference",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Samantha Salyards appointed to Juvenile Crime Prevention Council",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Dr. Ben Lamm reappointed to Nursing and Adult Care Home Advisory Committee",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Mark Emory appointed to Personnel Board",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Steve Warner reappointed to Transylvania Economic Alliance Board of Directors",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Authorization for County Manager and County Engineer to revise DEQ At-Risk funding allocations and execute grant resolutions",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Legislative goals for submission to NC Association of County Commissioners approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$114,515.85",
+        "vote": "unanimous",
+        "what": "Carryforward of $114,515.85 from FY 2026 to FY 2027 and extension of Allies 4 Outcomes contract through June 30, 2027 approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "County levy: $47,467,688.44; All Districts: $54,330,548.35",
+        "vote": "unanimous",
+        "what": "2025 Tax Settlement Report accepted",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "2026 Order to Collect All Real and Personal Property Taxes approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$83,000 base fee, $124,500 not to exceed",
+        "vote": "unanimous",
+        "what": "FY 2026 audit contract with Martin Starnes & Associates approved",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "63% discount from list price, approximately $215,000 savings",
+        "vote": "unanimous",
+        "what": "Multi-year agreement with ThreatLocker, Inc. for cybersecurity platform approved",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "",
+        "what": "FEMA debris removal program Rights of Entry processing deadline"
+      },
+      {
+        "date": "Before September 14, 2026",
+        "what": "Public notice publication deadline for September 14 Board meeting cancellation"
+      },
+      {
+        "date": "December 2028",
+        "what": "Dogwood Health Trust grant expenditure deadline"
+      },
+      {
+        "date": "December 31, 2026 (with extension possibilities for construction phases)",
+        "what": "DEQ At-Risk Infrastructure Grant construction deadline"
+      },
+      {
+        "date": "",
+        "what": "Appalachian Regional Commission Grant closeout"
+      },
+      {
+        "date": "January 5, 2026 (for 2025 taxes)",
+        "what": "Property tax payment deadline without interest"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$10,000,000 total; $6,000,000 redirected to other regional priorities",
+        "fund": "State budget",
+        "item": "Session Law 2023 infrastructure appropriation reallocated"
+      },
+      {
+        "amount": "$4,000,000 additional allocation",
+        "fund": "State budget",
+        "item": "Hurricane Helene recovery funding for Transylvania County"
+      },
+      {
+        "amount": "Approximately 40% of $10,000,000 ($4,000,000)",
+        "fund": "State budget",
+        "item": "Hurricane Helene recovery funding from previously misidentified allocation"
+      },
+      {
+        "amount": "$114,515.85",
+        "fund": "Child Welfare Division/DSS",
+        "item": "Allies 4 Outcomes staffing contract carryforward from FY 2026 to FY 2027"
+      },
+      {
+        "amount": "$135,921.00",
+        "fund": "Child Welfare Division/DSS",
+        "item": "Original Allies 4 Outcomes three-month contract authorization"
+      },
+      {
+        "amount": "$16,605.14",
+        "fund": "Child Welfare Division/DSS",
+        "item": "Allies 4 Outcomes expenses through June 15, 2026"
+      },
+      {
+        "amount": "$47,467,688.44",
+        "fund": "County General Fund",
+        "item": "2025 Tax Levy - County only"
+      },
+      {
+        "amount": "$54,330,548.35",
+        "fund": "County and Schools",
+        "item": "2025 Tax Levy - All Districts"
+      },
+      {
+        "amount": "$47,352,840.78",
+        "fund": "County General Fund",
+        "item": "2025 Taxes Collected as of June 30, 2026 - County"
+      },
+      {
+        "amount": "$114,847.66",
+        "fund": "County General Fund",
+        "item": "2025 Taxes Outstanding as of June 30, 2026 - County"
+      },
+      {
+        "amount": "$85,952.83",
+        "fund": "County General Fund",
+        "item": "2024 and Prior Delinquent Taxes Collected - County"
+      },
+      {
+        "amount": "$83,000",
+        "fund": "Audit Services",
+        "item": "FY 2026 audit contract with Martin Starnes & Associates base audit fee"
+      },
+      {
+        "amount": "$124,500",
+        "fund": "Audit Services",
+        "item": "FY 2026 audit contract total not to exceed"
+      },
+      {
+        "amount": "Approximately $215,000",
+        "fund": "Information Technology FY 2027 budget",
+        "item": "ThreatLocker cybersecurity platform multi-year agreement discount"
+      },
+      {
+        "amount": "Approximately $750,000 plus engineering, surveying, contingencies",
+        "fund": "Potential future landfill project",
+        "item": "Estimated construction cost - Leachate Pretreatment Project"
+      },
+      {
+        "amount": "Approximately $450,000",
+        "fund": "Potential future courthouse project",
+        "item": "Estimated construction cost - Morris Road Stormwater Project"
+      },
+      {
+        "amount": "Approximately $4,400,000 total",
+        "fund": "Soil and Water Conservation District ($2.1 million); Communications infrastructure ($2.3 million)",
+        "item": "New grant awards announced"
+      },
+      {
+        "amount": "50% of eligible costs",
+        "fund": "Child Welfare Division/DSS",
+        "item": "State administrative reimbursement for Allies 4 Outcomes contract services"
+      },
+      {
+        "amount": "Approximately $7,000,000 combined federal and state funding",
+        "fund": "Water Infrastructure Fund",
+        "item": "State infrastructure grant - DEQ At-Risk Infrastructure Grant"
+      },
+      {
+        "amount": "$2,000,000",
+        "fund": "Private foundation",
+        "item": "Dogwood Health Trust Housing Infrastructure Grant"
+      },
+      {
+        "amount": "Approximately $300,000",
+        "fund": "Federal funding",
+        "item": "Appalachian Regional Commission Grant for U.S. 64 sewer extension"
+      },
+      {
+        "amount": "Approximately $880,000",
+        "fund": "State funding",
+        "item": "NC Department of Commerce Industrial Development Fund Grant for U.S. 64 sewer extension"
+      },
+      {
+        "amount": "$4,600,000",
+        "fund": "Infrastructure grant funding",
+        "item": "U.S. 64/Gaia Herbs Sewer Extension project completed"
+      },
+      {
+        "amount": "Approximately $900,000",
+        "fund": "Infrastructure grant funding",
+        "item": "Brevard-Rosman Emergency Water Interconnect project completed"
+      },
+      {
+        "amount": "$50,000",
+        "fund": "Engineering",
+        "item": "Upper Transylvania Water Expansion Preliminary Engineering Study completed"
+      },
+      {
+        "amount": "Approximately $120,000,000",
+        "fund": "Multiple grant programs",
+        "item": "Total capital grant funding administered by County"
+      },
+      {
+        "amount": "Approximately $55,000,000",
+        "fund": "Multiple programs benefiting Transylvania County, City of Brevard, and Town of Rosman",
+        "item": "Grant funding secured collaboratively since 2022"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Incorporate into County's ongoing landfill planning efforts",
+        "what": "Leachate Pretreatment Project; project scope expanded by DEQ requirements; recommendation to incorporate into landfill planning rather than proceed with current project design"
+      },
+      {
+        "date": "",
+        "next_step": "Incorporate as alternate within new courthouse project budget",
+        "what": "Morris Road Stormwater Project; determined ineligible for DEQ grant funding as currently designed"
+      },
+      {
+        "date": "",
+        "next_step": "Complete engineering contract review; finalize memorandum of understanding",
+        "what": "Pisgah Labs Sewer Extension engineering contract under review following qualifications-based selection process"
+      },
+      {
+        "date": "",
+        "next_step": "Await confirmation of Town's matching funds",
+        "what": "Calvert Road Sewer Extension; Town of Rosman confirming availability of required matching funds"
+      },
+      {
+        "date": "",
+        "next_step": "Complete engineering; request construction funding directly to County",
+        "what": "Brevard High School Pump Station; engineering underway, awaiting construction funding authorization"
+      },
+      {
+        "date": "",
+        "next_step": "Finalize memorandum of understanding with City of Brevard regarding construction responsibilities",
+        "what": "Azalea Avenue Sewer Extension; engineering continues using Dogwood Health Trust funds"
+      },
+      {
+        "date": "",
+        "next_step": "State scoping meeting to be scheduled",
+        "what": "Upper Transylvania Watershed Study; engineering underway"
+      },
+      {
+        "date": "",
+        "next_step": "Conduct joint inspection with NCDEQ, County staff, contractor, and project engineers",
+        "what": "DEQ follow-up inspection of landfill Phase 7 erosion control measures requested"
+      }
+    ],
+    "public_process": [
+      "Approximately 50 people attended the regular Board meeting held in the Multipurpose Chambers at the County Administration Building.",
+      "Public comment period included five speakers addressing infrastructure funding, project delays, declarations of independence, and landfill concerns.",
+      "Representative Anna Ferguson invited to address audience regarding state funding status for local infrastructure projects.",
+      "Four citizens spoke during public comment regarding landfill erosion, sediment in Browns Mill Creek, infrastructure delays, and flood prevention measures.",
+      "Staff agreed to post information on County website directing residents to NCDEQ contacts for reporting erosion and sediment concerns.",
+      "County Manager emphasized that supporting documentation and project timeline are publicly available through the County website.",
+      "Board received comprehensive presentation on grant-funded infrastructure projects with detailed explanations of grant management practices.",
+      "Tax Settlement Report and Order to Collect presented with detailed breakdown of collection rates and taxpayer outreach efforts.",
+      "Monthly capital project updates provided to Board with reports available on County website for public review.",
+      "Finance Director presented audit contract information including statewide comparison of governmental audit firm costs.",
+      "County Manager provided updates on new grant awards and upcoming state budget implications for County operations."
+    ],
+    "quotes": [
+      {
+        "speaker": "Representative Anna Ferguson",
+        "text": "The issue was not the result of any error by Transylvania County."
+      },
+      {
+        "speaker": "Peter Offen",
+        "text": "The Board should act more promptly on major projects and grant-funded initiatives."
+      },
+      {
+        "speaker": "Owen Carson",
+        "text": "View recent challenges as warning signs requiring proactive leadership."
+      }
+    ],
+    "schedule_changes": [
+      "September 14, 2026 regular Board of Commissioners meeting canceled to accommodate special Superior Court session and family court relocation in the Commissioners' Multipurpose Chambers."
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "leachate",
+      "DEQ",
+      "Department of Environmental Quality",
+      "transfer station",
+      "social services",
+      "DSS",
+      "staffing contract",
+      "capital improvement plan",
+      "courthouse",
+      "public comment",
+      "decorum",
+      "open meetings",
+      "public records",
+      "agenda modification",
+      "stormwater",
+      "steep slope"
+    ]
+  },
+  {
+    "_extracted": "2026-08-28",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-02",
+      "title": "City Council Public Works & Utilities Committee 2026-09-02: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7396,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-07",
+        "what": "Next Public Works & Utilities Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Public Works Update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Stormwater Master Plan"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Hillview Street Culvert Update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Water Treatment Plant Renovation Update"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Sewer Lift Station Rehabilitation Project"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Wastewater Treatment Plant Update with KCI"
+      },
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Tannery Smokestack"
+      }
+    ],
+    "public_process": [
+      "Agenda posted to website and bulletin board on 08/28/2026",
+      "Agenda forwarded to media and Sunshine List on 08/28/2026",
+      "Public comment period scheduled during meeting"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater"
+    ]
   }
 ]
