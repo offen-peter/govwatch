@@ -167,6 +167,14 @@
     "title": "City Council Downtown Master Plan Committee 2026-07-08: Notice",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6337,plainText=false)"
   },
+  "47f6be1f56b9ed43": {
+    "body": "press",
+    "first_seen": "2026-08-31",
+    "kind": "notice",
+    "meeting_date": "2026-08-31",
+    "title": "Commissioners approve long-range transportation plan",
+    "url": "https://www.transylvaniatimes.com/news/commissioners-approve-long-range-transportation-plan/article_f27388e1-6088-4bd5-892e-8a8c798310c3.html"
+  },
   "4924479441471db6": {
     "body": "county",
     "first_seen": "2026-08-06",
@@ -414,6 +422,14 @@
     "meeting_date": "2026-06-22",
     "title": "Commissioners minutes 06/22/26",
     "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-06-22%20reg%20mtg%20_%20PH.pdf"
+  },
+  "f24daef01896105e": {
+    "body": "county",
+    "first_seen": "2026-08-31",
+    "kind": "notice",
+    "meeting_date": "2026-08-31",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
   },
   "f7e6caf6067c1e05": {
     "body": "press",

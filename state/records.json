@@ -7574,5 +7574,109 @@
     "watchlist_hits": [
       "stormwater"
     ]
+  },
+  {
+    "_extracted": "2026-08-31",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-08-31",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Board of Commissioners regular meeting"
+      },
+      {
+        "date": "2026-08-20",
+        "what": "Planning Board Public Hearing"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Board of Commissioners meeting cancelled for September 14, 2026",
+      "Quorum of Board of Commissioners may attend Local Officials Informational Meeting on August 31, 2026",
+      "Notice of Intent to Donate Surplus Personal Property per N.C.G.S. \u00a7 160A-280",
+      "Transylvania SWCD Board of Supervisors scheduled closed session meeting in accordance with NC open meetings law",
+      "Transylvania County Community Transportation Program Application Public Hearing",
+      "Planning Board Public Hearing on August 20, 2026 at 6:00 PM",
+      "Board of Commissioners seeking applications to Citizen Advisory Councils",
+      "Transportation Advisory Board (TAB) regular quarterly meeting on July 27, 2026",
+      "Joint Historic Preservation Commission (JHPC) Public Hearing on July 23, 2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "September 14, 2026 regular Board of Commissioners meeting cancelled; next meeting September 28, 2026",
+      "July 27, 2026 and August 10, 2026 Board of Commissioners meetings cancelled",
+      "See Off Solid Waste Collection Center closed at noon Monday, August 17 for facility maintenance; reopened Wednesday",
+      "See Off Solid Waste Collection Center closed at noon Tuesday, August 11 for facility maintenance; reopened Thursday, August 13",
+      "Public Transportation Fixed Route service ended early at 2pm on Wednesday, June 24, 2026",
+      "Public Transportation Fixed Route service ended early at 2pm on Friday, June 19, 2026",
+      "Transylvania SWCD Board of Supervisors June 18 meeting cancelled; resumed July 16",
+      "Transylvania County Tourism Development Authority Destination Infrastructure Committee meeting cancelled for Wednesday, July 1"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "transfer station",
+      "public comment",
+      "open meetings",
+      "public records",
+      "agenda modification"
+    ]
+  },
+  {
+    "_extracted": "2026-08-31",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-08-31",
+      "title": "Commissioners approve long-range transportation plan",
+      "url": "https://www.transylvaniatimes.com/news/commissioners-approve-long-range-transportation-plan/article_f27388e1-6088-4bd5-892e-8a8c798310c3.html"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Comprehensive transportation plan approved by commissioners",
+        "who": "Transylvania County Commissioners"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-08-31 at 4 p.m.",
+        "what": "Public involvement meeting on transportation issues"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "To be determined; likely mix of state and federal funds",
+        "what": "Project funding mechanisms"
+      },
+      {
+        "date": "",
+        "next_step": "Planning and permitting phase; projects may take up to 17 years from start to finish",
+        "what": "Implementation of 20+ prioritized transportation projects"
+      }
+    ],
+    "public_process": [
+      "Public involvement meeting scheduled for August 31, 2026 at county library",
+      "Plan assembled following DOT studies, public surveys and community meetings in recent years",
+      "Transylvania County Transportation Advisory Committee served as steering committee"
+    ],
+    "quotes": [
+      {
+        "speaker": "Commissioner Larry Chapman",
+        "text": "May be frustrations by residents with lengthy period to bring work to fruition."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
