@@ -7678,5 +7678,325 @@
     ],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-04",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-08",
+      "title": "City Council 2026-09-08: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7406,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-03",
+        "what": "Agenda posted on website and Sunshine List"
+      },
+      {
+        "date": "2026-09-08",
+        "what": "City Council Regular Meeting"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$350,000",
+        "fund": "",
+        "item": "Capital Project Amendment - Hillview//Mills Ave Culvert Repair"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-09-08",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendment to City of Brevard Traffic Schedule to Add Stop Sign on Thomas St. at Intersection with W. Main St."
+      },
+      {
+        "date": "2026-09-08",
+        "next_step": "Unfinished business",
+        "what": "Proposed Amendment to City of Brevard Unified Development Ordinance Chapter 17 and Code of Ordinances Chapter 70 - Fats, Oils and Grease (FOG) Regulations"
+      },
+      {
+        "date": "2026-09-08",
+        "next_step": "Unfinished business",
+        "what": "Funding Plan for Cashiers Valley Road Sewer Extension"
+      },
+      {
+        "date": "2026-09-08",
+        "next_step": "New business",
+        "what": "Menu of Options for Surplus Fund 82 (Rosenwald Fund) Dollars"
+      },
+      {
+        "date": "2026-09-08",
+        "next_step": "New business",
+        "what": "Appointment of At-Large Member to the Ecusta Trail Advisory Board"
+      },
+      {
+        "date": "2026-09-08",
+        "next_step": "New business",
+        "what": "Automated License Plate Readers (ALPRs)"
+      },
+      {
+        "date": "2026-09-08",
+        "next_step": "Closed session",
+        "what": "Economic Development"
+      }
+    ],
+    "public_process": [
+      "Public comment period included in agenda (item H)",
+      "Public hearing on proposed traffic amendment scheduled",
+      "Agenda packet materials posted on city website",
+      "Closed session scheduled for economic development"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "capital improvement plan",
+      "public comment",
+      "closed session",
+      "open meetings"
+    ]
+  },
+  {
+    "_extracted": "2026-09-04",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-08",
+      "title": "City Council 2026-09-08: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7408,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved minutes from June 5, 2026 Specially-Called Budget Workshop",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved minutes from August 17, 2026 Regular Meeting",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Proclaimed September 8 as Rise & Shine 30th Anniversary",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Proclaimed Constitution Week (September 17-23, 2026)",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Proclaimed September 2026 as Childhood Cancer Awareness Month",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved road closures for Plein Air Festival (September 19) and Halloweenfest (October 24)",
+        "who": "Council (Ordinance No. 2026-37)"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reaffirmed designation of official financial depositories",
+        "who": "Council (Resolution No. 2026-42)"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Adopted Remote Participation Policy for Appointed Boards and Committees",
+        "who": "Council (Resolution No. 2026-43)"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Renamed Downtown Master Plan Committee to Downtown Master Plan Implementation and Downtown Advisory Committee",
+        "who": "Council (Resolution No. 2026-44)"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Authorized City Manager to sign lease extension for Presbyterian Church property to June 30, 2030",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "4-1 (Holder opposed)",
+        "what": "Authorized non-competitive process for Presbyterian Church development partner selection",
+        "who": "Council"
+      },
+      {
+        "amount": "$350,000",
+        "vote": "",
+        "what": "Capital Project Amendment for Mills Avenue Culvert Repair",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approved Fats, Oils and Grease (FOG) Program amendments to UDO and Code of Ordinances",
+        "who": "Council (approval requested, hearing held August 17)"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointed Joseph M. Moore as at-large member to Ecusta Trail Advisory Board",
+        "who": "Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "Announced at meeting (project will proceed)",
+        "what": "Cascade Ridge LIHTC funding accepted; 84 affordable housing units to move forward"
+      },
+      {
+        "date": "Extended to June 30, 2030",
+        "what": "Presbyterian Church lease extension and development partner selection process"
+      },
+      {
+        "date": "September 1, 2026 (completed)",
+        "what": "ALPR public input session held; additional details on safeguards to be presented"
+      },
+      {
+        "date": "Annually (per policy)",
+        "what": "ALPR program annual review by Public Safety Committee"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$254,838.80",
+        "fund": "FEMA Reimbursement",
+        "item": "Mills Avenue Culvert Repair - Change Orders"
+      },
+      {
+        "amount": "$350,000",
+        "fund": "Capital Project/FEMA",
+        "item": "Mills Avenue Culvert Repair - Total Project Amendment"
+      },
+      {
+        "amount": "$11,400",
+        "fund": "Engineering Services",
+        "item": "Cashiers Valley Road Sewer Extension - Design and Engineering"
+      },
+      {
+        "amount": "$77,000",
+        "fund": "City contribution",
+        "item": "Cashiers Valley Road Sewer Extension - Construction Materials and Labor"
+      },
+      {
+        "amount": "$29,622",
+        "fund": "Fund 35",
+        "item": "Cashiers Valley Road Sewer Extension - Recommended funding from Fund 35 (W/S Capital Reserve)"
+      },
+      {
+        "amount": "$25,000",
+        "fund": "Fund 82",
+        "item": "Cashiers Valley Road Sewer Extension - Recommended funding from Fund 82 (Rosenwald)"
+      },
+      {
+        "amount": "$33,778",
+        "fund": "Line 7400 Capital Outlay",
+        "item": "Cashiers Valley Road Sewer Extension - Recommended funding from W/S Maintenance budget"
+      },
+      {
+        "amount": "$88,969",
+        "fund": "Rosenwald Fund",
+        "item": "Fund 82 Available Balance"
+      },
+      {
+        "amount": "$35,000",
+        "fund": "Fund 82 option",
+        "item": "Carver Street Sidewalk Enhancement Phase 1 (Design/Engineering)"
+      },
+      {
+        "amount": "$8,000-$14,000",
+        "fund": "Fund 82 option",
+        "item": "Carolina Avenue Traffic Calming"
+      },
+      {
+        "amount": "$30,000",
+        "fund": "Fund 82 option",
+        "item": "Tax Rebate Program"
+      },
+      {
+        "amount": "$398,299",
+        "fund": "City budget",
+        "item": "ALPR equipment bundle (5-year contract)"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Council may take action this evening or delay to next meeting per staff recommendation",
+        "what": "Proposed Amendment to City Traffic Schedule to Add Stop Sign on Thomas Street at W. Main Street"
+      },
+      {
+        "date": "",
+        "next_step": "Pending Council consideration",
+        "what": "Resolution in Support of Roadless Area Conservation Rule"
+      },
+      {
+        "date": "",
+        "next_step": "For discussion and future decision",
+        "what": "Menu of Options for Surplus Fund 82 (Rosenwald Fund) Dollars (approximately $88,969)"
+      },
+      {
+        "date": "",
+        "next_step": "To be deliberated alongside Item M.1 regarding Fund 82 options",
+        "what": "Funding Plan for Cashiers Valley Road Sewer Extension"
+      },
+      {
+        "date": "",
+        "next_step": "Council to approve, amend, table or reject proposal",
+        "what": "Automated License Plate Readers (ALPRs) implementation"
+      }
+    ],
+    "public_process": [
+      "Public comments heard on affordable housing at Presbyterian Church property, stormwater concerns, property value impacts, and Bracken Trail access issues",
+      "Public comments heard on Automated License Plate Readers including surveillance concerns, privacy issues, corporate involvement, and appropriateness for small town",
+      "ALPR public town hall held September 1, 2026 with approximately 54 attendees; 18 speakers commented on concerns",
+      "Remote Participation Policy for Appointed Boards and Committees adopted to increase accessibility while maintaining quorum and in-person requirements for quasi-judicial matters",
+      "City to hold town hall informational sessions in different precincts (next one planned for Pisgah Forest in October)",
+      "Notice of June 5, 2026 budget workshop posted to city website prior to meeting",
+      "Planning Board reviewed and approved FOG Program UDO amendments on June 23, 2026",
+      "Public hearing held August 17, 2026 for FOG Program amendments",
+      "FOG program includes public education component with semiannual distribution of educational materials to residential and non-residential users"
+    ],
+    "quotes": [
+      {
+        "speaker": "Butch Stiebing",
+        "text": "The soil has been designated as unfit. Very few ways to make it fit."
+      },
+      {
+        "speaker": "Carol Hamann",
+        "text": "My son is a biologist and said do anything to keep them from developing that property."
+      },
+      {
+        "speaker": "Doug Powell",
+        "text": "I prefer dangerous freedom over peaceful slavery. -Thomas Jefferson"
+      }
+    ],
+    "schedule_changes": [
+      "ALPR Town Hall scheduled for September 1, 2026 at 6:00 PM at MCJCC (completed)"
+    ],
+    "watchlist_hits": [
+      "DEQ (North Carolina Department of Environmental Quality) - FOG program compliance requirement",
+      "Department of Environmental Quality - FOG regulations and permit requirements",
+      "FOG (Fats, Oils and Grease) - comprehensive program updates adopted",
+      "affordable housing - Presbyterian Church project and Cascade Ridge project discussed",
+      "stormwater - concerns raised about development impact on Kings Creek",
+      "steep slope - referenced in development ordinance requirements",
+      "rezoning - required for Presbyterian Church low-income housing project",
+      "conditional use - development planning considerations"
+    ]
   }
 ]
