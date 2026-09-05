@@ -7998,5 +7998,38 @@
       "rezoning - required for Presbyterian Church low-income housing project",
       "conditional use - development planning considerations"
     ]
+  },
+  {
+    "_extracted": "2026-09-05",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-09",
+      "title": "City Council Downtown Master Plan Committee 2026-09-09: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7409,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-14",
+        "what": "Next Downtown Master Plan Implementation and Downtown Advisory Committee meeting (Joint Meeting with PTR Committee)"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Co-Ed Theater Update"
+      }
+    ],
+    "public_process": [
+      "Public Comment scheduled during meeting",
+      "Agenda posted to website and bulletin board on 09/04/2026",
+      "Agenda forwarded to media and Sunshine List on 09/04/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]

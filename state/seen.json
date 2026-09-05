@@ -327,6 +327,14 @@
     "title": "City Council Parks, Trails & Recreation Committee 2026-06-17: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6329,plainText=false)"
   },
+  "a2c598cb01e12929": {
+    "body": "city",
+    "first_seen": "2026-09-05",
+    "kind": "agenda",
+    "meeting_date": "2026-09-09",
+    "title": "City Council Downtown Master Plan Committee 2026-09-09: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7409,plainText=false)"
+  },
   "b5035c10a61d45c2": {
     "body": "city",
     "first_seen": "2026-08-06",
