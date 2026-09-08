@@ -8031,5 +8031,54 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-08",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-09-08",
+      "title": "School board candidates discuss funding, declin\u2026",
+      "url": "https://www.transylvaniatimes.com/education/school-board-candidates-discuss-funding-declining-enrollment/article_0dbcd779-4244-48e5-a9a4-7988facc4f5c.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [
+      {
+        "amount": "$800,000",
+        "fund": "",
+        "item": "School system revenue loss from student enrollment decline"
+      }
+    ],
+    "pending": [],
+    "public_process": [
+      "School board candidate forum held with moderator Angela Owen",
+      "Candidates discussed need for open forums and listening sessions with community",
+      "Public comment process moved to end of board meetings per Lanier criticism",
+      "Emphasis on transparency in board decisions and changes",
+      "Board members cited importance of being available and accessible to constituents"
+    ],
+    "quotes": [
+      {
+        "speaker": "Lanier",
+        "text": "We need to focus on increasing revenue, not cutting."
+      },
+      {
+        "speaker": "Kelley",
+        "text": "Literacy is very, very important to me."
+      },
+      {
+        "speaker": "Powell",
+        "text": "Everybody just wants to be heard."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "teacher supplement",
+      "average daily membership",
+      "public comment",
+      "affordable housing",
+      "social services"
+    ]
   }
 ]
