@@ -8080,5 +8080,54 @@
       "affordable housing",
       "social services"
     ]
+  },
+  {
+    "_extracted": "2026-09-10",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-09-10",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-14",
+        "what": "Board of Commissioners regular meeting cancelled"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Next regular Board meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Request for variance from Telecommunications Tower Ordinance"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled for variance request from Telecommunications Tower Ordinance",
+      "See Off Solid Waste Collection Center closure notice for facility maintenance"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "September 14, 2026 regular Board of Commissioners meeting cancelled; next meeting September 28, 2026",
+      "July 27 and August 10, 2026 regular Board meetings cancelled",
+      "See Off Solid Waste Collection Center closed August 11 at noon for maintenance; reopening August 13",
+      "See Off Solid Waste Collection Center closed August 17 at noon for maintenance; reopening with regular hours",
+      "Public Transportation Fixed Route service ending early June 19, 2026 at 2pm",
+      "Public Transportation Fixed Route service ending early June 24, 2026 at 2pm",
+      "TCTDA Destination Infrastructure Committee meeting cancelled July 1, 2026",
+      "SWCD Board of Supervisors June 18 meeting cancelled"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "transfer station"
+    ]
   }
 ]
