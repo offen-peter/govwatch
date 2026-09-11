@@ -8129,5 +8129,50 @@
       "solid waste",
       "transfer station"
     ]
+  },
+  {
+    "_extracted": "2026-09-11",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-09-11",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on House and Community Development Act funding application"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing",
+        "what": "Public hearing on application for funding under House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Public hearing on request for variance from Telecommunications Tower Ordinance"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled for September 28, 2026, at 6:00 PM for House and Community Development Act funding application",
+      "Public hearing scheduled for variance request from Telecommunications Tower Ordinance",
+      "Board of Commissioners inviting applications to citizen advisory councils"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "September 14, 2026 regular meeting cancelled; next regular meeting September 28, 2026",
+      "July 27, 2026 and August 10, 2026 regular meetings cancelled; next regular meeting August 24, 2026"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "landfill",
+      "public comment"
+    ]
   }
 ]
