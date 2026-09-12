@@ -8174,5 +8174,48 @@
       "landfill",
       "public comment"
     ]
+  },
+  {
+    "_extracted": "2026-09-12",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-16",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-09-16: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7414,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-21",
+        "what": "Next Parks, Trails & Recreation Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Committee discussion",
+        "what": "Friends of Franklin Park Meeting Update"
+      },
+      {
+        "date": "",
+        "next_step": "Revisit and discuss",
+        "what": "Sports Complex Improvements"
+      },
+      {
+        "date": "",
+        "next_step": "Revisit and discuss",
+        "what": "Visioning for Next Phases of Multi-Use Path"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda posted to website and bulletin board on 09/11/2026",
+      "Agenda forwarded to media and Sunshine List on 09/11/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]

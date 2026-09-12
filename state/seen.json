@@ -95,6 +95,14 @@
     "title": "City Council Public Safety (Police & Fire) Committee 2026-07-27: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7353,plainText=false)"
   },
+  "1bc1f8a4913e229a": {
+    "body": "city",
+    "first_seen": "2026-09-12",
+    "kind": "agenda",
+    "meeting_date": "2026-09-16",
+    "title": "City Council Parks, Trails & Recreation Committee 2026-09-16: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7414,plainText=false)"
+  },
   "1d7f1c5e6b99345a": {
     "body": "county",
     "first_seen": "2026-08-23",
