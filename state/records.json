@@ -8217,5 +8217,69 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-14",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-09-14",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on Housing and Community Development Act funding application"
+      },
+      {
+        "date": "",
+        "what": "Public hearing on telecommunications tower variance request"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-28",
+        "next_step": "Board consideration",
+        "what": "Resolution to authorize County for installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing",
+        "what": "Application by Transylvania County for funding under Housing and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Request for variance from Telecommunications Tower Ordinance"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled for September 28, 2026 at 6:00 PM for courthouse financing resolution",
+      "Public hearing scheduled for September 28, 2026 at 6:00 PM for Housing and Community Development Act funding application",
+      "Public hearing scheduled for telecommunications tower variance request",
+      "Board of Commissioners seeking applications to citizen advisory councils"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "September 14, 2026 regular meeting cancelled",
+      "July 27, 2026 and August 10, 2026 regular meetings cancelled",
+      "See Off Solid Waste Collection Center closed at noon Monday, August 17 for facility maintenance",
+      "See Off Solid Waste Collection Center closed at noon Tuesday, August 11 for facility maintenance",
+      "Public Transportation Fixed Route service ended early Wednesday, June 24, 2026 at 2 PM",
+      "Tourism Development Authority Destination Infrastructure Committee meeting cancelled for Wednesday, July 1 at 11 am"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "courthouse",
+      "public comment"
+    ]
   }
 ]
