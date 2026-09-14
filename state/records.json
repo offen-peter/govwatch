@@ -8281,5 +8281,29 @@
       "courthouse",
       "public comment"
     ]
+  },
+  {
+    "_extracted": "2026-09-14",
+    "_source": {
+      "body": "city",
+      "kind": "notice",
+      "meeting_date": "2026-09-17",
+      "title": "City Council Rosenwald Community Advisory Board 2026-09-17: Notice",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7415,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Meeting cancellation notice posted to website and bulletin board 09/14/2026",
+      "Notice forwarded to media and Sunshine List 09/14/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Regular meeting scheduled for Thursday, September 17, 2026 at 6pm has been canceled",
+      "Next regular meeting rescheduled for Thursday, October 15, 2026 at 6pm at Mary C. Jenkins Community and Cultural Center"
+    ],
+    "watchlist_hits": []
   }
 ]

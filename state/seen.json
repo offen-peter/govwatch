@@ -351,6 +351,14 @@
     "title": "Brevard City Council Meeting August 3, 2026 (transcript)",
     "url": "https://www.youtube.com/watch?v=gex3gGY3gi0"
   },
+  "9805c07469edd5d3": {
+    "body": "city",
+    "first_seen": "2026-09-14",
+    "kind": "notice",
+    "meeting_date": "2026-09-17",
+    "title": "City Council Rosenwald Community Advisory Board 2026-09-17: Notice",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7415,plainText=false)"
+  },
   "9920e50b41fbadd2": {
     "body": "city",
     "first_seen": "2026-08-06",
