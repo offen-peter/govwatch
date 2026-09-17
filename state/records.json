@@ -8305,5 +8305,100 @@
       "Next regular meeting rescheduled for Thursday, October 15, 2026 at 6pm at Mary C. Jenkins Community and Cultural Center"
     ],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-17",
+    "_source": {
+      "body": "schools",
+      "kind": "packet",
+      "meeting_date": "2026-09-21",
+      "title": "Regular Meeting",
+      "url": "https://transylvania.schoolboard.net/node/7269"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approval of Agenda",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approval of Consent Agenda (Minutes from June 15, 2026 and August 17, 2026; Personnel Report for September 21, 2026)",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Resolution 2026-5: A Resolution Supporting Proficiency-Centered Educational Accountability",
+        "who": "Board of Education"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "September 21, 2026 at 6:00 PM",
+        "what": "Regular Board Meeting"
+      },
+      {
+        "date": "October 2, 2026",
+        "what": "Teacher Workday (No School)"
+      },
+      {
+        "date": "October 19, 2026 at 6:00 PM",
+        "what": "Regular Board Meeting"
+      },
+      {
+        "date": "October 28, 2026",
+        "what": "End of Quarter 1"
+      },
+      {
+        "date": "October 29-30, 2026",
+        "what": "Teacher Workdays (No School)"
+      },
+      {
+        "date": "November 6, 2026",
+        "what": "Report Card 1 Issued"
+      },
+      {
+        "date": "November 16, 2026 at 6:00 PM",
+        "what": "Regular Board Meeting"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$5,000.00",
+        "fund": "football program and ongoing initiatives",
+        "item": "Brevard High School - T-Mobile Friday Night 5G Lights award"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Motion to authorize budget amendment request to Board of Commissioners",
+        "what": "Budget Amendment Request - Legislatively Mandated Salary Schedules (8% teacher raise, 3% state employee increase, bonuses)"
+      },
+      {
+        "date": "September 21, 2026",
+        "next_step": "Presentation by Chief Academic Officer Carrie Norris and District Instructional Coach Heidi Spradlin",
+        "what": "School Accountability Results presentation for 2025-2026"
+      }
+    ],
+    "public_process": [
+      "Meeting is open to the public; doors open at 5:30 PM",
+      "Meeting will be livestreamed at https://www.youtube.com/user/tcsnc",
+      "Public comment session held; sign-up sheet available 30 minutes before meeting",
+      "Each speaker receives 3 minutes; public comment session limited to 30 minutes total unless extended by majority Board vote",
+      "Board Chair recognizes speakers in sign-up order; no substitute speakers permitted",
+      "Board Members will not respond except to request clarification; no dialogue during public comment",
+      "Personal attacks on employees or Board Members prohibited; disruptions subject to G.S. 143-318.17",
+      "Public comment limited to issues relevant to and within Board jurisdiction",
+      "Individualized personnel and student matters are confidential; not appropriate for public comment"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "Joint School Bond and North Carolina Education Lottery Grant Projects"
+    ]
   }
 ]
