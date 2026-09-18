@@ -8400,5 +8400,272 @@
     "watchlist_hits": [
       "Joint School Bond and North Carolina Education Lottery Grant Projects"
     ]
+  },
+  {
+    "_extracted": "2026-09-18",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-21",
+      "title": "City Council 2026-09-21: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7417,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-21",
+        "what": "Public Hearings on Proposed UDO Amendments"
+      },
+      {
+        "date": "2026-09-17",
+        "what": "Agenda packet materials posted"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$60,700",
+        "fund": "",
+        "item": "Accreditation Grant - Police Department"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-09-21",
+        "next_step": "Public Hearing",
+        "what": "Proposed Amendments to UDO Chapters 2, 6, and 19 - Building Height Regulations"
+      },
+      {
+        "date": "2026-09-21",
+        "next_step": "Public Hearing",
+        "what": "Proposed Amendments to UDO Chapters 2, 8, 10, and 17 - Removal of Off-Street Parking Minimum Requirements"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Resolution Authorizing Application for SRF Loan and/or Grant Assistance for Azalea / Rhododendron Sewer Extension"
+      },
+      {
+        "date": "2026-09-21",
+        "next_step": "Unfinished business discussion",
+        "what": "Silversteen Picnic Pavilion and Bathroom Final Design"
+      },
+      {
+        "date": "2026-09-21",
+        "next_step": "Council consideration",
+        "what": "Clarification of Naming Conventions for City Trails"
+      },
+      {
+        "date": "2026-09-21",
+        "next_step": "Council consideration",
+        "what": "Resolution Authorizing Application for SRF Loan and/or Grant Assistance for Capital Improvements Program - Priority #1 Sewer System Improvements"
+      },
+      {
+        "date": "2026-09-21",
+        "next_step": "Closed Session",
+        "what": "Economic Development"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Public Hearings scheduled for proposed UDO amendments",
+      "Agenda posted on website and Sunshine List",
+      "Agenda packet materials available on City website for review prior to meeting",
+      "Closed Session scheduled under NCGS 143-318.11(a)(4)"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-18",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-21",
+      "title": "City Council 2026-09-21: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7418,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Amendment to City Traffic Schedule - Stop Sign on Thomas St at W Main St",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Amendments to Unified Development Ordinance Chapter 17 - Fats, Oils and Grease (FOG) Program",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appointment of Joseph Moore to Ecusta Trail Advisory Board - At-Large Member",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-09-21",
+        "what": "Public hearing for Building Height Regulations amendments"
+      },
+      {
+        "date": "2026-09-21",
+        "what": "Public hearing for Off-Street Parking Minimum Requirements removal"
+      },
+      {
+        "date": "2027-01-01",
+        "what": "State Law 2026-39 effective date for parking minimum prohibition"
+      },
+      {
+        "date": "2026-09-17 to 2026-09-23",
+        "what": "Constitution Week"
+      },
+      {
+        "date": "End of September 2026",
+        "what": "Next regular Ecusta Trail Advisory Board meeting with cost presentation"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Quarterly town hall meetings - Pisgah Forest area"
+      },
+      {
+        "date": "2026-09-24",
+        "what": "Meet the Mayor - Mary C. Jenkins Community Center"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$60,700",
+        "fund": "General Fund / Grant revenue",
+        "item": "Police Accreditation Grant - Budget Amendment 27-01"
+      },
+      {
+        "amount": "$2,749.53",
+        "fund": "City Tax Records",
+        "item": "Property Tax Releases - August 2026"
+      },
+      {
+        "amount": "$4,770,064.36",
+        "fund": "General Fund",
+        "item": "Property Tax Collections - August 2026"
+      },
+      {
+        "amount": "$97,348.25",
+        "fund": "General Fund",
+        "item": "Property Tax Discount (2% early payment)"
+      },
+      {
+        "amount": "$350,000 increase",
+        "fund": "General Fund / FEMA Reimbursement",
+        "item": "Mills Avenue Culvert Repair - Capital Project Amendment"
+      },
+      {
+        "amount": "$131,600",
+        "fund": "Police grant funding",
+        "item": "Accreditation Grant - Police Department full amount"
+      },
+      {
+        "amount": "$88,000 to $417,500 annually",
+        "fund": "Potential parking revenue",
+        "item": "Parking Study - Revenue estimates for management alternatives"
+      },
+      {
+        "amount": "Design funded by private donation (amount exhausted)",
+        "fund": "Private donation",
+        "item": "Silversteen Park Pavilion and Bathroom Design"
+      },
+      {
+        "amount": "$3,300,000 estimated project budget",
+        "fund": "SRF Loan / State funding application",
+        "item": "Capital Improvements Program Priority #1 - Sewer System Improvements"
+      },
+      {
+        "amount": "Amount TBD",
+        "fund": "SRF Loan / State funding application",
+        "item": "Azalea/Rhododendron Sewer Extension"
+      },
+      {
+        "amount": "$88,969 total available",
+        "fund": "City General Fund / Rosenwald Fund",
+        "item": "Rosenwald Fund (Fund 82) surplus available"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Public hearing held 9/21/26; Council to take action at next regular meeting",
+        "what": "Proposed Amendments to UDO Chapters 2, 6, 19 - Building Height Regulations"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing held 9/21/26; Council to take action at next regular meeting",
+        "what": "Proposed Amendments to UDO Chapters 2, 8, 10, 17 - Removal of Off-Street Parking Minimum Requirements"
+      },
+      {
+        "date": "",
+        "next_step": "Staff to bring back follow-up items for decision in coming weeks",
+        "what": "Funding Plan for Cashiers Valley Road Sewer Extension / Menu of Options for Surplus Fund 82 (Rosenwald Fund)"
+      },
+      {
+        "date": "",
+        "next_step": "Council to decide on design approval",
+        "what": "Silversteen Park Pavilion and Bathroom Final Design"
+      },
+      {
+        "date": "",
+        "next_step": "Council to approve Parks, Trails & Recreation Committee recommendation",
+        "what": "Clarification of Naming Conventions for City Trails"
+      }
+    ],
+    "public_process": [
+      "Public input session held on September 1, 2026 regarding Automated License Plate Readers (ALPRs); high community turnout; Chief Wentzell withdrew ALPR request based on community concerns",
+      "Public hearing held 9/21/26 on proposed amendments to UDO regarding building height regulations",
+      "Public hearing held 9/21/26 on proposed amendments to UDO regarding removal of off-street parking minimum requirements",
+      "Public comment during September 8, 2026 meeting - 11 community members spoke on ALPR technology, constitutional rights, Rosenwald Fund allocation, stormwater issues, and parking concerns",
+      "Rosenwald Community Advisory Board meetings held regularly regarding community improvements and Fund 82 allocation",
+      "Downtown Master Plan Implementation and Downtown Advisory Committee meeting minutes reviewed",
+      "Housing Committee meeting minutes reviewed",
+      "Parks, Trails, and Recreation Committee meeting minutes reviewed",
+      "Planning Board review and recommendation of proposed amendments",
+      "Listening sessions conducted for downtown parking study with approximately 30 stakeholders",
+      "Community survey on parking with 817 participants",
+      "Quarterly town hall meetings planned for different areas of city with public engagement",
+      "Closed session held for economic development matter under NCGS 143-318.11(a)(4)"
+    ],
+    "quotes": [
+      {
+        "speaker": "Police Chief Wentzell",
+        "text": "Building trust within the community is more important to me than winning the approval of technology."
+      },
+      {
+        "speaker": "Ashley Hart",
+        "text": "We the people are where it begins and we're also where it ends."
+      },
+      {
+        "speaker": "Councilman Baker",
+        "text": "We need to close this chapter out, we need to do what's right, and I'm not sure what that is right now."
+      }
+    ],
+    "schedule_changes": [
+      "Agenda Item M-3 Automated License Plate Readers (ALPRs) was removed from September 8, 2026 agenda at request of Police Chief",
+      "Items L-2 and M-1 were combined into Item M-1 on September 8, 2026 agenda"
+    ],
+    "watchlist_hits": [
+      "DEQ (Department of Environmental Quality) - Wastewater Collection System permit requirements for fats, oils, grease program",
+      "steep slope - Chapter 6 provisions for steep slope area requirements referenced in building height amendments",
+      "affordable housing - Multiple references including Azalea/Rhododendron sewer extension project for affordable housing development, HAC housing project",
+      "homelessness - Rosenwald Fund discussion referenced shelter for homeless",
+      "stormwater - Public comment on stormwater issues in Rosenwald; parking study addresses stormwater impacts",
+      "rezoning - References to conditional use permits and zoning districts in development ordinance amendments",
+      "courthouse - Building height amendments reference courthouse parking lot; county court relocation mentioned for downtown parking impact",
+      "tax rate - Tax settlement report and property tax releases discussed",
+      "school bond - Joint School Bond Project Committee referenced in watchlist but not substantively mentioned in documents",
+      "DSS - Not directly mentioned; social services referenced in Rosenwald community context",
+      "public comment - Extensive public comment session on ALPR technology and other items",
+      "decorum - Not directly addressed",
+      "open meetings - Resolution adopted recognizing Constitution Week and importance of public input process"
+    ]
   }
 ]

@@ -375,6 +375,14 @@
     "title": "City Council Parks, Trails & Recreation Committee 2026-06-17: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6329,plainText=false)"
   },
+  "9d4778cdd697c519": {
+    "body": "city",
+    "first_seen": "2026-09-18",
+    "kind": "agenda",
+    "meeting_date": "2026-09-21",
+    "title": "City Council 2026-09-21: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7417,plainText=false)"
+  },
   "a2c598cb01e12929": {
     "body": "city",
     "first_seen": "2026-09-05",
@@ -494,6 +502,14 @@
     "meeting_date": "2026-08-24",
     "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-08-24: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7388,plainText=false)"
+  },
+  "eb48edf1bd01bd97": {
+    "body": "city",
+    "first_seen": "2026-09-18",
+    "kind": "agenda",
+    "meeting_date": "2026-09-21",
+    "title": "City Council 2026-09-21: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7418,plainText=false)"
   },
   "ec2e47c4114298d7": {
     "body": "county",
