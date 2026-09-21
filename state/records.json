@@ -8667,5 +8667,70 @@
       "decorum - Not directly addressed",
       "open meetings - Resolution adopted recognizing Constitution Week and importance of public input process"
     ]
+  },
+  {
+    "_extracted": "2026-09-21",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-09-21",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on House and Community Development Act funding application"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-29",
+        "next_step": "Meeting",
+        "what": "Joint School Bond Project Committee meeting to receive updates on bond-funded projects"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing and board consideration",
+        "what": "Board consideration of resolution to authorize installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing",
+        "what": "Public hearing on application for funding under House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Public hearing on requests for variance from Telecommunications Tower Ordinance"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled for September 28, 2026 at 6:00 PM on House and Community Development Act funding application",
+      "Public hearing scheduled on request for variance from Telecommunications Tower Ordinance",
+      "Notice given of Joint School Bond Project Committee meeting on September 29, 2026 at 5:00 p.m."
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Transylvania County Board of Commissioners cancelled September 14, 2026 regular meeting",
+      "Next regular meeting scheduled for Monday, September 28, 2026 at 6:00 PM"
+    ],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "courthouse",
+      "school bond",
+      "Joint School Bond Project Committee"
+    ]
   }
 ]
