@@ -8732,5 +8732,78 @@
       "school bond",
       "Joint School Bond Project Committee"
     ]
+  },
+  {
+    "_extracted": "2026-09-22",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-09-22",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on House and Community Development Act funding application"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-24",
+        "what": "Department of Social Services office closure for professional development"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-28",
+        "next_step": "Board consideration and public hearing",
+        "what": "Resolution to authorize County for installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing",
+        "what": "Public hearing on application for funding under House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Public hearing on requests for variance from Telecommunications Tower Ordinance"
+      },
+      {
+        "date": "2026-09-29",
+        "next_step": "Committee meeting",
+        "what": "Joint School Bond Project Committee meeting to receive updates on bond-funded projects"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled September 28, 2026 on courthouse installment financing resolution",
+      "Public hearing scheduled September 28, 2026 on House and Community Development Act funding application",
+      "Public hearing scheduled on requests for variance from Telecommunications Tower Ordinance",
+      "Notice of Board of Commissioners members attending local officials informational meeting regarding Downtown Brevard Circulation Study"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of County Commissioners' September 14, 2026 regular meeting cancelled",
+      "Next regular meeting scheduled for Monday, September 28, 2026 at 6:00 p.m."
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "landfill",
+      "social services",
+      "DSS",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "public comment"
+    ]
   }
 ]
