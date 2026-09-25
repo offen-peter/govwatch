@@ -383,6 +383,14 @@
     "title": "City Council Rosenwald Community Advisory Board 2026-09-17: Notice",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7415,plainText=false)"
   },
+  "982a5861ae43ede3": {
+    "body": "city",
+    "first_seen": "2026-09-25",
+    "kind": "agenda",
+    "meeting_date": "2026-09-28",
+    "title": "City Council Finance, Human Resources & Citizen Appointment Committee Special Meeting 2026-09-28: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7427,plainText=false)"
+  },
   "9920e50b41fbadd2": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -487,6 +495,14 @@
     "title": "City Council Public Works & Utilities Committee 2026-08-05: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7364,plainText=false)"
   },
+  "ceaa6f4dbdb7ee94": {
+    "body": "city",
+    "first_seen": "2026-09-25",
+    "kind": "agenda",
+    "meeting_date": "2026-09-28",
+    "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-09-28: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7425,plainText=false)"
+  },
   "cfa969c449a99c07": {
     "body": "schools",
     "first_seen": "2026-08-13",
@@ -494,6 +510,14 @@
     "meeting_date": "2026-08-17",
     "title": "Regular Meeting",
     "url": "https://transylvania.schoolboard.net/node/7245"
+  },
+  "d2719f6f5bb0f42a": {
+    "body": "city",
+    "first_seen": "2026-09-25",
+    "kind": "agenda",
+    "meeting_date": "2026-09-28",
+    "title": "City Council Public Safety (Police & Fire) Committee 2026-09-28: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7424,plainText=false)"
   },
   "e31a08db3e845102": {
     "body": "city",

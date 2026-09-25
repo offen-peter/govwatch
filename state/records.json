@@ -8805,5 +8805,119 @@
       "courthouse",
       "public comment"
     ]
+  },
+  {
+    "_extracted": "2026-09-25",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-28",
+      "title": "City Council Public Safety (Police & Fire) Committee 2026-09-28: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7424,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-26",
+        "what": "Next Public Safety Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Traffic Calming Measures"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Streamlining Updates to the Traffic Schedule"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Discussion About Parking in the Lumberyard Area"
+      }
+    ],
+    "public_process": [
+      "Public comment period scheduled",
+      "Agenda posted on website and bulletin board 09/23/2026",
+      "Agenda forwarded to media and Sunshine List 09/23/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-25",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-28",
+      "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-09-28: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7425,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-26",
+        "what": "Next meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Revisit discussion",
+        "what": "Credit Card Processing Fee Discussion"
+      },
+      {
+        "date": "",
+        "next_step": "Quarterly report review",
+        "what": "Quarterly Reporting on P-Card Usage"
+      },
+      {
+        "date": "",
+        "next_step": "Review and recommend",
+        "what": "ABC Board Applications and Recommendation"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda posted on website and bulletin board 09/23/2026",
+      "Agenda forwarded to media and Sunshine List 09/23/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-25",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-09-28",
+      "title": "City Council Finance, Human Resources & Citizen Appointment Committee Special Meeting 2026-09-28: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7427,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Referral of Candidate to Full Council",
+        "what": "Candidate referral to Full Council"
+      }
+    ],
+    "public_process": [
+      "Agenda posted upon website and bulletin board 09/24/2026",
+      "Agenda forwarded to media and Sunshine List 09/24/2026",
+      "Closed session for personnel and employment matters"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
