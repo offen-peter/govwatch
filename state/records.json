@@ -8919,5 +8919,162 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-26",
+    "_source": {
+      "body": "county",
+      "kind": "agenda",
+      "meeting_date": "2026-09-28",
+      "title": "Commissioners agenda 09/28/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-09-28%20BOC%20Agenda.pdf"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Board of Commissioners Regular Meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public Hearing - Telecommunications Tower Variance, Courthouse Financing, CDBG-I Project"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-28",
+        "next_step": "Consideration of Variance Request",
+        "what": "Variance from Telecommunications Tower Ordinance - Quasi-Judicial Hearing"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public Hearing and consideration",
+        "what": "Authorizing Negotiation of Installment Financing Contract (Limited Obligation Bonds) for New Courthouse Building"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public Hearing",
+        "what": "NCDEQ Community Development Block Grant-Infrastructure (CDBG-I) Project Funding Application"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Old Business discussion",
+        "what": "Contract Amendment with Connestee Fire Rescue"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Old Business discussion",
+        "what": "Hazard Mitigation Grant Program Update"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "New Business discussion",
+        "what": "Federal Legislative Goal Proposals"
+      }
+    ],
+    "public_process": [
+      "Meeting open to public; doors open at 5:30 PM",
+      "Meeting viewable online at www.transylvaniacounty.org",
+      "Public Comment period with 15-minute time limit; sign-up required",
+      "Speakers limited to three minutes",
+      "Public comment period closes when no more speakers or 15-minute limit reached",
+      "Second Public Comment period with three-minute speaker limit",
+      "Chairman will limit number of speakers on same subject",
+      "No individual permitted to speak repetitively on same subject",
+      "Closed Session per N.C.G.S. 143-318.11(a)(3) for attorney-client privilege consultation"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board Meeting Schedule Adjustments for October-December 2026 on Consent Agenda"
+    ],
+    "watchlist_hits": [
+      "courthouse",
+      "DSS",
+      "DEQ",
+      "Department of Environmental Quality",
+      "closed session",
+      "open meetings",
+      "public records",
+      "public comment",
+      "decorum",
+      "agenda modification"
+    ]
+  },
+  {
+    "_extracted": "2026-09-26",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-09-26",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on Community Development Act funding application"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-30",
+        "what": "Department of Public Health offices closed for training"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing and Board consideration",
+        "what": "Resolution authorizing installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing",
+        "what": "Application by Transylvania County for funding under House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Request for variance from Telecommunications Tower Ordinance"
+      },
+      {
+        "date": "2026-09-29",
+        "next_step": "Committee meeting",
+        "what": "Joint School Bond Project Committee meeting for bond-funded status updates"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled for September 28, 2026 at 6:00 PM for Community Development Act funding application",
+      "Public hearing scheduled for September 28, 2026 for courthouse installment financing resolution",
+      "Public hearing scheduled for telecommunications tower variance request",
+      "Notice given that quorum of Board of Commissioners may or may not attend event on September 29, 2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of Commissioners September 14, 2026 regular meeting cancelled",
+      "Board of Commissioners July 27, 2026 and August 10, 2026 regular meetings cancelled",
+      "See Off Solid Waste Collection Center closure at noon on Monday, August 17 for facility maintenance",
+      "See Off Solid Waste Collection Center closure at noon on Tuesday, August 11 for facility maintenance",
+      "Department of Social Services offices closed September 24, 2026 from 1:00 p.m. to 5:00 p.m. for professional development"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "transfer station",
+      "social services",
+      "DSS",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "public comment"
+    ]
   }
 ]
