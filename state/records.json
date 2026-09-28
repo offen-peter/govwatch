@@ -9076,5 +9076,28 @@
       "courthouse",
       "public comment"
     ]
+  },
+  {
+    "_extracted": "2026-09-28",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-09-28",
+      "title": "Public encouraged to join local Council on Aging",
+      "url": "https://www.transylvaniatimes.com/news/public-encouraged-to-join-local-council-on-aging/article_ebfddc46-e1e4-4437-acf0-a9c266d049b3.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Council serves advisory capacity to Board of Commissioners",
+      "Public invited to Centenarians Party during Older Americans Month"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "social services"
+    ]
   }
 ]
