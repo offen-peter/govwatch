@@ -38,6 +38,7 @@
   ],
   "county:2026-08-24": [
     "agenda",
+    "minutes",
     "video"
   ],
   "county:2026-05-26": [
@@ -53,6 +54,7 @@
     "agenda"
   ],
   "county:2026-09-28": [
-    "agenda"
+    "agenda",
+    "video"
   ]
 }

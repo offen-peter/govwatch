@@ -9099,5 +9099,1026 @@
     "watchlist_hits": [
       "social services"
     ]
+  },
+  {
+    "_extracted": "2026-09-29",
+    "_source": {
+      "body": "county",
+      "kind": "minutes",
+      "meeting_date": "2026-08-24",
+      "title": "Commissioners minutes 08/24/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-08-24%20reg%20mtg%20_%20PH.pdf"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approve Consent Agenda including June 22 and July 13 minutes, tax discoveries/releases/refunds, Constitution Week proclamation, National Preparedness Month proclamation, Computer and Internet Use Policy updates, Council on Aging bylaw revisions, Public Transportation Program application, St. Philip's grant authorization, Soil & Water EWP supplementation, Health Department bad debt write-off, flu vaccine fee adjustments, surplus AV equipment donation notice, park-and-ride maintenance agreement with NCDOT, Social Services office closure Sept 24, and court proceedings chamber use",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$166,689 admin + $125,000 capital + $110,000 operating; local match $92,503 total",
+        "vote": "unanimous",
+        "what": "Approve FY 2028 Public Transportation Program application and funding agreement with NCDOT",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$10,000",
+        "vote": "unanimous",
+        "what": "Authorize St. Philip's grant application for Silver Squirrels Medical Transportation voucher program",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "up to $25,000",
+        "vote": "unanimous",
+        "what": "Approve use of Soil & Water Special Projects funds to supplement EWP engineering costs",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$286.20",
+        "vote": "unanimous",
+        "what": "Approve Health Department bad debt write-off",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approve health department flu vaccine fee adjustments to $25 standard and $125 high-dose",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Adopt Comprehensive Transportation Plan as modified, substituting Wilson Road Extension for Railroad Avenue Connector",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approve FY 2026 4th Quarter budget amendments (Amendments 60-77)",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Receive FY 2026 4th Quarter financial report",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$29,600 from unassigned fund balance",
+        "vote": "unanimous",
+        "what": "Approve funding for Tyler Technologies financial software upgrades including multi-year fund conversions and Open Finance platform",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$2,300,000 grants; $397,860 County contribution",
+        "vote": "unanimous",
+        "what": "Accept public safety communication tower grant awards and allocate remaining project cost from assigned fund balance",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appoint Lisa Sheffield, Amber Webb, and Shane Hooper to Personnel Board",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Reappoint Kae Parker, Brenda Skeffington, Mary Shore, and Debra Yunker to Council on Aging",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Appoint Sierra Lawing as Review Officer for Transylvania County per N.C.G.S. Chapter 47-30.2",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Affirm Chair McCall's nomination to NCACC Tax and Finance Steering Committee",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approve proposed contract amendment with Connestee Fire Rescue implementing monthly reimbursement based on documentation for minimum 18 months",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approve agenda as submitted",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "August 31, 2026",
+        "what": "Downtown Brevard Circulation Study public meeting"
+      },
+      {
+        "date": "September 16, 2026",
+        "what": "Connestee Fire Rescue board adoption of new policies"
+      },
+      {
+        "date": "September 17-23, 2026",
+        "what": "Constitution Week observance"
+      },
+      {
+        "date": "September 2026",
+        "what": "National Preparedness Month"
+      },
+      {
+        "date": "September 24, 2026 (1:00 p.m. - 5:00 p.m.)",
+        "what": "Department of Social Services office closure for professional development"
+      },
+      {
+        "date": "September 2026",
+        "what": "Land of Sky RPO consideration of Comprehensive Transportation Plan"
+      },
+      {
+        "date": "October 2026",
+        "what": "NCDOT Board of Transportation consideration of Comprehensive Transportation Plan"
+      },
+      {
+        "date": "October 27, 29 and November 3, 5, 6, 2026",
+        "what": "Elections Center Conference Room dedicated to early voting"
+      },
+      {
+        "date": "October 13, 2026",
+        "what": "State Auditor Hurricane Helene funding information request initial deadline"
+      },
+      {
+        "date": "October 26, 2026",
+        "item": "Courthouse audit fieldwork"
+      },
+      {
+        "date": "September 30, 2026",
+        "what": "Landfill cell expansion project completion"
+      },
+      {
+        "date": "September 28, 2026",
+        "what": "Board approval of formal Connestee Fire Rescue contract amendment"
+      },
+      {
+        "date": "September 28, 2026",
+        "what": "Approval of surplus AV equipment donation by resolution"
+      },
+      {
+        "date": "December 1, 2026",
+        "what": "County courthouse limited obligation bond financing"
+      },
+      {
+        "date": "Fall 2028",
+        "what": "School bond funding issuance deadline"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$166,689",
+        "fund": "Federal Transit Administration / NCDOT",
+        "item": "FY 2028 Public Transportation Program 5311 Administration"
+      },
+      {
+        "amount": "$25,003",
+        "fund": "General Fund",
+        "item": "FY 2028 Public Transportation Program 5311 Administration local match"
+      },
+      {
+        "amount": "$125,000",
+        "fund": "Federal Transit Administration / NCDOT",
+        "item": "FY 2028 Public Transportation Program Combined Capital"
+      },
+      {
+        "amount": "$12,500",
+        "fund": "General Fund",
+        "item": "FY 2028 Public Transportation Program Combined Capital local match"
+      },
+      {
+        "amount": "$110,000",
+        "fund": "Federal Transit Administration / NCDOT",
+        "item": "FY 2028 Public Transportation Program 5310 Operating"
+      },
+      {
+        "amount": "$55,000",
+        "fund": "NCDOT ROAP funding",
+        "item": "FY 2028 Public Transportation Program 5310 Operating local match"
+      },
+      {
+        "amount": "$10,000",
+        "fund": "St. Philip's Episcopal Church Women's Grant",
+        "item": "St. Philip's grant for Silver Squirrels Medical Transportation"
+      },
+      {
+        "amount": "$13,072.44",
+        "fund": "Tax Administration",
+        "item": "Tax dollars released - July 2026"
+      },
+      {
+        "amount": "$7,310.26",
+        "fund": "Tax Administration",
+        "item": "Refunds issued - July 2026"
+      },
+      {
+        "amount": "$286.20",
+        "fund": "Health Department",
+        "item": "Health Department bad debt write-off"
+      },
+      {
+        "amount": "$284,681",
+        "fund": "EWP",
+        "item": "Soil & Water Emergency Watershed Protection construction funding"
+      },
+      {
+        "amount": "$30,000",
+        "fund": "EWP",
+        "item": "Soil & Water EWP engineering and professional services"
+      },
+      {
+        "amount": "up to $25,000",
+        "fund": "Soil & Water Special Projects FY 2027",
+        "item": "Soil & Water Special Projects supplementation authorized"
+      },
+      {
+        "amount": "$49,495",
+        "fund": "Solid Waste",
+        "item": "Budget Amendment 60 - Solid Waste reallocation"
+      },
+      {
+        "amount": "$10,000",
+        "fund": "Parks & Recreation",
+        "item": "Budget Amendment 61 - Youth Sports Grant"
+      },
+      {
+        "amount": "$42,764",
+        "fund": "Soil & Water",
+        "item": "Budget Amendment 69 - StRAP grant for streambank restoration"
+      },
+      {
+        "amount": "$571,478",
+        "fund": "General Fund assigned fund balance",
+        "item": "Budget Amendment 73 - Ambulance purchase from assigned fund balance"
+      },
+      {
+        "amount": "$76,600,000",
+        "fund": "General Fund",
+        "item": "FY 2026 General Fund revenues"
+      },
+      {
+        "amount": "$49,400,000",
+        "fund": "General Fund",
+        "item": "FY 2026 property tax revenue"
+      },
+      {
+        "amount": "$47,100,000",
+        "fund": "General Fund",
+        "item": "FY 2026 current-year ad valorem taxes"
+      },
+      {
+        "amount": "$2,200,000",
+        "fund": "General Fund",
+        "item": "FY 2026 prior-year taxes, late fees, interest, motor vehicle tax"
+      },
+      {
+        "amount": "$72,700,000",
+        "fund": "General Fund",
+        "item": "FY 2026 General Fund expenditures"
+      },
+      {
+        "amount": "$33,900,000",
+        "fund": "General Fund",
+        "item": "FY 2026 personnel expenditures"
+      },
+      {
+        "amount": "$16,500,000",
+        "fund": "General Fund",
+        "item": "FY 2026 education funding to schools and college"
+      },
+      {
+        "amount": "$5,500,000",
+        "fund": "General Fund",
+        "item": "FY 2026 debt service"
+      },
+      {
+        "amount": "$3,500,000",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste Enterprise Fund revenues"
+      },
+      {
+        "amount": "$2,300,000",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste landfill scale sales"
+      },
+      {
+        "amount": "$643,000",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste sticker sales"
+      },
+      {
+        "amount": "$81,000",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste miscellaneous fees"
+      },
+      {
+        "amount": "$365,000",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste investment account earnings"
+      },
+      {
+        "amount": "$2,700,000",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste Enterprise Fund expenditures"
+      },
+      {
+        "amount": "$730,000",
+        "fund": "Solid Waste Enterprise Fund",
+        "item": "Solid Waste Enterprise Fund net gain"
+      },
+      {
+        "amount": "$130,000,000",
+        "fund": "Education Capital Fund",
+        "item": "Education Capital Fund active funding"
+      },
+      {
+        "amount": "$8,000",
+        "fund": "General Fund",
+        "item": "Tyler Technologies multi-year fund conversion one-time fee"
+      },
+      {
+        "amount": "$5,600",
+        "fund": "General Fund",
+        "item": "Tyler Technologies Open Finance implementation fee"
+      },
+      {
+        "amount": "$16,000",
+        "fund": "General Fund",
+        "item": "Tyler Technologies Open Finance annual subscription"
+      },
+      {
+        "amount": "$29,600",
+        "fund": "Unassigned fund balance",
+        "item": "Tyler Technologies financial software upgrades total FY 2027"
+      },
+      {
+        "amount": "$1,500,000",
+        "fund": "USDA Rural Development",
+        "item": "USDA Rural Development grant for communication towers"
+      },
+      {
+        "amount": "$800,000",
+        "fund": "Bureau of Justice Assistance",
+        "item": "Bureau of Justice Assistance grant for communication equipment"
+      },
+      {
+        "amount": "$2,697,860",
+        "fund": "Multiple sources",
+        "item": "Communication tower project total estimated cost"
+      },
+      {
+        "amount": "$397,860",
+        "fund": "Assigned fund balance",
+        "item": "Communication tower County contribution"
+      },
+      {
+        "amount": "$381,000",
+        "fund": "County budget",
+        "item": "SNAP revised estimated annual impact to Transylvania County"
+      },
+      {
+        "amount": "$172,640",
+        "fund": "County budget",
+        "item": "SNAP administrative costs impact"
+      },
+      {
+        "amount": "$208,741",
+        "fund": "County budget",
+        "item": "SNAP benefit costs impact"
+      },
+      {
+        "amount": "$0.0031",
+        "fund": "Property tax",
+        "item": "SNAP estimated property tax impact per $1 of tax"
+      },
+      {
+        "amount": "$87,000",
+        "fund": "Economic development",
+        "item": "Sylvan Valley Center expansion potential job creation annual wage"
+      },
+      {
+        "amount": "$13,500,000",
+        "fund": "Private investment",
+        "item": "Sylvan Valley Center machinery and improvement investments"
+      },
+      {
+        "amount": "$68,000,000",
+        "fund": "Payroll distributed locally",
+        "item": "TEA estimated economic activity from 10 years of work"
+      },
+      {
+        "amount": "$2,600,000",
+        "fund": "Local investment",
+        "item": "TEA estimated taxable investment value from 10 years"
+      },
+      {
+        "amount": "$33",
+        "fund": "Local tax revenue",
+        "item": "TEA new tax revenue per $1 County funding - 2 year average"
+      },
+      {
+        "amount": "$18,000,000",
+        "fund": "School Bond",
+        "item": "School bond funding remaining to be issued"
+      },
+      {
+        "amount": "$4,000,000",
+        "fund": "General Fund",
+        "item": "General Fund anticipated surplus FY 2026"
+      }
+    ],
+    "pending": [
+      {
+        "date": "September 28, 2026",
+        "next_step": "County Attorney to prepare amendment for Board approval",
+        "what": "Approval of formal Connestee Fire Rescue contract amendment"
+      },
+      {
+        "date": "September 28, 2026",
+        "next_step": "Board consideration by resolution",
+        "what": "Approval of surplus AV equipment donation to Transylvania County Schools"
+      },
+      {
+        "date": "",
+        "next_step": "Staff to proceed with site agreements and permitting following Board approval",
+        "what": "Public safety communication tower site agreements and permitting"
+      },
+      {
+        "date": "August 31, 2026",
+        "next_step": "Public meeting preceded by local officials meeting",
+        "what": "Downtown Brevard Circulation Study public input phase"
+      },
+      {
+        "date": "December 1, 2026 (scheduled financing date)",
+        "next_step": "Meetings with Local Government Commission, rating agencies, underwriters, bond attorneys, and financial advisors",
+        "what": "Courthouse limited obligation bond financing"
+      },
+      {
+        "date": "2027",
+        "next_step": "Joint School Bond Project Committee to review Axias reports and identify projects for second bond issuance",
+        "what": "School bond planning for next phase of work beyond Step One"
+      }
+    ],
+    "public_process": [
+      "Public hearing on Transylvania County Public Transportation Program Application held at beginning of meeting with no sign-up requirement and three-minute speaker limit",
+      "No public speakers addressed the transportation application",
+      "Public comment period allowed five speakers with three-minute limit and 15-minute total window",
+      "Samantha Jones addressed Board regarding investigation into death of her son and questioned delay in 911 call",
+      "Ashley Hart expressed concerns about Flock Safety automatic license plate reader system including data retention and sharing without public transparency portal",
+      "Robert Jazowski raised Fourth Amendment concerns and cited examples of ALPR misidentification in other communities",
+      "Doug Powell spoke regarding Constitution Week and founders' Fourth Amendment concerns regarding writs of assistance",
+      "Karen Gleasman requested formal written Board statement regarding data center position after Commissioner Dalton's departure",
+      "Chair McCall explained public hearing procedures noting no sign-up required and three-minute speaker limits",
+      "Chair McCall reviewed public comment procedures noting 15-minute total window with three minutes per speaker",
+      "Board members Commissioner McKelvey and Vice Chair Chapman stated openness to hearing from Sheriff regarding Flock camera use including data-sharing arrangements",
+      "Tyler Technologies Open Finance platform will provide real-time public access to County expenditures dating back to 2019 searchable by vendor, function, account, and other criteria",
+      "Limited redactions available in Open Finance for confidential transactions including inmate medical invoices and foster care payments",
+      "No agenda modifications reported",
+      "Downtown Brevard Circulation Study public meeting scheduled with local officials meeting preceding it",
+      "County Manager encouraged all County residents to attend Downtown Brevard Circulation Study public meeting to provide input",
+      "Proposed Sylvan Valley Center tenant information was discussed regarding economic development without reference to confidentiality",
+      "Board discussed Flock camera public concerns during commissioners' comments"
+    ],
+    "quotes": [
+      {
+        "speaker": "Ms. Minery",
+        "text": "Transylvania County Transportation complies with all NCDOT and FTA requirements"
+      },
+      {
+        "speaker": "Ms. Hart",
+        "text": "Support for law enforcement does not require endorsing all surveillance technology"
+      },
+      {
+        "speaker": "Vice Chair Chapman",
+        "text": "The Sheriff should present how Flock cameras are being used"
+      }
+    ],
+    "schedule_changes": [
+      "Board's September 14 regular meeting has been canceled",
+      "Next Board meeting scheduled for September 28, 2026 at 6:00 p.m.",
+      "Meeting included first use of County's new audio-visual system",
+      "10-minute recess called at 7:50 p.m.; Board reconvened at 8:00 p.m.",
+      "10-minute recess called before closed session at 9:20 p.m."
+    ],
+    "watchlist_hits": [
+      "landfill - Landfill Leachate Pretreatment project placed on hold pending consideration of future landfill options; Landfill Cell Expansion project on schedule for completion by end of September",
+      "solid waste - Multiple budget amendments and enterprise fund discussions; creation of new Enterprise Capital Fund for solid waste capital projects",
+      "DEQ - North Carolina Department of Environmental Quality commented on landfill leachate pretreatment project; stormwater issues being addressed with DEQ involvement in landfill cell expansion",
+      "transfer station - Pisgah Forest Convenience Site mentioned with flooded compactors requiring FEMA-funded repairs",
+      "social services - Department of Social Services office closure approved for professional development September 24, 2026",
+      "DSS - Department of Social Services request to close offices for professional development and team-building activities",
+      "capital improvement plan - Communication towers identified as need in County's Capital Improvement Plan for several years; comprehensive discussion of capital projects",
+      "courthouse - Courthouse Public Safety Complex with bids being advertised; limited obligation bond financing for courthouse planned for December 2026",
+      "public comment - Five public speakers signed up; public comment procedures reviewed by Chair McCall with 15-minute total window and three minutes per speaker",
+      "decorum - Vice Chair Chapman addressed paraglider incident at Gallimore Road airstrip and requested Sheriff enforcement of no-landing rules",
+      "open meetings - Meeting held in public; closed session entered following proper statutory citation and Board vote",
+      "public records - Tyler Technologies Open Finance platform will provide public access to County expenditures with real-time synchronization",
+      "agenda modification - Confirmed there were no agenda modifications",
+      "stormwater - Stormwater-related issues being addressed in landfill cell expansion project with DEQ, contractor, and engineer coordination",
+      "affordable housing - Azalea Sewer Extension project includes affordable housing component; design funded through Dogwood Grant",
+      "affordable housing - Brevard System Housing Projects including Housing Assistance Corporation extension, Habitat extension underway",
+      "Joint School Bond Project Committee - Manager noted committee needs to begin planning next phase of work for second bond issuance by fall 2028"
+    ]
+  },
+  {
+    "_extracted": "2026-09-29",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-09-29",
+      "title": "County OKs new tower to improve emergency communications",
+      "url": "https://www.transylvaniatimes.com/news/county-oks-new-tower-to-improve-emergency-communications/article_2c9c5309-2297-4900-863d-47360fbfd6d5.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Board of Commissioners quasi-judicial hearing with witnesses",
+        "what": "DuUEje Energy tower permit variance request"
+      }
+    ],
+    "public_process": [
+      "Planning Board reviewed tower permit application Aug. 20",
+      "Public hearing held with adjacent property owner providing testimony on safety concerns",
+      "Board of Commissioners required to conduct quasi-judicial hearing per state law"
+    ],
+    "quotes": [
+      {
+        "speaker": "Adjacent property owner",
+        "text": "Worried about safety issues including if it could fall during a storm"
+      },
+      {
+        "speaker": "DuUEje Energy representatives",
+        "text": "Tower height required due to topography issues impacting service"
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-09-29",
+    "_source": {
+      "body": "county",
+      "kind": "transcript",
+      "meeting_date": "2026-09-28",
+      "title": "Board of Commissioners September 28, 2026 (transcript)",
+      "url": "https://vimeo.com/event/6217361"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "unanimous aye",
+        "what": "Variance request for telecommunications tower height - approve 330-foot tower vs. 180-foot ordinance limit",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous aye",
+        "what": "Consent agenda approval",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous aye",
+        "what": "Reappoint Alan McAlado to Brevard Board of Adjustment and Appeals",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous aye",
+        "what": "Reappoint Eric Rasmussen and Jessica Huey to Parks and Recreation Commission, continue advertising for vacancies",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous aye",
+        "what": "Execute amended contract payment terms with Conestee Fire Rescue - monthly reimbursements, minimum 18 months",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous aye",
+        "what": "Confirm Kevin Shook and Cameron Sexton as designated agents for Helene public assistance projects",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "up to $40 million (verify)",
+        "vote": "unanimous aye",
+        "what": "Preliminary approval to negotiate limited obligation bonds for courthouse construction",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "unanimous aye",
+        "what": "Submit federal legislative goal proposals to NCACC",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "Ongoing (coordination meeting held same day as meeting)",
+        "what": "Coordinate with DEQ, engineer, and contractor to resolve stormwater issues at landfill cell expansion site",
+        "who": "County management"
+      },
+      {
+        "by_when": "Final approval and pricing November 2026, bonds issued December 2026",
+        "what": "Negotiate limited obligation bonds financing contract, submit application to NC Local Government Commission, retain financing team, prepare deed of trust for courthouse",
+        "who": "County management and finance director"
+      },
+      {
+        "by_when": "CDBG-I deadline September 30, 2026; ongoing coordination with state",
+        "what": "Apply for multiple state funding sources (CDBG-I, SRP grants, others) for Brevard High School pump station $1 million construction gap",
+        "who": "County management"
+      },
+      {
+        "by_when": "Ongoing; Rosman construction begins November 2026; all bond work completion target end of 2028",
+        "what": "Coordinate education capital projects to maintain schedule; work with Bloom Construction on Rosman area schools logistics and scheduling",
+        "who": "Beecher Allison, Joint School Bond Project Manager"
+      },
+      {
+        "by_when": "Ongoing throughout hazard mitigation grant process (minimum 3 years)",
+        "what": "Continue as designated agent for Helene public assistance projects with Cameron Sexton as secondary; obtain financial pre-audit and legal review before signing documents; provide copies to county clerk",
+        "who": "Kevin Shook, Emergency Management Director"
+      },
+      {
+        "by_when": "October 2, 2026",
+        "what": "Submit federal legislative goal proposals to NCACC through online portal",
+        "who": "County management"
+      },
+      {
+        "by_when": "Ongoing across 18-month monitoring period",
+        "what": "Provide regular progress reports to commissioners on Conestee Fire Rescue contract amendments and financial package submissions",
+        "who": "Megan O'Neal, Finance Director"
+      },
+      {
+        "by_when": "After September 30, 2026",
+        "what": "Submit CDBG-I application materials for public review after September 30 submission deadline",
+        "who": "Jennifer Wright, Budget Management Analyst"
+      },
+      {
+        "by_when": "Within 15 business days of receipt (practicable timeframe)",
+        "what": "Respond to any written complaints or grievances regarding CDBG-I public hearing",
+        "who": "Jennifer Wright, Budget Management Analyst"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "September 30, 2026",
+        "what": "CDBG-I grant application deadline"
+      },
+      {
+        "date": "October 2, 2026",
+        "what": "Federal legislative goal proposals due to NCACC"
+      },
+      {
+        "date": "October 2026",
+        "what": "Final approval of limited obligation bonds for courthouse at Board meeting"
+      },
+      {
+        "date": "November 2026",
+        "what": "Final pricing for limited obligation bonds"
+      },
+      {
+        "date": "December 2026",
+        "what": "Issuance of limited obligation bonds"
+      },
+      {
+        "date": "15 business days from hearing (within practicable timeframe)",
+        "what": "Written responses to complaints/grievances from CDBG-I public hearing"
+      },
+      {
+        "date": "Mid-November 2026",
+        "what": "Rosman area schools construction completion target"
+      },
+      {
+        "date": "End of 2028",
+        "what": "All bond-funded education projects completion"
+      },
+      {
+        "date": "Within 3 years of disaster (by 2027)",
+        "what": "FEMA compliance deadline for homes over 50% damaged from Hurricane Helene"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "Flock cameras - appropriate surveillance tool vs. constitutional violation",
+        "positions": [
+          {
+            "position": "Flock cameras constitute mass surveillance violating Fourth Amendment; data sharing with 2,612 agencies without transparency or public input unacceptable; future sheriffs could abuse system; prefer removal or public hearing",
+            "who": "Joan Hardy, Doug Powell, Jason Ball, Robert Jazowski, Owen Carson, Ashley Hart, Peter Often"
+          },
+          {
+            "position": "Flock provides legitimate public safety benefit (child abduction recovery); cameras ubiquitous in society (retail, body cams); should not dismiss all positive applications due to concerns",
+            "who": "Commissioner Chase McKelvey"
+          }
+        ]
+      },
+      {
+        "issue": "Hazard mitigation grant properties - burden vs. opportunity",
+        "positions": [
+          {
+            "position": "HMGP acquisitions represent ongoing maintenance burden and $10,730 annual tax revenue loss with limited FEMA-approved uses; properties permanently restricted from development",
+            "who": "Staff, emergency management director Kevin Shook"
+          },
+          {
+            "position": "Acquired properties should be reframed as community opportunities: urban farms for young farmers, pocket parks, amphitheaters, pollinator meadows, stormwater bioswales/rain gardens, solar installations; partnerships with land trusts can offset costs",
+            "who": "Ashley Hart, Owen Carson"
+          }
+        ]
+      },
+      {
+        "issue": "Duke Energy tower variance - public safety and scenic impact vs. infrastructure necessity",
+        "positions": [
+          {
+            "position": "330-foot tower violates 180-foot county ordinance commitment; fall distance calculations inadequate (tower could fall 330+ feet in strong wind, not 100 feet claimed); propane tank 80 feet not 100 feet from tower; frequency safety unaddressed; only 70-foot difference from water tower doesn't justify variance; too close to residential properties",
+            "who": "Janelle Arceneaux"
+          },
+          {
+            "position": "Tower needed for microwave line-of-sight and Fresnel zone clearance; alternative would require multiple shorter towers requiring more land acquisition; topography and transmission line constraints limit siting options; FCC and FAA approved; enhanced communications support emergency response post-Helene; benefits outweigh variances",
+            "who": "Daniel Peterson (Duke counsel), Joel Widmer (Duke engineer), Patrick Bernier (Duke), Board of Commissioners"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": "$1.97 million (verify)",
+        "fund": "Tourism Development Authority fund",
+        "item": "Occupancy tax revenue, Transylvania County Tourism Development Authority FY26"
+      },
+      {
+        "amount": "$10,730.08 annual loss (verify)",
+        "fund": "County tax revenue",
+        "item": "Hazard mitigation grant acquisitions - potential tax revenue loss if all 11 properties acquired"
+      },
+      {
+        "amount": "up to $40 million (verify)",
+        "fund": "LOB - secured by deed of trust on property and capital asset",
+        "item": "Limited obligation bonds for courthouse construction"
+      },
+      {
+        "amount": "not to exceed $1 million",
+        "fund": "NC DEQ CDBG-I federal program",
+        "item": "CDBG-I grant funding sought for Brevard High School sewer improvements"
+      },
+      {
+        "amount": "$1 million",
+        "fund": "Awaiting grant or alternative state funding",
+        "item": "Brevard High School sewer project remaining construction funding gap"
+      },
+      {
+        "amount": "over $250,000 (verify)",
+        "fund": "Tourism Development Authority",
+        "item": "Tourism grant programs for local projects"
+      },
+      {
+        "amount": "$22 million (verify)",
+        "fund": "School bond funds",
+        "item": "Educational capital projects - Rosman area schools combined scope"
+      }
+    ],
+    "pending": [
+      {
+        "date": "Application deadline September 30, 2026",
+        "next_step": "CDBG-I grant application submitted September 30; await state funding decision; if not awarded, explore SRP grants and other funding sources",
+        "what": "Brevard High School sewer line and pump station construction funding - seeking $1 million from CDBG-I grant"
+      },
+      {
+        "date": "October 2026",
+        "next_step": "Final approving resolution at October Board of Commissioners meeting before pricing received in November and bonds issued December",
+        "what": "Limited obligation bonds for courthouse - final approval"
+      },
+      {
+        "date": "Minimum three years from application; ongoing process",
+        "next_step": "Contract negotiations ongoing; state attempting to combine two groups of applicants; six properties notified of ineligibility; nine in group one preparing acquisition proposals",
+        "what": "Hazard mitigation grant program acquisitions - 11 properties under review"
+      },
+      {
+        "date": "November 2026 start; completion by end of 2028",
+        "next_step": "Construction begins November 2026; ongoing through 2028",
+        "what": "Education capital projects - Bond work at Rosman Middle and High Schools"
+      },
+      {
+        "date": "On next agenda",
+        "next_step": "Letter of support from Board of Commissioners; submit as round two CDBG-DR funding",
+        "what": "Rosman sewer and water improvements - CDBG-DR application for $8 million of $18 million total project"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "Joel Widmer (Duke engineer) noted towers designed to TIA-22-H standard for half-inch ice at 120 mph winds; maintenance is unmanned site with scheduled light monitoring",
+        "speaker": "Joan Hardy",
+        "summary": "Asked whether multiple towers would be more reliable and about maintenance procedures if tower ices over, referencing past icing problems in Transylvania County",
+        "topic": "Duke Energy telecommunications tower variance"
+      },
+      {
+        "response": "Patrick Bernier (Duke) noted entire parcel reviewed for tower siting; topography and transmission line clearances limited options; Joel Widmer addressed FCC frequencies and FCC safety compliance; Board member questioned fall distance design",
+        "speaker": "Janelle Arceneaux",
+        "summary": "Property owner within sight lines objected to variance as breaking county's 180-foot height commitment; questioned fall distance calculations (300+ feet actual vs. 100 feet claimed), propane tank safety (80 feet from tower), propane tank risk if hit by falling tower, frequency safety concerns, aesthetic impact on mountain views, stated only 70-foot difference from water tower height justifies project",
+        "topic": "Duke Energy telecommunications tower variance - opposition"
+      },
+      {
+        "response": "County manager and finance director implied affirmation but no direct response recorded",
+        "speaker": "Peter Often",
+        "summary": "Sought clarification that while bonds are secured by property (not general obligation), payments come from tax dollars",
+        "topic": "Courthouse financing resolution - public comment period"
+      },
+      {
+        "response": "No response recorded",
+        "speaker": "Owen Carson",
+        "summary": "Parent concerned about children attending high school in two years if pump station fails; criticized decision to not retain $10 million state grant previously allocated, calling it a failure of timely decision-making",
+        "topic": "CDBG-I grant application for Brevard High School sewer"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Joan Hardy",
+        "summary": "Army Intelligence and Electronics Warfare Agency veteran with two computer security certifications expressed concern that foreign adversaries (North Korea, Russia, China) are almost certainly in Flock systems; local risks include gang targeting of police officers and tracking of individuals; encryption being rendered useless by supercomputers",
+        "topic": "Flock automated license plate readers - cybersecurity concerns"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Ashley Hart",
+        "summary": "First Vice Chair District 11 Republican Party; noted sheriff's transparency portal shows 13 cameras, 122 searches in 30 days, 1,251 hot list hits, 30-day retention, data shared with 2,612 different agencies; requested audits that sheriff refused to release; questioned effectiveness (no solved crimes visible); noted lack of public forum (unlike Brevard); criticized Flock company claims about hack-proof systems",
+        "topic": "Flock cameras - data sharing and transparency concerns"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Doug Powell",
+        "summary": "Moved to Transylvania seeking escape from government surveillance overreach; drew parallels to COVID-era arbitrary power abuse; cited George Orwell's 1984 and Flock CEO's calling concerns 'domestic terrorism'; argued AI mass surveillance violates Fourth Amendment rights; offered complimentary copies of 1984 to board",
+        "topic": "Flock cameras and constitutional concerns"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Jason Ball",
+        "summary": "Native Transylvania resident; requested public hearing from sheriff on Flock system; suggested sheriff should prioritize deputy pay over camera funding; stated community does not want cameras and deserves opportunity to express views",
+        "topic": "Flock cameras - public hearing demand and budget priorities"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Robert Jazowski",
+        "summary": "Moved from New York to Transylvania to escape government surveillance state; observed APL cameras, homeless issues, rising taxes mirroring New York path; opposed characterization that Flock only reads plates (actually uses AI and collects identifying marks); explicitly stated he does not condone destruction of cameras but wants legal removal",
+        "topic": "Flock cameras - warning from surveillance culture experience"
+      },
+      {
+        "response": "Commissioner Chase McKelvey responded acknowledging positive uses of Flock (child abduction recovery) and noting body cameras are also surveillance; cautioned against 'doom and gloom' framing",
+        "speaker": "Owen Carson",
+        "summary": "Reiterated earlier speakers' constitutional concerns; noted commissioners have power to compel public process even without control over sheriff spending; if not doing anything wrong, why does government need surveillance; compared to forced public input process at City of Brevard",
+        "topic": "Flock automated license plate readers - general concerns"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Owen Carson",
+        "summary": "On behalf of Upper French Broad River watershed residents; landfill still hemorrhaging sediment into Browns Mill Creek flowing to French Broad River; engineers claimed sediment not from landfill but incoming DEQ reports will prove otherwise; residents can see excessive sedimentation during rain; affects tourism economy; asked county to stop work on landfill until protections in place; called for reinstatement of Transylvania Natural Resources Council",
+        "topic": "Landfill sediment runoff into French Broad River"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "David Morrow",
+        "summary": "Thanked commissioners for new audio-visual equipment; noted screens are easy to read and speaker system is significant upgrade; font still sometimes too small",
+        "topic": "Audio-visual equipment upgrade appreciation"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Peter Often",
+        "summary": "This is not attack on sheriff but on system and future sheriffs; nearly 3,000 law enforcement agencies have access to Transylvania data; less than 1,000 have transparency portals; cameras collect license plates, identifying marks, bumper stickers; Jackson County: 1 million plates from 4 cameras, only 563 searched (0.04% actual use); Macon County: 1-3 million plates before canceling; one camera pointed at Democratic Party headquarters for 1.5 years; contrast with Brevard's public input process; Chief Wentzell prioritized public trust over technology",
+        "topic": "Flock cameras - data sharing scale and public input absence"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Ashley Hart",
+        "summary": "Advocated for removal of camera pointed at Democratic headquarters; noted no Flock camera pointed at Republican headquarters; called placement 'wrong' and stated person who placed it should be ashamed",
+        "topic": "Flock camera removal from Democratic Party headquarters"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Ashley Hart (Unidentified speaker - second comment)",
+        "summary": "Praised improved audio system for online viewing; reframed HMGP acquired properties not as tax revenue loss but as community resources; suggested partnerships with land trusts to offset development costs; proposed farming (potential $50-200k annually on diversified 1-acre parcel) for young farmers; noted deed restrictions still allow farming; suggested pocket parks, amphitheaters, pollinator meadows, bee sanctuaries, bioswales/rain gardens for stormwater mitigation, permeable parking, solar panels instead of mowing",
+        "topic": "Audio system improvement and hazard mitigation grant properties as opportunities not burdens"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Unidentified speaker",
+        "summary": "Referenced April 2025 commissioner meeting slide saying 'AI in law enforcement' on horizon; researched AI dangers; warned of predictive analytics and pre-crime policing focusing on low-income areas; Flock website shows AI cameras tracking people not just vehicles; data stored on cloud/servers; cited Pinal County, Arizona sheriff example (county size of Connecticut, 60 miles from Mexican border, high crime area) as context for surveillance needs",
+        "topic": "Flock cameras - AI in law enforcement predictive analytics"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Commissioner Chase McKelvey",
+        "summary": "Stated not everything about Flock is negative; if child was abducted would want many cameras to recover child; noted cameras in retail stores everywhere; compared to body cameras everyone wants police to wear; cautioned against 'doom and gloom' framing",
+        "topic": "Flock cameras - balancing surveillance concerns with public safety benefits"
+      },
+      {
+        "response": "None recorded",
+        "speaker": "Commissioner Larry Chapman",
+        "summary": "Affirmed sheriff is highest elected official with independence from commission control except budget; noted next budget cycle is commissioners' opportunity; quoted Andrew Jackson 'one man with courage makes the majority'; clarified opposition is to tool not to man (sheriff Chuck Owenby); expressed support for law enforcement while defending constitutional rights; cautioned that rule should be same regardless of political party of future sheriffs; stated when Constitution and law enforcement are at odds, Constitution prevails",
+        "topic": "Flock cameras - constitutional and budgetary principles"
+      }
+    ],
+    "public_process": [
+      "Quasi-judicial hearing conducted for Duke Energy telecommunications tower variance per NC General Statute 160D; applicant burden to prove four criteria for variance approval",
+      "County Attorney Julie Hooten provided overview of quasi-judicial hearing procedures, conflicts of interest requirements, ex parte communication prohibitions, evidentiary standards",
+      "Board members disclosed communications: one received email about case but did not respond; one had conversations with planning board; others had no undisclosed conflicts",
+      "Planning board unanimous denial motion on August 20 but expressed support for variance if they had authority to grant",
+      "Two public hearings held on same agenda: quasi-judicial hearing for tower variance and public hearing for CDBG-I grant application",
+      "Public comment opened for tower variance after evidentiary hearing; speakers limited to three minutes",
+      "Public comment opened for CDBG-I grant application; speakers limited to three minutes",
+      "Public hearing on courthouse limited obligation bonds financing held; public informed that final resolution will be considered at October meeting",
+      "First signed-up public comment period limited to 15 minutes with six speakers; board extended time to allow sixth speaker full three minutes",
+      "Second public comment period held at end of meeting with no sign-up required and three-minute limit per speaker",
+      "Board member noted some attendees wearing campaign materials; chair reminded public that candidates should not be discussed during public comment and speakers should not discuss their own candidacy",
+      "Closed session held pursuant to NC General Statute 143-318 (11A) 3 for attorney-client privilege consultation; minutes sealed",
+      "County attorney addressed board after closed session regarding legal role of commissioners in allocating funds vs. elected officials like sheriff deciding how funds are spent"
+    ],
+    "quotes": [
+      {
+        "speaker": "Joel Widmer, Duke Energy engineer",
+        "start": "00:26:03",
+        "text": "The Fresnel zone is just a specific way of modeling this system."
+      },
+      {
+        "speaker": "Commissioner Larry Chapman",
+        "start": "03:31:30",
+        "text": "One man with courage makes the majority. I stand with the Constitution."
+      },
+      {
+        "speaker": "Ashley Hart",
+        "start": "03:21:52",
+        "text": "We need to think differently about opportunities, not burdens."
+      }
+    ],
+    "roll_call": [
+      "Teresa McCall, Chair",
+      "Larry Chapman, Vice Chair",
+      "Jason Chappell, Commissioner",
+      "Jake Dalton, Commissioner",
+      "Chase McKelvey, Commissioner",
+      "Jaime Laughter, County Manager",
+      "Trisha Hogan, Clerk to the Board"
+    ],
+    "schedule_changes": [
+      "First Board of Commissioners meeting in October canceled",
+      "First Board of Commissioners meeting in November canceled",
+      "Second Board of Commissioners meeting in December canceled",
+      "Remaining 2026 schedule: October 26 at 6:00 PM, November 23 at 6:00 PM, December 14 at 4:00 PM",
+      "Swearing-in ceremony and organizational meeting scheduled for morning of Monday, December 7, 2026",
+      "Regular two-monthly meeting schedule resumes January 2027 with new budget cycle"
+    ],
+    "unanswered": [
+      "How many license plates are being captured by Transylvania County's 13 Flock cameras?",
+      "How many of the license plates captured have actually been used in law enforcement activities?",
+      "Why was a Flock camera pointed at Democratic Party headquarters for approximately 1.5 years?",
+      "What are the specific frequencies being used by Duke Energy's microwave system (frequency in megahertz and whether UHF/VHF)?",
+      "Are the frequencies at Duke Energy tower height potentially harmful to humans in nearby residences?",
+      "If Brevard High School sewer project does not receive CDBG-I grant funding, what is the definitive timeline and funding source for construction?",
+      "Will the county accept all 11 hazard mitigation grant property acquisitions, or only some?",
+      "What specific date will the water tank at the Duke substation be removed?",
+      "How will Brevard High School operate if pump station fails during the grant funding gap period?",
+      "What is the Final Environmental Review document status for the Brevard High School sewer improvements project?",
+      "Can the Transylvania County Sheriff provide details on how Flock data is being used locally and what safeguards prevent misuse?",
+      "Will commissioners use their influence to request sheriff hold public hearing on Flock cameras or address specific concerns?"
+    ],
+    "watchlist_hits": [
+      "DEQ - Department of Environmental Quality involvement in landfill stormwater issues coordination",
+      "landfill - cell expansion substantial completion, stormwater issues ongoing",
+      "solid waste - landfill operations and sediment runoff concerns",
+      "leachate - referenced in context of landfill infrastructure",
+      "transfer station - capital improvements discussed",
+      "parcel fee - not explicitly mentioned but relevant to potential Flock camera property issues",
+      "school bond - Joint School Bond Project Committee capital improvements ($68 million bonds, $62 million grant-funded)",
+      "Joint School Bond Project Committee - Beecher Allison as project manager providing updates",
+      "vestibule - prototype design approved for T.C. Henderson Elementary security vestibule",
+      "capital improvement plan - comprehensive education and county infrastructure project updates presented",
+      "courthouse - new courthouse building $40 million limited obligation bond financing",
+      "tax rate - occupancy tax set at 5% with state approval up to 6%",
+      "revenue neutral - not explicitly discussed but implicit in limited obligation bond discussions",
+      "fund balance - appropriation of assigned fund balance for building permitting and office security modifications; appropriation of restricted fund balance for sheriff training software",
+      "social services - DSS out-of-state travel approved in FY27 budget; SNAP payment error rate advocacy",
+      "DSS - social services discussed in context of state funding and cost-share penalties",
+      "staffing contract - Conestee Fire Rescue amended contract for fiscal management",
+      "affordable housing - Housing Assistance Corporation design and construct project in Brevard system housing projects",
+      "rezoning - not explicitly discussed",
+      "conditional use - telecommunications tower variance request as quasi-judicial matter",
+      "stormwater - landfill stormwater issues; bioswale and rain garden opportunities suggested for HMGP properties",
+      "steep slope - referenced in context of tower siting challenges on mountainous property",
+      "homelessness - general community issue noted alongside landfill and camera concerns",
+      "public comment - extensive public comment on Flock cameras, tower variance, landfill, school funding",
+      "decorum - chair reminded speakers not to discuss candidate political activities",
+      "closed session - held for attorney-client privilege; minutes sealed",
+      "open meetings - public hearing processes described for all three public hearings",
+      "public records - public records request from Ashley Hart regarding Flock camera audits reportedly denied by sheriff's office twice",
+      "agenda modification - none recorded"
+    ]
   }
 ]

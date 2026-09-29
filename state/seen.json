@@ -103,6 +103,14 @@
     "title": "City Council Public Safety (Police & Fire) Committee 2026-07-27: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7353,plainText=false)"
   },
+  "192933414b435c51": {
+    "body": "press",
+    "first_seen": "2026-09-29",
+    "kind": "notice",
+    "meeting_date": "2026-09-29",
+    "title": "County OKs new tower to improve emergency communications",
+    "url": "https://www.transylvaniatimes.com/news/county-oks-new-tower-to-improve-emergency-communications/article_2c9c5309-2297-4900-863d-47360fbfd6d5.html"
+  },
   "1a3d1e462f3b4c1b": {
     "body": "schools",
     "first_seen": "2026-09-17",
@@ -198,6 +206,14 @@
     "meeting_date": "2026-08-03",
     "title": "City Council 2026-08-03: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7362,plainText=false)"
+  },
+  "3b49e690726dae2b": {
+    "body": "county",
+    "first_seen": "2026-09-29",
+    "kind": "minutes",
+    "meeting_date": "2026-08-24",
+    "title": "Commissioners minutes 08/24/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-08-24%20reg%20mtg%20_%20PH.pdf"
   },
   "3c1dd66f2471979d": {
     "body": "city",
@@ -446,6 +462,14 @@
     "meeting_date": "2026-09-14",
     "title": "County news and public notices",
     "url": "https://www.transylvaniacounty.org/news"
+  },
+  "a6e0cddcadde0cc1": {
+    "body": "county",
+    "first_seen": "2026-09-29",
+    "kind": "transcript",
+    "meeting_date": "2026-09-28",
+    "title": "Board of Commissioners September 28, 2026 (transcript)",
+    "url": "https://vimeo.com/event/6217361"
   },
   "b5035c10a61d45c2": {
     "body": "city",
