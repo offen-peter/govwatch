@@ -10120,5 +10120,286 @@
       "public records - public records request from Ashley Hart regarding Flock camera audits reportedly denied by sheriff's office twice",
       "agenda modification - none recorded"
     ]
+  },
+  {
+    "_extracted": "2026-09-30",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-05",
+      "title": "City Council 2026-10-05: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7434,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-05",
+        "what": "Regular City Council Meeting"
+      },
+      {
+        "date": "2026-09-30",
+        "what": "Agenda posted to website and Sunshine List"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$14,000",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "Carolina Avenue Traffic Calming"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Proposed Amendments to UDO Chapters 2, 6 and 19 - Building Height Regulations"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Proposed Amendments to UDO Chapters 2, 8, 10 and 17 - Removal of Off-Street Parking Minimum Requirements"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Carolina Avenue Traffic Calming"
+      },
+      {
+        "date": "",
+        "next_step": "Council review",
+        "what": "Quarterly PCard Report"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Streamlining Process for Updates to Traffic Schedule"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Downtown Master Plan Implementation and Downtown Advisory Committee Recommendation re Downtown Circulation Study"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Discussion re Proposed Addition to City Code Chapter 2-297 - Reimbursement Agreements"
+      },
+      {
+        "date": "",
+        "next_step": "Council consideration",
+        "what": "Appointment of ABC Board Member"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda packet materials posted on City website Thursday afternoon prior to Monday meeting",
+      "Meeting will be livestreamed on City of Brevard YouTube channel",
+      "Agenda posted on website, Sunshine List"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "open meetings"
+    ]
+  },
+  {
+    "_extracted": "2026-09-30",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-05",
+      "title": "City Council 2026-10-05: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7435,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "$2,749.53",
+        "vote": "unanimous",
+        "what": "Resolution approving property tax releases, Tax Year 2026",
+        "who": "Council"
+      },
+      {
+        "amount": "$60,700",
+        "vote": "unanimous",
+        "what": "Budget Amendment 27-01 for Police Accreditation Grant",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Resolution authorizing SRF Loan application for Azalea/Rhododendron Sewer Extension",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Resolution approving Silversteen Park pavilion and bathroom design",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Resolution affirming naming conventions for Estatoe Trail and Ecusta Trail",
+        "who": "Council"
+      },
+      {
+        "amount": "$3,230,000 estimated project cost",
+        "vote": "unanimous",
+        "what": "Resolution authorizing SRF application for Capital Improvements Program Priority 1 Sewer System",
+        "who": "Council"
+      },
+      {
+        "amount": "$22,500",
+        "vote": "",
+        "what": "Mini-Brooks Exemption Resolution for Headwaters Engineering streambank restoration",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Ordinance declaring road closure for Veterans Day Ceremony on Main Street",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Proposed Amendments to UDO Chapters 2, 6, 19 \u2013 Building Height Regulations",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Proposed Amendments to UDO Chapters 2, 8, 10, 17 \u2013 Removal of Off-Street Parking Minimums",
+        "who": "Council"
+      },
+      {
+        "amount": "$14,000 from Fund 82",
+        "vote": "",
+        "what": "Carolina Avenue Traffic Calming allocation",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Resolution requesting 'one-way pair' option be removed from Downtown Circulation Study",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Appointment of James Thomas Kilgore to Brevard ABC Board",
+        "who": "Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "October 19, 2026",
+        "what": "Public hearing on Municipal Infrastructure Reimbursement Agreements"
+      },
+      {
+        "date": "November 11, 2026",
+        "what": "Veterans Day road closure"
+      },
+      {
+        "date": "January 1, 2027",
+        "what": "State law effective date for parking minimum prohibition"
+      },
+      {
+        "date": "12 months from Section 2(b) effective date",
+        "what": "Stormwater ordinance amendment deadline to conform to state law"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$2,749.53",
+        "fund": "Tax Year 2026",
+        "item": "Property tax releases"
+      },
+      {
+        "amount": "$60,700",
+        "fund": "General Fund",
+        "item": "Police Accreditation Grant reimbursement"
+      },
+      {
+        "amount": "$22,500",
+        "fund": "",
+        "item": "Streambank restoration design (Headwaters Engineering)"
+      },
+      {
+        "amount": "$3,230,000",
+        "fund": "Clean Water State Revolving Fund Loan",
+        "item": "Sewer system replacement/rehabilitation project estimate"
+      },
+      {
+        "amount": "$415,000",
+        "fund": "Private donations/grants sought",
+        "item": "Silversteen Park pavilion and bathroom construction estimate"
+      },
+      {
+        "amount": "$14,000",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "Carolina Avenue traffic calming"
+      },
+      {
+        "amount": "$6,092,785",
+        "fund": "General Fund",
+        "item": "Finance Summary revenues through 9/30/26"
+      },
+      {
+        "amount": "$78,000",
+        "fund": "General Fund",
+        "item": "ABC Store projected revenue FY27"
+      },
+      {
+        "amount": "$76,317.12",
+        "fund": "General operating",
+        "item": "P-card purchases Q1 FY27"
+      }
+    ],
+    "pending": [
+      {
+        "date": "October 19, 2026",
+        "next_step": "Public hearing",
+        "what": "Public hearing on Chapter 2-297 Municipal Infrastructure Reimbursement Agreements"
+      },
+      {
+        "date": "",
+        "next_step": "Council action on Public Safety Committee recommendation",
+        "what": "Traffic Schedule amendment process streamlining"
+      }
+    ],
+    "public_process": [
+      "Public comment heard from Doug Powell on Constitution Week and founding principles",
+      "Public comment from Jimmy Veal regarding Pinnacle Road property access and trail infrastructure blocking access",
+      "Parking Study presentation to Council with public input data from 817 participants, 93% local",
+      "Public hearing held September 21, 2026 on Building Height Regulations amendments with no public participation",
+      "Public hearing held September 21, 2026 on Off-Street Parking Minimum Requirements removal with no public participation",
+      "Parking Study referred to Downtown Master Plan Implementation and Downtown Advisory Committee for discussion",
+      "Downtown Circulation Study public engagement sessions currently underway",
+      "DMPIDAC made public recommendation September 9, 2026 to remove one-way pair option from circulation study",
+      "Finance, Human Resources and Citizen Appointment Committee conducted open recruitment for ABC Board with published notices",
+      "Committee interviews of ABC Board applicants held July 14, 2026 and September 28, 2026"
+    ],
+    "quotes": [
+      {
+        "speaker": "Doug Powell",
+        "text": "our freedoms are not guaranteed; they must be understood and protected"
+      },
+      {
+        "speaker": "Jimmy Veal",
+        "text": "Your liability far exceeds what it would take to fix it"
+      },
+      {
+        "speaker": "Council Member Baker",
+        "text": "uncomfortable moments are often the most important ones on Council"
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "affordable housing (Azalea/Rhododendron sewer extension project mentioned)",
+      "capital improvement plan (referenced in infrastructure reimbursement agreement discussion)",
+      "open meetings (public comment, public hearings, public engagement sessions mentioned)",
+      "public records (public comment decorum and access discussed)"
+    ]
   }
 ]

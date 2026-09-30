@@ -615,6 +615,14 @@
     "title": "County news and public notices",
     "url": "https://www.transylvaniacounty.org/news"
   },
+  "f54d52986c5fb00a": {
+    "body": "city",
+    "first_seen": "2026-09-30",
+    "kind": "agenda",
+    "meeting_date": "2026-10-05",
+    "title": "City Council 2026-10-05: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7434,plainText=false)"
+  },
   "f7e6caf6067c1e05": {
     "body": "press",
     "first_seen": "2026-08-21",
@@ -630,5 +638,13 @@
     "meeting_date": "2026-08-19",
     "title": "City Council Parks, Trails & Recreation Committee 2026-08-19: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7379,plainText=false)"
+  },
+  "fefee1511c469ef9": {
+    "body": "city",
+    "first_seen": "2026-09-30",
+    "kind": "agenda",
+    "meeting_date": "2026-10-05",
+    "title": "City Council 2026-10-05: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7435,plainText=false)"
   }
 }
