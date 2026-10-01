@@ -10401,5 +10401,62 @@
       "open meetings (public comment, public hearings, public engagement sessions mentioned)",
       "public records (public comment decorum and access discussed)"
     ]
+  },
+  {
+    "_extracted": "2026-10-01",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-01",
+      "title": "Transylvania County celebrates the harvest season",
+      "url": "https://www.transylvaniatimes.com/news/transylvania-county-celebrates-the-harvest-season/article_40fb1f91-cc4b-4bd3-9458-ee31da0d5b0c.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-01",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-01",
+      "title": "Funding assured for Ecusta Trail in Transylvania County",
+      "url": "https://www.transylvaniatimes.com/news/funding-assured-for-ecusta-trail-in-transylvania-county/article_fd51a547-2991-45c3-825a-591b4710a1c5.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [
+      {
+        "amount": "",
+        "fund": "",
+        "item": "Ecusta Trail construction grant"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Project bidding and construction schedule to be determined",
+        "what": "Ecusta Trail project bidding and construction timeline"
+      }
+    ],
+    "public_process": [],
+    "quotes": [
+      {
+        "speaker": "City Councilman Aaron Baker",
+        "text": "This is a momentous day for Brevard and all of Transylvania County."
+      },
+      {
+        "speaker": "City Councilman Aaron Baker",
+        "text": "The Ecusta Trail is coming to Brevard."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]

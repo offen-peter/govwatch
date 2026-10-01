@@ -127,6 +127,14 @@
     "title": "City Council Parks, Trails & Recreation Committee 2026-09-16: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7414,plainText=false)"
   },
+  "1cb4d31daea917cd": {
+    "body": "press",
+    "first_seen": "2026-10-01",
+    "kind": "notice",
+    "meeting_date": "2026-10-01",
+    "title": "Transylvania County celebrates the harvest season",
+    "url": "https://www.transylvaniatimes.com/news/transylvania-county-celebrates-the-harvest-season/article_40fb1f91-cc4b-4bd3-9458-ee31da0d5b0c.html"
+  },
   "1d3151b9958761c5": {
     "body": "county",
     "first_seen": "2026-09-26",
@@ -166,6 +174,14 @@
     "meeting_date": "2026-07-27",
     "title": "City Council Finance and Human Resources Committee 2026-07-27: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7354,plainText=false)"
+  },
+  "279d1ad77d8f4038": {
+    "body": "press",
+    "first_seen": "2026-10-01",
+    "kind": "notice",
+    "meeting_date": "2026-10-01",
+    "title": "Funding assured for Ecusta Trail in Transylvania County",
+    "url": "https://www.transylvaniatimes.com/news/funding-assured-for-ecusta-trail-in-transylvania-county/article_fd51a547-2991-45c3-825a-591b4710a1c5.html"
   },
   "27df18ed86d6ceae": {
     "body": "city",
