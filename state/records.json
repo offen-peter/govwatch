@@ -10458,5 +10458,48 @@
     ],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-02",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-02",
+      "title": "Funding assured to build Ecusta Trail in Transylvania County",
+      "url": "https://www.transylvaniatimes.com/news/funding-assured-to-build-ecusta-trail-in-transylvania-county/article_fd51a547-2991-45c3-825a-591b4710a1c5.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [
+      {
+        "amount": "",
+        "fund": "Grant plus local groups and individual donors pledging millions collectively",
+        "item": "Ecusta Trail creation funding"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2029",
+        "next_step": "Bids to be let in summer 2027, followed by 18-24 months construction",
+        "what": "Ecusta Trail project - bid letting and construction"
+      }
+    ],
+    "public_process": [],
+    "quotes": [
+      {
+        "speaker": "City Manager Wilson Hooper",
+        "text": "Now that we know where we stand financially, we may be able to start talking about a strategy to include these facilities, but if we do, that strategy should be executed after the trail project is bid."
+      },
+      {
+        "speaker": "Mark Tooley",
+        "text": "It's the hard work of a lot of people and organizations that have gotten us to this point. A tidal wave of support has gotten us this far."
+      },
+      {
+        "speaker": "Aaron Baker",
+        "text": "It came in right about where we needed it to be to cover all the cost. Now, there is no doubt. The Ecusta Trail is coming to Brevard."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]

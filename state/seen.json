@@ -55,6 +55,14 @@
     "title": "City Council 2026-08-17: Agenda Packet",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7381,plainText=false)"
   },
+  "07710245570403d0": {
+    "body": "press",
+    "first_seen": "2026-10-02",
+    "kind": "notice",
+    "meeting_date": "2026-10-02",
+    "title": "Funding assured to build Ecusta Trail in Transylvania County",
+    "url": "https://www.transylvaniatimes.com/news/funding-assured-to-build-ecusta-trail-in-transylvania-county/article_fd51a547-2991-45c3-825a-591b4710a1c5.html"
+  },
   "079b5b7f8757fd51": {
     "body": "county",
     "first_seen": "2026-09-22",
