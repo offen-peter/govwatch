@@ -10501,5 +10501,143 @@
     ],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-05",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-10-05",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on House and Community Development Act funding application"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing and consideration by Board of Commissioners",
+        "what": "Resolution to authorize County to pursue installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing",
+        "what": "Application by Transylvania County for funding under the House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Requests for variance from the Transylvania County Telecommunications Tower Ordinance"
+      },
+      {
+        "date": "2026-09-29",
+        "next_step": "Committee meeting",
+        "what": "Joint School Bond Project Committee meeting to receive updates on bond-funded status"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled for September 28, 2026 on courthouse installment financing resolution",
+      "Public hearing scheduled for September 28, 2026 on HUD funding application",
+      "Public hearing scheduled for telecommunications tower variance requests",
+      "Notice of quorum presence at Blue Ridge Community College event on September 29, 2026",
+      "Notice of quorum presence at In The Loop Downtown Brevard Circulation Study meeting on August 31, 2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of Commissioners September 14, 2026 regular meeting cancelled",
+      "Board of Commissioners July 27 and August 10, 2026 regular meetings cancelled",
+      "Public Transportation Fixed Route service ends at 1pm on October 5, 2026",
+      "See Off Solid Waste Collection Center closed at noon August 17, 2026 for maintenance; reopens August 20",
+      "See Off Solid Waste Collection Center closed at noon August 11, 2026 for maintenance; reopens August 13",
+      "Department of Public Health offices closed September 30, 2026 for training",
+      "Department of Social Services offices closed September 24, 2026 from 1:00 p.m. to 5:00 p.m. for professional development"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "DSS",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "public comment"
+    ]
+  },
+  {
+    "_extracted": "2026-10-05",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-07",
+      "title": "City Council Public Works & Utilities Committee 2026-10-07: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7437,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-04",
+        "what": "Next Public Works & Utilities Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Review of McAdams Stormwater Master Plan Phase 1 Draft",
+        "what": "Stormwater Master Plan review"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Hillview Street Culvert Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Water Treatment Plant Renovation Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Sewer Lift Station Rehabilitation Project"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Wastewater Treatment Plant Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Tannery Smokestack"
+      },
+      {
+        "date": "",
+        "next_step": "Review",
+        "what": "FOG Program Outreach"
+      }
+    ],
+    "public_process": [
+      "Agenda posted on website and bulletin board 10/02/2026",
+      "Agenda forwarded to media and Sunshine List 10/02/2026",
+      "Public comments scheduled"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater"
+    ]
   }
 ]
