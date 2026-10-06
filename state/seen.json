@@ -7,6 +7,14 @@
     "title": "City Council Rosenwald Community Advisory Board 2026-07-16: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6347,plainText=false)"
   },
+  "012079145677e20f": {
+    "body": "city",
+    "first_seen": "2026-10-06",
+    "kind": "minutes",
+    "meeting_date": "2026-08-17",
+    "title": "City Council 2026-08-17: Minutes",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7439,plainText=false)"
+  },
   "01f621b52c7c44a5": {
     "body": "press",
     "first_seen": "2026-08-21",
@@ -428,6 +436,14 @@
     "first_seen": "2026-09-11",
     "kind": "notice",
     "meeting_date": "2026-09-11",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
+  },
+  "8f6abf855ae5ab4b": {
+    "body": "county",
+    "first_seen": "2026-10-06",
+    "kind": "notice",
+    "meeting_date": "2026-10-06",
     "title": "County news and public notices",
     "url": "https://www.transylvaniacounty.org/news"
   },
