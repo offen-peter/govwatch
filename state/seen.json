@@ -95,6 +95,14 @@
     "title": "Board of Commissioners June 8, 2026 (transcript)",
     "url": "https://vimeo.com/event/5977272"
   },
+  "0eff798eb1b505b0": {
+    "body": "press",
+    "first_seen": "2026-10-09",
+    "kind": "notice",
+    "meeting_date": "2026-10-09",
+    "title": "Haiti's electoral council drops rule targeting candidates sanctioned by foreign countries",
+    "url": "https://www.transylvaniatimes.com/news/nation_world/haitis-electoral-council-drops-rule-targeting-candidates-sanctioned-by-foreign-countries/article_6b68ba4f-349d-5080-bfd0-f2b23e0af058.html"
+  },
   "14649e816e153e81": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -319,6 +327,14 @@
     "title": "City Council Finance and Human Resources Committee 2026-06-22: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6333,plainText=false)"
   },
+  "4c04c808484ed435": {
+    "body": "city",
+    "first_seen": "2026-10-09",
+    "kind": "notice",
+    "meeting_date": "2026-10-14",
+    "title": "City Council Parks, Trails & Recreation Committee 2026-10-14: Notice",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7444,plainText=false)"
+  },
   "4f5e5416cfee5e27": {
     "body": "county",
     "first_seen": "2026-08-06",
@@ -534,6 +550,22 @@
     "meeting_date": "2026-08-18",
     "title": "Arts council announces winners of juried exhibition",
     "url": "https://www.transylvaniatimes.com/arts/arts-council-announces-winners-of-juried-exhibition/article_33b81ff8-ddbd-417a-8fe8-b4f40c17ed47.html"
+  },
+  "bb24ff4467cefbc0": {
+    "body": "city",
+    "first_seen": "2026-10-09",
+    "kind": "agenda",
+    "meeting_date": "2026-10-14",
+    "title": "City Council Downtown Master Plan Committee 2026-10-14: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7447,plainText=false)"
+  },
+  "bd35690649b55cc0": {
+    "body": "city",
+    "first_seen": "2026-10-09",
+    "kind": "agenda",
+    "meeting_date": "2026-10-14",
+    "title": "City Council Parks, Trails & Recreation Committee 2026-10-14: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7445,plainText=false)"
   },
   "bd4a35483efddfe1": {
     "body": "city",

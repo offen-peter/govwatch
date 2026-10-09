@@ -10867,5 +10867,138 @@
       "agenda modification",
       "DEQ"
     ]
+  },
+  {
+    "_extracted": "2026-10-09",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-14",
+      "title": "City Council Downtown Master Plan Committee 2026-10-14: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7447,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "",
+        "what": "DMPIDAC meeting (rescheduled from November 11 due to Veteran's Day Holiday)"
+      },
+      {
+        "date": "2026-11-18",
+        "what": "PTRC meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-10-14",
+        "next_step": "Straw votes and open discussion scheduled",
+        "what": "Joint Discussion on Bringing the Ecusta Trail into Downtown"
+      }
+    ],
+    "public_process": [
+      "Agenda posted to website and bulletin board on 10/09/2026",
+      "Agenda forwarded to media and Sunshine List on 10/09/2026",
+      "Public comments section included on agenda"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "DMPIDAC November 11, 2026 meeting needs to be rescheduled due to Veteran's Day Holiday"
+    ],
+    "watchlist_hits": [
+      "stormwater"
+    ]
+  },
+  {
+    "_extracted": "2026-10-09",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-14",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-10-14: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7445,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-11",
+        "what": "DMPIDAC next meeting (rescheduled from November 11)"
+      },
+      {
+        "date": "2026-11-18",
+        "what": "PTRC next meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-10-14",
+        "next_step": "Straw vote and open discussion; second straw vote if necessary",
+        "what": "Joint Discussion on Bringing the Ecusta Trail into Downtown"
+      }
+    ],
+    "public_process": [
+      "Public Comments section included in agenda",
+      "Agenda Posted Upon Website & Bulletin Board 10/09/2026",
+      "Agenda Forwarded to Media & Sunshine List 10/09/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "DMPIDAC meeting on November 11, 2026 needs to be rescheduled due to Veteran's Day Holiday"
+    ],
+    "watchlist_hits": [
+      "stormwater"
+    ]
+  },
+  {
+    "_extracted": "2026-10-09",
+    "_source": {
+      "body": "city",
+      "kind": "notice",
+      "meeting_date": "2026-10-14",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-10-14: Notice",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7444,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Notice posted to website and bulletin board 10/9/2026",
+      "Notice forwarded to media and Sunshine List 10/9/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Parks, Trails & Recreation Committee regular meeting rescheduled from October 21, 2026 at 3:30 PM to October 14, 2026 at 3:30 PM",
+      "October 14, 2026 meeting held jointly with Downtown Master Plan Implementation and Downtown Advisory Committee, replacing both committees' monthly meetings"
+    ],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-09",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-09",
+      "title": "Haiti's electoral council drops rule targeting candidates sanctioned by foreign countries",
+      "url": "https://www.transylvaniatimes.com/news/nation_world/haitis-electoral-council-drops-rule-targeting-candidates-sanctioned-by-foreign-countries/article_6b68ba4f-349d-5080-bfd0-f2b23e0af058.html"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-31",
+        "what": "Candidate registration deadline"
+      },
+      {
+        "date": "2026-12-13",
+        "what": "General election"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
