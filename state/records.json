@@ -11000,5 +11000,175 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-12",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-15",
+      "title": "City Council Rosenwald Community Advisory Board 2026-10-15: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7448,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-19",
+        "what": "Next Brevard City Council Rosenwald Community Advisory Board meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-10-15",
+        "next_step": "",
+        "what": "Discussion of Fund 82 (Rosenwald) Menu of Options"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda posted upon website and bulletin board 10/12/2026",
+      "Agenda forwarded to media and Sunshine List 10/12/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-12",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-14",
+      "title": "City Council Downtown Master Plan Committee 2026-10-14: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7450,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-18",
+        "what": "PTRC meeting"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$25,000-$100,000",
+        "fund": "Downtown Master Plan Fund (Fund 83)",
+        "item": "Design work for bike lane option"
+      },
+      {
+        "amount": "$25,000-$50,000",
+        "fund": "",
+        "item": "Restripe and add delineators using in-house resources"
+      },
+      {
+        "amount": "$80,000-$100,000",
+        "fund": "",
+        "item": "Restripe and add delineators using outside contractor"
+      },
+      {
+        "amount": "$250,000-$400,000",
+        "fund": "",
+        "item": "Repave, restripe, install delineators, and add curb cuts using outside contractor"
+      },
+      {
+        "amount": "$35,000",
+        "fund": "Downtown Master Plan Fund",
+        "item": "Current available balance in Fund 83"
+      },
+      {
+        "amount": "$0",
+        "fund": "Parks and Recreation Fund",
+        "item": "Available balance in Parks and Recreation Fund"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-10-14",
+        "next_step": "Joint meeting discussion with straw votes; committees to make recommendation",
+        "what": "Ecusta Trail connection to downtown via bike lane on W. Main St."
+      },
+      {
+        "date": "2026-11-11",
+        "next_step": "Reschedule due to Veteran's Day Holiday",
+        "what": "DMPIDAC next meeting"
+      }
+    ],
+    "public_process": [
+      "Agenda posted to website and bulletin board on 10/09/2026",
+      "Agenda forwarded to media and Sunshine List on 10/09/2026",
+      "Public comment section on agenda (item F)",
+      "Joint meeting format allows input from Downtown Master Plan Implementation and Downtown Advisory Committee and Parks, Trails, and Recreation Committee"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "DMPIDAC meeting scheduled for 2026-11-11 needs to be rescheduled due to Veteran's Day Holiday"
+    ],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-12",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-14",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-10-14: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7451,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "November 2026 (specific date not provided)",
+        "what": "DMPIDAC next meeting (rescheduled from November 11 due to Veteran's Day Holiday)"
+      },
+      {
+        "date": "2026-11-18",
+        "what": "PTRC next meeting"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$25,000-$100,000",
+        "fund": "Downtown Master Plan Fund (Fund 83)",
+        "item": "Detailed design work for bike lane options"
+      },
+      {
+        "amount": "$25,000-$50,000",
+        "fund": "Downtown Master Plan Fund",
+        "item": "Restripe and add delineators using in-house resources"
+      },
+      {
+        "amount": "$80,000-$100,000",
+        "fund": "Downtown Master Plan Fund",
+        "item": "Restripe and add delineators using outside contractor"
+      },
+      {
+        "amount": "$250,000-$400,000",
+        "fund": "Downtown Master Plan Fund",
+        "item": "Repave, restripe, install delineators, and add curb cuts using outside contractor"
+      },
+      {
+        "amount": "$35,000",
+        "fund": "Fund 83",
+        "item": "Available balance in Downtown Master Plan Fund (Fund 83)"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-10-14",
+        "next_step": "Joint discussion, straw votes, and open discussion at meeting; committees to provide recommendation",
+        "what": "Ecusta Trail connection to downtown via bike lane on W. Main St."
+      }
+    ],
+    "public_process": [
+      "Agenda posted on website and bulletin board on 10/09/2026",
+      "Agenda forwarded to media and Sunshine List on 10/09/2026",
+      "Public comment period scheduled during meeting (Item F)"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "DMPIDAC meeting scheduled for November 11, 2026 needs to be rescheduled due to Veteran's Day Holiday"
+    ],
+    "watchlist_hits": []
   }
 ]
