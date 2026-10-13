@@ -11170,5 +11170,80 @@
       "DMPIDAC meeting scheduled for November 11, 2026 needs to be rescheduled due to Veteran's Day Holiday"
     ],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-13",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-13",
+      "title": "Commissioner candidates stake out positions",
+      "url": "https://www.transylvaniatimes.com/news/commissioner-candidates-stake-out-positions/article_064586de-93e5-43b4-9a7a-ea29ac970d7d.html"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "November",
+        "what": "Tax amendments on ballot"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$500,000-$600,000",
+        "fund": "general fund",
+        "item": "Solid waste enterprise annual subsidy"
+      },
+      {
+        "amount": "$1 million",
+        "fund": "city of Brevard zoning compliance",
+        "item": "Courthouse construction costs"
+      },
+      {
+        "amount": "$2 million",
+        "fund": "annual gross",
+        "item": "Business revenue (candidate's firm)"
+      },
+      {
+        "amount": "$50 million",
+        "fund": "sales operations",
+        "item": "Retirement services company budget"
+      },
+      {
+        "amount": "$110 million",
+        "fund": "organizational",
+        "item": "Organization revenue (candidate's CEO role)"
+      }
+    ],
+    "pending": [],
+    "public_process": [
+      "Land-use regulations should be developed with robust public input",
+      "Comprehensive long-term plan should be developed with meaningful public input",
+      "Budget process should include meaningful input from people delivering services and affected by spending",
+      "Citizens should have meaningful input early in budget process"
+    ],
+    "quotes": [
+      {
+        "speaker": "Candidate (unnamed)",
+        "text": "If not you, who? And if not now, when?"
+      },
+      {
+        "speaker": "Kevin Howell",
+        "text": "We need commissioners with vision and can-do mentality."
+      },
+      {
+        "speaker": "Bryan O'Neill",
+        "text": "My campaign is about people, not politics."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "landfill",
+      "solid waste",
+      "stormwater",
+      "steep slope",
+      "affordable housing",
+      "rezoning",
+      "conditional use"
+    ]
   }
 ]

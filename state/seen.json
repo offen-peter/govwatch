@@ -431,6 +431,14 @@
     "title": "City Council 2026-08-17: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7380,plainText=false)"
   },
+  "6c7d90af3a486226": {
+    "body": "press",
+    "first_seen": "2026-10-13",
+    "kind": "notice",
+    "meeting_date": "2026-10-13",
+    "title": "Commissioner candidates stake out positions",
+    "url": "https://www.transylvaniatimes.com/news/commissioner-candidates-stake-out-positions/article_064586de-93e5-43b4-9a7a-ea29ac970d7d.html"
+  },
   "82cc1a135d76e2dc": {
     "body": "city",
     "first_seen": "2026-08-28",
