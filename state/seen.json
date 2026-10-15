@@ -23,6 +23,14 @@
     "title": "Transylvania County Schools staff members gathe\u2026",
     "url": "https://www.transylvaniatimes.com/education/transylvania-county-schools-staff-members-gather-before-school-starts/article_6dbf7d50-f78a-4a87-b81c-7d341de2f1c4.html"
   },
+  "02895e0ab790a9bd": {
+    "body": "city",
+    "first_seen": "2026-10-15",
+    "kind": "agenda",
+    "meeting_date": "2026-10-19",
+    "title": "City Council 2026-10-19: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7452,plainText=false)"
+  },
   "0335992fa8d2d2e8": {
     "body": "press",
     "first_seen": "2026-09-08",
@@ -438,6 +446,14 @@
     "meeting_date": "2026-10-13",
     "title": "Commissioner candidates stake out positions",
     "url": "https://www.transylvaniatimes.com/news/commissioner-candidates-stake-out-positions/article_064586de-93e5-43b4-9a7a-ea29ac970d7d.html"
+  },
+  "7d538879b46ca704": {
+    "body": "city",
+    "first_seen": "2026-10-15",
+    "kind": "agenda",
+    "meeting_date": "2026-10-19",
+    "title": "City Council 2026-10-19: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7453,plainText=false)"
   },
   "82cc1a135d76e2dc": {
     "body": "city",

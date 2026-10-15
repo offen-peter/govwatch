@@ -11245,5 +11245,307 @@
       "rezoning",
       "conditional use"
     ]
+  },
+  {
+    "_extracted": "2026-10-15",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-19",
+      "title": "City Council 2026-10-19: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7452,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-15",
+        "what": "Agenda posted"
+      },
+      {
+        "date": "2026-10-19",
+        "what": "City Council Regular Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-10-19",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendment to the City of Brevard Code of Ordinances to Add Chapter 2-297 - Municipal Infrastructure Reimbursement Agreements"
+      },
+      {
+        "date": "2026-10-19",
+        "next_step": "Discussion",
+        "what": "Menu of Options for Surplus Fund 82 (Rosenwald Fund) Dollars"
+      },
+      {
+        "date": "2026-10-19",
+        "next_step": "Discussion",
+        "what": "Request to Negotiate Conveyance of Unused Portion of City Utilities / Road Right-of-Way on Burrell Ave."
+      },
+      {
+        "date": "2026-10-19",
+        "next_step": "Discussion",
+        "what": "Resolution Authorizing Application for IMD Feasibility Study Grant Program"
+      },
+      {
+        "date": "2026-10-19",
+        "next_step": "Discussion",
+        "what": "Approve Low-Income Homeowner Assistance Program and Accept Dogwood Health Trust Funds"
+      },
+      {
+        "date": "2026-10-19",
+        "next_step": "Tentative closed session",
+        "what": "Economic Development Closed Session"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Public Hearing on Proposed Amendment to the City of Brevard Code of Ordinances to Add Chapter 2-297",
+      "Meeting will be livestreamed on the City of Brevard YouTube channel",
+      "Agenda packet materials posted on Thursday afternoon prior to Council's Monday meeting",
+      "Agenda materials available on City website at www.cityofbrevard.com"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "public comment",
+      "open meetings",
+      "public records",
+      "agenda modification"
+    ]
+  },
+  {
+    "_extracted": "2026-10-15",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-19",
+      "title": "City Council 2026-10-19: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7453,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Proclamation No. 2026-28 \u2013 Key to the City presented to Joe Smith",
+        "who": "Mayor Copelof"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approval of October 5, 2026 Regular Meeting Minutes",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approval of amended agenda \u2013 moved M-5 ABC Board appointment to Consent as K-6",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Ordinance 2026-42 \u2013 Road closure for Veterans Day Ceremony (Main St., Nov 11, 2026, 10 AM-1 PM)",
+        "who": "Council"
+      },
+      {
+        "amount": "$22,500",
+        "vote": "unanimous",
+        "what": "Resolution 2026-52 \u2013 Mini-Brooks Act exemption for Headwaters Engineering streambank restorations",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Resolution 2026-54 \u2013 Appointed James Thomas Kilgore to Brevard ABC Board (3-year term)",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Ordinance 2026-43 \u2013 Amended UDO chapters 2, 6, 19 for building height regulations",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Ordinance 2026-44 \u2013 Removed minimum off-street parking requirements per NC Session Law 2026-39",
+        "who": "Council"
+      },
+      {
+        "amount": "$14,000",
+        "vote": "unanimous",
+        "what": "Approved up to $14,000 from Fund 82 for Carolina Ave. traffic calming",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved 6 speed humps (4 on Carolina Ave., 1 each on Washington and McMinn) with option to study feasibility of 3 on Carolina instead",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Accepted Public Safety Committee recommendation to streamline Traffic Schedule amendment process",
+        "who": "Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Resolution 2026-53 \u2013 Removed one-way pair option from further consideration in Downtown Circulation Study",
+        "who": "Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-11-11",
+        "what": "Veterans Day Ceremony \u2013 Main St. road closure"
+      },
+      {
+        "date": "2026-10-10 through 2026-10-16",
+        "what": "Flags at half-staff for former Mayor Jimmy Harris"
+      },
+      {
+        "date": "",
+        "what": "Application deadline for IMD Feasibility Study Grant Program"
+      },
+      {
+        "date": "to be established by City",
+        "what": "Low-Income Homeowner Assistance Program application rounds (two per year)"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$22,500",
+        "fund": "Mini-Brooks Act exemption",
+        "item": "Headwaters Engineering streambank restoration design \u2013 Lamb's Creek/Norton Creek"
+      },
+      {
+        "amount": "$14,000",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "Carolina Ave. traffic calming (speed humps)"
+      },
+      {
+        "amount": "$60,000",
+        "fund": "Dogwood Health Trust",
+        "item": "Low-Income Homeowner Assistance Program grant"
+      },
+      {
+        "amount": "$750\u2013$1,500 per applicant",
+        "fund": "Dogwood Health Trust",
+        "item": "Low-Income Homeowner Assistance Program award \u2013 Priority 1 applicants"
+      },
+      {
+        "amount": "$8,500",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "Carver St. supplementary paving"
+      },
+      {
+        "amount": "$25,000",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "Carver St. utility pole removal (Comporium relocation)"
+      },
+      {
+        "amount": "$60,000",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "Carver St. sidewalk/street enhancements (design/engineering)"
+      },
+      {
+        "amount": "$25,000\u2013$74,969",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "HAC/Cashiers Valley Rd. sewer extension (affordable housing)"
+      },
+      {
+        "amount": "up to $74,969",
+        "fund": "Fund 82 (Rosenwald Fund)",
+        "item": "Silversteen Park Pavilion seed money"
+      },
+      {
+        "amount": "$30,000",
+        "fund": "Fund 82 (Rosenwald Fund); Dogwood Health Trust",
+        "item": "Tax rebate program (low-income homeowners affected by 2025 revaluation)"
+      },
+      {
+        "amount": "$12,000\u2013$16,000",
+        "fund": "Local match (20%)",
+        "item": "IMD Feasibility Study Grant Program local match"
+      },
+      {
+        "amount": "$7,800,000",
+        "fund": "General Fund",
+        "item": "City 2026-2027 budget \u2013 property tax revenue"
+      },
+      {
+        "amount": "$2,700,000",
+        "fund": "General Fund",
+        "item": "City 2026-2027 budget \u2013 sales tax revenue"
+      },
+      {
+        "amount": "$188,000,000",
+        "fund": "Tourism",
+        "item": "Transylvania County tourism economic impact (2025)"
+      }
+    ],
+    "pending": [
+      {
+        "date": "2026-10-19",
+        "next_step": "Public hearing held Oct 19, 2026; City Council action expected same date",
+        "what": "Public Hearing on Proposed Amendment to City Code Chapter 2-297 \u2013 Municipal Infrastructure Reimbursement Agreements"
+      },
+      {
+        "date": "",
+        "next_step": "Council to direct staff to begin research and negotiations or maintain existing ROW",
+        "what": "Request to Negotiate Conveyance of Unused Portion of Burrell Ave. Right-of-Way"
+      },
+      {
+        "date": "",
+        "next_step": "Council to identify preferred greenway project and adopt resolution",
+        "what": "Resolution Authorizing Application for IMD Feasibility Study Grant Program"
+      },
+      {
+        "date": "2026-10-19",
+        "next_step": "Council action expected at Oct 19 meeting",
+        "what": "Approval of Low-Income Homeowner Assistance Program and acceptance of $60,000 Dogwood Health Trust grant"
+      },
+      {
+        "date": "",
+        "next_step": "Council to identify preferred option(s); Rosenwald Advisory Committee scheduled discussion Oct 15",
+        "what": "Menu of Options for Fund 82 (Rosenwald Fund) surplus dollars"
+      }
+    ],
+    "public_process": [
+      "Public hearing held Oct 5, 2026 on proposed UDO amendments (building height regulations, minimum parking requirements).",
+      "Public hearing to be held Oct 19, 2026 on proposed Chapter 2-297 (Municipal Infrastructure Reimbursement Agreements).",
+      "Extensive public comment at Oct 5 meeting on Downtown Circulation Study: 15+ speakers expressed opposition to one-way pair option on Broad/Caldwell; concerns about impacts to businesses, events, walkability, downtown character.",
+      "Downtown Master Plan Implementation and Downtown Advisory Committee (DMPIDAC) voted unanimously to recommend removal of one-way pair option from circulation study.",
+      "Public Safety Committee recommended approval of streamlined Traffic Schedule process (removing public hearing requirement, placing amendments on Consent agenda).",
+      "Rosenwald Advisory Committee scheduled to discuss Fund 82 options Oct 15, 2026.",
+      "Agenda posted Oct 15, 2026; materials available on City website; meeting livestreamed on YouTube.",
+      "City conducting outreach and information sessions for Low-Income Homeowner Assistance Program.",
+      "Two application rounds anticipated per program year for Low-Income Homeowner Assistance Program.",
+      "Housing Committee endorsed Low-Income Homeowner Assistance Program guidelines in August 2026."
+    ],
+    "quotes": [
+      {
+        "speaker": "Adam Perkins, Heart of Brevard",
+        "text": "Take the one-way option off the table. Let's focus our energy on solutions that improve safety and mobility while protecting economic vitality."
+      },
+      {
+        "speaker": "Dee Dee Perkins, D.D. Bullwinkel's Outdoors",
+        "text": "One-way pairs put all of that at risk. Remove the one-way pairs from the options under consideration."
+      },
+      {
+        "speaker": "Mayor Copelof",
+        "text": "Jimmy Harris was our Mayor for 22 years and he loved this community, and he did an incredible amount for this community."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "affordable housing (HAC/Cashiers Valley Rd. sewer extension for 26 affordable homes)",
+      "capital improvement plan (infrastructure reimbursement agreements tied to CIP; sidewalks, greenways, bikeways listed)",
+      "revenue neutral (Low-Income Homeowner Assistance Program will use grant funding only, no net cost to City after FY27 budget allocation to staff)"
+    ]
   }
 ]
