@@ -423,6 +423,14 @@
     "title": "City Council 2026-07-20: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6351,plainText=false)"
   },
+  "67a4767daac2fad9": {
+    "body": "press",
+    "first_seen": "2026-10-16",
+    "kind": "notice",
+    "meeting_date": "2026-10-16",
+    "title": "School board candidates tackle the issues",
+    "url": "https://www.transylvaniatimes.com/education/school-board-candidates-tackle-the-issues/article_7d04c9e8-e40c-4391-a582-fc5893c6d4fd.html"
+  },
   "69410a43da31a98c": {
     "body": "county",
     "first_seen": "2026-08-28",
