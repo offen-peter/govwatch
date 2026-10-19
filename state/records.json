@@ -11565,5 +11565,90 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-19",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-10-19",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-05",
+        "what": "Local Emergency Planning Committee meeting"
+      },
+      {
+        "date": "2026-10-26",
+        "what": "Board of Commissioners regular meeting"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing and Community Development Act funding"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-10-26",
+        "next_step": "Regular meeting",
+        "what": "Board of Commissioners meeting"
+      },
+      {
+        "date": "2026-11-05",
+        "next_step": "Meeting scheduled",
+        "what": "Local Emergency Planning Committee meeting"
+      },
+      {
+        "date": "2026-09-29",
+        "next_step": "Meeting to receive updates on bond-funded status",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Board consideration of resolution",
+        "what": "Public hearing on installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Board public hearing",
+        "what": "Public hearing on FUnding Under House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Board public hearing",
+        "what": "Public hearing on variance requests from Telecommunications Tower Ordinance"
+      }
+    ],
+    "public_process": [
+      "Public hearing on courthouse installment financing scheduled for September 28, 2026",
+      "Public hearing on Community Development Act funding application scheduled for September 28, 2026 at 6:00 PM",
+      "Public hearing on Telecommunications Tower Ordinance variance requests",
+      "Joint School Bond Project Committee meeting notice issued",
+      "Board of Commissioners seeking applications to citizen advisory councils"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Transylvania County Board of Commissioners cancelled October 12, 2026 regular meeting",
+      "Transylvania County Board of Commissioners cancelled September 14, 2026 regular meeting",
+      "Public Transportation Fixed Route ending early on Monday, October 5, 2026 at 1pm",
+      "See Off Solid Waste Collection Center closure at noon Monday, August 17 for facility maintenance",
+      "See Off Solid Waste Collection Center closure at noon Tuesday, August 11 for facility maintenance"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "courthouse",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "social services",
+      "DSS"
+    ]
   }
 ]
