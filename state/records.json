@@ -11650,5 +11650,92 @@
       "social services",
       "DSS"
     ]
+  },
+  {
+    "_extracted": "2026-10-20",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-10-20",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-05",
+        "what": "Local Emergency Planning Committee meeting"
+      },
+      {
+        "date": "2026-10-26",
+        "what": "Board of Commissioners regular meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on Community Development Act funding application"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-10-26",
+        "next_step": "Meet",
+        "what": "Board of Commissioners regular meeting"
+      },
+      {
+        "date": "2026-11-05",
+        "next_step": "Meet",
+        "what": "Local Emergency Planning Committee meeting"
+      },
+      {
+        "date": "2026-09-29",
+        "next_step": "Receive updates on bond-funded projects",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Consider resolution",
+        "what": "Public hearing on installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Conduct hearing",
+        "what": "Public hearing on FUnding Under the House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Conduct hearing",
+        "what": "Public hearing on variance requests from Telecommunications Tower Ordinance"
+      }
+    ],
+    "public_process": [
+      "Public hearing scheduled on courthouse installment financing on September 28, 2026 at 6:00 PM",
+      "Public hearing scheduled on Community Development Act funding application on September 28, 2026 at 6:00 PM",
+      "Public hearing scheduled on Telecommunications Tower Ordinance variance requests",
+      "Quorum notice for Board of Commissioners attendance at Downtown Brevard Circulation Study meeting",
+      "Quorum notice for Board of Commissioners attendance at Blue Ridge event"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of Commissioners October 12, 2026 regular meeting cancelled; next meeting October 26, 2026",
+      "Board of Commissioners September 14, 2026 regular meeting cancelled; next meeting September 28, 2026",
+      "Public Transportation Fixed Route service ending early at 1 PM on October 5, 2026"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "transfer station",
+      "social services",
+      "DSS",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "public comment",
+      "open meetings",
+      "public records"
+    ]
   }
 ]

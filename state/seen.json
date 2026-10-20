@@ -687,6 +687,14 @@
     "title": "City Council Public Works & Utilities Committee 2026-10-07: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7437,plainText=false)"
   },
+  "c7dfdc1aeeda5898": {
+    "body": "county",
+    "first_seen": "2026-10-20",
+    "kind": "notice",
+    "meeting_date": "2026-10-20",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
+  },
   "cdfa9870f11debf7": {
     "body": "city",
     "first_seen": "2026-08-06",
