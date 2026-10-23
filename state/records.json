@@ -11737,5 +11737,166 @@
       "open meetings",
       "public records"
     ]
+  },
+  {
+    "_extracted": "2026-10-23",
+    "_source": {
+      "body": "county",
+      "kind": "agenda",
+      "meeting_date": "2026-10-26",
+      "title": "Commissioners agenda 10/26/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-10-26%20BOC%20Agenda.pdf"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-26",
+        "what": "Regular Board of Commissioners Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-10-26",
+        "next_step": "Presentation",
+        "what": "Transylvania County School Board Request for FY 27 Funding Increase"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Presentation",
+        "what": "Monthly Capital Update"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Appointment consideration",
+        "what": "Library Board of Trustees appointments"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Appointment consideration",
+        "what": "Transylvania County Council on Aging appointments"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Appointment consideration",
+        "what": "Transylvania County Tourism Development Authority appointments"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Appointment",
+        "what": "Voting Delegate to NCACC Legislative Goals Conference"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Review",
+        "what": "Quarterly Reporting for Allies 4 Outcomes Contract"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Vote",
+        "what": "Resolution Approving an Installment Financing Contract (Limited Obligation Bond) to Construct and Equip a New Courthouse Building"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Review",
+        "what": "FY 2027 1st Quarter Financial Summary"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Vote",
+        "what": "Establishment of County Debt Service Fund (Fund 43)"
+      },
+      {
+        "date": "2026-10-26",
+        "next_step": "Vote",
+        "what": "FY 2027 1st Quarter Budget Amendments"
+      }
+    ],
+    "public_process": [
+      "Public Comment period with 15-minute time limit; sign-up required; speakers limited to three minutes",
+      "Second Public Comment period with three-minute speaker limit",
+      "Meeting open to public; doors open at 5:30 PM",
+      "Meeting viewable online at www.transylvaniacounty.org",
+      "Agenda Modifications item on agenda",
+      "Closed Session scheduled"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "courthouse",
+      "capital improvement plan"
+    ]
+  },
+  {
+    "_extracted": "2026-10-23",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-10-23",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on Community Development Act funding application"
+      },
+      {
+        "date": "2026-11-05",
+        "what": "Local Emergency Planning Committee meeting"
+      },
+      {
+        "date": "2026-10-26",
+        "what": "Board of Commissioners regular meeting"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing and board consideration",
+        "what": "Resolution to authorize installment financing for new courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "next_step": "Public hearing",
+        "what": "Application by Transylvania County for funding under House and Community Development Act of 1974"
+      },
+      {
+        "date": "",
+        "next_step": "Public hearing",
+        "what": "Requests for variance from Telecommunications Tower Ordinance"
+      }
+    ],
+    "public_process": [
+      "Public hearing on courthouse installment financing scheduled for September 28, 2026",
+      "Public hearing on Community Development Act funding application scheduled for September 28, 2026",
+      "Public hearing on Telecommunications Tower Ordinance variance requests",
+      "Applications sought for citizen advisory councils",
+      "Joint School Bond Project Committee to receive updates on bond-funded projects",
+      "Closed session meeting by Transylvania SWCD Board of Supervisors in accordance with NC open meetings law"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "October 12, 2026 regular meeting cancelled; next meeting scheduled for October 26, 2026",
+      "September 14, 2026 regular meeting cancelled; next meeting scheduled for September 28, 2026"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "DSS",
+      "social services"
+    ]
   }
 ]

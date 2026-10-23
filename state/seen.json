@@ -95,6 +95,14 @@
     "title": "Regular Meeting",
     "url": "https://transylvania.schoolboard.net/node/7225"
   },
+  "09ac56abc2967b84": {
+    "body": "county",
+    "first_seen": "2026-10-23",
+    "kind": "agenda",
+    "meeting_date": "2026-10-26",
+    "title": "Commissioners agenda 10/26/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-10-26%20BOC%20Agenda.pdf"
+  },
   "0ebfaf48cf3a00eb": {
     "body": "county",
     "first_seen": "2026-08-07",
@@ -406,6 +414,14 @@
     "meeting_date": "2026-06-15",
     "title": "City Council 2026-06-15: Agenda Packet",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6331,plainText=false)"
+  },
+  "600b63d26d825f70": {
+    "body": "county",
+    "first_seen": "2026-10-23",
+    "kind": "notice",
+    "meeting_date": "2026-10-23",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
   },
   "62eae0fba02154de": {
     "body": "city",
