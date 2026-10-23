@@ -11898,5 +11898,149 @@
       "DSS",
       "social services"
     ]
+  },
+  {
+    "_extracted": "2026-10-23",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-26",
+      "title": "City Council Public Safety (Police & Fire) Committee 2026-10-26: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7455,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-23",
+        "what": "Next Public Safety Committee Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Traffic Calming Measures"
+      },
+      {
+        "date": "",
+        "next_step": "Introductory Discussion",
+        "what": "E-bikes and E-scooters on Public Greenways, Roads, and Sidewalks"
+      }
+    ],
+    "public_process": [
+      "Public Comments period included on agenda",
+      "Agenda Posted Upon Website & Bulletin Board 10/21/2026",
+      "Agenda Forwarded to Media & Sunshine List 10/21/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-23",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-10-26",
+      "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-10-26: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7456,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [
+      {
+        "amount": "$30,000-$499,999",
+        "fund": "",
+        "item": "Construction Contracts threshold"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Discussion",
+        "what": "Quarterly Reporting on Construction Contracts $30,000-$499,999"
+      },
+      {
+        "date": "",
+        "next_step": "Discussion",
+        "what": "Police Department Reorganization"
+      }
+    ],
+    "public_process": [
+      "Public Comments period on agenda",
+      "Agenda posted on website and bulletin board 10/21/2026",
+      "Agenda forwarded to media and Sunshine List 10/21/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "public comment",
+      "staffing contract"
+    ]
+  },
+  {
+    "_extracted": "2026-10-23",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-23",
+      "title": "Council moves money from park to housing project",
+      "url": "https://www.transylvaniatimes.com/news/council-moves-money-from-park-to-housing-project/article_ca1268dc-e27f-4e03-a896-62671963873a.html"
+    },
+    "actions_taken": [
+      {
+        "amount": "$41,000",
+        "vote": "3-2",
+        "what": "Reallocate $41,000 surplus from Carver Street work to Silversteen Park seed funding",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [],
+    "money": [
+      {
+        "amount": "$41,000",
+        "fund": "",
+        "item": "Carver Street work surplus allocated to Silversteen Park seed funding"
+      },
+      {
+        "amount": "$400,000",
+        "fund": "",
+        "item": "Silversteen Park capital need for restrooms and pavilion"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Task force to develop funding strategy",
+        "what": "Community task force to examine Silversteen Park funding (needs ~$400,000 for restrooms and pavilion)"
+      },
+      {
+        "date": "",
+        "next_step": "Committee review and planning",
+        "what": "Parks, Trails & Recreation Advisory Committee to develop updated comprehensive parks plan"
+      }
+    ],
+    "public_process": [
+      "Public comment period held during meeting",
+      "Rosenwald Community Advisory Board recommendation presented for council consideration",
+      "Council debate and vote on reallocation of funds"
+    ],
+    "quotes": [
+      {
+        "speaker": "Councilwoman Pamela Holder",
+        "text": "If we don't have seed money, it shows our lack of interest."
+      },
+      {
+        "speaker": "Councilman Dean Lytle",
+        "text": "It's not just a playground. It's a gathering place."
+      },
+      {
+        "speaker": "Councilman Lauren Wise",
+        "text": "Use the money now. Don't sit on it."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]

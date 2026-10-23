@@ -487,6 +487,14 @@
     "title": "City Council 2026-10-19: Agenda Packet",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7453,plainText=false)"
   },
+  "7ed6dca7785e8c29": {
+    "body": "city",
+    "first_seen": "2026-10-23",
+    "kind": "agenda",
+    "meeting_date": "2026-10-26",
+    "title": "City Council Public Safety (Police & Fire) Committee 2026-10-26: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7455,plainText=false)"
+  },
   "82cc1a135d76e2dc": {
     "body": "city",
     "first_seen": "2026-08-28",
@@ -567,6 +575,14 @@
     "title": "City Council Rosenwald Community Advisory Board 2026-10-15: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7448,plainText=false)"
   },
+  "9bde86c380b2aa5f": {
+    "body": "press",
+    "first_seen": "2026-10-23",
+    "kind": "notice",
+    "meeting_date": "2026-10-23",
+    "title": "Council moves money from park to housing project",
+    "url": "https://www.transylvaniatimes.com/news/council-moves-money-from-park-to-housing-project/article_ca1268dc-e27f-4e03-a896-62671963873a.html"
+  },
   "9ce9c13f70b74492": {
     "body": "press",
     "first_seen": "2026-09-28",
@@ -622,6 +638,14 @@
     "meeting_date": "2026-06-15",
     "title": "City Council 2026-06-15: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6330,plainText=false)"
+  },
+  "b5a6423b3892ae37": {
+    "body": "city",
+    "first_seen": "2026-10-23",
+    "kind": "agenda",
+    "meeting_date": "2026-10-26",
+    "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-10-26: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7456,plainText=false)"
   },
   "b9da2b2a7ad2dfcf": {
     "body": "press",
