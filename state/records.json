@@ -12042,5 +12042,89 @@
     ],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-26",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-26",
+      "title": "Council moves money from fund to housing project",
+      "url": "https://www.transylvaniatimes.com/news/council-moves-money-from-fund-to-housing-project/article_ca1268dc-e27f-4e03-a896-62671963873a.html"
+    },
+    "actions_taken": [
+      {
+        "amount": "$41,000",
+        "vote": "3-2",
+        "what": "Reallocate $41,000 from Carver Street work to seed money for Silverstein Park restrooms and pavilion",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [],
+    "money": [
+      {
+        "amount": "$41,000",
+        "fund": "",
+        "item": "Carver Street work surplus reallocated to Silverstein Park"
+      },
+      {
+        "amount": "$400,000",
+        "fund": "",
+        "item": "Silverstein Park restrooms and pavilion project"
+      }
+    ],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Community task force to explore funding options",
+        "what": "Funding strategy for Silverstein Park project (estimated $400,000 total need)"
+      },
+      {
+        "date": "",
+        "next_step": "Parks committee and city staff to develop updated plan",
+        "what": "Comprehensive parks plan development"
+      }
+    ],
+    "public_process": [
+      "Public comment period held during meeting",
+      "Community advisory board recommendation presented to council",
+      "Council voted on matter after public input"
+    ],
+    "quotes": [
+      {
+        "speaker": "Councilwoman Pamela Holder",
+        "text": "If we don't have seed money, it shows our lack of interest."
+      },
+      {
+        "speaker": "Councilman Dean Lytle",
+        "text": "It's not just a playground. It's a gathering place."
+      },
+      {
+        "speaker": "Councilman Lauren Wise",
+        "text": "Use the money now. Don't sit on it."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "capital improvement plan"
+    ]
+  },
+  {
+    "_extracted": "2026-10-26",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-26",
+      "title": "Big plays, aerial thefts pull Rosman past Swain County",
+      "url": "https://www.transylvaniatimes.com/sports/big-plays-aerial-thefts-pull-rosman-past-swain-county/article_a7538ea2-b237-46f5-a913-aff31cde50a5.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]

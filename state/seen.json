@@ -431,6 +431,14 @@
     "title": "City Council Public Safety (Police & Fire) Committee 2026-08-24: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7383,plainText=false)"
   },
+  "64961940653adcd3": {
+    "body": "press",
+    "first_seen": "2026-10-26",
+    "kind": "notice",
+    "meeting_date": "2026-10-26",
+    "title": "Council moves money from fund to housing project",
+    "url": "https://www.transylvaniatimes.com/news/council-moves-money-from-fund-to-housing-project/article_ca1268dc-e27f-4e03-a896-62671963873a.html"
+  },
   "664722d9fa2eb53c": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -470,6 +478,14 @@
     "meeting_date": "2026-08-17",
     "title": "City Council 2026-08-17: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7380,plainText=false)"
+  },
+  "6c5a90c1442012c6": {
+    "body": "press",
+    "first_seen": "2026-10-26",
+    "kind": "notice",
+    "meeting_date": "2026-10-26",
+    "title": "Big plays, aerial thefts pull Rosman past Swain County",
+    "url": "https://www.transylvaniatimes.com/sports/big-plays-aerial-thefts-pull-rosman-past-swain-county/article_a7538ea2-b237-46f5-a913-aff31cde50a5.html"
   },
   "6c7d90af3a486226": {
     "body": "press",
