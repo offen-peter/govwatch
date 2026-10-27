@@ -12126,5 +12126,618 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-27",
+    "_source": {
+      "body": "county",
+      "kind": "transcript",
+      "meeting_date": "2026-10-26",
+      "title": "Board of Commissioners October 26, 2026 (transcript)",
+      "url": "https://vimeo.com/event/6295818"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "Unanimous (Aye)",
+        "what": "Approval of consent agenda",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous (Aye)",
+        "what": "Appointment of Yvonne Croca to Library Board of Trustees",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous (Aye)",
+        "what": "Appointment of Jennifer B. Henley to Transylvania County Council on Aging",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous (Aye)",
+        "what": "Approval of TCDTDA board recommendations (reappointments of Dion Hodgson, Norrie Lebrun, Jessica Whitmire as chair)",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous (Aye)",
+        "what": "Appointment of Larry Chapman as voting delegate to NCACC Legislative Goals Conference",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$40 million (verify)",
+        "vote": "Unanimous (Aye)",
+        "what": "Approval of Resolution authorizing limited obligation bonds for courthouse construction",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": "$5.5 million transfer",
+        "vote": "Unanimous (Aye)",
+        "what": "Approval of Budget Ordinance Schedule B6 to establish new debt service fund",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous (Aye)",
+        "what": "Approval of FY 2027 first quarter budget amendments",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "Early January 2027",
+        "what": "Work together to schedule joint meeting between Board of Commissioners and Board of Education to present all funding options and impacts for school budget",
+        "who": "County Manager Lauder and Dr. Lisa Fletcher"
+      },
+      {
+        "by_when": "Before joint meeting",
+        "what": "Gather information on ESSER-funded positions still in place and included in local budget",
+        "who": "Dr. Lisa Fletcher"
+      },
+      {
+        "by_when": "Before joint meeting",
+        "what": "Provide information on the 12 positions absorbed over past two years and what positions they were",
+        "who": "Dr. Lisa Fletcher"
+      },
+      {
+        "by_when": "Before joint meeting",
+        "what": "Provide enrollment loss breakdown showing how many students went to charter schools versus private schools versus other factors",
+        "who": "Dr. Lisa Fletcher"
+      },
+      {
+        "by_when": "Early January 2027",
+        "what": "Request and compile information from Dr. Fletcher and commissioners regarding school funding options and impacts for joint meeting",
+        "who": "County Manager Lauder"
+      },
+      {
+        "by_when": "Over next few weeks",
+        "what": "Send questions and information requests to County Manager Lauder regarding school funding presentation for compilation before joint meeting",
+        "who": "Commissioners"
+      },
+      {
+        "by_when": "Ongoing quarterly",
+        "what": "Continue quarterly reporting on Allies for Outcomes contract utilization",
+        "who": "Amanda Vanderhoff, DSS Director"
+      },
+      {
+        "by_when": "October 29, 2026 (verify - transcript says 'this Thursday')",
+        "what": "Complete Rosman area school bond project groundbreaking ceremony with notice to public",
+        "who": "Beecher Allison, Capital Projects Manager"
+      },
+      {
+        "by_when": "Each quarter ongoing",
+        "what": "Continue quarterly financial reporting to Board of Commissioners",
+        "who": "Finance Director Megan O'Neal and staff"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Coordinate with state representatives on potential state funding allocation for courthouse (letter mentioned)",
+        "who": "County Manager Lauder"
+      },
+      {
+        "by_when": "December 1, 2026",
+        "what": "Process courthouse financing through LGC approval, bond pricing, and closing",
+        "who": "County Manager Lauder and Finance staff"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Maintain recognition of county employee veterans",
+        "who": "HR Director Sheila Cozart"
+      },
+      {
+        "by_when": "November 19-20, 2026",
+        "what": "Serve as voting delegate representing Transylvania County at NCACC Legislative Goals Conference",
+        "who": "Commissioner Chapman"
+      },
+      {
+        "by_when": "Before December swearing-in",
+        "what": "Prepare orientation for new board members",
+        "who": "County staff"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Work on financial policy updates as informed by audits and other measures",
+        "who": "County staff"
+      },
+      {
+        "by_when": "By next quarterly finance report",
+        "what": "Implement and test new internal procedures for reimbursement package review",
+        "who": "Conestee Fire and Rescue and Finance Department"
+      },
+      {
+        "by_when": "Ongoing; public comment closes November 2, 2026",
+        "what": "Monitor and provide updates on 2030 Census proposed rule changes and impacts",
+        "who": "County Manager Lauder"
+      },
+      {
+        "by_when": "Ongoing; possible trip to Marion planned",
+        "what": "Follow up on Freedom Life Ministries re-entry program meeting and coordination with DSS re-entry work",
+        "who": "Commissioner Dalton"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "January 2027",
+        "what": "School board budget presentation and funding decision deadline"
+      },
+      {
+        "date": "November 19-20, 2026",
+        "what": "NCACC Legislative Goals Conference"
+      },
+      {
+        "date": "November 2, 2026",
+        "what": "Census public comment period on proposed changes"
+      },
+      {
+        "date": "November 3, 2026",
+        "what": "LGC approval for courthouse financing"
+      },
+      {
+        "date": "November 4, 2026",
+        "what": "Courthouse bond position posting"
+      },
+      {
+        "date": "November 10, 2026",
+        "what": "Bond pricing due"
+      },
+      {
+        "date": "Week of November 16, 2026",
+        "what": "Closing documents drafting"
+      },
+      {
+        "date": "December 1, 2026",
+        "what": "Courthouse financing closing"
+      },
+      {
+        "date": "December 22, 2026",
+        "what": "BHS CTE design development package drawings expected"
+      },
+      {
+        "date": "Beginning of December 2026",
+        "what": "Brevard Area School project CMAR pricing due"
+      },
+      {
+        "date": "February 15, 2027 (verify)",
+        "what": "Seymour/CMAR pricing for BHS CTE project due"
+      },
+      {
+        "date": "End of October 2026",
+        "what": "Rosman High School underground storage tank bids going out"
+      },
+      {
+        "date": "October 29, 2026",
+        "what": "Rosman area school groundbreaking ceremony"
+      },
+      {
+        "date": "November 2, 2026",
+        "what": "Rosman Middle/High School project mobilization"
+      },
+      {
+        "date": "March 2027",
+        "what": "BHS Scope Number Two early release site demolition package"
+      },
+      {
+        "date": "Beginning of February 2027",
+        "what": "Rosman Elementary School permit to be pulled"
+      },
+      {
+        "date": "November 11, 2026 at 11:00 AM",
+        "what": "Veterans Day ceremony at courthouse gazebo"
+      },
+      {
+        "date": "End of year 2026",
+        "what": "Watershed study completion"
+      },
+      {
+        "date": "Tuesday through Friday 8:00 AM - 7:30 PM, Saturday October 31 8:00 AM - 3:00 PM",
+        "what": "Early voting continues"
+      },
+      {
+        "date": "November 3, 2026; polls 6:30 AM - 7:30 PM",
+        "what": "Election Day"
+      },
+      {
+        "date": "Monday, November 23, 2026 at 6:00 PM",
+        "what": "Next Board of Commissioners meeting"
+      },
+      {
+        "date": "Friday, November 6, 2026",
+        "what": "Land of Sky Regional Council awards nominations deadline"
+      },
+      {
+        "date": "Wednesday, December 2, 2026",
+        "what": "Board of Delegates meeting for awards presentation"
+      },
+      {
+        "date": "December 18, 2026",
+        "what": "County offices closed for employee holiday lunch"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "School funding approach - fund balance versus tax increase versus other solutions",
+        "positions": [
+          {
+            "position": "Concerned that using fund balance is not sustainable for recurring expenses; wants to explore other options and pressure legislators for additional state funding before committing fund balance; wants joint meeting to present all options",
+            "who": "Vice Chair Chapman"
+          },
+          {
+            "position": "Concerned about long-term trend of enrollment losses and staff reductions; believes situation not sustainable; uncomfortable committing multiple tax increases for single department needs; wants to explore other solutions",
+            "who": "Commissioner Chappell"
+          },
+          {
+            "position": "Need funding to cover current operating expenses (salaries, benefits, retirement rate increases) for 68 locally funded positions; cannot use fund balance for recurring expenses; requesting local funding increase",
+            "who": "Dr. Lisa Fletcher and school system"
+          },
+          {
+            "position": "Funding must come from fund balance for FY27 since tax rate cannot be changed mid-year; this will establish new baseline for FY28 budget requiring approximately 2 cent tax increase",
+            "who": "County Manager Lauder (implied)"
+          }
+        ]
+      },
+      {
+        "issue": "Pre-K funding responsibility and appropriateness",
+        "positions": [
+          {
+            "position": "Questioned whether county commissioners have statutory responsibility for pre-K or only K-12; if pre-K is choice not requirement, questions whether $227,000 annual cost per classroom is appropriate use of county education dollars",
+            "who": "Commissioner Chappell"
+          },
+          {
+            "position": "County has statutory responsibility for K-12; pre-K is ability to provide, not requirement; if provided, must be equitable to all pre-K residents or target disadvantaged; noted school has ability to transfer pre-K funding to Fund Eight for K-12 education",
+            "who": "County Manager Lauder"
+          }
+        ]
+      },
+      {
+        "issue": "Charter school funding impact on local schools",
+        "positions": [
+          {
+            "position": "Charter school funding drain harms district; state law requires local dollars to follow students to charter schools; district receives no state funding for students who enroll in charter schools from homeschool; costs district operating funds",
+            "who": "Dr. Lisa Fletcher"
+          },
+          {
+            "position": "Requested information on how many lost students went to charter schools versus private schools versus other factors; impact on budget calculations",
+            "who": "Commissioners (implied concern)"
+          }
+        ]
+      },
+      {
+        "issue": "ALPR/Flock camera surveillance - whether public hearing should be held",
+        "positions": [
+          {
+            "position": "County commissioners should hold public hearing on ALPR surveillance; cameras violate Fourth Amendment; mass surveillance unconstitutional; commissioners as stewards of public trust should address this",
+            "who": "Ashley Hart, Robert Czajkowski, Doug Powell (public comment speakers)"
+          },
+          {
+            "position": "No public hearing will be held. This is sheriff's constitutional prerogative as elected officer. Clear line between city government (can address police cameras) and county government. County Attorney advised board has no authority to micromanage sheriff or tell him what to do. Commissioners can talk individually to sheriff but will not direct him or reduce his budget line-by-line. Concerns should be directed to sheriff.",
+            "who": "Chair McCall"
+          },
+          {
+            "position": "Board has spent 16+ years building relationships with legislators and will continue advocacy at state level; but cameras are not board's jurisdiction",
+            "who": "Commissioner Chapman (implied)"
+          }
+        ]
+      },
+      {
+        "issue": "Board advocacy and effort on legislative matters",
+        "positions": [
+          {
+            "position": "Board jokes about Raleigh trip and shows lack of desire to advocate; missing advocacy when things out of local control; bad look to joke after morose school funding report",
+            "who": "Owen Carson (public comment)"
+          },
+          {
+            "position": "Board members have spent years in Raleigh building first-name relationships with legislators; has gotten results (small school money); extensive personal trips and advocacy; joked about Raleigh trip only because all commissioners regularly travel there",
+            "who": "Commissioner Dalton"
+          },
+          {
+            "position": "Personal relationships with legislators developed through years of persistence; called Raleigh to influence votes on bills; wife and I burned roads making trips; necessary advocacy, not entertainment; many commissioners served on substantial state boards",
+            "who": "Vice Chair Chapman"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": "$1,840,943 (verify)",
+        "fund": "General Fund; comprised of $857,000 local funding need and $984,000 state funding shortfall",
+        "item": "School system funding gap (FY27)"
+      },
+      {
+        "amount": "$400,000 (verify)",
+        "fund": "Enrollment decline from 42 students loss in FY27",
+        "item": "Anticipated next year school funding gap"
+      },
+      {
+        "amount": "$1.2 million (15% increase)",
+        "fund": "Operating expenses for 68 locally funded positions",
+        "item": "School system salary and benefits increases"
+      },
+      {
+        "amount": "$300,000",
+        "fund": "One-time expense; will not carry to next year",
+        "item": "State-required bonus for school staff"
+      },
+      {
+        "amount": "$237,000",
+        "fund": "Employer rate increase from 24.67% to 26.10%",
+        "item": "Retirement rate increase for schools"
+      },
+      {
+        "amount": "$92,000",
+        "fund": "Per-employee increase from $8,500 to $8,925",
+        "item": "Health insurance increase for schools"
+      },
+      {
+        "amount": "$652,000",
+        "fund": "19% of students need services; state caps funding at 13% (formula from 1993)",
+        "item": "Special education funding shortfall (schools)"
+      },
+      {
+        "amount": "$350,000 typically",
+        "fund": "State and federal cover only $45,000 across nine schools",
+        "item": "Child nutrition local funding (schools)"
+      },
+      {
+        "amount": "$227,000 shortfall (approximately $57,000 per classroom)",
+        "fund": "Four classrooms cost $850,000; state/federal funds $578,000",
+        "item": "Pre-K local funding (schools)"
+      },
+      {
+        "amount": "$120 million total investment",
+        "fund": "Bond funds, grants, and annual allocations over time",
+        "item": "School capital projects funded"
+      },
+      {
+        "amount": "$40 million (verify)",
+        "fund": "Limited obligation bonds; repayment over 20 years",
+        "item": "Courthouse construction project limit"
+      },
+      {
+        "amount": "$5.5 million",
+        "fund": "Transfer from general fund; not new funds",
+        "item": "Debt service fund transfer (initial establishment)"
+      },
+      {
+        "amount": "$2.3 million",
+        "fund": "Two federal grants with county match approved",
+        "item": "Federal emergency communications radio tower grants"
+      },
+      {
+        "amount": "$2.5 million",
+        "fund": "Awarded to Soil and Water Conservation District for stream bank restoration and debris removal",
+        "item": "STRAP and EWP grants for stream bank repair"
+      },
+      {
+        "amount": "$600,000",
+        "fund": "Q1 FY27 at 25% of budget",
+        "item": "Solid waste fund - scale sales collected"
+      },
+      {
+        "amount": "$160,000",
+        "fund": "Q1 FY27 at 25% of budget",
+        "item": "Solid waste fund - sticker sales collected"
+      },
+      {
+        "amount": "$19.9 million",
+        "fund": "Including $14.7 million ad valorem tax, $1.1 million sales tax, over $600,000 investment earnings",
+        "item": "General fund revenues Q1 FY27"
+      },
+      {
+        "amount": "$16.7 million",
+        "fund": "Including $7.7 million personnel, $1.4 million operating/contract services, $4.2 million to education",
+        "item": "General fund expenditures Q1 FY27"
+      },
+      {
+        "amount": "$45,664 spent of $114,515 authorized",
+        "fund": "DSS contract staffing for child welfare vacancies",
+        "item": "Allies for Outcomes contract utilization (Q1 FY27)"
+      },
+      {
+        "amount": "2 cents (approximately)",
+        "fund": "To cover $1.8 million current year gap and break-even for next year budget baseline",
+        "item": "Tax increase needed for school funding shortfall"
+      },
+      {
+        "amount": "$20,000",
+        "fund": "Budget amendment per TDA board request",
+        "item": "TDA reallocation approved"
+      },
+      {
+        "amount": "$4,000",
+        "fund": "To Parks and Recreation for annual event",
+        "item": "Light of the Night event grant from TDA"
+      },
+      {
+        "amount": "Additional funding (amount not specified)",
+        "fund": "Public Health Department",
+        "item": "WIC funding increase"
+      },
+      {
+        "amount": "Additional funds (amount not specified)",
+        "fund": "Public health received new infrastructure funding",
+        "item": "Public health infrastructure funds"
+      },
+      {
+        "amount": "Additional funds (amount not specified)",
+        "fund": "Program for teens in foster care",
+        "item": "DSS Links program funding"
+      }
+    ],
+    "pending": [
+      {
+        "date": "Early January 2027",
+        "next_step": "Schedule joint meeting to address $1.8 million funding gap and present all solution options",
+        "what": "Joint meeting between Board of Commissioners and Board of Education to discuss school funding shortfall and options"
+      },
+      {
+        "date": "January 2027",
+        "next_step": "Ms. Mullinax to present budget to school board and determine funding approach",
+        "what": "School system budget presentation to Board of Education and funding decision"
+      },
+      {
+        "date": "December 1, 2026",
+        "next_step": "Close on financing, then issue notice to proceed to contractor",
+        "what": "Courthouse financing closing"
+      },
+      {
+        "date": "End of 2029",
+        "next_step": "Continue design development and pricing coordination",
+        "what": "BHS Scope Number Two and CTE grant project coordination"
+      },
+      {
+        "date": "November 2026 - December 2027",
+        "next_step": "Mobilization and phased construction across three school sites",
+        "what": "Rosman area school bond project construction"
+      },
+      {
+        "date": "November 3 - December 1, 2026",
+        "next_step": "LGC approval, position posting, pricing, closing documents",
+        "what": "Courthouse project bond rating and financing approval"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "Chair McCall thanked her. No substantive response from commissioners.",
+        "speaker": "Ashley Hart",
+        "summary": "Hart cited North Carolina Constitution Article One Section 20 protecting against unreasonable searches and general warrants. Referenced Federal District Court Judge Sarah E. Hill's October 1, 2026 ruling (United States v. Kyle) that warrantless ALPR searches violated Fourth Amendment rights. Presented evidence of out-of-state agencies conducting massive searches through NC camera networks: Houston Police 182,000 searches at UNC Charlotte; Texas agencies 285,000 searches at UNC Pembroke; Asheville network 2.75 million searches in three months. Asked commissioners to protect Transylvania County residents' data and ban unwarranted mass surveillance as unconstitutional.",
+        "topic": "ALPR/Flock cameras and Fourth Amendment rights; general warrants; mass surveillance"
+      },
+      {
+        "response": "Chair McCall thanked him. Later, Commissioner Chapman nominated him for the vacancy, but motion died with no second. Board appointed Jennifer B. Henley instead.",
+        "speaker": "Tom Sweeney",
+        "summary": "Sweeney presented qualifications for Council on Aging position, noting service on South Carolina Governor's Council on Aging and Silver-Haired Legislature for three years. Currently serves on Age-Friendly Task Force, Board of Equalization, and Hunger Coalition. Highlighted work on senior issues including dental problems, gambling addiction, and drug addiction. Referenced work with Dr. Frank Quinn on senior gambling programs and instituted paid leave for unpaid caregivers in South Carolina.",
+        "topic": "Transylvania County Council on Aging appointment"
+      },
+      {
+        "response": "Chair McCall thanked him. No substantive response from commissioners.",
+        "speaker": "Robert Czajkowski",
+        "summary": "Czajkowski challenged 'what if your child was kidnapped' argument used to justify surveillance. Cited FBI reports: 100-350 child abductions yearly, 99% return home alive (1-3 children), versus 1,100 children die yearly in car accidents; 15-17 die in youth sports; 107 die on bicycles. Characterized mass surveillance as denying constitutional rights given by God, not government.",
+        "topic": "ALPR mass surveillance concerns"
+      },
+      {
+        "response": "Chair McCall thanked him, concluding public comment period.",
+        "speaker": "Doug Powell",
+        "summary": "Powell quoted Thomas Jefferson on free government founded in jealousy; Ronald Reagan on 'trust but verify'; and John Jay on constitutional study. Argued Supreme Court review is inconsistent with founding intent, citing Jefferson and Madison's response to Marbury v. Madison. Emphasized Fourth Amendment protection of persons and property, calling for commissioners to read and interpret Constitution themselves rather than waiting for Supreme Court. Criticized dependency on judicial review.",
+        "topic": "Constitutional interpretation regarding surveillance and constitutional rights"
+      },
+      {
+        "response": "Chair McCall said time was up. Commissioner Dalton responded defensively, calling Carson a candidate without facts, stating board spends extensive time with legislators and has results. Commissioner Chapman echoed this, noting they visit Raleigh regularly and have personal relationships with legislators.",
+        "speaker": "Owen Carson",
+        "summary": "Carson praised Blue Ridge Community College award of excellence and noted modern improvements needed. Criticized board's joking comment that 'no one wants to go to Raleigh.' Pointed out contradiction between morose school funding report ($1.8M shortfall, $400K incoming loss) and laughter about Raleigh trip. Urged board to advocate at legislature rather than joke, noting legislators they endorsed created problems and confused constitutional amendments. Called board comments 'a bad look' given school crisis.",
+        "topic": "Blue Ridge Community College funding and advocacy regarding Raleigh and school funding"
+      }
+    ],
+    "public_process": [
+      "Public comment period held at beginning of meeting; four speakers registered and limited to three minutes each; speakers directed to approach podium and speak into microphone; comments directed to board not public; speakers advised not to discuss candidacy matters",
+      "Second public comment period held at end of meeting without sign-up requirement; same rules applied",
+      "Proclamation 37-2026 on Veterans Day to be read at courthouse gazebo ceremony November 11, 2026",
+      "Resolution 38-2026 supporting Operation Green Light for Veterans read aloud with full text presented",
+      "County employee veterans recognized by name in open meeting",
+      "School funding presentation noted as informational only; no action taken; direction given to gather information for future joint meeting with public present",
+      "Consent agenda items presented and voted on together",
+      "Appointments presented with background information and recommendations from department directors/boards",
+      "Capital project updates provided with detailed timeline information for public viewing",
+      "Financial reports presented quarterly in writing and verbally with charts",
+      "Budget amendments presented categorized by whether commissioners had previous action on item",
+      "Courtesy break announced mid-meeting",
+      "Chair addressed public comment complaints about ALPR surveillance policy, clarifying that sheriff is elected constitutional officer not subject to board direction",
+      "Chair stated clearly no public hearing will be held on ALPR issue",
+      "Chair noted courthouse building remains occupied and available for future discussion when appropriate",
+      "Clerk to board handles voting delegate registration and travel arrangements",
+      "Board encouraged residents to participate in early voting and on election day November 3, 2026"
+    ],
+    "quotes": [
+      {
+        "speaker": "Chair McCall",
+        "start": "01:51:09",
+        "text": "Taxes will not be raised for this courthouse construction."
+      },
+      {
+        "speaker": "Dr. Lisa Fletcher",
+        "start": "00:31:50",
+        "text": "This success would not have been possible without the funding for our local positions."
+      },
+      {
+        "speaker": "Commissioner Chapman",
+        "start": "02:30:25",
+        "text": "We got more money in this county than has ever been had."
+      }
+    ],
+    "roll_call": [
+      "Teresa McCall, Chair",
+      "Larry Chapman, Vice Chair",
+      "Jason Chappell, Commissioner",
+      "Jake Dalton, Commissioner",
+      "Chase McKelvey, Commissioner (absent - newborn)",
+      "Jaime Laughter, County Manager",
+      "Trisha Hogan, Clerk to the Board"
+    ],
+    "schedule_changes": [
+      "Next regular Board of Commissioners meeting moved to Monday, November 23, 2026 at 6:00 PM (not typical date)"
+    ],
+    "unanswered": [
+      "How many of the 102 lost students from FY25-26 went to charter schools versus private schools versus other factors?",
+      "How many of the 42 newly lost students in FY26-27 went to charter schools versus private schools?",
+      "What were the specific 12 positions absorbed over the past two years?",
+      "How many ESSER-funded positions are still in place and included in local current expense budget?",
+      "Will ESSER-funded positions be reduced, and if so, when?",
+      "What is the total cost of all ESSER-funded positions still being funded locally?",
+      "Do other regional school systems operate charter schools, and how many?",
+      "What is the specific outcome of efforts to secure remaining funding for Brevard High School sewer line and pump station project?",
+      "What is the final project budget for the new courthouse?",
+      "Will the proposed 2030 census changes have measurable impact on Transylvania County's population count and resulting federal/state funding?",
+      "What is the status of temporary housing availability through Renew NC for Hurricane Helene survivors?",
+      "When will complete details on courthouse move transition plan be prepared?",
+      "Commissioner Chapman suggested sending formal letter to state representatives about courthouse funding\u2014has this been sent?"
+    ],
+    "watchlist_hits": [
+      "solid waste (fund revenue tracking)",
+      "transfer station (capital projects mentioned but not detailed)",
+      "landfill (cell expansion and DEQ stormwater concerns)",
+      "DEQ (Department of Environmental Quality - stormwater review of landfill site)",
+      "social services (DSS/Allies for Outcomes contract and Links program funding)",
+      "DSS (Department of Social Services - child welfare staffing and foster care)",
+      "school bond (Joint School Bond Project Committee - extensive discussion of $50M bond, $18M remaining)",
+      "Joint School Bond Project Committee (Beecher Allison presented detailed capital projects update)",
+      "vestibule (security vestibules at schools - $4.1M budget reallocation)",
+      "capital improvement plan (extensive discussion of $220M in projects)",
+      "courthouse (major discussion of new $40M facility, financing, and bond)",
+      "tax rate (would need ~2 cent increase for school funding and courthouse debt service)",
+      "revenue neutral (discussed regarding courthouse financing and fiscal planning)",
+      "fund balance (extensive discussion of school fund balance concerns and county fund balance for courthouse)",
+      "teacher supplement (locally funded positions providing supplements)",
+      "average daily membership (school funding formula based on ADM enrollment)",
+      "public comment (extensive public comment on ALPR/Flock cameras and school advocacy)",
+      "decorum (rules for public comment established)",
+      "closed session (no closed sessions held this meeting)",
+      "open meetings (meeting held in open with public participation)",
+      "public records (budget documents and capital project reports available on county website)",
+      "agenda modification (chair asked if any modifications before approval)",
+      "stormwater (landfill site stormwater concerns with DEQ review)",
+      "affordable housing (Brevard System Housing Projects with water/sewer extensions discussed)"
+    ]
   }
 ]
