@@ -71,6 +71,14 @@
     "title": "City Council 2026-08-17: Agenda Packet",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7381,plainText=false)"
   },
+  "07268c406d1098b9": {
+    "body": "city",
+    "first_seen": "2026-10-29",
+    "kind": "agenda",
+    "meeting_date": "2026-11-02",
+    "title": "City Council 2026-11-02: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7463,plainText=false)"
+  },
   "07710245570403d0": {
     "body": "press",
     "first_seen": "2026-10-02",
@@ -150,6 +158,14 @@
     "meeting_date": "2026-09-29",
     "title": "County OKs new tower to improve emergency communications",
     "url": "https://www.transylvaniatimes.com/news/county-oks-new-tower-to-improve-emergency-communications/article_2c9c5309-2297-4900-863d-47360fbfd6d5.html"
+  },
+  "19b890f036601fcc": {
+    "body": "press",
+    "first_seen": "2026-10-29",
+    "kind": "notice",
+    "meeting_date": "2026-10-29",
+    "title": "UPDATED: Through Wednesday, 8,890 registered county voters have cast ballots during early voting",
+    "url": "https://www.transylvaniatimes.com/news/updated-through-wednesday-8-890-registered-county-voters-have-cast-ballots-during-early-voting/article_16e62419-ceaa-4d31-bc1f-bf6e01cf35b4.html"
   },
   "1a3d1e462f3b4c1b": {
     "body": "schools",
@@ -390,6 +406,14 @@
     "meeting_date": "2026-06-22",
     "title": "Board of Commissioners June 22, 2026 (transcript)",
     "url": "https://vimeo.com/event/6005609"
+  },
+  "5a0db7687aca2d79": {
+    "body": "press",
+    "first_seen": "2026-10-29",
+    "kind": "notice",
+    "meeting_date": "2026-10-29",
+    "title": "Commissioners OK borrowing $40 million for new courthouse",
+    "url": "https://www.transylvaniatimes.com/news/commissioners-ok-borrowing-40-million-for-new-courthouse/article_7da9f93b-6631-4384-875b-61d7572aa90e.html"
   },
   "5bf00429c4134ba7": {
     "body": "county",
@@ -822,6 +846,14 @@
     "meeting_date": "2026-09-21",
     "title": "City Council 2026-09-21: Agenda Packet",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7418,plainText=false)"
+  },
+  "ebbb169733ccc935": {
+    "body": "city",
+    "first_seen": "2026-10-29",
+    "kind": "agenda",
+    "meeting_date": "2026-11-02",
+    "title": "City Council 2026-11-02: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7464,plainText=false)"
   },
   "ec2e47c4114298d7": {
     "body": "county",

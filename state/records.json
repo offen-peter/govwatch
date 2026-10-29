@@ -12739,5 +12739,343 @@
       "stormwater (landfill site stormwater concerns with DEQ review)",
       "affordable housing (Brevard System Housing Projects with water/sewer extensions discussed)"
     ]
+  },
+  {
+    "_extracted": "2026-10-29",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-02",
+      "title": "City Council 2026-11-02: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7463,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-02",
+        "what": "Public hearing on ETJ modification and UDO Chapter 16 amendments"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-11-02",
+        "next_step": "Public hearing",
+        "what": "Request for Modification to the City of Brevard Extraterritorial Jurisdiction (ETJ) and Proposed Amendments to City of Brevard Unified Development Ordinance Chapter 16 - Vesting Period"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Public Hearing on ETJ modification and UDO amendments",
+      "Agenda posted on website on October 29, 2026",
+      "Agenda packet materials posted Thursday afternoon prior to Monday meeting",
+      "Meeting livestreamed on City of Brevard YouTube channel"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-29",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-02",
+      "title": "City Council 2026-11-02: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7464,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved agenda as amended",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved October 5, 2026 meeting minutes",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Proclaimed October 23, 2026 as Joe Smith Day and presented Key to City",
+        "who": "Mayor Copelof"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved Municipal Infrastructure Reimbursement Agreements ordinance",
+        "who": "City Council"
+      },
+      {
+        "amount": "$52.44",
+        "vote": "unanimous",
+        "what": "Approved property tax releases for September 2026",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved Fitch Irick Lease Amendment with extended option period through December 31, 2027",
+        "who": "City Council"
+      },
+      {
+        "amount": "$8,500 paving; $25,000 pole removal",
+        "vote": "unanimous",
+        "what": "Approved Carver Street supplementary paving and utility pole removal (Fund 82)",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "3 ayes, 2 nays",
+        "what": "Directed remainder of Fund 82 to Silversteen Park Pavilion seed funding",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Directed Staff to negotiate relinquishment of unused Burrell Avenue right-of-way portion",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "4 ayes, 1 nay",
+        "what": "Applied for IMD Feasibility Study Grant for Asheville Highway greenway",
+        "who": "City Council"
+      },
+      {
+        "amount": "$60,000",
+        "vote": "unanimous",
+        "what": "Approved Low-Income Homeowner Assistance Program and accepted $60,000 Dogwood Health Trust grant",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "30 days from October 19, 2026 notice issuance",
+        "what": "Request for public hearing for ETJ modification"
+      },
+      {
+        "date": "Two years from grant acceptance",
+        "what": "Low-Income Homeowner Assistance Program grant distribution period"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$52.44",
+        "fund": "Tax funds",
+        "item": "Property tax releases September 2026"
+      },
+      {
+        "amount": "$41,469",
+        "fund": "Fund 82",
+        "item": "Rosenwald Community Advisory Board Fund 82 allocation - Silversteen Park Pavilion"
+      },
+      {
+        "amount": "$8,500",
+        "fund": "Fund 82",
+        "item": "Rosenwald Community Advisory Board Fund 82 allocation - Carver Street paving"
+      },
+      {
+        "amount": "$25,000",
+        "fund": "Fund 82",
+        "item": "Rosenwald Community Advisory Board Fund 82 allocation - Comporium utility pole relocation"
+      },
+      {
+        "amount": "$74,969.00",
+        "fund": "Fund 82",
+        "item": "Available balance in Fund 82"
+      },
+      {
+        "amount": "$2,500,000",
+        "fund": "Utilities/Sewer fund",
+        "item": "Utilities Fund balance potentially available"
+      },
+      {
+        "amount": "$43,700",
+        "fund": "Private",
+        "item": "Private donor contribution to Silversteen Park Pavilion design"
+      },
+      {
+        "amount": "$500,000",
+        "fund": "Not yet funded",
+        "item": "Estimated construction cost for Silversteen Park Pavilion"
+      },
+      {
+        "amount": "$60,000",
+        "fund": "Dogwood Health Trust",
+        "item": "Low-Income Homeowner Assistance Program grant"
+      },
+      {
+        "amount": "$500,000",
+        "fund": "Dogwood Health Trust",
+        "item": "Brevard/Transylvania Housing Coalition grant request total"
+      },
+      {
+        "amount": "$7,500,000",
+        "fund": "Various",
+        "item": "Spending in Rosenwald neighborhood in last five years"
+      }
+    ],
+    "pending": [
+      {
+        "date": "November 2, 2026 public hearing held; vote scheduled for next regular meeting",
+        "next_step": "Council action at next meeting after public hearing",
+        "what": "Request for Modification to Extraterritorial Jurisdiction (ETJ) - Grey Havens Drive property"
+      },
+      {
+        "date": "November 2, 2026 public hearing held; vote scheduled for next regular meeting",
+        "next_step": "Council action at next meeting after public hearing",
+        "what": "Proposed Amendments to UDO Chapter 16 regarding vesting periods"
+      },
+      {
+        "date": "",
+        "next_step": "Further discussion and funding consideration",
+        "what": "Cashiers Valley Road sewer extension funding"
+      }
+    ],
+    "public_process": [
+      "Randy Lytle, Rosenwald Community Advisory Board Co-Chair, provided public comment supporting unanimous board recommendation for Fund 82 allocation to three projects",
+      "Rodney Locks of S. Rice Street provided comment regarding Rosenwald Fund 82 discussion and infrastructure eligibility",
+      "Ella Jones of McMinn Avenue provided public comment emphasizing need for Silversteen Park Pavilion, Carver Street paving, and utility pole removal",
+      "Altha Mills Gordon of Hillview Circle provided public comment requesting speed bumps in area, noting multi-generational petition efforts",
+      "Public hearing held on Municipal Infrastructure Reimbursement Agreements ordinance with no public participation",
+      "Public hearing held on ETJ modification request with no public participation recorded",
+      "Brevard Planning Board reviewed and recommended Unified Development Ordinance vesting period amendments on October 27, 2026",
+      "Finance and Human Resources Committee reviewed Low-Income Homeowner Assistance Program at prior meeting"
+    ],
+    "quotes": [
+      {
+        "speaker": "Randy Lytle",
+        "text": "Tonight, we ask you to honor both the voice of the community."
+      },
+      {
+        "speaker": "Ella Jones",
+        "text": "My main thing for standing here is those 3 items."
+      },
+      {
+        "speaker": "Altha Mills Gordon",
+        "text": "I'm asking once again\u2014will you please give this your attention?"
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "affordable housing",
+      "public comment",
+      "decorum",
+      "open meetings",
+      "agenda modification",
+      "capital improvement plan",
+      "stormwater",
+      "rezoning",
+      "conditional use"
+    ]
+  },
+  {
+    "_extracted": "2026-10-29",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-29",
+      "title": "UPDATED: Through Wednesday, 8,890 registered county voters have cast ballots during early voting",
+      "url": "https://www.transylvaniatimes.com/news/updated-through-wednesday-8-890-registered-county-voters-have-cast-ballots-during-early-voting/article_16e62419-ceaa-4d31-bc1f-bf6e01cf35b4.html"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-29 to 2026-10-31",
+        "what": "Early voting in Transylvania County"
+      },
+      {
+        "date": "2026-11-03",
+        "what": "General election voting polls open"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-10-29",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-29",
+      "title": "Commissioners OK borrowing $40 million for new courthouse",
+      "url": "https://www.transylvaniatimes.com/news/commissioners-ok-borrowing-40-million-for-new-courthouse/article_7da9f93b-6631-4384-875b-61d7572aa90e.html"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "November 2026",
+        "what": "Courthouse final project budget decision"
+      },
+      {
+        "date": "January 2027",
+        "what": "School funding decision"
+      },
+      {
+        "date": "January or February 2027",
+        "what": "Potential construction start"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$1.84 million",
+        "fund": "",
+        "item": "School salary and benefits increases requested by Superintendent Lisa Fletcher"
+      },
+      {
+        "amount": "",
+        "fund": "Fund balance assigned",
+        "item": "Courthouse project cost reduction being negotiated"
+      }
+    ],
+    "pending": [
+      {
+        "date": "November 2026",
+        "next_step": "Commissioners will consider final project budget",
+        "what": "Courthouse project final budget approval"
+      },
+      {
+        "date": "Decision required by January 2027",
+        "next_step": "Meeting between commissioners and Board of Education to discuss",
+        "what": "School funding request for salary and benefits increases"
+      }
+    ],
+    "public_process": [
+      "Commission Chair McCall addressed public questions about bond payment from commissioners' last meeting",
+      "City of Brevard made formal approach to county regarding old courthouse conversion to city hall and police headquarters",
+      "Veterans History Museum of the Carolinas initiated public GoFundMe drive to relocate"
+    ],
+    "quotes": [
+      {
+        "speaker": "County Manager Jai Laughter",
+        "text": "Timing to get construction underway is important because of two economic projections that would impact the project budget."
+      },
+      {
+        "speaker": "Commission Chair Teresa McCall",
+        "text": "Taxes will not be raised for this courthouse construction. Let me say that again."
+      },
+      {
+        "speaker": "Commission Chair Teresa McCall",
+        "text": "Her work had saved the county millions of dollars."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "courthouse",
+      "capital improvement plan",
+      "fund balance",
+      "tax rate",
+      "revenue neutral",
+      "teacher supplement",
+      "public comment"
+    ]
   }
 ]
