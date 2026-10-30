@@ -13077,5 +13077,36 @@
       "teacher supplement",
       "public comment"
     ]
+  },
+  {
+    "_extracted": "2026-10-30",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-10-30",
+      "title": "NEW: Through Thursday, 9,587 registered county voters have cast ballots during early voting",
+      "url": "https://www.transylvaniatimes.com/news/new-through-thursday-9-587-registered-county-voters-have-cast-ballots-during-early-voting/article_16e62419-ceaa-4d31-bc1f-bf6e01cf35b4.html"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-10-30",
+        "what": "Early voting"
+      },
+      {
+        "date": "2026-10-31",
+        "what": "Early voting"
+      },
+      {
+        "date": "2026-11-03",
+        "what": "General election polls open"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
