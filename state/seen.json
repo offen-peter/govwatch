@@ -111,6 +111,14 @@
     "title": "Commissioners agenda 10/26/26",
     "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-10-26%20BOC%20Agenda.pdf"
   },
+  "0e21a5871b56b6ea": {
+    "body": "city",
+    "first_seen": "2026-11-02",
+    "kind": "agenda",
+    "meeting_date": "2026-11-04",
+    "title": "City Council Public Works & Utilities Committee 2026-11-04: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7465,plainText=false)"
+  },
   "0ebfaf48cf3a00eb": {
     "body": "county",
     "first_seen": "2026-08-07",

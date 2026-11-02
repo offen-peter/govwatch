@@ -13108,5 +13108,65 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-02",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-04",
+      "title": "City Council Public Works & Utilities Committee 2026-11-04: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7465,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-12-02",
+        "what": "Next Public Works & Utilities Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Stormwater Master Plan"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Hillview Street Culvert Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Water Treatment Plant Renovation Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Sewer Lift Station Rehabilitation Project"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Wastewater Treatment Plant Update"
+      },
+      {
+        "date": "",
+        "next_step": "Project update",
+        "what": "Tannery Smokestack"
+      }
+    ],
+    "public_process": [
+      "Public comment period scheduled",
+      "Agenda posted on website and bulletin board 10/30/2026",
+      "Agenda forwarded to media and Sunshine List 10/30/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater"
+    ]
   }
 ]
