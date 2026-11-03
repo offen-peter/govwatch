@@ -13168,5 +13168,121 @@
     "watchlist_hits": [
       "stormwater"
     ]
+  },
+  {
+    "_extracted": "2026-11-03",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-11-03",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-23",
+        "what": "Board of County Commissioners' Meeting"
+      },
+      {
+        "date": "2027-02-09",
+        "what": "Board of Health Meeting"
+      },
+      {
+        "date": "2026-11-05",
+        "what": "Local Emergency Planning Committee Meeting"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee Meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public Hearing: Installment Financing for New Courthouse"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public Hearing: House and Community Development Act Funding Application"
+      },
+      {
+        "date": "",
+        "what": "Public Hearing: Telecommunications Tower Ordinance Variance"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Board of Commissioners' Meeting cancelled November 9, 2026",
+      "Board of Health Meeting cancelled November 10, 2026",
+      "Public hearings scheduled for September 28, 2026",
+      "Applications invited for citizen advisory councils",
+      "Quorum notice for September 29, 2026 event at Blue Ridge area"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of County Commissioners' regular meeting on November 9, 2026 cancelled; next meeting scheduled for Monday, November 23, 2026 at 6:00 p.m.",
+      "Board of Health regular meeting on November 10, 2026 cancelled; next meeting scheduled for Tuesday, February 9, 2027 at 6:00 p.m.",
+      "Board of County Commissioners' October 12, 2026 meeting cancelled; next meeting scheduled for Monday, October 26, 2026",
+      "Board of County Commissioners' September 14, 2026 meeting cancelled; next meeting scheduled for Monday, September 28, 2026",
+      "Public Transportation Fixed Route service ending at 1 p.m. on Monday, October 5, 2026",
+      "See Off Solid Waste Collection Center closed at noon on August 17, 2026 and August 11, 2026 for facility maintenance",
+      "Transylvania County Department of Public Health offices closed September 30, 2026 for training",
+      "Department of Social Services offices closed September 24, 2026 from 1:00 p.m. to 5:00 p.m. for professional development"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "DSS",
+      "social services"
+    ]
+  },
+  {
+    "_extracted": "2026-11-03",
+    "_source": {
+      "body": "city",
+      "kind": "notice",
+      "meeting_date": "2026-11-12",
+      "title": "**RESCHEDULED** City Council Rosenwald Community Advisory Board 2026-11-12: Notice",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7466,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Meeting cancellation notice posted to website and bulletin board 11/03/2026",
+      "Cancellation notice forwarded to media and Sunshine List 11/03/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Regular meeting scheduled for Thursday, November 12, 2026 at 6pm has been canceled",
+      "Next regular meeting rescheduled for Thursday, December 17, 2026 at 6pm at Mary C. Jenkins Community and Cultural Center"
+    ],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-03",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-11-03",
+      "title": "Early voting total: 10,892 registered county voters cast ballots",
+      "url": "https://www.transylvaniatimes.com/news/early-voting-total-10-892-registered-county-voters-cast-ballots/article_16e62419-ceaa-4d31-bc1f-bf6e01cf35b4.html"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-03",
+        "what": "Election Day voting"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
