@@ -335,6 +335,14 @@
     "title": "City Council Downtown Master Plan Committee 2026-07-08: Notice",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6337,plainText=false)"
   },
+  "47b7eaf79520497d": {
+    "body": "press",
+    "first_seen": "2026-11-07",
+    "kind": "notice",
+    "meeting_date": "2026-11-07",
+    "title": "Democrats win 2 commissioner seats",
+    "url": "https://www.transylvaniatimes.com/news/democrats-win-2-commissioner-seats/article_69cc1a00-9d1b-4674-a36e-e17f6800e7e4.html"
+  },
   "47f6be1f56b9ed43": {
     "body": "press",
     "first_seen": "2026-08-31",
@@ -534,6 +542,14 @@
     "meeting_date": "2026-10-13",
     "title": "Commissioner candidates stake out positions",
     "url": "https://www.transylvaniatimes.com/news/commissioner-candidates-stake-out-positions/article_064586de-93e5-43b4-9a7a-ea29ac970d7d.html"
+  },
+  "7379eb9450eb5186": {
+    "body": "press",
+    "first_seen": "2026-11-07",
+    "kind": "notice",
+    "meeting_date": "2026-11-07",
+    "title": "Lanier, Kelley win school board seats",
+    "url": "https://www.transylvaniatimes.com/news/lanier-kelley-win-school-board-seats/article_e7e5c949-4017-455f-8a9a-6309f583c359.html"
   },
   "7d538879b46ca704": {
     "body": "city",

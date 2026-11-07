@@ -13284,5 +13284,95 @@
     "quotes": [],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-07",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-11-07",
+      "title": "Democrats win 2 commissioner seats",
+      "url": "https://www.transylvaniatimes.com/news/democrats-win-2-commissioner-seats/article_69cc1a00-9d1b-4674-a36e-e17f6800e7e4.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [
+      {
+        "speaker": "Carson",
+        "text": "We've got to get on the landfill posthaste. This is probably the single largest cost that we have."
+      },
+      {
+        "speaker": "O'Neill",
+        "text": "It is a strong message from the voters. The county is going to be facing additional financial pressures."
+      },
+      {
+        "speaker": "Sutherland",
+        "text": "The folks that came out every single day to support their candidates need to be recognized."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "landfill",
+      "courthouse"
+    ]
+  },
+  {
+    "_extracted": "2026-11-07",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-11-07",
+      "title": "Lanier, Kelley win school board seats",
+      "url": "https://www.transylvaniatimes.com/news/lanier-kelley-win-school-board-seats/article_e7e5c949-4017-455f-8a9a-6309f583c359.html"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2030",
+        "what": "North Carolina state goal for graduation rate improvement"
+      },
+      {
+        "date": "2028",
+        "what": "second set of school bonds sale planned"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$587 million",
+        "fund": "North Carolina state public school funds",
+        "item": "state public school funds paying for opportunity scholarships to private schools"
+      },
+      {
+        "amount": "$18 million",
+        "fund": "school bonds to be sold in 2028",
+        "item": "additional school renovations identified by 2023 building assessment"
+      }
+    ],
+    "pending": [],
+    "public_process": [],
+    "quotes": [
+      {
+        "speaker": "Lanier",
+        "text": "thousands of people vote for you, many whom you don't know."
+      },
+      {
+        "speaker": "Kelley",
+        "text": "Voters are requesting a change in all levels of government."
+      },
+      {
+        "speaker": "Owen",
+        "text": "The board is going to face very tough decisions ahead."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "school bond",
+      "teacher supplement",
+      "average daily membership",
+      "affordable housing"
+    ]
   }
 ]
