@@ -13374,5 +13374,141 @@
       "average daily membership",
       "affordable housing"
     ]
+  },
+  {
+    "_extracted": "2026-11-09",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-11-09",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2027-02-09",
+        "what": "Board of Health regular meeting"
+      },
+      {
+        "date": "2026-11-23",
+        "what": "Board of County Commissioners regular meeting"
+      },
+      {
+        "date": "2026-11-05",
+        "what": "Local Emergency Planning Committee meeting"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on courthouse installment financing"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on House and Community Development Act funding application"
+      },
+      {
+        "date": "",
+        "what": "Public hearing on telecommunications tower variance requests"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Notice of Public Hearing for Coastal Affordable Senior Housing Foundation application",
+      "Public hearing on courthouse installment financing authorization",
+      "Public hearing on House and Community Development Act funding application",
+      "Public hearing on telecommunications tower variance requests",
+      "Board of Commissioners seeking applications to citizen advisory councils",
+      "Quorum notice for September 29, 2026 Blue Ridge event",
+      "Quorum notice for August 31, 2026 In The Loop Downtown Brevard Circulation Study meeting"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Board of Health meeting cancelled for November 10, 2026; next meeting February 9, 2027",
+      "Board of County Commissioners meeting cancelled for November 9, 2026; rescheduled to November 23, 2026",
+      "Board of County Commissioners meeting cancelled for October 12, 2026; rescheduled to October 26, 2026",
+      "Board of County Commissioners meeting cancelled for September 14, 2026; rescheduled to September 28, 2026",
+      "Public Transportation Fixed Route ending early at 1pm on October 5, 2026",
+      "See Off Solid Waste Collection Center closing at noon August 17, 2026 for maintenance; reopening Wednesday with regular hours"
+    ],
+    "watchlist_hits": [
+      "affordable housing",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "solid waste",
+      "social services",
+      "DSS"
+    ]
+  },
+  {
+    "_extracted": "2026-11-09",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-12",
+      "title": "**RESCHEDULED** City Council Downtown Master Plan Committee 2026-11-12: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7471,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-12-09",
+        "what": "Next Downtown Master Plan Implementation and Downtown Advisory Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "Discussion",
+        "what": "Co-Ed Theater update"
+      },
+      {
+        "date": "",
+        "next_step": "Progress discussion",
+        "what": "Grants for DTMP Implementation"
+      },
+      {
+        "date": "",
+        "next_step": "Discussion",
+        "what": "Parking Study Results"
+      }
+    ],
+    "public_process": [
+      "Public Comments scheduled on agenda",
+      "Agenda posted to website and bulletin board on 11/09/2026",
+      "Agenda forwarded to media and Sunshine List on 11/09/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-09",
+    "_source": {
+      "body": "city",
+      "kind": "notice",
+      "meeting_date": "2026-11-12",
+      "title": "**RESCHEDULED** City Council Downtown Master Plan Committee 2026-11-12: Notice",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7472,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Notice posted on website and bulletin board",
+      "Notice forwarded to media and Sunshine List"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Downtown Master Plan Committee regular meeting rescheduled from Wednesday, November 11, 2026 at 3:30 PM to Thursday, November 12, 2026 at 3:30 PM"
+    ],
+    "watchlist_hits": []
   }
 ]
