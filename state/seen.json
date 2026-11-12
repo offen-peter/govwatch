@@ -567,6 +567,14 @@
     "title": "Lanier, Kelley win school board seats",
     "url": "https://www.transylvaniatimes.com/news/lanier-kelley-win-school-board-seats/article_e7e5c949-4017-455f-8a9a-6309f583c359.html"
   },
+  "7754549ccede1479": {
+    "body": "schools",
+    "first_seen": "2026-11-12",
+    "kind": "packet",
+    "meeting_date": "2026-11-16",
+    "title": "Regular Meeting",
+    "url": "https://transylvania.schoolboard.net/node/7321"
+  },
   "7d538879b46ca704": {
     "body": "city",
     "first_seen": "2026-10-15",
@@ -878,6 +886,14 @@
     "meeting_date": "2026-09-28",
     "title": "City Council Public Safety (Police & Fire) Committee 2026-09-28: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7424,plainText=false)"
+  },
+  "d43f10f6a22f93a1": {
+    "body": "city",
+    "first_seen": "2026-11-12",
+    "kind": "notice",
+    "meeting_date": "2026-11-12",
+    "title": "**CANCELLED** City Council Downtown Master Plan Committee 2026-11-12: Notice",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7482,plainText=false)"
   },
   "e31a08db3e845102": {
     "body": "city",

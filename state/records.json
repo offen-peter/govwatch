@@ -13510,5 +13510,93 @@
       "Downtown Master Plan Committee regular meeting rescheduled from Wednesday, November 11, 2026 at 3:30 PM to Thursday, November 12, 2026 at 3:30 PM"
     ],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-12",
+    "_source": {
+      "body": "schools",
+      "kind": "packet",
+      "meeting_date": "2026-11-16",
+      "title": "Regular Meeting",
+      "url": "https://transylvania.schoolboard.net/node/7321"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Approval of November 16, 2026 Agenda",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Adopt Proclamation designating November 16-20, 2026 as American Education Week in Transylvania County",
+        "who": "Board of Education"
+      },
+      {
+        "amount": "",
+        "vote": "",
+        "what": "Consent Agenda approval: Minutes (September 21, 2026), Personnel Report (November 16, 2026), Winter 2026-2027 Non-Faculty Coaches, TCS 2026-2027 Budget Approval, Superintendent's Contract Amendment #3",
+        "who": "Board of Education"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-11-16",
+        "what": "Regular Board Meeting"
+      },
+      {
+        "date": "2026-11-16 through 2026-11-20",
+        "what": "American Education Week"
+      }
+    ],
+    "money": [
+      {
+        "amount": "",
+        "fund": "",
+        "item": "TCS 2026-2027 Budget Approval"
+      }
+    ],
+    "pending": [],
+    "public_process": [
+      "Meeting is open to the public",
+      "Doors open at 5:30 p.m.",
+      "Meeting will be livestreamed at https://www.youtube.com/user/tcsnc"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "school bond",
+      "Joint School Bond Project Committee"
+    ]
+  },
+  {
+    "_extracted": "2026-11-12",
+    "_source": {
+      "body": "city",
+      "kind": "notice",
+      "meeting_date": "2026-11-12",
+      "title": "**CANCELLED** City Council Downtown Master Plan Committee 2026-11-12: Notice",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7482,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-12-09",
+        "what": "Downtown Master Plan Implementation and Downtown Advisory Committee regular meeting"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Meeting cancellation notice posted on website and bulletin board",
+      "Cancellation forwarded to media and Sunshine List"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Downtown Master Plan Implementation and Downtown Advisory Committee regular meeting scheduled for 2026-11-12 at 3:30 PM cancelled",
+      "Next regularly scheduled meeting rescheduled to 2026-12-09 at 3:30 PM"
+    ],
+    "watchlist_hits": []
   }
 ]
