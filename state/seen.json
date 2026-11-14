@@ -111,6 +111,14 @@
     "title": "Commissioners agenda 10/26/26",
     "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-10-26%20BOC%20Agenda.pdf"
   },
+  "0c37e9e702e8003a": {
+    "body": "city",
+    "first_seen": "2026-11-14",
+    "kind": "agenda",
+    "meeting_date": "2026-11-16",
+    "title": "City Council 2026-11-16: Agenda Packet",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7484,plainText=false)"
+  },
   "0e21a5871b56b6ea": {
     "body": "city",
     "first_seen": "2026-11-02",
@@ -303,6 +311,14 @@
     "title": "Commissioners minutes 08/24/26",
     "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/minutes/2026-08-24%20reg%20mtg%20_%20PH.pdf"
   },
+  "3b998e6c7c32830e": {
+    "body": "press",
+    "first_seen": "2026-11-14",
+    "kind": "notice",
+    "meeting_date": "2026-11-14",
+    "title": "Portion of Transylvania County tapped as an 'Opportunity Zone'",
+    "url": "https://www.transylvaniatimes.com/news/portion-of-transylvania-county-tapped-as-an-opportunity-zone/article_8ae61bc4-7d9b-4be0-a6d8-a23461ffe663.html"
+  },
   "3c1dd66f2471979d": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -470,6 +486,14 @@
     "meeting_date": "2026-10-23",
     "title": "County news and public notices",
     "url": "https://www.transylvaniacounty.org/news"
+  },
+  "603157c0ccfb398f": {
+    "body": "city",
+    "first_seen": "2026-11-14",
+    "kind": "agenda",
+    "meeting_date": "2026-11-16",
+    "title": "City Council 2026-11-16: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7483,plainText=false)"
   },
   "62eae0fba02154de": {
     "body": "city",
@@ -742,6 +766,14 @@
     "meeting_date": "2026-09-28",
     "title": "Board of Commissioners September 28, 2026 (transcript)",
     "url": "https://vimeo.com/event/6217361"
+  },
+  "ae670180090f18d0": {
+    "body": "city",
+    "first_seen": "2026-11-14",
+    "kind": "agenda",
+    "meeting_date": "2026-11-18",
+    "title": "City Council Parks, Trails & Recreation Committee 2026-11-18: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7478,plainText=false)"
   },
   "ae9dcba53473b0a6": {
     "body": "city",

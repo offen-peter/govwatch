@@ -13598,5 +13598,318 @@
       "Next regularly scheduled meeting rescheduled to 2026-12-09 at 3:30 PM"
     ],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-14",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-18",
+      "title": "City Council Parks, Trails & Recreation Committee 2026-11-18: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7478,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-12-16",
+        "what": "Next Parks, Trails & Recreation Committee meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Temporary Circulation Plan for Sports Complex Parking Lot"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Updates to Main St. to MCJCCC and Rosman Hwy to High School Trail Segments"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Lamb Creek Streambank Restoration"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Brevard Trail App"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda posted to website and bulletin board on 11/13/2026",
+      "Agenda forwarded to media and Sunshine List on 11/13/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-14",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-16",
+      "title": "City Council 2026-11-16: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7483,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-12",
+        "what": "Agenda materials available online"
+      },
+      {
+        "date": "2026-11-16",
+        "what": "Brevard City Council Regular Meeting"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-11-16",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendment to Official Zoning Map - Georgia Hill St., PIN 8586-21-7170-000"
+      },
+      {
+        "date": "2026-11-16",
+        "next_step": "Public hearing",
+        "what": "Proposed Amendments to UDO Chapter 5 - Glazing and Fenestration"
+      },
+      {
+        "date": "2026-11-16",
+        "next_step": "Unfinished business consideration",
+        "what": "Request for Modification to ETJ and Proposed Amendments to UDO Chapter 16 - Vesting Period"
+      },
+      {
+        "date": "2026-11-16",
+        "next_step": "New business consideration",
+        "what": "Architectural Firm Selection for Co-Ed Cinema Renovation"
+      }
+    ],
+    "public_process": [
+      "Public hearing on zoning map amendment for Georgia Hill St.",
+      "Public hearing on UDO Chapter 5 glazing and fenestration amendments",
+      "Public comments period scheduled",
+      "Agenda posted to website, Sunshine List on November 12, 2026",
+      "Meeting livestreamed on City of Brevard YouTube channel",
+      "Agenda packet materials posted Thursday afternoon prior to Monday meeting"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "rezoning"
+    ]
+  },
+  {
+    "_extracted": "2026-11-14",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-16",
+      "title": "City Council 2026-11-16: Agenda Packet",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7484,plainText=false)"
+    },
+    "actions_taken": [
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved agenda as presented",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Approved October 19, 2026 meeting minutes",
+        "who": "City Council"
+      },
+      {
+        "amount": "$88,900",
+        "vote": "unanimous",
+        "what": "Fund 82 project amendment with transfers to General Fund and Water/Sewer Fund",
+        "who": "City Council"
+      },
+      {
+        "amount": "$88,900",
+        "vote": "unanimous",
+        "what": "FY 2026-2027 budget amendment for Fund 82 balance allocation",
+        "who": "City Council"
+      },
+      {
+        "amount": "",
+        "vote": "unanimous",
+        "what": "Architectural firm selection for Co-Ed Cinema renovation - approved recommended designers",
+        "who": "City Council"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "November 16, 2026",
+        "what": "Public hearing on proposed rezoning at 84 Georgia Hill Street"
+      },
+      {
+        "date": "November 16, 2026",
+        "what": "Public hearing on proposed vesting period amendment"
+      },
+      {
+        "date": "November 16, 2026",
+        "what": "Public hearing on proposed glazing and fenestration amendment"
+      },
+      {
+        "date": "November 16, 2026",
+        "what": "City Council votes on vesting period amendment"
+      },
+      {
+        "date": "February 2027",
+        "what": "Strategic planning session to receive capital projects investment list"
+      },
+      {
+        "date": "July 1, 2027",
+        "what": "Local governments adopt accessory dwelling unit regulations"
+      }
+    ],
+    "money": [
+      {
+        "amount": "$47,500",
+        "fund": "General Fund",
+        "item": "Fund 82 transfer to General Fund"
+      },
+      {
+        "amount": "$41,369",
+        "fund": "Water and Sewer Fund",
+        "item": "Fund 82 transfer to Water and Sewer Fund"
+      },
+      {
+        "amount": "$14,000",
+        "fund": "General Fund",
+        "item": "Speed humps on Carolina Avenue"
+      },
+      {
+        "amount": "$8,500",
+        "fund": "General Fund",
+        "item": "Supplementary paving on Carver Street"
+      },
+      {
+        "amount": "$25,000",
+        "fund": "General Fund",
+        "item": "Removal of telephone pole on Carver Street"
+      },
+      {
+        "amount": "$41,369",
+        "fund": "Water and Sewer Fund",
+        "item": "Sewer extension on Cashiers Valley Road for affordable housing"
+      },
+      {
+        "amount": "$52.44",
+        "fund": "Tax Year 2026",
+        "item": "Property tax releases"
+      },
+      {
+        "amount": "$2,500,000 unallocated",
+        "fund": "Water and Sewer",
+        "item": "Water and Sewer fund balance"
+      },
+      {
+        "amount": "$75,000-$100,000",
+        "fund": "To be determined",
+        "item": "Smokestack demolition cost overrun"
+      }
+    ],
+    "pending": [
+      {
+        "date": "December 2026",
+        "next_step": "City Council to vote at next regular meeting after public hearing held November 16",
+        "what": "Proposed rezoning of 84 Georgia Hill Street from NMX to GR-8 zoning district"
+      },
+      {
+        "date": "December 2026",
+        "next_step": "City Council to adopt, revise, reject, or table after public hearing November 16",
+        "what": "Proposed amendment to Chapter 16 UDO regarding vesting periods"
+      },
+      {
+        "date": "December 2026",
+        "next_step": "City Council to adopt, revise, reject, or table after public hearing November 16",
+        "what": "Proposed amendment to Chapter 5 UDO regarding glazing and fenestration requirements"
+      },
+      {
+        "date": "",
+        "next_step": "City Council to approve, approve with conditions, deny, or table",
+        "what": "Request to modify extraterritorial jurisdiction to remove parcel at 55 Grey Havens Drive"
+      },
+      {
+        "date": "February 2027",
+        "next_step": "Staff to prepare list showing where City invested",
+        "what": "Strategic planning session - provide capital projects list over last 10 years by location"
+      },
+      {
+        "date": "Next meeting",
+        "next_step": "City Manager to bring recommended funding strategy and budget amendments",
+        "what": "Smokestack demolition cost recovery and funding strategy"
+      }
+    ],
+    "public_process": [
+      "Public hearings held November 16, 2026 on rezoning, vesting period amendments, and glazing/fenestration amendments",
+      "No public comments recorded at November 16 meeting on these items",
+      "Planning Board recommendations provided on all three ordinance amendments",
+      "Meetings livestreamed on City of Brevard YouTube channel",
+      "Agenda posted on website with materials available Thursday prior to Monday meeting",
+      "Staff to provide fee schedule transparency with estimates to development applicants within 10 business days",
+      "Annual reports on fee collections required to Local Government Commission"
+    ],
+    "quotes": [
+      {
+        "speaker": "City Manager Wilson Hooper",
+        "text": "We project $75,000 to $100,000 additional cost for the smokestack demolition project"
+      },
+      {
+        "speaker": "Mayor Maureen Copelof",
+        "text": "The smokestack has been a symbol of the early industrial age of our town"
+      },
+      {
+        "speaker": "Assistant Planning Director Aaron Bland",
+        "text": "I have not seen ETJ removal happen in the 15 years I have been at the City"
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "stormwater - Phase 1 Results presentation on Stormwater Master Plan with 10 hotspot areas identified",
+      "rezoning - proposed rezoning of 84 Georgia Hill Street from NMX to GR-8",
+      "conditional use - potential special use permits referenced in development discussions",
+      "capital improvement plan - Rosenwald Capital Project Fund amendments",
+      "fund balance - Water and Sewer fund balance of $2.5M noted with significant needs",
+      "public comment - public comment period procedures discussed in multiple contexts",
+      "open meetings - meeting livestreamed and agenda posted per open meeting requirements",
+      "affordable housing - sewer extension funding for Cashiers Valley Road affordable housing project"
+    ]
+  },
+  {
+    "_extracted": "2026-11-14",
+    "_source": {
+      "body": "press",
+      "kind": "notice",
+      "meeting_date": "2026-11-14",
+      "title": "Portion of Transylvania County tapped as an 'Opportunity Zone'",
+      "url": "https://www.transylvaniatimes.com/news/portion-of-transylvania-county-tapped-as-an-opportunity-zone/article_8ae61bc4-7d9b-4be0-a6d8-a23461ffe663.html"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [],
+    "public_process": [],
+    "quotes": [
+      {
+        "speaker": "Stein",
+        "text": "Opportunity Zones will position federal, state, local, and private partners to work together."
+      },
+      {
+        "speaker": "Burton Hodges",
+        "text": "The zones offer incentives to attract community development."
+      }
+    ],
+    "schedule_changes": [],
+    "watchlist_hits": []
   }
 ]
