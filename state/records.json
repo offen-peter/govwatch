@@ -13911,5 +13911,73 @@
     ],
     "schedule_changes": [],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-19",
+    "_source": {
+      "body": "county",
+      "kind": "notice",
+      "meeting_date": "2026-11-19",
+      "title": "County news and public notices",
+      "url": "https://www.transylvaniacounty.org/news"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-23",
+        "what": "Board of Commissioners regular meeting"
+      },
+      {
+        "date": "2027-02-09",
+        "what": "Board of Health regular meeting"
+      },
+      {
+        "date": "2026-09-29",
+        "what": "Joint School Bond Project Committee meeting"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Board of Commissioners meeting for courthouse installment financing resolution"
+      },
+      {
+        "date": "2026-09-28",
+        "what": "Public hearing on Community Development Act funding application"
+      },
+      {
+        "date": "",
+        "what": "Public hearing on telecommunications tower variance requests"
+      }
+    ],
+    "money": [],
+    "pending": [],
+    "public_process": [
+      "Library Board of Trustees meeting cancelled November 19, 2026 due to lack of quorum",
+      "Board of County Commissioners meeting cancelled November 9, 2026; rescheduled for November 23, 2026",
+      "Board of Health meeting cancelled November 10, 2026",
+      "Board of County Commissioners meeting cancelled October 12, 2026; rescheduled for October 26, 2026",
+      "Board of County Commissioners meeting cancelled September 14, 2026; rescheduled for September 28, 2026",
+      "Notice of quorum possibility at Blue Ridge Community College event September 29, 2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Library Board of Trustees meeting cancelled November 19, 2026 due to lack of quorum",
+      "Board of County Commissioners regular meeting cancelled November 9, 2026; next meeting November 23, 2026 at 6:00 p.m.",
+      "Board of Health regular meeting cancelled November 10, 2026; next meeting February 9, 2027 at 6:00 p.m.",
+      "Board of County Commissioners meeting cancelled October 12, 2026; rescheduled for October 26, 2026 at 6:00 p.m.",
+      "Board of County Commissioners meeting cancelled September 14, 2026; rescheduled for September 28, 2026 at 6:00 p.m.",
+      "Public Transportation Fixed Route ending early at 1:00 p.m. on October 5, 2026",
+      "Department of Social Services offices closed September 24, 2026 from 1:00 p.m. to 5:00 p.m. for professional development",
+      "Department of Public Health offices closed September 30, 2026 for training",
+      "See Off Solid Waste Collection Center closing at noon August 17 for facility maintenance"
+    ],
+    "watchlist_hits": [
+      "solid waste",
+      "social services",
+      "DSS",
+      "school bond",
+      "Joint School Bond Project Committee",
+      "courthouse",
+      "public comment"
+    ]
   }
 ]

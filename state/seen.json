@@ -927,6 +927,14 @@
     "title": "**CANCELLED** City Council Downtown Master Plan Committee 2026-11-12: Notice",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7482,plainText=false)"
   },
+  "d885adf1791a446f": {
+    "body": "county",
+    "first_seen": "2026-11-19",
+    "kind": "notice",
+    "meeting_date": "2026-11-19",
+    "title": "County news and public notices",
+    "url": "https://www.transylvaniacounty.org/news"
+  },
   "e31a08db3e845102": {
     "body": "city",
     "first_seen": "2026-08-06",
