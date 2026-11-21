@@ -1,4 +1,12 @@
 {
+  "008e7d7dfcc52880": {
+    "body": "city",
+    "first_seen": "2026-11-21",
+    "kind": "agenda",
+    "meeting_date": "2026-11-23",
+    "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-11-23: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7487,plainText=false)"
+  },
   "00ba91f948305cbb": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -887,6 +895,14 @@
     "title": "County news and public notices",
     "url": "https://www.transylvaniacounty.org/news"
   },
+  "cdbfec12bd2cc9e1": {
+    "body": "city",
+    "first_seen": "2026-11-21",
+    "kind": "agenda",
+    "meeting_date": "2026-11-23",
+    "title": "City Council Public Safety (Police & Fire) Committee 2026-11-23: Agenda",
+    "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7488,plainText=false)"
+  },
   "cdfa9870f11debf7": {
     "body": "city",
     "first_seen": "2026-08-06",
@@ -958,6 +974,14 @@
     "meeting_date": "2026-08-24",
     "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-08-24: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7388,plainText=false)"
+  },
+  "e6338a7655ec815b": {
+    "body": "county",
+    "first_seen": "2026-11-21",
+    "kind": "agenda",
+    "meeting_date": "2026-11-23",
+    "title": "Commissioners agenda 11/23/26",
+    "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-11-23%20BOC%20Agenda.pdf"
   },
   "eb48edf1bd01bd97": {
     "body": "city",

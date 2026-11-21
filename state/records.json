@@ -13979,5 +13979,116 @@
       "courthouse",
       "public comment"
     ]
+  },
+  {
+    "_extracted": "2026-11-21",
+    "_source": {
+      "body": "county",
+      "kind": "agenda",
+      "meeting_date": "2026-11-23",
+      "title": "Commissioners agenda 11/23/26",
+      "url": "https://www.transylvaniacounty.org/sites/default/files/departments/administration/agendas/2026-11-23%20BOC%20Agenda.pdf"
+    },
+    "actions_taken": [],
+    "deadlines": [
+      {
+        "date": "2026-11-23",
+        "what": "Retirement Facilities Revenue Bonds Public Hearing"
+      }
+    ],
+    "money": [],
+    "pending": [
+      {
+        "date": "2026-11-23",
+        "next_step": "public hearing and vote on resolution",
+        "what": "Retirement Facilities Revenue Bonds - Public Hearing and Resolution Approval"
+      },
+      {
+        "date": "2026-11-23",
+        "next_step": "old business discussion and decision",
+        "what": "Courthouse Budget Approval and Contract Award"
+      }
+    ],
+    "public_process": [
+      "Meeting open to public; doors open at 5:30 p.m.",
+      "Public may view meeting online at www.transylvaniacounty.org",
+      "Public Hearing on Retirement Facilities Revenue Bonds scheduled",
+      "Public Comment period: 15-minute time limit, sign-up required, three minutes per speaker",
+      "Second public comment period: three-minute limit per speaker, Chair may limit repetitive speakers",
+      "Agenda Modifications section included",
+      "Closed Session scheduled"
+    ],
+    "quotes": [],
+    "schedule_changes": [],
+    "watchlist_hits": [
+      "social services",
+      "courthouse",
+      "capital improvement plan"
+    ]
+  },
+  {
+    "_extracted": "2026-11-21",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-23",
+      "title": "City Council Public Safety (Police & Fire) Committee 2026-11-23: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7488,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Traffic Calming Measures"
+      },
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Brevard Police Department Accreditation Update"
+      }
+    ],
+    "public_process": [
+      "Public Comments session scheduled",
+      "Agenda posted on website and bulletin board 11/18/2026",
+      "Agenda forwarded to media and Sunshine List 11/18/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Next meeting December 28, 2026 at 3:30pm requires rescheduling due to City Hall closure"
+    ],
+    "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-21",
+    "_source": {
+      "body": "city",
+      "kind": "agenda",
+      "meeting_date": "2026-11-23",
+      "title": "City Council Finance, Human Resources & Citizen Appointment Committee 2026-11-23: Agenda",
+      "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7487,plainText=false)"
+    },
+    "actions_taken": [],
+    "deadlines": [],
+    "money": [],
+    "pending": [
+      {
+        "date": "",
+        "next_step": "",
+        "what": "Ecusta Trail Advisory Board Applications and Recommendation"
+      }
+    ],
+    "public_process": [
+      "Public Comments section on agenda",
+      "Agenda posted to website and bulletin board 11/18/2026",
+      "Agenda forwarded to media and Sunshine List 11/18/2026"
+    ],
+    "quotes": [],
+    "schedule_changes": [
+      "Next meeting December 28, 2026 at 11am requires rescheduling due to City Hall closure"
+    ],
+    "watchlist_hits": []
   }
 ]
