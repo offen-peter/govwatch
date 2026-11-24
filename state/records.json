@@ -14090,5 +14090,426 @@
       "Next meeting December 28, 2026 at 11am requires rescheduling due to City Hall closure"
     ],
     "watchlist_hits": []
+  },
+  {
+    "_extracted": "2026-11-24",
+    "_source": {
+      "body": "county",
+      "kind": "transcript",
+      "meeting_date": "2026-11-23",
+      "title": "Board of Commissioners November 23, 2026 (transcript)",
+      "url": "https://vimeo.com/event/6368597"
+    },
+    "actions_taken": [
+      {
+        "amount": null,
+        "vote": "Unanimous",
+        "what": "Resolution approving issuance of bonds by Public Finance Authority for Coastal Affordable Senior Housing Foundation",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous",
+        "what": "Approval of consent agenda including minutes, proclamations, and reports",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous",
+        "what": "Reappointment of Beth Privitt to Board of Health",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous",
+        "what": "Reappointment of Sandra McNeil to Board of Health",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": 44900000,
+        "vote": "Unanimous",
+        "what": "Approval of courthouse budget modification and contract award to Blaine Construction",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": 100000,
+        "vote": "Unanimous",
+        "what": "Approval of alternate three for firefighter radio amplifier system",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous",
+        "what": "Transition of federal COSSUP grant peer support services to North Carolina Alliance of Public Health Agencies",
+        "who": "Board of Commissioners"
+      },
+      {
+        "amount": null,
+        "vote": "Unanimous",
+        "what": "Approval of agenda",
+        "who": "Board of Commissioners"
+      }
+    ],
+    "commitments": [
+      {
+        "by_when": "Ongoing as updates available",
+        "what": "Will keep board updated on courthouse steel procurement delays",
+        "who": "County Manager Jaime Laughter"
+      },
+      {
+        "by_when": "Throughout project",
+        "what": "Will maintain tracking of UDO compliance costs for courthouse project",
+        "who": "County Manager Jaime Laughter"
+      },
+      {
+        "by_when": "Throughout construction",
+        "what": "Will continue contact with Articles of Freedom group regarding courthouse placement and design integration",
+        "who": "County staff"
+      },
+      {
+        "by_when": "Ongoing",
+        "what": "Will continue coordination with Bloom Construction and LS3P for school projects to meet timeline milestones",
+        "who": "Beecher Allison, Education Capital Projects Manager"
+      },
+      {
+        "by_when": "Following meeting",
+        "what": "Will provide 1-800 VA number for veteran services on county website",
+        "who": "County Manager Jaime Laughter"
+      },
+      {
+        "by_when": "In next two to three weeks",
+        "what": "Will provide legislative goals booklet to board members",
+        "who": "County Manager Jaime Laughter"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "December 22, 2026",
+        "what": "Brevard High School CTE grant design development package"
+      },
+      {
+        "date": "February 15, 2027",
+        "what": "Brevard High School CTE grant Seymour pricing"
+      },
+      {
+        "date": "Mid to end of December 2026",
+        "what": "Fuel storage tank replacement bids"
+      },
+      {
+        "date": "End of January 2027",
+        "what": "Rosman Middle School eighth grade floor construction completion"
+      },
+      {
+        "date": "December 15, 2026",
+        "what": "Unit ventilators delivery for Rosman Middle School"
+      },
+      {
+        "date": "December 5, 2026",
+        "what": "NCDOT active transportation plan submission deadline"
+      },
+      {
+        "date": "December 7, 2026 at 8:30 AM",
+        "what": "Board of Commissioners oath of office and organizational meeting"
+      },
+      {
+        "date": "July 1, 2027",
+        "what": "SNAP cost share effective date"
+      },
+      {
+        "date": "October 1, 2027 or after",
+        "what": "SNAP cost share sales tax withholding implementation"
+      },
+      {
+        "date": "Early 2028",
+        "what": "COSSUP grant conclusion and peer support services contract end"
+      },
+      {
+        "date": "January 15, 2027",
+        "what": "NCACC Executive Director Kevin Leonard last day"
+      },
+      {
+        "date": "December 14, 2026 at 4:00 PM",
+        "what": "Next regular Board of Commissioners meeting"
+      },
+      {
+        "date": "December 5, 2026 at 5:00 PM",
+        "what": "Heart of Brevard Light Up the Night tree lighting ceremony"
+      },
+      {
+        "date": "December 19, 2026 at 12:00 PM",
+        "what": "National Wreaths Across America Day at Lakeside Cemetery"
+      }
+    ],
+    "disagreements": [
+      {
+        "issue": "Tax-exempt bond approval necessity for Cedar Mountain House purchase",
+        "positions": [
+          {
+            "position": "Initially believed purchase was not dependent on board resolution approval",
+            "who": "Commissioner (unnamed)"
+          },
+          {
+            "position": "Purchase is dependent on resolution being passed for tax-exempt bond issuance",
+            "who": "Grant Melton, CASHF representative"
+          }
+        ]
+      },
+      {
+        "issue": "ALG relationship and involvement",
+        "positions": [
+          {
+            "position": "Expressed concern about ALG parent corporation litigation and regulatory issues bearing on decision",
+            "who": "Owen Carson, Commissioner-elect"
+          },
+          {
+            "position": "CASHF not associated with ALG except as third-party manager for day-to-day operations",
+            "who": "Grant Melton, CASHF representative"
+          }
+        ]
+      }
+    ],
+    "money": [
+      {
+        "amount": 70000000,
+        "fund": "Tax-exempt bonds issued by Public Finance Authority",
+        "item": "Cedar Mountain House bond financing aggregate principal ceiling"
+      },
+      {
+        "amount": 15000000,
+        "fund": "Bond proceeds",
+        "item": "Cedar Mountain House allocation for this facility"
+      },
+      {
+        "amount": 12000000,
+        "fund": "Bond proceeds (80% of 15 million allocation)",
+        "item": "Cedar Mountain House purchase price portion"
+      },
+      {
+        "amount": 12000,
+        "fund": "Annual property tax reduction",
+        "item": "Cedar Mountain House property tax loss to county"
+      },
+      {
+        "amount": 44900000,
+        "fund": "Bond proceeds and assigned fund balance",
+        "item": "Courthouse project total budget"
+      },
+      {
+        "amount": 35000000,
+        "fund": "Blaine Construction contract",
+        "item": "Courthouse construction cost of work"
+      },
+      {
+        "amount": 34900000,
+        "fund": "Negotiated with Blaine Construction",
+        "item": "Courthouse construction base bid"
+      },
+      {
+        "amount": 100000,
+        "fund": "Conditional on building requirement",
+        "item": "Courthouse firefighter radio amplifier alternate"
+      },
+      {
+        "amount": 2900000,
+        "fund": "Architecture, commissioning, testing",
+        "item": "Courthouse professional services"
+      },
+      {
+        "amount": 7000000,
+        "fund": "Generator, lighting, site work, FF&E, fees",
+        "item": "Courthouse owner items and soft costs"
+      },
+      {
+        "amount": 1200000,
+        "fund": "Included in base bid",
+        "item": "Courthouse UDO compliance costs"
+      },
+      {
+        "amount": 61600,
+        "fund": "City of Brevard and county costs",
+        "item": "Courthouse permitting and fees"
+      },
+      {
+        "amount": 220000000,
+        "fund": "Various projects",
+        "item": "County capital projects and development underway"
+      },
+      {
+        "amount": 120000000,
+        "fund": "Federal and state grants",
+        "item": "Grant funding for capital projects"
+      },
+      {
+        "amount": 4400000,
+        "fund": "Federal Payment in Lieu of Taxes",
+        "item": "PILT payment to Transylvania County"
+      },
+      {
+        "amount": 89000,
+        "fund": "PILT calculation basis",
+        "item": "Transylvania County federal public lands acreage"
+      }
+    ],
+    "pending": [
+      {
+        "date": "Mid-2027",
+        "next_step": "Closing transaction",
+        "what": "Cedar Mountain House bond financing dependent on resolution approval"
+      },
+      {
+        "date": "December 22, 2026",
+        "next_step": "Design development package delivery",
+        "what": "Brevard High School CTE grant project design development package"
+      },
+      {
+        "date": null,
+        "next_step": "Secure funding and coordination with other projects",
+        "what": "Brevard High School infrastructure project - remaining grant funds for construction"
+      },
+      {
+        "date": "Mid to end of December 2026",
+        "next_step": "Bid opening for three remaining underground storage tanks",
+        "what": "Fuel storage tank replacement bids"
+      },
+      {
+        "date": "End of January 2027",
+        "next_step": "Complete eighth grade floor unit ventilators and construction",
+        "what": "Rosman Area School Project construction"
+      },
+      {
+        "date": "Week of December 7, 2026",
+        "next_step": "Project kickoff meeting",
+        "what": "Brevard Area School projects owner deliverable meeting"
+      },
+      {
+        "date": null,
+        "next_step": "Final DEQ clearance to operate new cell",
+        "what": "Landfill expansion final clearance"
+      },
+      {
+        "date": null,
+        "next_step": "DEQ review and approval",
+        "what": "Watershed study review"
+      },
+      {
+        "date": "December 7, 2026",
+        "next_step": "Swearing in of newly elected commissioners and election of chair and vice chair",
+        "what": "Board of Commissioners oath of office and organizational meeting"
+      },
+      {
+        "date": "July 1, 2027 effective date",
+        "next_step": "Policy changes and state statute compliance",
+        "what": "SNAP benefit cost share adjustments implementation"
+      },
+      {
+        "date": "October 1, 2027 or after",
+        "next_step": "Administrative implementation",
+        "what": "County sales tax distribution withholding for SNAP cost share"
+      }
+    ],
+    "public_comment": [
+      {
+        "response": "Manager clarified that resolution is required for tax-exempt bond issuance. Grant Melton stated bond process includes six other communities, they retain ALG only as third-party manager not as parent company, ALG will continue managing day-to-day operations ensuring no interruption to residents' care.",
+        "speaker": "Brian O'Neil, Commissioner-elect",
+        "summary": "Asked about other counties' similar approval processes, due diligence on entities involved, ALG litigation and regulatory issues, bond allocation of 70 million across state, and whether approval was necessary for purchase to proceed.",
+        "topic": "Cedar Mountain House bond financing concerns"
+      },
+      {
+        "response": "Manager stated no ongoing obligations for county. Grant Melton stated affordability is not legally enforceable but goal is to maintain Medicaid community, 80% of 15 million is purchase price and 20% for reserves, 12-month debt service reserve plus 60-90 days cash on hand will be funded for resident protection.",
+        "speaker": "Owen Carson, Commissioner-elect",
+        "summary": "Asked about enforceability of affordability commitments, impact on existing residents' agreements and care levels, management and staffing changes, allocation of 15 million between purchase and capital improvements, protections if borrower faces financial distress, and whether approval creates ongoing county obligations.",
+        "topic": "Cedar Mountain House affordability and resident protections"
+      },
+      {
+        "response": "Chair acknowledged and said 'Happy Thanksgiving'",
+        "speaker": "Doug Powell",
+        "summary": "Expressed gratitude for armed forces and their sacrifices, praised board members' service, particularly outgoing commissioners, and reflected on pilgrims' Thanksgiving, emphasizing importance of faith, morality, law, education, and liberty as foundations of freedom.",
+        "topic": "Public comment - Thanksgiving and civic engagement"
+      },
+      {
+        "response": "No formal response recorded",
+        "speaker": "Owen Carson, Commissioner-elect",
+        "summary": "Thanked Jake Dalton and Chase McKelvey for their service, acknowledged they set high standard, expressed excitement about filling their positions, and invited constituents to bring concerns during public comment.",
+        "topic": "Thank you to outgoing commissioners"
+      }
+    ],
+    "public_process": [
+      "Public hearing conducted for Cedar Mountain House bond financing with seven-day notice posted",
+      "Public comment rules stated: three-minute limit per speaker, speakers must state name and address board not public, comments must relate to topic, no sign-up required for second public comment period",
+      "Second public comment opportunity provided at end of meeting",
+      "All commissioners and commissioner-elects recognized at meeting start",
+      "Outgoing commissioners (Jake Dalton and Chase McKelvey) honored with resolutions read by Vice Chair Larry Chapman and Chair Teresa McCall",
+      "Oath of office ceremony scheduled for newly elected officials"
+    ],
+    "quotes": [
+      {
+        "speaker": "Chase McKelvey, Commissioner",
+        "start": "01:52:00",
+        "text": "I'll miss the camaraderie. I'll miss hearing from the people."
+      },
+      {
+        "speaker": "Jake Dalton, Commissioner",
+        "start": "01:54:03",
+        "text": "It was a pleasure. I won't say it was always fun."
+      },
+      {
+        "speaker": "Frank Pearsall, Veterans Service Officer",
+        "start": "00:50:13",
+        "text": "How can I be faceless? That just doesn't work."
+      }
+    ],
+    "roll_call": [
+      "Teresa McCall, Chair",
+      "Larry Chapman, Vice Chair",
+      "Chase McKelvey, Commissioner",
+      "Jake Dalton, Commissioner",
+      "Jason Chappell, Commissioner",
+      "Jaime Laughter, County Manager",
+      "Trisha Hogan, Clerk to the Board",
+      "Julie Hooten, County Attorney (virtually)",
+      "Brian O'Neil, Commissioner-elect",
+      "Owen Carson, Commissioner-elect"
+    ],
+    "schedule_changes": [
+      "Board canceled its second meeting in December 2026; December 14, 2026 will be the last meeting for the calendar year",
+      "Next regular meeting scheduled for Monday, December 14, 2026 at 4:00 PM",
+      "Oath of office and organizational meeting scheduled for Monday, December 7, 2026 at 8:30 AM"
+    ],
+    "unanswered": [
+      "Specific details about ALG's litigation and regulatory issues were not fully addressed",
+      "Whether enforceable affordability commitments would be legally required beyond the goal of maintaining Medicaid community status",
+      "Whether there is any mechanism for county oversight if Cedar Mountain House faces financial distress after approval",
+      "Specific legal remedies or protections available if management or staffing quality declines after ownership transition"
+    ],
+    "watchlist_hits": [
+      "affordable housing - Cedar Mountain House senior living community",
+      "transfer station - not mentioned as topic but referenced in context",
+      "leachate - landfill expansion project mentioned with permit to operate",
+      "DEQ - landfill expansion information submitted to DEQ, awaiting final clearance; watershed study under DEQ review",
+      "Department of Environmental Quality - same as DEQ references",
+      "stormwater - courthouse project stormwater pond design, landfill site stormwater issues",
+      "social services - multiple Social Services department staff recognized",
+      "DSS - same as social services",
+      "school bond - Joint School Bond Project Committee education capital projects, BHS and Rosman Area school improvements funded by bond",
+      "Joint School Bond Project Committee - Beecher Allison presented education capital projects update",
+      "capital improvement plan - extensive capital projects portfolio presented with $220-230 million underway",
+      "courthouse - courthouse project budget approved at $44.9 million",
+      "tax rate - not discussed",
+      "revenue neutral - not discussed",
+      "fund balance - courthouse funded by bond proceeds and assigned fund balance",
+      "SNAP - Senate Bill 177 changes to SNAP benefit cost share law discussed in manager's report",
+      "teacher supplement - not discussed",
+      "public comment - two public comment periods conducted with established rules",
+      "decorum - public comment rules established regarding addressing board and not public",
+      "closed session - no closed session held",
+      "open meetings - informal mention of open government process",
+      "agenda modification - no agenda modifications requested",
+      "homelessness - not discussed",
+      "rezoning - not discussed",
+      "conditional use - not discussed",
+      "landfill - landfill expansion has permit to operate, information submitted to DEQ, waiting for final clearance, stormwater issues being worked through",
+      "solid waste - Solid Waste department staff recognized for service awards",
+      "staffing contract - North Carolina Alliance of Public Health Agencies contracted for COSSUP grant peer support services"
+    ]
   }
 ]

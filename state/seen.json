@@ -503,6 +503,14 @@
     "title": "City Council 2026-11-16: Agenda",
     "url": "https://brevardnc.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7483,plainText=false)"
   },
+  "60bde73e0f5b73e2": {
+    "body": "county",
+    "first_seen": "2026-11-24",
+    "kind": "transcript",
+    "meeting_date": "2026-11-23",
+    "title": "Board of Commissioners November 23, 2026 (transcript)",
+    "url": "https://vimeo.com/event/6368597"
+  },
   "62eae0fba02154de": {
     "body": "city",
     "first_seen": "2026-08-21",
